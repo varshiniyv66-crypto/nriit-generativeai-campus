@@ -1,0 +1,11 @@
+subject_code,subject_name,dept_code,year,semester,credits,subject_type,is_active
+CS501,Data Mining,CSE,3,5,4,theory,TRUE
+CS502,Web Technologies,CSE,3,5,3,theory,TRUE
+CS503,Data Mining Lab,CSE,3,5,2,lab,TRUE
+CS504,Compiler Design,CSE,3,5,4,theory,TRUE
+CS601,Artificial Intelligence,CSE,3,6,4,theory,TRUE
+CS602,Machine Learning,CSE,3,6,4,theory,TRUE
+CS701,Major Project,CSE,4,7,6,project,TRUE
+EC501,Digital Signal Processing,ECE,3,5,4,theory,TRUE
+EC502,VLSI Design,ECE,3,5,4,theory,TRUE
+ME501,Thermal Engineering,MECH,3,5,4,theory,TRUE

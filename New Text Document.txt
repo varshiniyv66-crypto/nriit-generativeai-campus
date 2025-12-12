@@ -1,0 +1,31 @@
+### Test Dean Account:
+- [ ] Login as dean@nriit.ac.in
+- [ ] View Dean Dashboard
+- [ ] Go to Faculty Management
+- [ ] See 244 faculty members
+- [ ] Try adding a new faculty
+- [ ] Upload a faculty photo
+- [ ] Search for a faculty member
+
+### Test Faculty Account:
+- [ ] Login as rajesh.kumar@nriit.ac.in
+- [ ] View Faculty Dashboard
+- [ ] See your mentees count
+- [ ] View at-risk students
+- [ ] Check today's classes
+
+### Test Student Account:
+- [ ] Login as 21B81A0501@nriit.ac.in
+- [ ] View Student Dashboard
+- [ ] Check attendance percentage
+- [ ] View marks
+- [ ] See mentor details
+
+---
+
+## 🔐 **PASSWORD POLICY**
+
+All test accounts use simple passwords for development:
+- **Dean**: `Dean@123`
+- **Faculty**: `Faculty@123`
+- **Student**: `Student@123`

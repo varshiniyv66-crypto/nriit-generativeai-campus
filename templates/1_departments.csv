@@ -1,0 +1,10 @@
+code,name,short_name,established_year,is_active
+CSE,Computer Science and Engineering,CSE,2001,TRUE
+ECE,Electronics and Communication Engineering,ECE,2001,TRUE
+MECH,Mechanical Engineering,MECH,2001,TRUE
+CIVIL,Civil Engineering,CIVIL,2001,TRUE
+IT,Information Technology,IT,2005,TRUE
+CSE-DS,Computer Science and Engineering (Data Science),CSE-DS,2019,TRUE
+CSE-AI,Computer Science and Engineering (Artificial Intelligence),CSE-AI,2020,TRUE
+MBA,Master of Business Administration,MBA,2010,TRUE
+MCA,Master of Computer Applications,MCA,2008,TRUE

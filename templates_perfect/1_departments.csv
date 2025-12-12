@@ -1,0 +1,10 @@
+code,name,short_name,description,vision,mission,established_year,contact_email,contact_phone,location,is_active
+CSE,Computer Science and Engineering,CSE,Leading department in AI and ML research,To be a center of excellence in Computer Science Education,To provide quality education and foster innovation,2001,cse@nriit.ac.in,0863-2344300,Main Block - 3rd Floor,TRUE
+ECE,Electronics and Communication Engineering,ECE,Excellence in VLSI and Embedded Systems,To excel in Electronics and Communication,To develop skilled engineers in ECE domain,2001,ece@nriit.ac.in,0863-2344301,Main Block - 2nd Floor,TRUE
+MECH,Mechanical Engineering,MECH,Strong foundation in Thermal and Manufacturing,To be leaders in Mechanical Engineering,To provide hands-on training in mechanical systems,2001,mech@nriit.ac.in,0863-2344302,Workshop Block,TRUE
+CIVIL,Civil Engineering,CIVIL,Building infrastructure for tomorrow,To create civil engineering leaders,To develop sustainable infrastructure solutions,2001,civil@nriit.ac.in,0863-2344303,Civil Block,TRUE
+IT,Information Technology,IT,Cutting-edge IT education and research,To be pioneers in Information Technology,To bridge academia and industry in IT,2005,it@nriit.ac.in,0863-2344304,IT Block,TRUE
+CSE-DS,Computer Science (Data Science),CSE-DS,Specialized in Big Data and Analytics,To lead in Data Science education,To create data science professionals,2019,cseds@nriit.ac.in,0863-2344305,Main Block - 4th Floor,TRUE
+CSE-AI,Computer Science (Artificial Intelligence),CSE-AI,Focus on AI and Deep Learning,To excel in AI research and education,To develop AI experts for industry,2020,cseai@nriit.ac.in,0863-2344306,AI Lab Block,TRUE
+MBA,Master of Business Administration,MBA,Management education with industry focus,To create business leaders,To provide holistic management education,2010,mba@nriit.ac.in,0863-2344307,Management Block,TRUE
+MCA,Master of Computer Applications,MCA,Advanced computing and software development,To excel in computer applications,To create industry-ready software professionals,2008,mca@nriit.ac.in,0863-2344308,MCA Block,TRUE

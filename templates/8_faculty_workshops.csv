@@ -1,0 +1,6 @@
+faculty_employee_id,title,type,category,organizer,start_date,end_date,duration_days
+FACCSE001,AI and Machine Learning,attended,FDP,AICTE,2023-06-01,2023-06-05,5
+FACCSE001,Deep Learning Workshop,conducted,workshop,NRIIT CSE Dept,2023-09-15,2023-09-16,2
+FACCSE002,Data Science Bootcamp,attended,FDP,IIT Bombay,2023-07-10,2023-07-14,5
+FACECE001,VLSI Design Techniques,conducted,workshop,NRIIT ECE Dept,2023-08-20,2023-08-21,2
+FACECE002,Signal Processing Seminar,attended,seminar,IEEE,2023-10-05,2023-10-05,1

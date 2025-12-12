@@ -1,0 +1,16 @@
+course_code,course_name,dept_code,semester,credits,lecture_hours,tutorial_hours,practical_hours,course_type,is_elective,is_active
+CS501,Data Mining,CSE,5,4,3,1,0,theory,FALSE,TRUE
+CS502,Web Technologies,CSE,5,3,2,1,0,theory,FALSE,TRUE
+CS503,Data Mining Lab,CSE,5,2,0,0,4,lab,FALSE,TRUE
+CS504,Compiler Design,CSE,5,4,3,1,0,theory,FALSE,TRUE
+CS505,Cloud Computing,CSE,5,3,3,0,0,theory,TRUE,TRUE
+CS601,Artificial Intelligence,CSE,6,4,3,1,0,theory,FALSE,TRUE
+CS602,Machine Learning,CSE,6,4,3,1,0,theory,FALSE,TRUE
+CS603,AI Lab,CSE,6,2,0,0,4,lab,FALSE,TRUE
+CS701,Major Project,CSE,7,6,0,0,12,project,FALSE,TRUE
+EC501,Digital Signal Processing,ECE,5,4,3,1,0,theory,FALSE,TRUE
+EC502,VLSI Design,ECE,5,4,3,1,0,theory,FALSE,TRUE
+EC503,DSP Lab,ECE,5,2,0,0,4,lab,FALSE,TRUE
+ME501,Thermal Engineering,MECH,5,4,3,1,0,theory,FALSE,TRUE
+ME502,Manufacturing Processes,MECH,5,3,2,1,0,theory,FALSE,TRUE
+IT501,Network Security,IT,5,4,3,1,0,theory,FALSE,TRUE

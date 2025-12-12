@@ -1,0 +1,117 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    ✅ BUCKET CREATION CHECKLIST                             ┃
+┃                         (Print or Keep Open)                                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+BEFORE YOU START:
+□ Supabase dashboard open: https://supabase.com/dashboard
+□ Project selected
+□ On Storage page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUCKET 1: faculty-photos
+□ Click "New bucket"
+□ Name: faculty-photos
+□ Public: ✅ ON
+□ Size: 2097152
+□ MIME: image/jpeg,image/png,image/webp
+□ Click "Create bucket"
+□ ✅ Verify it appears in list
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUCKET 2: faculty-resumes
+□ Click "New bucket"
+□ Name: faculty-resumes
+□ Public: ❌ OFF
+□ Size: 5242880
+□ MIME: application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document
+□ Click "Create bucket"
+□ ✅ Verify it appears in list
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUCKET 3: student-photos
+□ Click "New bucket"
+□ Name: student-photos
+□ Public: ✅ ON
+□ Size: 2097152
+□ MIME: image/jpeg,image/png,image/webp
+□ Click "Create bucket"
+□ ✅ Verify it appears in list
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUCKET 4: circulars
+□ Click "New bucket"
+□ Name: circulars
+□ Public: ✅ ON
+□ Size: 10485760
+□ MIME: application/pdf
+□ Click "Create bucket"
+□ ✅ Verify it appears in list
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERIFY BUCKETS:
+□ See 4 buckets total in Storage
+□ circulars (public)
+□ faculty-photos (public)
+□ faculty-resumes (private)
+□ student-photos (public)
+□ 📸 Take screenshot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RUN SQL SCRIPT:
+□ Go to SQL Editor
+□ New query
+□ Copy content from: setup_supabase_complete.sql
+□ Paste into editor
+□ Click "Run"
+□ Wait for completion
+□ Check for success messages
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CREATE DEAN USER:
+□ Go to Authentication → Users
+□ Click "Add user" or "Invite user"
+□ Email: dean@nriit.ac.in
+□ Password: Dean@123
+□ Auto Confirm: ✅ ON
+□ Click "Create user"
+□ ✅ Verify user appears in list
+□ 📸 Take screenshot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERIFY SETUP:
+□ Go to SQL Editor
+□ New query
+□ Copy content from: verify_supabase_setup.sql
+□ Paste into editor
+□ Click "Run"
+□ Check results
+□ Should see: "✅ ✅ ✅ ALL CHECKS PASSED! ✅ ✅ ✅"
+□ 📸 Take screenshot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINAL STEP:
+□ All checks passed
+□ 3 screenshots taken
+□ Tell AI: "All buckets created successfully!"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TOTAL CHECKBOXES: 42
+COMPLETED: _____ / 42
+
+TIME ESTIMATE: 7-10 minutes
+DIFFICULTY: ⭐⭐ (Easy)
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  🏆 Once complete, you're ready for Faculty Management & Gold Medal! 🏆     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛

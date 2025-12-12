@@ -1,0 +1,5 @@
+faculty_employee_id,title,authors,journal_name,publication_type,publication_date,doi,impact_factor,scopus_indexed,ugc_approved
+FACCSE001,Machine Learning in Healthcare,Rajesh Kumar; Priya Sharma,IEEE Transactions on AI,journal,2023-05-15,10.1109/TAI.2023.1234,8.5,TRUE,TRUE
+FACCSE001,Deep Learning for Medical Diagnosis,Rajesh Kumar; Anil Verma,Springer LNCS,conference,2023-08-20,10.1007/978-3-123456,3.2,TRUE,TRUE
+FACCSE002,Neural Networks for Image Recognition,Priya Sharma; Arun Reddy,ACM Computing Surveys,journal,2023-03-10,10.1145/3456789,12.3,TRUE,TRUE
+FACECE001,VLSI Design Optimization Techniques,Arun Reddy; Lakshmi Devi,IEEE TVLSI,journal,2023-06-25,10.1109/TVLSI.2023.5678,4.8,TRUE,TRUE

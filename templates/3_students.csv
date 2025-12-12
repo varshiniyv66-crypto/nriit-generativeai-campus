@@ -1,0 +1,8 @@
+roll_number,registration_number,first_name,last_name,email,phone,dept_code,year,section,current_semester,admission_date,admission_type,is_active
+24CSE001,24CSE001,Aarav,Sharma,24cse001@nriit.ac.in,9900000001,CSE,1,A,1,2024-07-15,EAMCET,TRUE
+24CSE002,24CSE002,Aditi,Rao,24cse002@nriit.ac.in,9900000002,CSE,1,A,1,2024-07-15,EAMCET,TRUE
+24CSE003,24CSE003,Karthik,Reddy,24cse003@nriit.ac.in,9900000003,CSE,1,A,1,2024-07-15,EAMCET,TRUE
+23CSE001,23CSE001,Meera,Nair,23cse001@nriit.ac.in,9900000004,CSE,2,A,3,2023-07-15,EAMCET,TRUE
+23CSE002,23CSE002,Rohan,Gupta,23cse002@nriit.ac.in,9900000005,CSE,2,A,3,2023-07-15,EAMCET,TRUE
+22CSE001,22CSE001,Sneha,Patel,22cse001@nriit.ac.in,9900000006,CSE,3,A,5,2022-07-15,EAMCET,TRUE
+21CSE001,21CSE001,Vikram,Singh,21cse001@nriit.ac.in,9900000007,CSE,4,A,7,2021-07-15,EAMCET,TRUE

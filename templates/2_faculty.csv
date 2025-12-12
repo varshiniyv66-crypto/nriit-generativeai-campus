@@ -1,0 +1,8 @@
+employee_id,first_name,last_name,email,phone,dept_code,designation,qualification,specialization,experience_years,date_of_joining,is_active
+FACCSE001,Rajesh,Kumar,rajesh.kumar@nriit.ac.in,9876543001,CSE,Professor & HOD,Ph.D,Artificial Intelligence,18,7/1/2010,TRUE
+FACCSE002,Priya,Sharma,priya.sharma@nriit.ac.in,9876543002,CSE,Associate Professor,Ph.D,Machine Learning,12,7/1/2015,TRUE
+FACCSE003,Anil,Verma,anil.verma@nriit.ac.in,9876543003,CSE,Assistant Professor,M.Tech,Data Science,5,7/1/2019,TRUE
+FACECE001,Arun,Reddy,arun.reddy@nriit.ac.in,9876543004,ECE,Professor & HOD,Ph.D,VLSI Design,20,7/1/2008,TRUE
+FACECE002,Lakshmi,Devi,lakshmi.devi@nriit.ac.in,9876543005,ECE,Associate Professor,Ph.D,Signal Processing,14,7/1/2012,TRUE
+FACMECH001,Suresh,Babu,suresh.babu@nriit.ac.in,9876543006,MECH,Professor & HOD,Ph.D,Thermal Engineering,22,7/1/2006,TRUE
+FACIT001,Ramesh,Rao,ramesh.rao@nriit.ac.in,9876543007,IT,Professor & HOD,Ph.D,Cloud Computing,16,7/1/2011,TRUE

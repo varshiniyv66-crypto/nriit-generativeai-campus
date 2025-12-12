@@ -1,0 +1,29 @@
+roll_number,course_code,exam_type,academic_year,semester_type,marks_obtained,max_marks,is_absent,remarks
+21B81A0501,CS501,internal_1,2024-25,odd,38,50,FALSE,Good performance
+21B81A0501,CS502,internal_1,2024-25,odd,42,50,FALSE,Excellent
+21B81A0501,CS503,internal_1,2024-25,odd,35,50,FALSE,
+21B81A0501,CS504,internal_1,2024-25,odd,40,50,FALSE,
+21B81A0501,CS505,internal_1,2024-25,odd,45,50,FALSE,Outstanding lab work
+21B81A0501,CS501,internal_2,2024-25,odd,40,50,FALSE,Improved
+21B81A0501,CS502,internal_2,2024-25,odd,44,50,FALSE,Consistent
+21B81A0501,CS503,internal_2,2024-25,odd,38,50,FALSE,
+21B81A0501,CS504,internal_2,2024-25,odd,42,50,FALSE,
+21B81A0501,CS505,internal_2,2024-25,odd,47,50,FALSE,Excellent practical skills
+21B81A0502,CS501,internal_1,2024-25,odd,32,50,FALSE,
+21B81A0502,CS502,internal_1,2024-25,odd,35,50,FALSE,
+21B81A0502,CS503,internal_1,2024-25,odd,30,50,FALSE,Needs improvement
+21B81A0502,CS504,internal_1,2024-25,odd,33,50,FALSE,
+21B81A0502,CS505,internal_1,2024-25,odd,38,50,FALSE,
+22B81A0401,EC301,internal_1,2024-25,odd,40,50,FALSE,
+22B81A0401,EC302,internal_1,2024-25,odd,38,50,FALSE,
+22B81A0401,EC303,internal_1,2024-25,odd,42,50,FALSE,Good understanding
+22B81A0401,EC304,internal_1,2024-25,odd,39,50,FALSE,
+20B81A0301,ME501,internal_1,2024-25,odd,35,50,FALSE,
+20B81A0301,ME502,internal_1,2024-25,odd,37,50,FALSE,
+20B81A0301,ME503,internal_1,2024-25,odd,0,50,TRUE,Absent due to illness
+20B81A0301,ME504,internal_1,2024-25,odd,36,50,FALSE,
+21B81A0501,CS501,external,2024-25,odd,72,100,FALSE,
+21B81A0501,CS502,external,2024-25,odd,78,100,FALSE,
+21B81A0501,CS503,external,2024-25,odd,68,100,FALSE,
+21B81A0501,CS504,external,2024-25,odd,75,100,FALSE,
+21B81A0501,CS505,external,2024-25,odd,82,100,FALSE,

@@ -1,0 +1,6 @@
+student_roll_number,father_name,father_phone,father_email,mother_name,mother_phone,mother_email,guardian_name,guardian_phone,guardian_email
+24CSE001,Ramesh Sharma,9800000001,ramesh.sharma@gmail.com,Sunita Sharma,9800000002,sunita.sharma@gmail.com,,,
+24CSE002,Vijay Rao,9800000003,vijay.rao@gmail.com,Lakshmi Rao,9800000004,lakshmi.rao@gmail.com,,,
+24CSE003,Suresh Reddy,9800000005,suresh.reddy@gmail.com,Padma Reddy,9800000006,padma.reddy@gmail.com,,,
+23CSE001,Krishna Nair,9800000007,krishna.nair@gmail.com,Radha Nair,9800000008,radha.nair@gmail.com,,,
+23CSE002,Mohan Gupta,9800000009,mohan.gupta@gmail.com,Sita Gupta,9800000010,sita.gupta@gmail.com,,,

@@ -1,0 +1,9 @@
+student_roll_number,subject_code,exam_type,marks_obtained,max_marks,academic_year,semester
+24CSE001,CS501,mid1,28,30,2024-25,5
+24CSE001,CS501,mid2,25,30,2024-25,5
+24CSE001,CS501,assignment1,9,10,2024-25,5
+24CSE001,CS501,assignment2,10,10,2024-25,5
+24CSE002,CS501,mid1,25,30,2024-25,5
+24CSE002,CS501,mid2,27,30,2024-25,5
+24CSE003,CS501,mid1,30,30,2024-25,5
+23CSE001,CS501,mid1,15,30,2024-25,5

@@ -1,0 +1,6 @@
+student_roll_number,date,subject_code,period_1,period_2,period_3,period_4,period_5,period_6,period_7,period_8
+24CSE001,2024-12-11,CS501,P,P,P,P,P,P,P,P
+24CSE002,2024-12-11,CS501,P,P,A,P,P,P,P,P
+24CSE003,2024-12-11,CS501,P,P,P,P,P,P,P,P
+23CSE001,2024-12-11,CS501,A,A,A,A,A,A,A,A
+23CSE002,2024-12-11,CS501,P,P,ML,ML,ML,ML,ML,ML
