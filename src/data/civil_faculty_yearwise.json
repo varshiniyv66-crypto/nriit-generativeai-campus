@@ -1,0 +1,202 @@
+{
+  "2025-26": [
+    {
+      "sno": "1",
+      "name": "Dr.K.SRINIVASU",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "30.04.2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "DR.K.CHANDRAMOULI",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "07-06-2010",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "B.NARENDRA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "27-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "K.DIVYA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "06-01-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "T.YASWANTH",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "SHAIK SAMAD",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1",
+      "name": "Dr.K.SRINIVASU",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "30.04.2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "DR.K.CHANDRAMOULI",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "07-06-2010",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "B.NARENDRA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "27-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "K.DIVYA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "06-01-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "T.YASWANTH",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "SHAIK SAMAD",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1",
+      "name": "Dr.K.SRINIVASU",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "30.04.2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "DR.K.CHANDRAMOULI",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "07-06-2010",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "B.NARENDRA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "27-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "K.DIVYA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "06-01-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "T.YASWANTH",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "SHAIK SAMAD",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1",
+      "name": "Dr.K.SRINIVASU",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "30.04.2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "DR.K.CHANDRAMOULI",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "07-06-2010",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "B.NARENDRA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "27-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "K.DIVYA",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "06-01-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "T.YASWANTH",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "SHAIK SAMAD",
+      "qualification": "M.Tech",
+      "designation": "Asst Professor",
+      "doj": "14-11-2022",
+      "nature": "Regular"
+    }
+  ]
+}

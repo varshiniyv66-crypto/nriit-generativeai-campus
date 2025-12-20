@@ -1,0 +1,6251 @@
+{
+  "2022-2023": {
+    "CIVIL": [
+      {
+        "sno": "1",
+        "name": "Bella Krishna",
+        "regd_no": "19KP1A0102",
+        "branch": "CIVIL",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "2",
+        "name": "g.manikanta reddy",
+        "regd_no": "19kp1a0106",
+        "branch": "CIVIL",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "3",
+        "name": "g. siva sai kalayan",
+        "regd_no": "19KP1A0107",
+        "branch": "CIVIL",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "4",
+        "name": "m.arun kumar",
+        "regd_no": "19kp1a0111",
+        "branch": "CIVIL",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "5",
+        "name": "n.v.sivannarayna",
+        "regd_no": "19kp1a0112",
+        "branch": "CIVIL",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "6",
+        "name": "N.venkata sivanarayana yadav",
+        "regd_no": "19KP1A0112",
+        "branch": "CIVIL",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "7",
+        "name": "Shyed Ahmad",
+        "regd_no": "19KP1A0123",
+        "branch": "CIVIL",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "8",
+        "name": "P.Ravi Babu",
+        "regd_no": "20KP5A0101",
+        "branch": "CIVIL",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      }
+    ],
+    "CSE": [
+      {
+        "sno": "9",
+        "name": "ANKATA SANDEEP",
+        "regd_no": "19KP1A0504",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "10",
+        "name": "BELLAMKONDA PRADEEP KUMAR",
+        "regd_no": "19KP1A0506",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "11",
+        "name": "BITRA DILEEP KUMAR",
+        "regd_no": "19KP1A0508",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "12",
+        "name": "CH. SAI MEGHANA",
+        "regd_no": "19KP1A0511",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "13",
+        "name": "CHALLA RAGA SRAVYA",
+        "regd_no": "19KP1A0512",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "14",
+        "name": "CHALUVADI JYOTHIRMAI",
+        "regd_no": "19KP1A0513",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "15",
+        "name": "CHINTAKRINDI.SUPRIYA",
+        "regd_no": "19KP1A0518",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "16",
+        "name": "DUPUGUNTLA VENKATA NAGA SIVA SAI HARSHITHA",
+        "regd_no": "19KP1A0525",
+        "branch": "CSE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "17",
+        "name": "ARUN KUMAR MARUBOINA",
+        "regd_no": "19KP1A0559",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "18",
+        "name": "RAJ SHARMA",
+        "regd_no": "19KP1A0589",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6lLPA"
+      },
+      {
+        "sno": "19",
+        "name": "GOUSE BASHA SHAIK",
+        "regd_no": "19KP1A0598",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6lLPA"
+      },
+      {
+        "sno": "20",
+        "name": "SAILIKITH SOMISETTY",
+        "regd_no": "19KP1A05A7",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6lLPA"
+      },
+      {
+        "sno": "21",
+        "name": "TEKI SASIPRIYA",
+        "regd_no": "19KP1A05B0",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6lLPA"
+      },
+      {
+        "sno": "22",
+        "name": "YARLAGADDA SAI MOUNIKA",
+        "regd_no": "19KP1A05C1",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "24",
+        "name": "DHULIPUDI HEMANTH",
+        "regd_no": "19KP1A0524",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "25",
+        "name": "GADIKOYYA LOKESH REDDY",
+        "regd_no": "19KP1A0527",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "26",
+        "name": "TADIKONDA CHAITANYA RAJ",
+        "regd_no": "19KP1A05A9",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "27",
+        "name": "UNNAVA GOPI",
+        "regd_no": "19KP1A05B4",
+        "branch": "CSE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "28",
+        "name": "P. AFREEN KHAN",
+        "regd_no": "19KP1A0582",
+        "branch": "CSE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "29",
+        "name": "U.BLESSY",
+        "regd_no": "19KP1A05B5",
+        "branch": "CSE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "30",
+        "name": "PASAM SAI TEJA",
+        "regd_no": "19KP1A0578",
+        "branch": "CSE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "31",
+        "name": "MADDU PRAVEEN KUMAR",
+        "regd_no": "19KP1A05C4",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "32",
+        "name": "MARREBOINA KOTESWARI",
+        "regd_no": "19KP1A0566",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "33",
+        "name": "NARRA SANKAR SAI",
+        "regd_no": "19KP1A0572",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "34",
+        "name": "P.MAHESH BABU",
+        "regd_no": "19KP1A0577",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "35",
+        "name": "P.RAGHAVENDRA",
+        "regd_no": "19KP1A0587",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "36",
+        "name": "P.VIJAYA LAKSHMI",
+        "regd_no": "19KP1A0576",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "38",
+        "name": "PERNENI GANAPATHI",
+        "regd_no": "19KP1A0584",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "39",
+        "name": "SHANAKARAPU BHUMIKA",
+        "regd_no": "19KP1A05A4",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "41",
+        "name": "CHIKKAM HEMA LATHA",
+        "regd_no": "19KP1A0516",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "42",
+        "name": "CHINNI ALEKHYA",
+        "regd_no": "19KP1A0517",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "43",
+        "name": "SAI CHANDRIKA.KARANKI",
+        "regd_no": "19KP1A0543",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "44",
+        "name": "NIMISHA REDDY KARKA",
+        "regd_no": "19KP1A0546",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "45",
+        "name": "K VISWASRI BANDHAVI",
+        "regd_no": "19KP1A0548",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "46",
+        "name": "LAKKARAJU SAI VIDITHA",
+        "regd_no": "19KP1A0556",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "47",
+        "name": "PAMULAPATI LEELA MADHAVI",
+        "regd_no": "19KP1A0558",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "48",
+        "name": "ARAVIND KUMAR MITTINTI",
+        "regd_no": "19KP1A0569",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "49",
+        "name": "PALEPU BHAVANA",
+        "regd_no": "19KP1A0575",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "51",
+        "name": "NAGA GOPI PATHAKAMURI",
+        "regd_no": "19KP1A0581",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "52",
+        "name": "PRASANTH SRIRAM",
+        "regd_no": "19KP1A0588",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "53",
+        "name": "RAMYA SANKURU",
+        "regd_no": "19KP1A0596",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "54",
+        "name": "SHAIK.SATHAR",
+        "regd_no": "19KP1A05A1",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "55",
+        "name": "SHAIK SUBANA",
+        "regd_no": "19KP1A05A2",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "56",
+        "name": "TADIKAMALA SIVA PARVATHI",
+        "regd_no": "19KP1A05A8",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "57",
+        "name": "NARAYANAMMA. THANIKONDA",
+        "regd_no": "19KP1A05B1",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "58",
+        "name": "T. VEERA LAKSHMI",
+        "regd_no": "19KP1A05B2",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "59",
+        "name": "HARSHA PHANI VARDHAN",
+        "regd_no": "19KP1A05C0",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "60",
+        "name": "DEVALLA TIRUMALA BABU",
+        "regd_no": "20KP5AO503",
+        "branch": "CSE",
+        "company": "SAVANTIS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "61",
+        "name": "BATHULA DURGA PRASAD",
+        "regd_no": "19KP1A0505",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "62",
+        "name": "BOLLINENI MOUNIKA",
+        "regd_no": "19KP1A0510",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "63",
+        "name": "CHINTALA PAVAN SAI",
+        "regd_no": "19KP1A0519",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "64",
+        "name": "GOLLA SAI KISHOR",
+        "regd_no": "19KP1A0532",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "65",
+        "name": "GONUGUNTL YAMINI",
+        "regd_no": "19KP1A0533",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "66",
+        "name": "JANJANAM.VENKATA NAGA LAKSHMI KUMARI",
+        "regd_no": "19KP1A0539",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "67",
+        "name": "K BHUMIKA",
+        "regd_no": "19KP1A0541",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "68",
+        "name": "KETHAVATH SAILAJA BAI",
+        "regd_no": "19KP1A0547",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "69",
+        "name": "SONY KOLATAPU",
+        "regd_no": "19KP1A0549",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "70",
+        "name": "KORRE NAGA LAKSHMI",
+        "regd_no": "19KP1A0551",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "71",
+        "name": "K. NITHIS KUMAR SINGH",
+        "regd_no": "19KP1A0555",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "73",
+        "name": "PASUPULETI KEDHAR SUSHMA",
+        "regd_no": "19KP1A0579",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "74",
+        "name": "PINNAMANENI RAJANI",
+        "regd_no": "19KP1A0585",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "75",
+        "name": "POTLA RAJA RAJESWARI",
+        "regd_no": "19KP1A0586",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "78",
+        "name": "U. BLESSY",
+        "regd_no": "19KP1A05B3",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "79",
+        "name": "YEKAMBARAM DEEPTHI",
+        "regd_no": "19KP1A05C3",
+        "branch": "CSE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "EVURI VAISHNAVI",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GADDAM BALANKI REDDY",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GADDIPARTHI MADAN BABU",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GARLAPATI VENKAT REDDY",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GRANDHE MOUNIKA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GRANDHI PRASANNA VIJAYA KUMAR",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GUDAVALLI RISHI SEKHAR",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GUDIPUDI NAGA SAMPOORNA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "INTURI MUKESH",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "ISKA MAHESWARA REDDY",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "JAMALLAMUDI NAVYA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "JANDHYALA SITHIKANTA MURTHY",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "JANDRAJUPALLI SURENDRA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "JANGA LENIN BABU",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "JUJJURU RAJARAJESWARI",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "KALARI HARINI",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "KARRIAVULA UMA LALITHA BANGARAM",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SHAIK ISHARATH SUL THAN",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SHAIK MOHAMMAD ASIM",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SHAIK NAJIRUNNISA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SURAPALLI RAKESH",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SUREPALLI DINESH NAGA TEJA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "TALAKAYALA TONNY CHRISTAPHAR",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "THATI SAI CHANDRA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "UPPALAPATI ANJINADH",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "UPPU PRANESHWARI",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "VEERAPUNENI RADHA",
+        "branch": "CSE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "DAMA PAVANI",
+        "branch": "CSE",
+        "company": "WIPRO",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "NOORBASHA YASMIDHA SHEEHAN",
+        "branch": "CSE",
+        "company": "WIPRO",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SURINENI NAVEEN",
+        "branch": "CSE",
+        "company": "WIPRO",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "SAVARALA TIRUPATHI RAO",
+        "branch": "CSE",
+        "company": "WIPRO",
+        "package": "3LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "BOMMU MOUNIKA",
+        "branch": "CSE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "GOWRI MAMIDI",
+        "branch": "CSE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "CHALLA SHASHIPRIYA",
+        "branch": "CSE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "",
+        "regd_no": "",
+        "name": "TAVVAGUNTA SHAIK MOULALI",
+        "branch": "CSE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      }
+    ],
+    "MECH": [
+      {
+        "sno": "80",
+        "name": "A.Mohan koteswararao",
+        "regd_no": "19KP1A0301",
+        "branch": "MECH",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "81",
+        "name": "A.Manikanta",
+        "regd_no": "19KP1A0302",
+        "branch": "MECH",
+        "company": "Bujus",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "82",
+        "name": "G.Roshith",
+        "regd_no": "19KP1A0303",
+        "branch": "MECH",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "83",
+        "name": "k. surya anil kumar",
+        "regd_no": "19KP1A0305",
+        "branch": "MECH",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "84",
+        "name": "k. gopichand",
+        "regd_no": "19KP1A0307",
+        "branch": "MECH",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "86",
+        "name": "M.Shanmuka Naga Gopi",
+        "regd_no": "19KP1A0308",
+        "branch": "MECH",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "87",
+        "name": "SK. Irfan",
+        "regd_no": "19KP1A0314",
+        "branch": "MECH",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      }
+    ],
+    "ECE": [
+      {
+        "sno": "88",
+        "name": "ALEKHYA TADIKONDA",
+        "regd_no": "19KP1A0475",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "89",
+        "name": "ALLAMSETTY KARTHIKEYA",
+        "regd_no": "19KP1A0403",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "90",
+        "name": "ALLUMALLU VENKATESH",
+        "regd_no": "19KP1A0404",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "91",
+        "name": "B. JAYA NAGA VENKATA SURYA",
+        "regd_no": "19KP1A0412",
+        "branch": "ECE",
+        "company": "EFFTRONICS",
+        "package": ""
+      },
+      {
+        "sno": "92",
+        "name": "B. MANOHAR",
+        "regd_no": "19KP1A0414",
+        "branch": "ECE",
+        "company": "Q SPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "93",
+        "name": "BADVEETI EDUKONDALU",
+        "regd_no": "19KP1A0407",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "95",
+        "name": "CH ANNAPURNA SWETHA SRI",
+        "regd_no": "19KP1A0422",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "96",
+        "name": "CH. SUKANYA",
+        "regd_no": "19KP1A0421",
+        "branch": "ECE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "97",
+        "name": "CHANDU ASHOK",
+        "regd_no": "19KP1A0415",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "98",
+        "name": "CHENNUPATI VIJAYA LAKSHMI",
+        "regd_no": "19KP1A0418",
+        "branch": "ECE",
+        "company": "SAVANTIS, Q SPIDERS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "99",
+        "name": "CHERUKURI LAKSHMI BHARGAVI",
+        "regd_no": "19KP1A0419",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "100",
+        "name": "D. HRUTHIK",
+        "regd_no": "19KP1A0423",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "101",
+        "name": "DASARI RAMYA",
+        "regd_no": "19KP1A0424",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "102",
+        "name": "DONEPUDI LAVANYA",
+        "regd_no": "19KP1A0427",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "103",
+        "name": "G RAMA RAO",
+        "regd_no": "19KP1A0429",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "104",
+        "name": "G. NAGARAJU",
+        "regd_no": "19KP1A0433",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "105",
+        "name": "G. HAREESH",
+        "regd_no": "19KP1A0432",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "106",
+        "name": "G. JEEVAN GOPI",
+        "regd_no": "19KP1A0431",
+        "branch": "ECE",
+        "company": "Q SPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "107",
+        "name": "HRUSHITHA KANCHARLA",
+        "regd_no": "19KP1A0443",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "108",
+        "name": "K. AKASH",
+        "regd_no": "19KP1A0446",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "109",
+        "name": "KAMISETTY SRINIVASA RAO",
+        "regd_no": "19KP1A0441",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "110",
+        "name": "KESARI CHAITHANYA",
+        "regd_no": "19KP1A0444",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "111",
+        "name": "KOKKU SAI LAKSHMI",
+        "regd_no": "19KP1A0448",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "112",
+        "name": "KONDAPALLI VARA LAKSHMI",
+        "regd_no": "19KP1A0447",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "113",
+        "name": "KOTHA MEGHANA",
+        "regd_no": "19KP1A0449",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "114",
+        "name": "LAKSHMI YAMINI",
+        "regd_no": "19KP1A0430",
+        "branch": "ECE",
+        "company": "BYJUS, SMART BRAINS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "115",
+        "name": "M. UDAYA SREE",
+        "regd_no": "19KP1A0453",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "116",
+        "name": "MALLAVARAPU ABHINAV",
+        "regd_no": "19KP1A0454",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "117",
+        "name": "MANNEM PAVAN KUMAR",
+        "regd_no": "19KP1A0455",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "118",
+        "name": "MEKA NANDINI",
+        "regd_no": "17KP1A0467",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "119",
+        "name": "P. FAROOK KHAN",
+        "regd_no": "19KP1A0465",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "120",
+        "name": "P. NIKHILA ANGEL",
+        "regd_no": "19KP1A0467",
+        "branch": "ECE",
+        "company": "SAVANTIS, EFFTRONICS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "121",
+        "name": "POTHULA RAVI TEJA",
+        "regd_no": "19KP1A0468",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "122",
+        "name": "PRASANNA AMMINEDI",
+        "regd_no": "19KP1A0405",
+        "branch": "ECE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "123",
+        "name": "RAJA RAJESWARI BATHULA",
+        "regd_no": "19KP1A0409",
+        "branch": "ECE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "124",
+        "name": "S. BALA PRIYANKA",
+        "regd_no": "19KP1A0473",
+        "branch": "ECE",
+        "company": "CLICK IN SOFT",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "125",
+        "name": "S. HAREESH",
+        "regd_no": "19KP1A0470",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "126",
+        "name": "SAI PALLAVI CHERUKURI",
+        "regd_no": "19KP1A0420",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "127",
+        "name": "SD. RASOOL",
+        "regd_no": "19KP1A0474",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "128",
+        "name": "SHAIK SHEHANAAZ",
+        "regd_no": "19KP1A0472",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "129",
+        "name": "SIREESHA THOKALA",
+        "regd_no": "19KP1A0477",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "130",
+        "name": "SK. PARVEZ",
+        "regd_no": "19KP1A0471",
+        "branch": "ECE",
+        "company": "BYJUS",
+        "package": "7.5LPA"
+      },
+      {
+        "sno": "131",
+        "name": "T. YADAGIRI",
+        "regd_no": "19KP1A0478",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "132",
+        "name": "U. YASWANTH KUMAR",
+        "regd_no": "19KP1A0480",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.4LPA"
+      },
+      {
+        "sno": "133",
+        "name": "VATTEM TULASI",
+        "regd_no": "19KP1A0481",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "134",
+        "name": "YUGANDHAR REDDY",
+        "regd_no": "19KP1A0402",
+        "branch": "ECE",
+        "company": "Q SPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "135",
+        "name": "DASARI SANKEERTHANA",
+        "regd_no": "19KP1A0425",
+        "branch": "ECE",
+        "company": "EFFTRONICS",
+        "package": ""
+      },
+      {
+        "sno": "136",
+        "name": "GOPICHAND MUTUKURU",
+        "regd_no": "19KP1A0434",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "137",
+        "name": "KAMMELA DINESH",
+        "regd_no": "19KP1A0442",
+        "branch": "ECE",
+        "company": "EFFTRONICS",
+        "package": ""
+      },
+      {
+        "sno": "138",
+        "name": "KAIPU ADHI SIVASANKARA REDDY",
+        "regd_no": "19KP1A0440",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "139",
+        "name": "IDAMAKANTI KALYAN KUMAR REDDY",
+        "regd_no": "19KP1A0438",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "140",
+        "name": "KUKATI MADHAVA RAO",
+        "regd_no": "19KP1A0450",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "141",
+        "name": "MEKA SRIJA",
+        "regd_no": "19KP1A0456",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "142",
+        "name": "NALAKA BHARGHAVI",
+        "regd_no": "19KP1A0459",
+        "branch": "ECE",
+        "company": "EFFTRONICS",
+        "package": ""
+      },
+      {
+        "sno": "143",
+        "name": "PESALA AJAY",
+        "regd_no": "19KP1A0466",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "144",
+        "name": "VELLALA TARUN",
+        "regd_no": "19KP1A0483",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "145",
+        "name": "GADDAM RAVIKUMAR",
+        "regd_no": "19KP1A0485",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "146",
+        "name": "GUTHIKONDA NAVYASREE",
+        "regd_no": "19KP1A0437",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "147",
+        "name": "JONNADULA ESWARI ALEKHYA",
+        "regd_no": "19KP1A0488",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "3lLPA"
+      },
+      {
+        "sno": "1",
+        "regd_no": "ADIGOPPALA KAVYA",
+        "name": "20KP1A0401",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "2",
+        "regd_no": "ALLA AJAY KUMAR",
+        "name": "20KP1A0403",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "3",
+        "regd_no": "ALLU LAKSHMITRIVENI",
+        "name": "20KP1A0404",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "AMMISETTI BHAVANI",
+        "name": "20KP1A0405",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "BANDI VENKATA RAJESH",
+        "name": "20KP1A0408",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "6",
+        "regd_no": "BANDLAMUDI MANO CHANDRA",
+        "name": "20KP1A0409",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "7",
+        "regd_no": "BATTULA POOJA",
+        "name": "20KP1A0411",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "8",
+        "regd_no": "BHAVANAM ESWARI SAI",
+        "name": "20KP1A0412",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "9",
+        "regd_no": "BHIMAVARAPU JAYANTH REDDY",
+        "name": "20KP1A0413",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "10",
+        "regd_no": "BILLIPATI MANASA",
+        "name": "20KP1A0414",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "11",
+        "regd_no": "BOLLIMUNTHA ANUSHA",
+        "name": "20KP1A0416",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "12",
+        "regd_no": "BURAGADDA RENUKA DEVI",
+        "name": "20KP1A0417",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "13",
+        "regd_no": "BOLLA NIKITHA SAI",
+        "name": "20KP1A0415",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "14",
+        "regd_no": "AVANCHA KARTHIK BHAT",
+        "name": "20KP1A0406",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "15",
+        "regd_no": "BUSI AKHILA",
+        "name": "20KP1A0418",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "16",
+        "regd_no": "CHEEDIPUDI LOKESH SAINADHA REDDY",
+        "name": "20KP1A0419",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "17",
+        "regd_no": "CHENNAKESAVULA DEEPIKA",
+        "name": "20KP1A0420",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "18",
+        "regd_no": "CHILAKA ARUN KUMAR",
+        "name": "20KP1A0421",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "19",
+        "regd_no": "CHINNI GOPI KRISHNA SAI",
+        "name": "20KP1A0422",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "20",
+        "regd_no": "DADI SANDIP",
+        "name": "20KP1A0423",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "21",
+        "regd_no": "DAGGUPATI VENKATA HARI SRINIVAS",
+        "name": "20KP1A0424",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "22",
+        "regd_no": "DASARI NARASIMHA RAO",
+        "name": "20KP1A0425",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "23",
+        "regd_no": "DEVIREDDY KAVITHA",
+        "name": "20KP1A0426",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "24",
+        "regd_no": "DIVVELA SUJATHA LAKSHMI",
+        "name": "20KP1A0427",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "25",
+        "regd_no": "DODDAKA SUMANTH",
+        "name": "20KP1A0428",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "26",
+        "regd_no": "DORSILA SRINIVASA BHAVANI",
+        "name": "20KP1A0429",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "27",
+        "regd_no": "DUGGEMPUDI SUSHMA",
+        "name": "20KP1A0430",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "28",
+        "regd_no": "DURISALA CHAMUNDESWARI",
+        "name": "20KP1A0431",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "29",
+        "regd_no": "GALLA INDRANAG",
+        "name": "20KP1A0432",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "30",
+        "regd_no": "GANGAVARAPU SIVASANKAR",
+        "name": "20KP1A0433",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "31",
+        "regd_no": "GANGI REDDY NARENDRA REDDY",
+        "name": "20KP1A0434",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "32",
+        "regd_no": "GOPAVARAPU KARTHIK",
+        "name": "20KP1A0436",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "33",
+        "regd_no": "GORRE MOUNIKA",
+        "name": "20KP1A0437",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "34",
+        "regd_no": "GORREPATI NAGA VAMSI",
+        "name": "20KP1A0438",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "35",
+        "regd_no": "GUNDAVARAPU SIRISHA",
+        "name": "20KP1A0441",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "36",
+        "regd_no": "JANGAM RAVI SAGAR",
+        "name": "20KP1A0443",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "37",
+        "regd_no": "KANCHARLA SIVA GOPI",
+        "name": "20KP1A0446",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "38",
+        "regd_no": "KANNA VIJAY SHANKAR",
+        "name": "20KP1A0448",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "39",
+        "regd_no": "KAPALAVAI MANIKANTA",
+        "name": "20KP1A0449",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "40",
+        "regd_no": "KARASALA JANAKI ABHINAYA",
+        "name": "20KP1A0450",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "41",
+        "regd_no": "KICHAMSETTI ASHOK",
+        "name": "20KP1A0451",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "42",
+        "regd_no": "KOLIKINENI TEJASWINI",
+        "name": "20KP1A0452",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "43",
+        "regd_no": "KONJETI SANDEEP",
+        "name": "20KP1A0454",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "44",
+        "regd_no": "KOPPARTHI RAMALAKSHMI",
+        "name": "20KP1A0455",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "45",
+        "regd_no": "KOTARU LAKSHMANA VAMSI",
+        "name": "20KP1A0457",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "46",
+        "regd_no": "KOTHA SRAVYA",
+        "name": "20KP1A0458",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "47",
+        "regd_no": "KOTTURI VENKATESH",
+        "name": "20KP1A0459",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "48",
+        "regd_no": "MADALA ANUSHA",
+        "name": "20KP1A0460",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "49",
+        "regd_no": "MADALA RAVI TEJA",
+        "name": "20KP1A0461",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "50",
+        "regd_no": "MAGULURI VEDAVATHI",
+        "name": "20KP1A0462",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "51",
+        "regd_no": "MANDHADAPU PAVANI",
+        "name": "20KP1A0465",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "52",
+        "regd_no": "MANNEM SAKETH",
+        "name": "20KP1A0467",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "53",
+        "regd_no": "MEDARAMETLA NEERAJA",
+        "name": "20KP1A0468",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "54",
+        "regd_no": "MEENUGA SAI TEJA",
+        "name": "20KP1A0469",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "55",
+        "regd_no": "METIKALA SHIVA SAI TEJA",
+        "name": "20KP1A0470",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "56",
+        "regd_no": "MOGULURI LAKSHMI REVANTH KUMAR",
+        "name": "20KP1A0471",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "57",
+        "regd_no": "MOHAMMED BASHEER",
+        "name": "20KP1A0472",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "58",
+        "regd_no": "MONIKA GUMMADI",
+        "name": "20KP1A0473",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "59",
+        "regd_no": "MUTUKURU SUMANTH",
+        "name": "20KP1A0474",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "60",
+        "regd_no": "NADENDLA YASWANTH",
+        "name": "20KP1A0475",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "61",
+        "regd_no": "NALAJARLA SOMASEKHAR BABU",
+        "name": "20KP1A0476",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "63",
+        "regd_no": "NANDA MANIKYA RAO",
+        "name": "20KP1A0480",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "64",
+        "regd_no": "NARALA VAMSI KRISHNA",
+        "name": "20KP1A0481",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "65",
+        "regd_no": "NELAPATI MAHENDRA",
+        "name": "20KP1A0483",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "66",
+        "regd_no": "ODELA NAVEEN",
+        "name": "20KP1A0486",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "67",
+        "regd_no": "PAGADALA MALLIKARJUNA REDDY",
+        "name": "20KP1A0487",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "68",
+        "regd_no": "PARIMI KALYANI",
+        "name": "20KP1A0491",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "69",
+        "regd_no": "PATAN RAHEEM",
+        "name": "20KP1A0493",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "70",
+        "regd_no": "PATHAN AHMED ALI KHAN",
+        "name": "20KP1A0495",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "71",
+        "regd_no": "PATHAPATI ANURADHA",
+        "name": "20KP1A0498",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "72",
+        "regd_no": "PATHAPATI LAKSHMI PRASANNA",
+        "name": "20KP1A0499",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "73",
+        "regd_no": "PENUGONDA SIVA PARVATHI",
+        "name": "20KP1A04A2",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "74",
+        "regd_no": "PINNAMANENI ADITHYA",
+        "name": "20KP1A04A3",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "75",
+        "regd_no": "POOJALA SAMBASIVARAO",
+        "name": "20KP1A04A4",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "76",
+        "regd_no": "GADDE GOPI",
+        "name": "21KP5A0402",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "77",
+        "regd_no": "JAMMULA PRAVEEN",
+        "name": "21KP5A0404",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "78",
+        "regd_no": "JAMPANI ARAVIND SAI",
+        "name": "21KP5A0405",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "79",
+        "regd_no": "KANTU SIVA KRISHNA",
+        "name": "21KP5A0406",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "80",
+        "regd_no": "KETARAJU YASHWANTH KUMAR",
+        "name": "21KP5A0407",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "81",
+        "regd_no": "KOPPULA HEMANTH",
+        "name": "21KP5A0408",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "82",
+        "regd_no": "KSHATRI RISHWANTH SINGH",
+        "name": "21KP5A0409",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "83",
+        "regd_no": "KURAPATI KARUNAKAR REDDY",
+        "name": "21KP5A0410",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "84",
+        "regd_no": "ALA SRINIVAS",
+        "name": "20KP1A0402",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "85",
+        "regd_no": "GODDUMARRI VENKATESH",
+        "name": "20KP1A0435",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "86",
+        "regd_no": "NEMALIPURI RAJKAMAL",
+        "name": "20KP1A0484",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "87",
+        "regd_no": "NEMALITHOKA PAVAN KALYAN",
+        "name": "20KP1A0485",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "88",
+        "regd_no": "PANALA SURESH",
+        "name": "20KP1A0488",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "89",
+        "regd_no": "PANGA GANGADHAR",
+        "name": "20KP1A0489",
+        "branch": "ECE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "90",
+        "regd_no": "PAPIREDDY CHANDRA SEKHAR REDDY",
+        "name": "20KP1A0490",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "91",
+        "regd_no": "PASUPULETI LAKSHMI LAVANYA",
+        "name": "20KP1A0492",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "92",
+        "regd_no": "PATHAN SHOYAB KHAN",
+        "name": "20KP1A0497",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "93",
+        "regd_no": "PATIBANDLA MONA",
+        "name": "20KP1A04A0",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "94",
+        "regd_no": "POOLA SAI KUMAR",
+        "name": "20KP1A04A6",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "95",
+        "regd_no": "POPURI SRI LAKSHMI PRASANNA",
+        "name": "20KP1A04A7",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "96",
+        "regd_no": "SUDA NAGA MASTAN SRIHARSHA",
+        "name": "20KP1A04C4",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "97",
+        "regd_no": "SIVAJI MARUTHI VENKATA GOPINADH",
+        "name": "20KP1A04C3",
+        "branch": "ECE",
+        "company": "EFFTRONICS",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "98",
+        "regd_no": "SUREDDY VENKATA SAI NADH REDDY",
+        "name": "20KP1A04C6",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "99",
+        "regd_no": "SYED MASIUDDIN",
+        "name": "20KP1A04C7",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "100",
+        "regd_no": "TADISETTY SAI PARDHIV",
+        "name": "20KP1A04C8",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "101",
+        "regd_no": "TALLURI JAYADWEEP",
+        "name": "20KP1A04C9",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "102",
+        "regd_no": "TAMMA SRAVYA",
+        "name": "20KP1A04D0",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "103",
+        "regd_no": "VARIKALLA VENKATA GOWTHAM",
+        "name": "20KP1A04E5",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "104",
+        "regd_no": "VASANTHU HARIHARA",
+        "name": "20KP1A04E6",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "105",
+        "regd_no": "VASANTHU HARIKA",
+        "name": "20KP1A04E7",
+        "branch": "ECE",
+        "company": "EFFTRONICS",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "106",
+        "regd_no": "VELIVALA SIVA VENKATESWARA RAO",
+        "name": "20KP1A04E8",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "107",
+        "regd_no": "VELURI VENKATA JYOSHNAVI",
+        "name": "20KP1A04E9",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "108",
+        "regd_no": "VEMULA ANUSHA",
+        "name": "20KP1A04F0",
+        "branch": "ECE",
+        "company": "ILM",
+        "package": "3LPA"
+      },
+      {
+        "sno": "109",
+        "regd_no": "VIKKURTHI NAGA ANUSHA",
+        "name": "20KP1A04F1",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "110",
+        "regd_no": "YAKKANTI MAHESWARA REDDY",
+        "name": "20KP1A04F2",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "111",
+        "regd_no": "YALLAMANDALA BALAJI",
+        "name": "20KP1A04F3",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "112",
+        "regd_no": "YALLAPRGADA NAGA SAI PADMA SRI",
+        "name": "20KP1A04F4",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "113",
+        "regd_no": "YAPARLA VISHNUVARDHANA REDDY",
+        "name": "20KP1A04F5",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "114",
+        "regd_no": "LINGALA ANUPA",
+        "name": "21KP5A0411",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "115",
+        "regd_no": "MINDALA MOUNIKA",
+        "name": "21KP5A0412",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "116",
+        "regd_no": "T ANVITHA",
+        "name": "21KP5A0413",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "sno": "117",
+        "regd_no": "TALATHOTI RAJESH",
+        "name": "21KP5A0414",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "118",
+        "regd_no": "VALLEPU SHALEMURAJU",
+        "name": "21KP5A0415",
+        "branch": "ECE",
+        "company": "SAVANTIS",
+        "package": "2.22LPA"
+      },
+      {
+        "name": "AAKISETTI VENKATA SIVA KRISHNA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "AALOKAM SAI MAHESH",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "ADAPALA VENKATA PAVAN SAI",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BOLLIMUNTHA BHANU SAIAKHIL",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BANDARUPALLI DEEPIKA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "BAREDDY NEELAPA REDDY",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BELLAMKONDA PAVAN KUMAR",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BIJINEPALLI SUJITHA",
+        "branch": "ECE",
+        "company": "VALLI,BIGBUL,GLOBAL"
+      },
+      {
+        "name": "BINGI ANUSHA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BOLLIMUNTA ANKAMMA RAO",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BUKKURU HEMANTH",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "BUSSA ABHILASHA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "BUTHUKURI KALYAN REDDY",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "CHALLA VENKATA KALYAN",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "CHALUVADI KRISHNA SUKANYA",
+        "branch": "ECE",
+        "company": "VALLI,BIGBUL"
+      },
+      {
+        "name": "CHANDU BHARATH KUMAR",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "CHENNAMSETTY VENKATA LAVANYA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "CHINATHALA SAI DURGA PRASAD",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "DARSI NITHIN CHANDRA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "DASARI SRAVYA",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "DEVARAKONDA SWATHI",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "DIDDALA MADHAVI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "DODDA PRABHU KUMAR",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "DONDLETI GOWRI SANKAR REDDY",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION"
+      },
+      {
+        "name": "DONDLETI VENKATESWARA REDDY",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "DONTHIREDDY PRABHAVATHI",
+        "branch": "ECE",
+        "company": "VALLI,BIGBUL"
+      },
+      {
+        "name": "GANTA AJAY BABU",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "GODA ANANDA JYOTHI",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "GODAVARTHI SREE VIKAS",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "GOLLA LAKSHMI SOWJANYA",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "GRANDHISILA PRAVALLIKA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "GUDIPUDI VEERA POTHURAJU",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "GUMMADIDALA VISHNU NANDAN",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "JAMPALA ANJALI",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "JINKALA MANIKUMAR",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "KAITEPALLI GOPI",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KAMASANI RAKESH",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KANCHARANA THANMAYEE",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KANDIMALLA THRIVENI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "KANDULA RAMI REDDY",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KAPPALA NARASIMHA RAO",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KATURI NAVEEN",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KATURI SRI NAGA SUBRAHMANYAM",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KOLLI CHANDRA SEKHAR",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KOLUSU JAGADEESH",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "KOMMIRISETTY VENKATA SUBHASHINI",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KONDAMUDI RAJABABU",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KOTTE RAJESH",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "KUNDURU ABHISHEKAR REDDY",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "KURAPATI VARALAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL,GLOBAL"
+      },
+      {
+        "name": "LAKSHMI PRASANNA VADLAMUDI",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "LANKA PRABHAKAR",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "MADALA SIDDARDHA",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "MADDIRALA NAGA SAIDULU",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "MADDU HARIKA",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "MANDALAPU KEERTHI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "MARATHU SRIDEVI",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "MARNENI USHA RANI",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "name": "MEDARAMETLA SRIVIDYA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "MELAM NAGA RAJU",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "MOHAMMED ASHRAF BAIG",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "NAGABOTHU MURALI PRASANNA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "NALLAGORLA GANGADHARA RAO",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "NALLAPATI NAGALAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "NALLURI TEJA VENKATA RAMA PRASAD",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "NEELAM NAVEEN",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "NELAVALLI SRI LAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "PALAKOLLU KOMALA SAI PARVATHI",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PALERU VANAJA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PAMIDI PAVAN",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "PANCHANGAM RUPA BHAVANI",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PANIDEPU PUSHPANJALI",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PATHI RAJYA LAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "PAVULURI NAGAVENU",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "PEETLA SRINU",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PENUMUCHU NAGA AHALYA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PISIPATI REVANTH SAI KRISHNA KUMAR",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PODAPATI JYOSHNA PRIYA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "POSIPOGU SAGAR BABU",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "POTLAPALLI KAVITHA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "name": "PULIGUJJU GOPIKRISHNA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "RAMISETTI LAYA VARDHAN",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "RAVINUTHALA ASHOK KUMAR",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "RAVIPATI MAMATHA",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "RISHITHA ARAMBAKA",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "S PRAMOD KUMAR",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "SANKAVARAPU AJAY BABU",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "SANKU KOTESWARA RAO",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "SAYED ARSHIYA",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "SHAIK ARIF",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "SHAIK HAMIDHA",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "SHAIK IMRANA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "SHAIK KHAISAR ALI",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "SHAIK KHASIMSHAREF",
+        "branch": "ECE",
+        "company": "SUTHERLAND"
+      },
+      {
+        "name": "SHAIK UMAR FAROOQ",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "SHAIK WAHID",
+        "branch": "ECE",
+        "company": "NYERAS"
+      },
+      {
+        "name": "SHAIK YASIN",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "SIRIGIRI DIVYA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "SK MUZAVAR JAN SAIDA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "SYED POTARAM KOUSAR",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "SYED SADEER",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "UNNANGIRI SIREESHA",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "VANKAMAMIDI PRANAVI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "VAVILALA NAGAIAH",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "YACHAVARAPU NAHOR KUMAR",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "YALLA MEGHANA",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "name": "YEKULA SREEJA",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "YELLISETTY KUSUMA KUMARI",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "ALLAM SYAM PRANITH",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "name": "KARUMURI CHAITANYA SRI REDDY",
+        "branch": "ECE",
+        "company": "BIGBUL,GLOBAL"
+      },
+      {
+        "name": "KONDAMEEDI SIRI",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "BADE VISHNUVARDHAN",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "BAGGU SAI KUMAR",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "CHILAMKURI NAGA VENKATA GANGADHAR",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "GORANTLA YUGANDHAR",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "GURRAM NAGA KUSHWANTH",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "JALLI USHA SRI",
+        "branch": "ECE",
+        "company": "VALLI"
+      },
+      {
+        "name": "KALAHASTHI RAVI TEJA",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "KAVITI VISHNUVARDHAN",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "MADASU NAVYAKA",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "name": "MALLA ANANDH",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS"
+      },
+      {
+        "name": "NINDUJARLA SRI RAMA KRISHNA",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS"
+      },
+      {
+        "name": "POTHARLANKA BHARGAVI",
+        "branch": "ECE",
+        "company": "TAP"
+      },
+      {
+        "name": "PUVVADI KARTHIK",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS"
+      },
+      {
+        "name": "SANDRALA UMA KOTESWARARAO",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS"
+      },
+      {
+        "name": "ADDANKI SANJAY",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS"
+      }
+    ],
+    "IT": [
+      {
+        "name": "SANGA BHARGAVI",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "name": "SHAIK SHABANA",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "name": "TALUCHURI PREETHIPADMAVATHI",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "name": "UDAY KIRAN ANANTHA",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "name": "GAYATHRI THUMMURU",
+        "branch": "IT",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "name": "ARAVIND SWAMI PATHELLA",
+        "branch": "IT",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "name": "P.LASYASRI",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      },
+      {
+        "name": "KASARAGADDA VENKATA NAVYA SRI",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      },
+      {
+        "name": "DUGGEMPUDI SRINIVAS",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      },
+      {
+        "name": "VADDELI LAKSHMI",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      }
+    ],
+    "CSE-DS": [
+      {
+        "name": "ATLURI SATHVIKA",
+        "branch": "CSD",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "name": "PRATHYUSHA KOTHAPALLI",
+        "branch": "CSD",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "name": "A.SRILEKHA",
+        "branch": "CSD",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "name": "HARSHITHA JAIN",
+        "branch": "CSD",
+        "company": "JITHARA",
+        "package": "3.6LPA"
+      },
+      {
+        "name": "SOWJANYA THOTA",
+        "branch": "CSD",
+        "company": "JITHARA",
+        "package": "3.6LPA"
+      },
+      {
+        "name": "KOTANI ROOPCHAND",
+        "branch": "CSD",
+        "company": "JITHARA",
+        "package": "3.6LPA"
+      }
+    ]
+  },
+  "2023-2024": {
+    "ECE": [
+      {
+        "sno": "94",
+        "name": "BHEEMAVARAPU ANITHA",
+        "regd_no": "20KP1A0403",
+        "branch": "ECE",
+        "company": "SMART BRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "1",
+        "name": "ADIGOPPALA KAVYA",
+        "regd_no": "20KP1A0401",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "3",
+        "name": "ALLU LAKSHMITRIVENI",
+        "regd_no": "20KP1A0404",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "4",
+        "name": "AMMISETTI BHAVANI",
+        "regd_no": "20KP1A0405",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "5",
+        "name": "BANDI VENKATA RAJESH",
+        "regd_no": "20KP1A0408",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "6",
+        "name": "BANDLAMUDI MANO CHANDRA",
+        "regd_no": "20KP1A0409",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "7",
+        "name": "BATTULA POOJA",
+        "regd_no": "20KP1A0411",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "8",
+        "name": "BHAVANAM ESWARI SAI",
+        "regd_no": "20KP1A0412",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "9",
+        "name": "BHIMAVARAPU JAYANTH REDDY",
+        "regd_no": "20KP1A0413",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "10",
+        "name": "BILLIPATI MANASA",
+        "regd_no": "20KP1A0414",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "11",
+        "name": "BOLLIMUNTHA ANUSHA",
+        "regd_no": "20KP1A0416",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "12",
+        "name": "BURAGADDA RENUKA DEVI",
+        "regd_no": "20KP1A0417",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "13",
+        "name": "BOLLA NIKITHA SAI",
+        "regd_no": "20KP1A0415",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "14",
+        "name": "AVANCHA KARTHIK BHAT",
+        "regd_no": "20KP1A0406",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "15",
+        "name": "BUSI AKHILA",
+        "regd_no": "20KP1A0418",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "16",
+        "name": "CHEEDIPUDI LOKESH SAINADHA REDDY",
+        "regd_no": "20KP1A0419",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "17",
+        "name": "CHENNAKESAVULA DEEPIKA",
+        "regd_no": "20KP1A0420",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "18",
+        "name": "CHILAKA ARUN KUMAR",
+        "regd_no": "20KP1A0421",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "19",
+        "name": "CHINNI GOPI KRISHNA SAI",
+        "regd_no": "20KP1A0422",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "20",
+        "name": "DADI SANDIP",
+        "regd_no": "20KP1A0423",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "21",
+        "name": "DAGGUPATI VENKATA HARI SRINIVAS",
+        "regd_no": "20KP1A0424",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "22",
+        "name": "DASARI NARASIMHA RAO",
+        "regd_no": "20KP1A0425",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "23",
+        "name": "DEVIREDDY KAVITHA",
+        "regd_no": "20KP1A0426",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "24",
+        "name": "DIVVELA SUJATHA LAKSHMI",
+        "regd_no": "20KP1A0427",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "25",
+        "name": "DODDAKA SUMANTH",
+        "regd_no": "20KP1A0428",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "26",
+        "name": "DORSILA SRINIVASA BHAVANI",
+        "regd_no": "20KP1A0429",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "27",
+        "name": "DUGGEMPUDI SUSHMA",
+        "regd_no": "20KP1A0430",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "28",
+        "name": "DURISALA CHAMUNDESWARI",
+        "regd_no": "20KP1A0431",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "29",
+        "name": "GALLA INDRANAG",
+        "regd_no": "20KP1A0432",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "30",
+        "name": "GANGAVARAPU SIVASANKAR",
+        "regd_no": "20KP1A0433",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "31",
+        "name": "GANGI REDDY NARENDRA REDDY",
+        "regd_no": "20KP1A0434",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "32",
+        "name": "GOPAVARAPU KARTHIK",
+        "regd_no": "20KP1A0436",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "33",
+        "name": "GORRE MOUNIKA",
+        "regd_no": "20KP1A0437",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "34",
+        "name": "GORREPATI NAGA VAMSI",
+        "regd_no": "20KP1A0438",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "35",
+        "name": "GUNDAVARAPU SIRISHA",
+        "regd_no": "20KP1A0441",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "36",
+        "name": "JANGAM RAVI SAGAR",
+        "regd_no": "20KP1A0443",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "37",
+        "name": "KANCHARLA SIVA GOPI",
+        "regd_no": "20KP1A0446",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "38",
+        "name": "KANNA VIJAY SHANKAR",
+        "regd_no": "20KP1A0448",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "39",
+        "name": "KAPALAVAI MANIKANTA",
+        "regd_no": "20KP1A0449",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "40",
+        "name": "KARASALA JANAKI ABHINAYA",
+        "regd_no": "20KP1A0450",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "41",
+        "name": "KICHAMSETTI ASHOK",
+        "regd_no": "20KP1A0451",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "42",
+        "name": "KOLIKINENI TEJASWINI",
+        "regd_no": "20KP1A0452",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "43",
+        "name": "KONJETI SANDEEP",
+        "regd_no": "20KP1A0454",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "44",
+        "name": "KOPPARTHI RAMALAKSHMI",
+        "regd_no": "20KP1A0455",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "45",
+        "name": "KOTARU LAKSHMANA VAMSI",
+        "regd_no": "20KP1A0457",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "46",
+        "name": "KOTHA SRAVYA",
+        "regd_no": "20KP1A0458",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "47",
+        "name": "KOTTURI VENKATESH",
+        "regd_no": "20KP1A0459",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "48",
+        "name": "MADALA ANUSHA",
+        "regd_no": "20KP1A0460",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "49",
+        "name": "MADALA RAVI TEJA",
+        "regd_no": "20KP1A0461",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "50",
+        "name": "MAGULURI VEDAVATHI",
+        "regd_no": "20KP1A0462",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "51",
+        "name": "MANDHADAPU PAVANI",
+        "regd_no": "20KP1A0465",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "52",
+        "name": "MANNEM SAKETH",
+        "regd_no": "20KP1A0467",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "53",
+        "name": "MEDARAMETLA NEERAJA",
+        "regd_no": "20KP1A0468",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "54",
+        "name": "MEENUGA SAI TEJA",
+        "regd_no": "20KP1A0469",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "55",
+        "name": "METIKALA SHIVA SAI TEJA",
+        "regd_no": "20KP1A0470",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "56",
+        "name": "MOGULURI LAKSHMI REVANTH KUMAR",
+        "regd_no": "20KP1A0471",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "57",
+        "name": "MOHAMMED BASHEER",
+        "regd_no": "20KP1A0472",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "58",
+        "name": "MONIKA GUMMADI",
+        "regd_no": "20KP1A0473",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "59",
+        "name": "MUTUKURU SUMANTH",
+        "regd_no": "20KP1A0474",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "60",
+        "name": "NADENDLA YASWANTH",
+        "regd_no": "20KP1A0475",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "61",
+        "name": "NALAJARLA SOMASEKHAR BABU",
+        "regd_no": "20KP1A0476",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "62",
+        "name": "MEENUGA SAI TEJA",
+        "regd_no": "20KP1A0479",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "63",
+        "name": "NANDA MANIKYA RAO",
+        "regd_no": "20KP1A0480",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "64",
+        "name": "NARALA VAMSI KRISHNA",
+        "regd_no": "20KP1A0481",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "65",
+        "name": "NELAPATI MAHENDRA",
+        "regd_no": "20KP1A0483",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "66",
+        "name": "ODELA NAVEEN",
+        "regd_no": "20KP1A0486",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "67",
+        "name": "PAGADALA MALLIKARJUNA REDDY",
+        "regd_no": "20KP1A0487",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "68",
+        "name": "PARIMI KALYANI",
+        "regd_no": "20KP1A0491",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "69",
+        "name": "PATAN RAHEEM",
+        "regd_no": "20KP1A0493",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "70",
+        "name": "PATHAN AHMED ALI KHAN",
+        "regd_no": "20KP1A0495",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "71",
+        "name": "PATHAPATI ANURADHA",
+        "regd_no": "20KP1A0498",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "72",
+        "name": "PATHAPATI LAKSHMI PRASANNA",
+        "regd_no": "20KP1A0499",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "73",
+        "name": "PENUGONDA SIVA PARVATHI",
+        "regd_no": "20KP1A04A2",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "74",
+        "name": "PINNAMANENI ADITHYA",
+        "regd_no": "20KP1A04A3",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "75",
+        "name": "POOJALA SAMBASIVARAO",
+        "regd_no": "20KP1A04A4",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "76",
+        "name": "GADDE GOPI",
+        "regd_no": "21KP5A0402",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "77",
+        "name": "JAMMULA PRAVEEN",
+        "regd_no": "21KP5A0404",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "78",
+        "name": "JAMPANI ARAVIND SAI",
+        "regd_no": "21KP5A0405",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "79",
+        "name": "KANTU SIVA KRISHNA",
+        "regd_no": "21KP5A0406",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "80",
+        "name": "KETARAJU YASHWANTH KUMAR",
+        "regd_no": "21KP5A0407",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "81",
+        "name": "KOPPULA HEMANTH",
+        "regd_no": "21KP5A0408",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "82",
+        "name": "KSHATRI RISHWANTH SINGH",
+        "regd_no": "21KP5A0409",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "83",
+        "name": "KURAPATI KARUNAKAR REDDY",
+        "regd_no": "21KP5A0410",
+        "branch": "ECE",
+        "company": "BIGBUL"
+      },
+      {
+        "sno": "84",
+        "name": "ALA SRINIVAS",
+        "regd_no": "20KP1A0402",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "85",
+        "name": "GODDUMARRI VENKATESH",
+        "regd_no": "20KP1A0435",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "86",
+        "name": "NEMALIPURI RAJKAMAL",
+        "regd_no": "20KP1A0484",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "87",
+        "name": "NEMALITHOKA PAVAN KALYAN",
+        "regd_no": "20KP1A0485",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "88",
+        "name": "PANALA SURESH",
+        "regd_no": "20KP1A0488",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "89",
+        "name": "PANGA GANGADHAR",
+        "regd_no": "20KP1A0489",
+        "branch": "ECE",
+        "company": "SMARTBRAINS"
+      },
+      {
+        "sno": "90",
+        "name": "PAPIREDDY CHANDRA SEKHAR REDDY",
+        "regd_no": "20KP1A0490",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "91",
+        "name": "PASUPULETI LAKSHMI LAVANYA",
+        "regd_no": "20KP1A0492",
+        "branch": "ECE",
+        "company": "CODEGNAN IT SOLUTIONS"
+      },
+      {
+        "sno": "92",
+        "name": "PATHAN SHOYAB KHAN",
+        "regd_no": "20KP1A0497",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "93",
+        "name": "PATIBANDLA MONA",
+        "regd_no": "20KP1A04A0",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES"
+      },
+      {
+        "sno": "94",
+        "name": "POOLA SAI KUMAR",
+        "regd_no": "20KP1A04A6",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "95",
+        "name": "POPURI SRI LAKSHMI PRASANNA",
+        "regd_no": "20KP1A04A7",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "96",
+        "name": "SUDA NAGA MASTAN SRIHARSHA",
+        "regd_no": "20KP1A04C4",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM"
+      },
+      {
+        "sno": "97",
+        "name": "SIVAJI MARUTHI VENKATA GOPINADH",
+        "regd_no": "20KP1A04C3",
+        "branch": "ECE",
+        "company": "EFFTRONICS"
+      },
+      {
+        "sno": "98",
+        "name": "SUREDDY VENKATA SAI NADH REDDY",
+        "regd_no": "20KP1A04C6",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "99",
+        "name": "SYED MASIUDDIN",
+        "regd_no": "20KP1A04C7",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "100",
+        "name": "TADISETTY SAI PARDHIV",
+        "regd_no": "20KP1A04C8",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "101",
+        "name": "TALLURI JAYADWEEP",
+        "regd_no": "20KP1A04C9",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "102",
+        "name": "TAMMA SRAVYA",
+        "regd_no": "20KP1A04D0",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "103",
+        "name": "VARIKALLA VENKATA GOWTHAM",
+        "regd_no": "20KP1A04E5",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "104",
+        "name": "VASANTHU HARIHARA",
+        "regd_no": "20KP1A04E6",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "105",
+        "name": "VASANTHU HARIKA",
+        "regd_no": "20KP1A04E7",
+        "branch": "ECE",
+        "company": "EFFTRONICS"
+      },
+      {
+        "sno": "106",
+        "name": "VELIVALA SIVA VENKATESWARA RAO",
+        "regd_no": "20KP1A04E8",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "107",
+        "name": "VELURI VENKATA JYOSHNAVI",
+        "regd_no": "20KP1A04E9",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "108",
+        "name": "VEMULA ANUSHA",
+        "regd_no": "20KP1A04F0",
+        "branch": "ECE",
+        "company": "ILM"
+      },
+      {
+        "sno": "109",
+        "name": "VIKKURTHI NAGA ANUSHA",
+        "regd_no": "20KP1A04F1",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "110",
+        "name": "YAKKANTI MAHESWARA REDDY",
+        "regd_no": "20KP1A04F2",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "111",
+        "name": "YALLAMANDALA BALAJI",
+        "regd_no": "20KP1A04F3",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "112",
+        "name": "YALLAPRGADA NAGA SAI PADMA SRI",
+        "regd_no": "20KP1A04F4",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "113",
+        "name": "YAPARLA VISHNUVARDHANA REDDY",
+        "regd_no": "20KP1A04F5",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "114",
+        "name": "LINGALA ANUPA",
+        "regd_no": "21KP5A0411",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "115",
+        "name": "MINDALA MOUNIKA",
+        "regd_no": "21KP5A0412",
+        "branch": "ECE",
+        "company": "EXCELR"
+      },
+      {
+        "sno": "116",
+        "name": "T ANVITHA",
+        "regd_no": "21KP5A0413",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      },
+      {
+        "sno": "117",
+        "name": "TALATHOTI RAJESH",
+        "regd_no": "21KP5A0414",
+        "branch": "ECE",
+        "company": "QSPIDERS"
+      },
+      {
+        "sno": "118",
+        "name": "VALLEPU SHALEMURAJU",
+        "regd_no": "21KP5A0415",
+        "branch": "ECE",
+        "company": "SAVANTIS"
+      }
+    ],
+    "CIVIL": [
+      {
+        "sno": "1",
+        "regd_no": "20KP1A0103",
+        "name": "KAKI VINITHA SRI",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "20KP1A0104",
+        "name": "KARUMANCHI BABU RAO",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "20KP1A0105",
+        "name": "LAKKOJU CHITRA",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "20KP1A0106",
+        "name": "MANDADAPU VIHARIKA",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "20KP1A0107",
+        "name": "MODUGULA VEERA VENKATA SIVA SAI KUMAR",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "20KP1A0108",
+        "name": "NUTHALAPATI V MAHESH",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "7",
+        "regd_no": "20KP1A0109",
+        "name": "PEEKE ANJAIAH",
+        "branch": "CIVIL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      }
+    ],
+    "CSE": [
+      {
+        "sno": "1",
+        "regd_no": "20KP1A0534",
+        "name": "GUDIPUDI NAGA SAMPOORNA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "2",
+        "regd_no": "20KP1A0532",
+        "name": "GRANDHI  PRASANNA VIJAY KUMAR",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "3",
+        "regd_no": "20KP1A0556",
+        "name": "MADDOJU SAIMAHENDRA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "4",
+        "regd_no": "20KP1A0575",
+        "name": "PAPPULA SIVANI",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "5",
+        "regd_no": "20KP1A0507",
+        "name": "PAVAN KUMAR BATTULA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "6",
+        "regd_no": "20KP1A0544",
+        "name": "KARRIAVULA UMA LALITHA BANGARAM",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "7",
+        "regd_no": "20KP1A0549",
+        "name": "KALARI HARINI",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "8",
+        "regd_no": "20KP1A0520",
+        "name": "CHILKA ROJI",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "9",
+        "regd_no": "20KP1A05A9",
+        "name": "YARLAGADDA SRUTHI ANASURYA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "10",
+        "regd_no": "20KP1A0585",
+        "name": "TEJASWINI RAVIPATI",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "11",
+        "regd_no": "21KP5A0507",
+        "name": "MORUBOINA BHARATH",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "12",
+        "regd_no": "21KP5A0508",
+        "name": "SAYYAD JAKEER HUSSAIN",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "13",
+        "regd_no": "20KP1A0535",
+        "name": "INTURI MUKESH",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "14",
+        "regd_no": "20KP1A0524",
+        "name": "ENAGANTI HEMANTH SAI KUMAR",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "15",
+        "regd_no": "20KP1A0583",
+        "name": "PONUGUPATI VENKATA KOUSALYA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "16",
+        "regd_no": "20KP1A05A3",
+        "name": "UPPALAPATI ANJUNADH",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "17",
+        "regd_no": "20KP1A0599",
+        "name": "SURINENI NAVEEN",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "18",
+        "regd_no": "20KP1A0503",
+        "name": "MANOHAR REDDY ANUMULA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "19",
+        "regd_no": "20KP1A0588",
+        "name": "REDDEM MOUNIKA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "20",
+        "regd_no": "20KP1A0594",
+        "name": "SHAIK ISHRATH SULTHANA",
+        "branch": "COMPUTER SCIENCE AND ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      }
+    ],
+    "CSE-DS": [
+      {
+        "sno": "1",
+        "regd_no": "20KP1A4433",
+        "name": "PARAKANDLA PADMASAI",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "20KP1A4434",
+        "name": "PATAN KHARIMUNNISA",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "20KP1A4435",
+        "name": "PODILI ROHITH",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "20KP1A4437",
+        "name": "POLIMETLA SRI SOWMYA",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "20KP1A4438",
+        "name": "POTHURI RAMANIKA",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "20KP1A4440",
+        "name": "PULAGURI MANI KUMAR",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "7",
+        "regd_no": "20KP1A4441",
+        "name": "RAVELA CHANDR SEKHAR",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "8",
+        "regd_no": "20KP1A4442",
+        "name": "SANIKOMMU LIKHITH REDDY",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "9",
+        "regd_no": "20KP1A4444",
+        "name": "SHAIK ASHRAF ALI",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "10",
+        "regd_no": "20KP1A4446",
+        "name": "SHAIK GOUSE BASHA",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "11",
+        "regd_no": "20KP1A4447",
+        "name": "SHAIK IRFAN",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "12",
+        "regd_no": "20KP1A4448",
+        "name": "SHAIK JAREENA",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "13",
+        "regd_no": "20KP1A4449",
+        "name": "SHAIK MAHABOOB SUBHANI",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "14",
+        "regd_no": "20KP1A4450",
+        "name": "SHAIK UMAR FARUK",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "15",
+        "regd_no": "20KP1A4452",
+        "name": "SUDA ASHA",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "16",
+        "regd_no": "20KP1A4453",
+        "name": "SYED YASINE",
+        "branch": "CSDS",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "20",
+        "regd_no": "20KP1A1238",
+        "name": "SHAIK ISHTIYAQ FAIZ",
+        "branch": "CSDS",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "21",
+        "regd_no": "20KP1A4457",
+        "name": "VEMPATI PAVAN KUMAR",
+        "branch": "CSDS",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      },
+      {
+        "sno": "22",
+        "regd_no": "20KP1A4419",
+        "name": "K.ANUSHA",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "23",
+        "regd_no": "20KP1A4424",
+        "name": "MANGALAPURI HEMANTH",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "25",
+        "regd_no": "20KP1A4408",
+        "name": "DEVANDLA NARASAKUMARI",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "26",
+        "regd_no": "20KP1A4428",
+        "name": "USHARANI NALLABOTHU",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "27",
+        "regd_no": "20KP1A4432",
+        "name": "JYOTHISWAROOP NUKAPOTHULA",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "28",
+        "regd_no": "20KP1A4426",
+        "name": "MULLAPATI SAMBAIAH",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "30",
+        "regd_no": "20KP1A4429",
+        "name": "NALLAMOTHU SRAVANI",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "31",
+        "regd_no": "20KP1A4403",
+        "name": "BONABOINA SAHITHI",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "32",
+        "regd_no": "20KP1A4412",
+        "name": "JETTI.SIVA BADRINATH",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "34",
+        "regd_no": "20KP1A4405",
+        "name": "CHAVA.JAHNAVI",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "35",
+        "regd_no": "20KP1A4418",
+        "name": "HARIKA KOTTE",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "36",
+        "regd_no": "20KP1A4414",
+        "name": "KANDRA RAKESH",
+        "branch": "CSDS",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      }
+    ],
+    "IT": [
+      {
+        "sno": "17",
+        "regd_no": "20KP1A1229",
+        "name": "PATHAN AZMEEN",
+        "branch": "CSIT",
+        "company": "CODEGNAN IT SOLUTIONS",
+        "package": "UPTO 4LPA"
+      }
+    ],
+    "EEE": [
+      {
+        "sno": "1",
+        "regd_no": "21KP5A0202",
+        "name": "DASARI INDUMATHI",
+        "branch": "EEE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "21KP5A0203",
+        "name": "DUNAKA TEJA NAGA VENKATA VAMSI",
+        "branch": "EEE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "21KP5A0204",
+        "name": "MUDDADA VENNELA",
+        "branch": "EEE",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      }
+    ],
+    "MECH": [
+      {
+        "sno": "1",
+        "regd_no": "21KP5A0324",
+        "name": "SHAIK JANI BASHA",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "2",
+        "regd_no": "21KP5A0302",
+        "name": "BAIRISETTI CHIRANJEEVI",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "3",
+        "regd_no": "20KP1A0307",
+        "name": "PAPINENI SAI VENKAT",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "20KP1A0308",
+        "name": "PARISA YUVA GANESH",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "20KP1A0310",
+        "name": "POTLA SUDHEER BABU",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "20KP1A0311",
+        "name": "RAMAVATHU RAGHU NAIK",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "7",
+        "regd_no": "20KP1A0312",
+        "name": "SHAIK MOHAMMAD KAIF",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "8",
+        "regd_no": "21KP5A0301",
+        "name": "APPADI NARESH",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      },
+      {
+        "sno": "10",
+        "regd_no": "21KP5A0303",
+        "name": "BODA PRASHANTH YADAV",
+        "branch": "MECHANICAL ENGINEERING",
+        "company": "SMARTBRAINS",
+        "package": "3LPA"
+      }
+    ]
+  },
+  "2024-2025": {
+    "CSE": [
+      {
+        "sno": "1",
+        "regd_no": "21KP1A0501",
+        "name": "ALLU VARA LAKSHMI",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "21KP1A0502",
+        "name": "ARUMALLA DINESH",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "21KP1A0503",
+        "name": "BALABATTUNI SAI KIRAN",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "21KP1A0506",
+        "name": "BATTINA TRIKANTH",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "21KP1A0507",
+        "name": "BAYYA AVINASH",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "21KP1A0509",
+        "name": "BOGGULA GURU LOKESH",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "7",
+        "regd_no": "21KP1A0510",
+        "name": "BOLNEDI DIVYA",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "8",
+        "regd_no": "21KP1A0511",
+        "name": "BUSANI SANDHYA",
+        "branch": "CSE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "9",
+        "regd_no": "21KP1A0512",
+        "name": "CHALUVADI MANIKANTA SAI",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "10",
+        "regd_no": "21KP1A0513",
+        "name": "CHINTA ABHILASH",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "11",
+        "regd_no": "21KP1A0514",
+        "name": "DARA PHILIP JOY",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "12",
+        "regd_no": "21KP1A0516",
+        "name": "DESALA VENKATA NARESH",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "13",
+        "regd_no": "21KP1A0517",
+        "name": "DEVI REDDY HARI PURNA SASHANK",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "14",
+        "regd_no": "21KP1A0518",
+        "name": "DEVINENI UMESH CHANDRA",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "15",
+        "regd_no": "21KP1A0519",
+        "name": "DONDAPATI KEERTHI",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "16",
+        "regd_no": "21KP1A0521",
+        "name": "DUDEKULA SIDDAIAH",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "17",
+        "regd_no": "21KP1A0523",
+        "name": "ENIMIREDDY SASI",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "18",
+        "regd_no": "21KP1A0524",
+        "name": "GADIPUDI HARISH",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "19",
+        "regd_no": "21KP1A0526",
+        "name": "GANITHI MOHANA LAKSHMI",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "20",
+        "regd_no": "21KP1A0527",
+        "name": "GARLAPATI RAMANJANEYULU",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "21",
+        "regd_no": "21KP1A0529",
+        "name": "GONUGUNTLA TEJASWINI",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "22",
+        "regd_no": "21KP1A0530",
+        "name": "GORANTLA SAI NARENDRA",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "23",
+        "regd_no": "21KP1A0531",
+        "name": "INTURI TRIVENI",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "24",
+        "regd_no": "21KP1A0532",
+        "name": "JADDA PRATHYUSHA",
+        "branch": "CSE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "25",
+        "regd_no": "21KP1A0533",
+        "name": "JATAVATHU KALYANI BAI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "26",
+        "regd_no": "21KP1A0534",
+        "name": "JORIGE RAMYA",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "27",
+        "regd_no": "21KP1A0535",
+        "name": "KALLAM VISHNU PRIYA",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "28",
+        "regd_no": "21KP1A0536",
+        "name": "KALUMURI GOPI CHANDRA",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "29",
+        "regd_no": "21KP1A0537",
+        "name": "KAMMA MANJULA",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "30",
+        "regd_no": "21KP1A0538",
+        "name": "KANDI MAHESH REDDY",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "31",
+        "regd_no": "21KP1A0540",
+        "name": "KASIREDDY SAI SANDEEP REDDY",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "32",
+        "regd_no": "21KP1A0543",
+        "name": "KAVURI ASWINI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "33",
+        "regd_no": "21KP1A0544",
+        "name": "KESANI VENKATA KARTHIK",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "34",
+        "regd_no": "21KP1A0547",
+        "name": "KONDRU LAKSHMI PRASANNA",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "35",
+        "regd_no": "21KP1A0548",
+        "name": "KONDURU MADHURI VENKATA SANGEETHA LAKSHMI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "36",
+        "regd_no": "21KP1A0549",
+        "name": "KOPPANATHI JAYA NAGA RAJASRI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "37",
+        "regd_no": "21KP1A0550",
+        "name": "KOPURI PRASANTH",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "38",
+        "regd_no": "21KP1A0552",
+        "name": "KUNCHALA BOBBY",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "39",
+        "regd_no": "21KP1A0563",
+        "name": "MEDARAMETLA RAJESWARI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "40",
+        "regd_no": "21KP1A0564",
+        "name": "MEKALA KUMARI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "41",
+        "regd_no": "21KP1A0565",
+        "name": "METHANI NAGENDRA BABU",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "42",
+        "regd_no": "21KP1A0566",
+        "name": "MIRIYAM GAYATHRI",
+        "branch": "CSE",
+        "company": "SPR HUMAN CAPITAL SOLUTIONS",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "43",
+        "regd_no": "21KP1A0568",
+        "name": "MOVVA SAI NAGA MAHA LAKSHMI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "44",
+        "regd_no": "21KP1A0569",
+        "name": "MUPPA RAMYASRI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "45",
+        "regd_no": "21KP1A0573",
+        "name": "NANDIGAMA YASHASWI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "46",
+        "regd_no": "21KP1A0574",
+        "name": "NARAYANAM ESWAR SRI MANIKANTA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "47",
+        "regd_no": "21KP1A0576",
+        "name": "NAYUDU VAMSI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "48",
+        "regd_no": "21KP1A0578",
+        "name": "NUTHALAPATI JAGADEESH CHANDRA PRASAD",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "49",
+        "regd_no": "21KP1A0579",
+        "name": "PALAGANI GAYATHRI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "50",
+        "regd_no": "21KP1A0581",
+        "name": "PARASA JASMITHA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "51",
+        "regd_no": "21KP1A0582",
+        "name": "PARIMI SAI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "52",
+        "regd_no": "21KP1A0583",
+        "name": "PARUCHURI JAGADEESH",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "53",
+        "regd_no": "21KP1A0585",
+        "name": "PATTAN FEERDOSH KHAN",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "54",
+        "regd_no": "21KP1A0586",
+        "name": "PILLI POOJITHA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "55",
+        "regd_no": "21KP1A0588",
+        "name": "REBBA MANOHAR",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "56",
+        "regd_no": "21KP1A0589",
+        "name": "REGULAGADDA BINDU MADHAVI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "57",
+        "regd_no": "21KP1A0591",
+        "name": "SANDEPOGU SILUVARAJU",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "58",
+        "regd_no": "21KP1A0592",
+        "name": "SARIPUDI SRIKANTH",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "59",
+        "regd_no": "21KP1A0593",
+        "name": "SHAIK ASEN",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "60",
+        "regd_no": "21KP1A0594",
+        "name": "SHAIK FAZULA MOHAMMAD",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "61",
+        "regd_no": "21KP1A0595",
+        "name": "SHAIK HASEENA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "62",
+        "regd_no": "21KP1A0596",
+        "name": "SHAIK KASIMBE",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "63",
+        "regd_no": "21KP1A0597",
+        "name": "SHAIK MOULANA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "64",
+        "regd_no": "21KP1A0598",
+        "name": "SHAIK MUZAMMIL",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "65",
+        "regd_no": "21KP1A0599",
+        "name": "SHAIK SHAHEENA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "66",
+        "regd_no": "21KP1A05A0",
+        "name": "SIRIPURAPU NEHEMAIAH",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "67",
+        "regd_no": "21KP1A05A1",
+        "name": "SUSMITHA VANKAYALAPATI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "68",
+        "regd_no": "21KP1A05A2",
+        "name": "SYED NAGUL SHARIF",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "69",
+        "regd_no": "21KP1A05A3",
+        "name": "SYED RIYAZ BASHA",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "70",
+        "regd_no": "21KP1A05A7",
+        "name": "TIRUVEEDHULA PRATHIBHA BHARATHI",
+        "branch": "CSE",
+        "company": "SURYATECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "71",
+        "regd_no": "21KP1A05A9",
+        "name": "UPPU SATHVIKA",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "72",
+        "regd_no": "21KP1A05B0",
+        "name": "VAICHARLA NARASIMHA RAO",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "73",
+        "regd_no": "21KP1A05B1",
+        "name": "VAKKAPATLA DURGA PAVAN KUMAR",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "74",
+        "regd_no": "21KP1A05B7",
+        "name": "YALAMARTHI YAMINI",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "75",
+        "regd_no": "21KP1A05B8",
+        "name": "YALAVARTHI BALAJI",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "76",
+        "regd_no": "21KP1A05B9",
+        "name": "YALLA NAGA PRAVEEN",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "77",
+        "regd_no": "22KP5A0501",
+        "name": "ANNA VENKATA SAI RAGHAVENDRA",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "78",
+        "regd_no": "22KP5A0505",
+        "name": "KOLAKALURI EMMANUAL RAJU",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "79",
+        "regd_no": "22KP5A0506",
+        "name": "MEDISETTI ESTHER RANI",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "80",
+        "regd_no": "22KP5A0507",
+        "name": "MOPIDEVI POTHURAJU",
+        "branch": "CSE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      }
+    ],
+    "ECE": [
+      {
+        "sno": "1",
+        "regd_no": "21KP1A0401",
+        "name": "AAKISETTI VENKATA SIVA KRISHNA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "21KP1A0402",
+        "name": "AALOKAM SAI MAHESH",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "21KP1A0403",
+        "name": "ADAPALA VENKATA PAVAN SAI",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "21KP1A0404",
+        "name": "BOLLIMUNTHA BHANU SAIAKHIL",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "21KP1A0405",
+        "name": "BANDARUPALLI DEEPIKA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "21KP1A0407",
+        "name": "BAREDDY NEELAPA REDDY",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "7",
+        "regd_no": "21KP1A0409",
+        "name": "BELLAMKONDA PAVAN KUMAR",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "8",
+        "regd_no": "21KP1A0411",
+        "name": "BIJINEPALLI SUJITHA",
+        "branch": "ECE",
+        "company": "VALLI,BIGBUL,GLOBAL",
+        "package": ""
+      },
+      {
+        "sno": "9",
+        "regd_no": "21KP1A0412",
+        "name": "BINGI ANUSHA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "10",
+        "regd_no": "21KP1A0415",
+        "name": "BOLLIMUNTA ANKAMMA RAO",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "11",
+        "regd_no": "21KP1A0417",
+        "name": "BUKKURU HEMANTH",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "12",
+        "regd_no": "21KP1A0418",
+        "name": "BUSSA ABHILASHA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "13",
+        "regd_no": "21KP1A0419",
+        "name": "BUTHUKURI KALYAN REDDY",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "14",
+        "regd_no": "21KP1A0420",
+        "name": "CHALLA VENKATA KALYAN",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "15",
+        "regd_no": "21KP1A0421",
+        "name": "CHALUVADI KRISHNA SUKANYA",
+        "branch": "ECE",
+        "company": "VALLI,BIGBUL",
+        "package": ""
+      },
+      {
+        "sno": "16",
+        "regd_no": "21KP1A0422",
+        "name": "CHANDU BHARATH KUMAR",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "17",
+        "regd_no": "21KP1A0423",
+        "name": "CHENNAMSETTY VENKATA LAVANYA",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "18",
+        "regd_no": "21KP1A0424",
+        "name": "CHINATHALA SAI DURGA PRASAD",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "19",
+        "regd_no": "21KP1A0425",
+        "name": "DARSI NITHIN CHANDRA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "20",
+        "regd_no": "21KP1A0426",
+        "name": "DASARI SRAVYA",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": "216LPA"
+      },
+      {
+        "sno": "21",
+        "regd_no": "21KP1A0427",
+        "name": "DEVARAKONDA SWATHI",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "22",
+        "regd_no": "21KP1A0428",
+        "name": "DIDDALA MADHAVI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "23",
+        "regd_no": "21KP1A0429",
+        "name": "DODDA PRABHU KUMAR",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "24",
+        "regd_no": "21KP1A0430",
+        "name": "DONDLETI GOWRI SANKAR REDDY",
+        "branch": "ECE",
+        "company": "SPR HUMAN CAPITAL SOLUTION",
+        "package": "2.2LPA"
+      },
+      {
+        "sno": "25",
+        "regd_no": "21KP1A0431",
+        "name": "DONDLETI VENKATESWARA REDDY",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "26",
+        "regd_no": "21KP1A0432",
+        "name": "DONTHIREDDY PRABHAVATHI",
+        "branch": "ECE",
+        "company": "VALLI,BIGBUL",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "27",
+        "regd_no": "21KP1A0433",
+        "name": "GANTA AJAY BABU",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "28",
+        "regd_no": "21KP1A0435",
+        "name": "GODA ANANDA JYOTHI",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "29",
+        "regd_no": "21KP1A0436",
+        "name": "GODAVARTHI SREE VIKAS",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "30",
+        "regd_no": "21KP1A0437",
+        "name": "GOLLA LAKSHMI SOWJANYA",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "31",
+        "regd_no": "21KP1A0438",
+        "name": "GRANDHISILA PRAVALLIKA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "32",
+        "regd_no": "21KP1A0439",
+        "name": "GUDIPUDI VEERA POTHURAJU",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "33",
+        "regd_no": "21KP1A0440",
+        "name": "GUMMADIDALA VISHNU NANDAN",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "34",
+        "regd_no": "21KP1A0444",
+        "name": "JAMPALA ANJALI",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "35",
+        "regd_no": "21KP1A0445",
+        "name": "JINKALA MANIKUMAR",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "36",
+        "regd_no": "21KP1A0446",
+        "name": "KAITEPALLI GOPI",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "37",
+        "regd_no": "21KP1A0447",
+        "name": "KAMASANI RAKESH",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "38",
+        "regd_no": "21KP1A0448",
+        "name": "KANCHARANA THANMAYEE",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "39",
+        "regd_no": "21KP1A0449",
+        "name": "KANDIMALLA THRIVENI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "40",
+        "regd_no": "21KP1A0450",
+        "name": "KANDULA RAMI REDDY",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "41",
+        "regd_no": "21KP1A0451",
+        "name": "KAPPALA NARASIMHA RAO",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "42",
+        "regd_no": "21KP1A0453",
+        "name": "KATURI NAVEEN",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "43",
+        "regd_no": "21KP1A0454",
+        "name": "KATURI SRI NAGA SUBRAHMANYAM",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "44",
+        "regd_no": "21KP1A0455",
+        "name": "KOLLI CHANDRA SEKHAR",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "45",
+        "regd_no": "21KP1A0456",
+        "name": "KOLUSU JAGADEESH",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "46",
+        "regd_no": "21KP1A0457",
+        "name": "KOMMIRISETTY VENKATA SUBHASHINI",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "47",
+        "regd_no": "21KP1A0459",
+        "name": "KONDAMUDI RAJABABU",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "48",
+        "regd_no": "21KP1A0461",
+        "name": "KOTTE RAJESH",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "49",
+        "regd_no": "21KP1A0462",
+        "name": "KUNDURU ABHISHEKAR REDDY",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "50",
+        "regd_no": "21KP1A0463",
+        "name": "KURAPATI VARALAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL,GLOBAL",
+        "package": ""
+      },
+      {
+        "sno": "51",
+        "regd_no": "21KP1A0465",
+        "name": "LAKSHMI PRASANNA VADLAMUDI",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "52",
+        "regd_no": "21KP1A0466",
+        "name": "LANKA PRABHAKAR",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "53",
+        "regd_no": "21KP1A0467",
+        "name": "MADALA SIDDARDHA",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "54",
+        "regd_no": "21KP1A0468",
+        "name": "MADDIRALA NAGA SAIDULU",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "55",
+        "regd_no": "21KP1A0469",
+        "name": "MADDU HARIKA",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "56",
+        "regd_no": "21KP1A0470",
+        "name": "MANDALAPU KEERTHI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "57",
+        "regd_no": "21KP1A0472",
+        "name": "MARATHU SRIDEVI",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "58",
+        "regd_no": "21KP1A0473",
+        "name": "MARNENI USHA RANI",
+        "branch": "ECE",
+        "company": "QSPIDERS",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "59",
+        "regd_no": "21KP1A0474",
+        "name": "MEDARAMETLA SRIVIDYA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "60",
+        "regd_no": "21KP1A0476",
+        "name": "MELAM NAGA RAJU",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "61",
+        "regd_no": "21KP1A0477",
+        "name": "MOHAMMED ASHRAF BAIG",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "62",
+        "regd_no": "21KP1A0478",
+        "name": "NAGABOTHU MURALI PRASANNA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "63",
+        "regd_no": "21KP1A0479",
+        "name": "NALLAGORLA GANGADHARA RAO",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "64",
+        "regd_no": "21KP1A0480",
+        "name": "NALLAPATI NAGALAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "65",
+        "regd_no": "21KP1A0482",
+        "name": "NALLURI TEJA VENKATA RAMA PRASAD",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "66",
+        "regd_no": "21KP1A0484",
+        "name": "NEELAM NAVEEN",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "67",
+        "regd_no": "21KP1A0485",
+        "name": "NELAVALLI SRI LAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "68",
+        "regd_no": "21KP1A0486",
+        "name": "PALAKOLLU KOMALA SAI PARVATHI",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "69",
+        "regd_no": "21KP1A0488",
+        "name": "PALERU VANAJA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "70",
+        "regd_no": "21KP1A0489",
+        "name": "PAMIDI PAVAN",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "71",
+        "regd_no": "21KP1A0490",
+        "name": "PANCHANGAM RUPA BHAVANI",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "72",
+        "regd_no": "21KP1A0491",
+        "name": "PANIDEPU PUSHPANJALI",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "73",
+        "regd_no": "21KP1A0492",
+        "name": "PATHI RAJYA LAKSHMI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "74",
+        "regd_no": "21KP1A0493",
+        "name": "PAVULURI NAGAVENU",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "75",
+        "regd_no": "21KP1A0495",
+        "name": "PEETLA SRINU",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "76",
+        "regd_no": "21KP1A0496",
+        "name": "PENUMUCHU NAGA AHALYA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "77",
+        "regd_no": "21KP1A0497",
+        "name": "PISIPATI REVANTH SAI KRISHNA KUMAR",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "78",
+        "regd_no": "21KP1A0498",
+        "name": "PODAPATI JYOSHNA PRIYA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "79",
+        "regd_no": "21KP1A0499",
+        "name": "POSIPOGU SAGAR BABU",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "80",
+        "regd_no": "21KP1A04A0",
+        "name": "POTLAPALLI KAVITHA",
+        "branch": "ECE",
+        "company": "VALUE MOMENTUM",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "81",
+        "regd_no": "21KP1A04A1",
+        "name": "PULIGUJJU GOPIKRISHNA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "82",
+        "regd_no": "21KP1A04A2",
+        "name": "RAMISETTI LAYA VARDHAN",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "83",
+        "regd_no": "21KP1A04A3",
+        "name": "RAVINUTHALA ASHOK KUMAR",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "84",
+        "regd_no": "21KP1A04A4",
+        "name": "RAVIPATI MAMATHA",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "85",
+        "regd_no": "21KP1A04A5",
+        "name": "RISHITHA ARAMBAKA",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "86",
+        "regd_no": "21KP1A04A6",
+        "name": "S PRAMOD KUMAR",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "87",
+        "regd_no": "21KP1A04A7",
+        "name": "SANKAVARAPU AJAY BABU",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "88",
+        "regd_no": "21KP1A04A8",
+        "name": "SANKU KOTESWARA RAO",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "89",
+        "regd_no": "21KP1A04A9",
+        "name": "SAYED ARSHIYA",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "90",
+        "regd_no": "21KP1A04B1",
+        "name": "SHAIK ARIF",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "91",
+        "regd_no": "21KP1A04B3",
+        "name": "SHAIK HAMIDHA",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "92",
+        "regd_no": "21KP1A04B4",
+        "name": "SHAIK IMRANA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "93",
+        "regd_no": "21KP1A04B5",
+        "name": "SHAIK KHAISAR ALI",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "94",
+        "regd_no": "21KP1A04B6",
+        "name": "SHAIK KHASIMSHAREF",
+        "branch": "ECE",
+        "company": "SUTHERLAND",
+        "package": "2.70LPA"
+      },
+      {
+        "sno": "95",
+        "regd_no": "21KP1A04B9",
+        "name": "SHAIK UMAR FAROOQ",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "96",
+        "regd_no": "21KP1A04C0",
+        "name": "SHAIK WAHID",
+        "branch": "ECE",
+        "company": "NYERAS",
+        "package": "1.8LPA"
+      },
+      {
+        "sno": "97",
+        "regd_no": "21KP1A04C1",
+        "name": "SHAIK YASIN",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "98",
+        "regd_no": "21KP1A04C3",
+        "name": "SIRIGIRI DIVYA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "99",
+        "regd_no": "21KP1A04C4",
+        "name": "SK MUZAVAR JAN SAIDA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "100",
+        "regd_no": "21KP1A04C5",
+        "name": "SYED POTARAM KOUSAR",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "101",
+        "regd_no": "21KP1A04C6",
+        "name": "SYED SADEER",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "102",
+        "regd_no": "21KP1A04C8",
+        "name": "UNNANGIRI SIREESHA",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "103",
+        "regd_no": "21KP1A04C9",
+        "name": "VANKAMAMIDI PRANAVI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "104",
+        "regd_no": "21KP1A04D1",
+        "name": "VAVILALA NAGAIAH",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "105",
+        "regd_no": "21KP1A04D5",
+        "name": "YACHAVARAPU NAHOR KUMAR",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "106",
+        "regd_no": "21KP1A04D6",
+        "name": "YALLA MEGHANA",
+        "branch": "ECE",
+        "company": "EXCELR",
+        "package": "4LPA"
+      },
+      {
+        "sno": "107",
+        "regd_no": "21KP1A04D7",
+        "name": "YEKULA SREEJA",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "108",
+        "regd_no": "21KP1A04D8",
+        "name": "YELLISETTY KUSUMA KUMARI",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "109",
+        "regd_no": "21KP1A04D9",
+        "name": "ALLAM SYAM PRANITH",
+        "branch": "ECE",
+        "company": "BIGBUL",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "110",
+        "regd_no": "21KP1A04E0",
+        "name": "KARUMURI CHAITANYA SRI REDDY",
+        "branch": "ECE",
+        "company": "BIGBUL,GLOBAL",
+        "package": ""
+      },
+      {
+        "sno": "111",
+        "regd_no": "21KP1A04E1",
+        "name": "KONDAMEEDI SIRI",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "112",
+        "regd_no": "22KP5A0401",
+        "name": "BADE VISHNUVARDHAN",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "113",
+        "regd_no": "22KP5A0402",
+        "name": "BAGGU SAI KUMAR",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": ""
+      },
+      {
+        "sno": "114",
+        "regd_no": "22KP5A0403",
+        "name": "CHILAMKURI NAGA VENKATA GANGADHAR",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "115",
+        "regd_no": "22KP5A0405",
+        "name": "GORANTLA YUGANDHAR",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "116",
+        "regd_no": "22KP5A0406",
+        "name": "GURRAM NAGA KUSHWANTH",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "117",
+        "regd_no": "22KP5A0407",
+        "name": "JALLI USHA SRI",
+        "branch": "ECE",
+        "company": "VALLI",
+        "package": ""
+      },
+      {
+        "sno": "118",
+        "regd_no": "22KP5A0408",
+        "name": "KALAHASTHI RAVI TEJA",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "119",
+        "regd_no": "22KP5A0410",
+        "name": "KAVITI VISHNUVARDHAN",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "120",
+        "regd_no": "22KP5A0411",
+        "name": "MADASU NAVYAKA",
+        "branch": "ECE",
+        "company": "KODNEST TECHNOLOGIES",
+        "package": "INTERNSHIP"
+      },
+      {
+        "sno": "121",
+        "regd_no": "22KP5A0412",
+        "name": "MALLA ANANDH",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "122",
+        "regd_no": "22KP5A0413",
+        "name": "NINDUJARLA SRI RAMA KRISHNA",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "123",
+        "regd_no": "22KP5A0414",
+        "name": "POTHARLANKA BHARGAVI",
+        "branch": "ECE",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "124",
+        "regd_no": "22KP5A0415",
+        "name": "PUVVADI KARTHIK",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "125",
+        "regd_no": "22KP5A0416",
+        "name": "SANDRALA UMA KOTESWARARAO",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.16LPA"
+      },
+      {
+        "sno": "126",
+        "regd_no": "22KP5A0417",
+        "name": "ADDANKI SANJAY",
+        "branch": "ECE",
+        "company": "SURYA TECH SOLUTIONS",
+        "package": "2.16LPA"
+      }
+    ],
+    "IT": [
+      {
+        "sno": "1",
+        "regd_no": "21KP1A1243",
+        "name": "SANGA BHARGAVI",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "21KP1A1248",
+        "name": "SHAIK SHABANA",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "21KP1A1252",
+        "name": "TALUCHURI PREETHIPADMAVATHI",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "21KP1A1202",
+        "name": "UDAY KIRAN ANANTHA",
+        "branch": "IT",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "21KP1A1255",
+        "name": "GAYATHRI THUMMURU",
+        "branch": "IT",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "21KP1A1232",
+        "name": "ARAVIND SWAMI PATHELLA",
+        "branch": "IT",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "8",
+        "regd_no": "21KP1A1241",
+        "name": "P.LASYASRI",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      },
+      {
+        "sno": "9",
+        "regd_no": "21KP1A1223",
+        "name": "KASARAGADDA VENKATA NAVYA SRI",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      },
+      {
+        "sno": "10",
+        "regd_no": "21KP1A1211",
+        "name": "DUGGEMPUDI SRINIVAS",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      },
+      {
+        "sno": "11",
+        "regd_no": "21KP1A1256",
+        "name": "VADDELI LAKSHMI",
+        "branch": "IT",
+        "company": "GLOBAL QUEST",
+        "package": "3LPA"
+      }
+    ],
+    "CSE-DS": [
+      {
+        "sno": "1",
+        "regd_no": "21KP1A4409",
+        "name": "ATLURI SATHVIKA",
+        "branch": "CSD",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "sno": "2",
+        "regd_no": "21KP1A4457",
+        "name": "PRATHYUSHA KOTHAPALLI",
+        "branch": "CSD",
+        "company": "10K CODERS",
+        "package": "4LPA"
+      },
+      {
+        "sno": "3",
+        "regd_no": "21KP1A4404",
+        "name": "A.SRILEKHA",
+        "branch": "CSD",
+        "company": "TAP ACADEMY",
+        "package": "4.5LPA"
+      },
+      {
+        "sno": "4",
+        "regd_no": "21KP1A4438",
+        "name": "HARSHITHA JAIN",
+        "branch": "CSD",
+        "company": "JITHARA",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "5",
+        "regd_no": "21KP1A44B6",
+        "name": "SOWJANYA THOTA",
+        "branch": "CSD",
+        "company": "JITHARA",
+        "package": "3.6LPA"
+      },
+      {
+        "sno": "6",
+        "regd_no": "21KP1A4455",
+        "name": "KOTANI ROOPCHAND",
+        "branch": "CSD",
+        "company": "JITHARA",
+        "package": "3.6LPA"
+      }
+    ]
+  }
+}

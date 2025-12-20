@@ -48,8 +48,8 @@ export default function FacultyMarksPage() {
 
             if (profile) {
                 // Fetch courses for this department
-                const { data: courseData } = await supabase
-                    .from('courses')
+                const { data: courseData } = await (supabase
+                    .from('courses') as any)
                     .select('id, course_code, course_name, semester')
                     .eq('dept_code', profile.dept_code)
                     .eq('is_active', true)
@@ -87,8 +87,8 @@ export default function FacultyMarksPage() {
 
             if (profile) {
                 // Fetch students from this department and semester
-                const { data: studentData } = await supabase
-                    .from('student_profiles')
+                const { data: studentData } = await (supabase
+                    .from('student_profiles') as any)
                     .select('id, roll_number, first_name, last_name')
                     .eq('dept_code', profile.dept_code)
                     .eq('current_semester', course.semester)
@@ -100,8 +100,8 @@ export default function FacultyMarksPage() {
                     setStudents(studentData);
 
                     // Fetch existing marks for these students
-                    const { data: existingData } = await supabase
-                        .from('internal_marks')
+                    const { data: existingData } = await (supabase
+                        .from('internal_marks') as any)
                         .select('student_id, marks_obtained')
                         .eq('course_id', selectedCourse)
                         .eq('exam_type', selectedExam);
@@ -147,8 +147,8 @@ export default function FacultyMarksPage() {
 
             // Upsert marks
             for (const mark of marksToInsert) {
-                await supabase
-                    .from('internal_marks')
+                await (supabase
+                    .from('internal_marks') as any)
                     .upsert(mark, {
                         onConflict: 'student_id,course_id,exam_type,academic_year,semester_type'
                     });

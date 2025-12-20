@@ -5,7 +5,10 @@ This project is optimized for Vercel.
 
 1.  Push code to GitHub.
 2.  Import project in Vercel.
-3.  Add the Environment Variables from `.env.local`.
+3.  Add the Environment Variables from `.env.local`:
+    - `NEXT_PUBLIC_SUPABASE_URL`
+    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+    - `GOOGLE_GENERATIVE_AI_API_KEY` (Required for Visionary AI)
 4.  Deploy.
 
 ## 2. Supabase (Database)

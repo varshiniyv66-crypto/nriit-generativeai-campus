@@ -1,0 +1,1514 @@
+{
+  "2025-26": [
+    {
+      "sno": "1.0",
+      "name": "Dr. SANJAY DOLA S",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "01-11-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Dr. SRIHARI RAO KOMATINENI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "06-01-2012",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "Dr. CHETTY KALAI SELVAN",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Dr. SAIDAIAH BANDI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "19-01-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Dr. JAMPANI KRISHNA KISHORE",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "20-07-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "Dr. V. NAGA MALLESWARI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "09-11-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "Dr. RAVI MANCHARLA",
+      "qualification": "Ph.D.",
+      "designation": "Associate Professor",
+      "doj": "05-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "Dr. NAGA JYOTHI VALETI",
+      "qualification": "Ph.D.",
+      "designation": "Associate Professor",
+      "doj": "03-09-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "CHEKURI VENUGOPALA CHOWDARY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "SESHAGIRI RAO SUGGUNA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "SUJATA KANDUKURI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-06-2015",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "MANASA MANUKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "PURNE SRINIVASARAO",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "PRAMEELA PODILI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-02-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "SAI KUMAR GOPU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "13-03-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "BINDU SRI MOKAMATAM",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "YARRU SREEJA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "SHAHANAJ SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "KANVITHA PENUMUTCHU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20.0",
+      "name": "HANEEF SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21.0",
+      "name": "PAVANI VELAGA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22.0",
+      "name": "BHEEMANA INDU LATHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23.0",
+      "name": "VIJAY KUMAR ANKIPALLI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-12-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24.0",
+      "name": "MANOHAR PATRA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "18-08-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25.0",
+      "name": "AMALA PAYALA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26.0",
+      "name": "SRAVYA DOPPALAPUDI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-06-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27.0",
+      "name": "MEENAKSHI BOLLU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28.0",
+      "name": "MOPARTHY MARY JUNITHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-06-2009",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29.0",
+      "name": "ANJANEYULU UMMANENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30.0",
+      "name": "LALITHA GOGINENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31.0",
+      "name": "RAMBABU CHEMAKURTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32.0",
+      "name": "CHAITANYA VUNNAVA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-08-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33.0",
+      "name": "VENKETESWARARAO VENTURUMILLI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-09-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34.0",
+      "name": "MODUKURI CHIRANJEEVI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "16-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35.0",
+      "name": "MORABOENA RAMESH BABU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36.0",
+      "name": "KUMMARI SREENIVASARAO",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37.0",
+      "name": "PUPPALLA YOJITHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38.0",
+      "name": "BALUDRA RAM CHANDINI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "16-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39.0",
+      "name": "NALAJALA PAVAN KUMAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40.0",
+      "name": "KOMMU SIRISHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-07-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41.0",
+      "name": "GADDAM KOTESWARARAO",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-07-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "42.0",
+      "name": "EDARA VIJAYA SANTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "16-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "43.0",
+      "name": "NADENDLA SATYANARAYANA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "44.0",
+      "name": "GARIGIPATI VIJAYA KUMAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "45.0",
+      "name": "GANAPAVARAPU VENKATESWARLU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "46.0",
+      "name": "ALLAM KANCHANA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1.0",
+      "name": "Dr. SANJAY DOLA S",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "01-11-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Dr. SRIHARI RAO KOMATINENI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "06-01-2012",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "Dr. CHETTY KALAI SELVAN",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Dr. SAIDAIAH BANDI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "19-01-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Dr. V. NAGA MALLESWARI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "09-11-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "Dr. RAVI MANCHARLA",
+      "qualification": "Ph.D.",
+      "designation": "Associate Professor",
+      "doj": "05-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "JAMPANI KRISHNA KISHORE",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-07-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "CHEKURI VENUGOPALA CHOWDARY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "SESHAGIRI RAO SUGGUNA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "LAKSHMI DARSI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "SUJATA KANDUKURI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-06-2015",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "MANASA MANUKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "NAGA JYOTHI VALETI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-09-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "PRAMEELA PODILI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-02-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "SRILAKSHMI PAMARTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-01-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "SAI KUMAR GOPU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "13-03-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "BINDU SRI MOKAMATAM",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "YARRU SREEJA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "SHAHANAJ SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20.0",
+      "name": "KANVITHA PENUMUTCHU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21.0",
+      "name": "HANEEF SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22.0",
+      "name": "PAVANI VELAGA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23.0",
+      "name": "KIRAN KUMAR KOMARAPURI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24.0",
+      "name": "TAMILVANAM M",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25.0",
+      "name": "BHEEMANA INDU LATHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26.0",
+      "name": "VIJAY KUMAR ANKIPALLI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-12-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27.0",
+      "name": "CHODAVARAPU SATYANARAYANA MURTHY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28.0",
+      "name": "GIRIDHAR BABU AMIRISETTY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-02-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29.0",
+      "name": "MANOHAR PATRA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "18-08-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30.0",
+      "name": "AMALA PAYALA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31.0",
+      "name": "SRAVYA DOPPALAPUDI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-06-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32.0",
+      "name": "LAKSHMINARAYANA MOGILI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33.0",
+      "name": "MEENAKSHI BOLLU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34.0",
+      "name": "MOPARTHY MARY JUNITHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-06-2009",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35.0",
+      "name": "BABA FARIDDIN SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36.0",
+      "name": "POTHULA TEJA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37.0",
+      "name": "UJJIT BURADAGUNTA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38.0",
+      "name": "VEERENDRANATH NUNE",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "16-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39.0",
+      "name": "SAI BANAVATHU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40.0",
+      "name": "FAIROZE SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-01-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41.0",
+      "name": "PRASANNA KUMAR THURUMELA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "42.0",
+      "name": "ANJANEYULU UMMANENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "43.0",
+      "name": "LALITHA GOGINENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "44.0",
+      "name": "TRIVENI LAKSHMI MARELLA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "11-09-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "45.0",
+      "name": "RAMBABU CHEMAKURTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "46.0",
+      "name": "CHAITANYA VUNNAVA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-08-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "47.0",
+      "name": "LAKSHMI DEVARAKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "48.0",
+      "name": "VENKETESWARARAO VENTURUMILLI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-09-2023",
+      "nature": "Regular"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1.0",
+      "name": "Dr. SANJAY DOLA S",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "01-11-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Dr. SRIHARI RAO KOMATINENI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "06-01-2012",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "Dr. CHETTY KALAI SELVAN",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Dr. SAIDAIAH BANDI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "19-01-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Dr. V. NAGA MALLESWARI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "09-11-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "RAVI MANCHARLA",
+      "qualification": "M. Tech",
+      "designation": "Assistant Professor",
+      "doj": "05-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "JAMPANI KRISHNA KISHORE",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-07-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "CHEKURI VENUGOPALA CHOWDARY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "SESHAGIRI RAO SUGGUNA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "LAKSHMI DARSI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "SUJATA KANDUKURI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-06-2015",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "MANASA MANUKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "NAGA JYOTHI VALETI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-09-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "PRAMEELA PODILI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-02-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "SRILAKSHMI PAMARTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-01-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "SAI KUMAR GOPU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "13-03-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "BINDU SRI MOKAMATAM",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "YARRU SREEJA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "SHAHANAJ SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20.0",
+      "name": "KANVITHA PENUMUTCHU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21.0",
+      "name": "HANEEF SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22.0",
+      "name": "PAVANI VELAGA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23.0",
+      "name": "KIRAN KUMAR KOMARAPURI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24.0",
+      "name": "TAMILVANAM M",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25.0",
+      "name": "BHEEMANA INDU LATHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26.0",
+      "name": "AKHILA BOGGAVARAPU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27.0",
+      "name": "CHODAVARAPU SATYANARAYANA MURTHY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28.0",
+      "name": "GIRIDHAR BABU AMIRISETTY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-02-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29.0",
+      "name": "MANOHAR PATRA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "18-08-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30.0",
+      "name": "AMALA PAYALA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31.0",
+      "name": "SRAVYA DOPPALAPUDI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-06-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32.0",
+      "name": "LAKSHMINARAYANA MOGILI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33.0",
+      "name": "MEENAKSHI BOLLU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34.0",
+      "name": "MOPARTHY MARY JUNITHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-06-2009",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35.0",
+      "name": "BABA FARIDDIN SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36.0",
+      "name": "POTHULA TEJA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37.0",
+      "name": "VEERENDRANATH NUNE",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "16-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38.0",
+      "name": "SAI BANAVATHU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39.0",
+      "name": "ANJANEYULU UMMANENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40.0",
+      "name": "LALITHA GOGINENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41.0",
+      "name": "TRIVENI LAKSHMI MARELLA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "11-09-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "42.0",
+      "name": "K MURALI BABU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "43.0",
+      "name": "B BHASKAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-12-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "44.0",
+      "name": "RAMBABU CHEMAKURTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "45.0",
+      "name": "V. GAJENDRA KUMAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "46.0",
+      "name": "CHAITANYA VUNNAVA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-08-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "47.0",
+      "name": "BABU RAJAK SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-01-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "48.0",
+      "name": "LAKSHMI DEVARAKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2022",
+      "nature": "Regular"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1.0",
+      "name": "Dr. SANJAY DOLA S",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "01-11-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Dr. SRIHARI RAO KOMATINENI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "06-01-2012",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "Dr. CHETTY KALAI SELVAN",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Dr. SAIDAIAH BANDI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "19-01-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Dr. V. NAGA MALLESWARI",
+      "qualification": "Ph.D.",
+      "designation": "Professor",
+      "doj": "09-11-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "SESHAGIRI RAO SUGGUNA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "LAKSHMI DARSI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "SUJATA KANDUKURI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "26-06-2015",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "MANASA MANUKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "28-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "NAGA JYOTHI VALETI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-09-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "PRAMEELA PODILI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-02-2019",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "SRILAKSHMI PAMARTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-01-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "BINDU SRI MOKAMATAM",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "YARRU SREEJA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "SHAHANAJ SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "KANVITHA PENUMUTCHU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "HANEEF SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "CHODAVARAPU SATYANARAYANA MURTHY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "GIRIDHAR BABU AMIRISETTY",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "23-02-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20.0",
+      "name": "MANOHAR PATRA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "18-08-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21.0",
+      "name": "AMALA PAYALA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22.0",
+      "name": "SRAVYA DOPPALAPUDI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-06-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23.0",
+      "name": "MEENAKSHI BOLLU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24.0",
+      "name": "MOPARTHY MARY JUNITHA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-06-2009",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25.0",
+      "name": "BABA FARIDDIN SHAIK",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26.0",
+      "name": "ANJANEYULU UMMANENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-05-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27.0",
+      "name": "LALITHA GOGINENI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28.0",
+      "name": "AKHILA BOGGAVARAPU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29.0",
+      "name": "TRIVENI LAKSHMI MARELLA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "11-09-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30.0",
+      "name": "K MURALI BABU",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31.0",
+      "name": "RAMBABU CHEMAKURTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2017",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32.0",
+      "name": "V GAJENDRA KUMAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33.0",
+      "name": "VALLURI YAMINI DEVI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34.0",
+      "name": "CHAITANYA VUNNAVA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-08-2020",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35.0",
+      "name": "BALANARASIMHA  NEERUDI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-08-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36.0",
+      "name": "VANI VEERA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10-05-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37.0",
+      "name": "NEELIMA SARIPALLI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "14-02-2018",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38.0",
+      "name": "N. SHANTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-01-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39.0",
+      "name": "D VASANTHI",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40.0",
+      "name": "MALLADI SUMANTH",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-03-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41.0",
+      "name": "C.V.JAI KUMAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "42.0",
+      "name": "V. ANJI KUMAR",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-03-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "43.0",
+      "name": "VIJAYA DURGA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "31-08-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "44.0",
+      "name": "M. FRANCIES",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-03-2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "45.0",
+      "name": "LAKSHMI DEVARAKONDA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "46.0",
+      "name": "SATYANARAYANA DIVVELA",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-01-2012",
+      "nature": "Regular"
+    }
+  ]
+}

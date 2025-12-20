@@ -1,0 +1,2875 @@
+{
+  "BSH": [
+    {
+      "S.NO": "1",
+      "NAME": "Dr.K.Srinivasarao",
+      "HIGHEST DEGREE": "M.SC.(Mathematics) and PhD",
+      "Designation": "Associate Professor",
+      "DOJ": "2017-03-30",
+      "CAY": "2019-12-15",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "2",
+      "NAME": "Dr.G.Sreedevikumari",
+      "HIGHEST DEGREE": "M.SC.(Mathematics) and PhD",
+      "Designation": "Associate Professor",
+      "DOJ": "2013-03-15",
+      "CAY": "2021-11-15",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "3",
+      "NAME": "Dr.G.Krishnakumari",
+      "HIGHEST DEGREE": "M.Sc. (Physics) and Ph.D.",
+      "Designation": "Associate Professor",
+      "DOJ": "2013-03-09",
+      "CAY": "2008-08-06",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "4",
+      "NAME": "CH.DHANALAKSHMI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2022-04-11",
+      "CAY": "2022-06-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "5",
+      "NAME": "T.P.KANAKADURGA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2021-11-17",
+      "CAY": "2022-05-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "6",
+      "NAME": "Y.SUPRAJA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-04-28",
+      "CAY": "2023-07-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "7",
+      "NAME": "D.VINODA",
+      "HIGHEST DEGREE": "M.Phil",
+      "Designation": "Assistant Professor",
+      "DOJ": "2014-08-27",
+      "CAY": "2019-07-04",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "8",
+      "NAME": "G.SURESH",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2005-01-22",
+      "CAY": "2021-11-27",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "9",
+      "NAME": "B.NAGAMANI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2016-10-07",
+      "CAY": "2023-06-30",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "10",
+      "NAME": "Dr.SK.MUNTAJ BEGUM",
+      "HIGHEST DEGREE": "M.Sc. (Physics) and Ph.D.",
+      "Designation": "Associate Professor",
+      "DOJ": "2020-02-18",
+      "CAY": "2022-06-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "11",
+      "NAME": "K.VENKAYYAMMA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2022-01-17",
+      "CAY": "2022-04-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "12",
+      "NAME": "M.APPARAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2006-04-17",
+      "CAY": "2024-06-01",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "13",
+      "NAME": "M.KALYANI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2015-07-17",
+      "CAY": "2022-10-28",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "14",
+      "NAME": "D.VANI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2000-10-06",
+      "CAY": "2024-07-01",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "15",
+      "NAME": "V.SANDYARANI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2016-10-18",
+      "CAY": "2024-05-04",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "16",
+      "NAME": "J.SUNILGOWTHAM",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2021-08-10",
+      "CAY": "2022-04-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "N0",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "17",
+      "NAME": "M.SRINIVASARAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2007-08-29",
+      "CAY": "2011-08-16",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "18",
+      "NAME": "G.SRINIVASARAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2005-09-10",
+      "CAY": "2015-07-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "19",
+      "NAME": "G.NAGALAKSHMI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2017-04-17",
+      "CAY": "2023-07-10",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "20",
+      "NAME": "P.BIKSHALU",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2022-04-01",
+      "CAY": "2022-05-26",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "21",
+      "NAME": "V.NAGARANI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2021-08-20",
+      "CAY": "2022-05-26",
+      "CAYM1": "0",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "22",
+      "NAME": "P.ANITHA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2022-04-01",
+      "CAY": "2021-12-07",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "23",
+      "NAME": "P.SRILAKSHMI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-09-23",
+      "CAY": "2022-04-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "24",
+      "NAME": "M.RADHADEVI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-04-11",
+      "CAY": "2023-06-26",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "25",
+      "NAME": "SK.PHARJANA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2017-06-02",
+      "CAY": "2021-08-25",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "26",
+      "NAME": "G.MAHESHBABU",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2012-11-13",
+      "CAY": "2022-03-21",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "27",
+      "NAME": "Y.RAJYALAKSHMI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-04-18",
+      "CAY": "2022-06-04",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "28",
+      "NAME": "J.BRAMARAMBICADEVI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2008-07-31",
+      "CAY": "2021-11-08",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "29",
+      "NAME": "K.SURYAPRABHA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "1998-09-21",
+      "CAY": "2020-11-09",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "30",
+      "NAME": "CH.ANUSHA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-01-19",
+      "CAY": "2015-04-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "31",
+      "NAME": "Dr.P.RAVICHANDRA",
+      "HIGHEST DEGREE": "M.A and Ph.D",
+      "Designation": "Associate Professor",
+      "DOJ": "2022-11-30",
+      "CAY": "2023-07-05",
+      "CAYM1": "0",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "32",
+      "NAME": "I.SURESHBABU",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2005-05-02",
+      "CAY": "2017-05-24",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "33",
+      "NAME": "G.RAMAKOTESWARARAO",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2009-07-15",
+      "CAY": "2013-06-03",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "34",
+      "NAME": "V.GOVARDHANARAO",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2007-08-31",
+      "CAY": "2023-07-25",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "35",
+      "NAME": "D.SUJATHA",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-05-09",
+      "CAY": "2022-09-26",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "36",
+      "NAME": "V.NAVEEN CHOWDARY",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2007-10-04",
+      "CAY": "2021-01-27",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "37",
+      "NAME": "K.SRI NAGAVALLI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2018-04-06",
+      "CAY": "2024-06-01",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "38",
+      "NAME": "Y.SRINIVASARAO",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2013-04-15",
+      "CAY": "2022-04-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "39",
+      "NAME": "I.VIDYAREKHA",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2009-07-11",
+      "CAY": "2019-06-27",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "40",
+      "NAME": "M.JOYCE",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "1998-08-18",
+      "CAY": "2009-07-16",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "41",
+      "NAME": "D.RAMESH",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2020-05-11",
+      "CAY": "2022-04-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "42",
+      "NAME": "S.KAVITHA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2005-10-07",
+      "CAY": "2022-07-15",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "43",
+      "NAME": "T.SIREESHA",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2017-03-14",
+      "CAY": "2019-12-11",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "44",
+      "NAME": "J NANCYNAMRTHA",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2012-07-26",
+      "CAY": "2019-12-11",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "45",
+      "NAME": "T.NAGABHARGAVI",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2021-05-17",
+      "CAY": "2022-06-13",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "46",
+      "NAME": "G.KRISHNAREDDY",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2013-06-18",
+      "CAY": "2015-06-22",
+      "CAYM1": "0",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "47",
+      "NAME": "TONY RHODESKOTCHEARA",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2016-12-19",
+      "CAY": "2019-01-21",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "48",
+      "NAME": "Dr.U.GAYATHRI",
+      "HIGHEST DEGREE": "M.Tech and Ph.D.",
+      "Designation": "Associate Professor",
+      "DOJ": "2022-12-31",
+      "CAY": "2019-10-19",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "49",
+      "NAME": "SUGUNPAUL KARYAMSETTY",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2020-01-13",
+      "CAY": "2020-11-09",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "50",
+      "NAME": "B V R SAIKRISHNA",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2019-08-17",
+      "CAY": "2019-10-17",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "51",
+      "NAME": "V SATISHBABU",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2017-07-10",
+      "CAY": "2024-06-01",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "52",
+      "NAME": "D.NAGABHUSHANAM",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2019-01-28",
+      "CAY": "2024-06-01",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "53",
+      "NAME": "JAYMUNNISA",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2009-06-21",
+      "CAY": "2022-04-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "54",
+      "NAME": "A.MEDASRIMRUNALINI",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2018-10-30",
+      "CAY": "2022-04-11",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "55",
+      "NAME": "A V RAMANA",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "1987-10-05",
+      "CAY": "2020-11-16",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "56",
+      "NAME": "A.SAKEETH",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2018-08-13",
+      "CAY": "2020-11-16",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "57",
+      "NAME": "M.SUBRAMANYAM",
+      "HIGHEST DEGREE": "MCA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2021-08-11",
+      "CAY": "2024-06-05",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "58",
+      "NAME": "A.ADIYYA",
+      "HIGHEST DEGREE": "MCA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2015-03-13",
+      "CAY": "2024-06-05",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "59",
+      "NAME": "P.RATNA KUMAR",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2010-07-28",
+      "CAY": "2015-07-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "60",
+      "NAME": "G.BABU RAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2007-04-09",
+      "CAY": "2015-07-08",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "61",
+      "NAME": "G.HANUMANTHA RAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2009-04-20",
+      "CAY": "2016-06-09",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "62",
+      "NAME": "K.VENKATESWARA RAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2008-09-15",
+      "CAY": "2016-06-09",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "63",
+      "NAME": "T.SUJATHA",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2005-09-14",
+      "CAY": "2017-06-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "64",
+      "NAME": "M.CHAITANYA",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-09-08",
+      "CAY": "2019-06-01",
+      "CAYM1": "0",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "65",
+      "NAME": "CH.VISVANATH SAI",
+      "HIGHEST DEGREE": "M.P.Ed",
+      "Designation": "Assistant Professor",
+      "DOJ": "2022-02-07",
+      "CAY": "2022-04-01",
+      "CAYM1": "0",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "66",
+      "NAME": "K.ANURADHA",
+      "HIGHEST DEGREE": "MA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2015-02-16",
+      "CAY": "2019-06-01",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "67",
+      "NAME": "DR.P.RAJASEKHAR",
+      "HIGHEST DEGREE": "M.SC.(Mathematics) and PhD",
+      "Designation": "Associate Professor",
+      "DOJ": "2022-11-22",
+      "CAY": "2024-06-26",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "68",
+      "NAME": "S.P.RANGANATH",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2013-11-29",
+      "CAY": "2022-05-04",
+      "CAYM1": "0",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "69",
+      "NAME": "T.RATNAKUMAR",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2015-06-11",
+      "CAY": "2019-11-27",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "70",
+      "NAME": "G.ANJANEYULU",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2017-03-15",
+      "CAY": "2022-06-08",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "71",
+      "NAME": "A.TEJASWI",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2019-10-17",
+      "CAY": "2022-06-24",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "72",
+      "NAME": "T.CHAKRAVARTHI",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2014-05-27",
+      "CAY": "2017-06-05",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "73",
+      "NAME": "K.SRINIVASARAO",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2007-10-12",
+      "CAY": "2024-07-21",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "74",
+      "NAME": "N.SARATH CHAND",
+      "HIGHEST DEGREE": "MCA",
+      "Designation": "Assistant Professor",
+      "DOJ": "2009-09-29",
+      "CAY": "2022-06-27",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "75",
+      "NAME": "K.SRILAKSHMI",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2011-04-30",
+      "CAY": "2023-07-22",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "76",
+      "NAME": "SK.MADEENA BEGUM",
+      "HIGHEST DEGREE": "M.Sc",
+      "Designation": "Assistant Professor",
+      "DOJ": "2010-05-10",
+      "CAY": "2022-06-21",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "77",
+      "NAME": "T.HARISH",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2023-07-27",
+      "CAY": "2023-07-31",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "78",
+      "NAME": "K.KARUNA KUMARI",
+      "HIGHEST DEGREE": "M.P.Ed",
+      "Designation": "Assistant Professor",
+      "DOJ": "2024-06-20",
+      "CAY": "2022-06-01",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "79",
+      "NAME": "K.SAMBAIAH",
+      "HIGHEST DEGREE": "M.Tech",
+      "Designation": "Assistant Professor",
+      "DOJ": "2018-04-17",
+      "CAY": "2024-07-31",
+      "CAYM1": "100",
+      "CAYM2": "0",
+      "CURRENTLY ASSOCIATED": "0",
+      "R/C": "Yes",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "80",
+      "NAME": "DR.G.RAMASAILAJA",
+      "HIGHEST DEGREE": "PH.D",
+      "Designation": "Assistant Professor",
+      "DOJ": "2015-09-05",
+      "CAY": "2008-06-15",
+      "CAYM1": "100",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "YES",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "81",
+      "NAME": "Dr.M.PANDU",
+      "HIGHEST DEGREE": "Ph.D",
+      "Designation": "Associate Professor",
+      "DOJ": "2016-03-18",
+      "CAY": "2022-07-20",
+      "CAYM1": "0",
+      "CAYM2": "100",
+      "CURRENTLY ASSOCIATED": "100",
+      "R/C": "No",
+      "DOR": "Regular"
+    },
+    {
+      "S.NO": "2",
+      "NAME": "Dr.SK.RASOOL",
+      "PAN": "AOIPS0514D",
+      "QUALIFICATION": "PH.D",
+      "HIGHEST DEGREE": "2018-07-27",
+      "SUBJECT": "LIBRARIAN",
+      "DESIGNATION": "Associate Professor",
+      "DOJ": "2024-10-14"
+    },
+    {
+      "S.NO": "3",
+      "NAME": "I.PADMAJA",
+      "PAN": "ACOPI4305C",
+      "QUALIFICATION": "MLIC",
+      "HIGHEST DEGREE": "2016-08-19",
+      "SUBJECT": "LIBRARIAN",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2021-06-21"
+    },
+    {
+      "S.NO": "2",
+      "NAME": "CH. SAI NARENDRA KUMAR",
+      "PAN": "CHDPC8248Q",
+      "QUALIFICATION": "M.PED",
+      "HIGHEST DEGREE": "2024-06-26",
+      "SUBJECT": "PD",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-09-25"
+    },
+    {
+      "S.NO": "1",
+      "NAME": "Dr.C.RAVIKANTH",
+      "PAN": "ACOPC1844Q",
+      "QUALIFICATION": "Ph.D",
+      "HIGHEST DEGREE": "2008-06-16",
+      "SUBJECT": "MECHANICAL",
+      "DESIGNATION": "Professor",
+      "DOJ": "2025-05-08"
+    },
+    {
+      "S.NO": "5",
+      "NAME": "K.SUMAPRIYA",
+      "PAN": "DCXPK1502F",
+      "QUALIFICATION": "M.Tech",
+      "HIGHEST DEGREE": "2016-10-16",
+      "SUBJECT": "MECHANICAL",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-06-23"
+    },
+    {
+      "S.NO": "2",
+      "NAME": "VELPURI HARITHA",
+      "PAN": "BUEPV5850L",
+      "QUALIFICATION": "M.TECH",
+      "HIGHEST DEGREE": "2021-12-11",
+      "SUBJECT": "ELECTRICAL AND ELECTRONICS ENGINEERING",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-06-28"
+    },
+    {
+      "S.NO": "6",
+      "NAME": "V.SANDHYA",
+      "PAN": "CDOPV6407P",
+      "QUALIFICATION": "MA",
+      "HIGHEST DEGREE": "2019-07-27",
+      "SUBJECT": "ENGLISH",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-07-01"
+    },
+    {
+      "S.NO": "7",
+      "NAME": "V.SRINIVASARAO",
+      "PAN": "AUUPV4836H",
+      "QUALIFICATION": "MA",
+      "HIGHEST DEGREE": "2010-03-03",
+      "SUBJECT": "ENGLISH",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-07-31"
+    },
+    {
+      "S.NO": "1",
+      "NAME": "DR.G.KARUNADEEPTHI",
+      "PAN": "APOPG6975M",
+      "QUALIFICATION": "M.SC(CHEMISTRY) PH.D",
+      "HIGHEST DEGREE": "2025-08-07",
+      "SUBJECT": "CHEMISTRY",
+      "DESIGNATION": "Associate Professor",
+      "DOJ": "2025-07-28"
+    },
+    {
+      "S.NO": "10",
+      "NAME": "R.SASIRANI",
+      "PAN": "HKBPR8728E",
+      "QUALIFICATION": "M.SC",
+      "HIGHEST DEGREE": "2024-06-15",
+      "SUBJECT": "CHEMISTRY",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-07-31"
+    },
+    {
+      "S.NO": "8",
+      "NAME": "B.SRINIVASARAO",
+      "PAN": "ARBPB0908J",
+      "QUALIFICATION": "M.SC",
+      "HIGHEST DEGREE": "2011-02-18",
+      "SUBJECT": "PHYSICS",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-07-31"
+    },
+    {
+      "S.NO": "14",
+      "NAME": "B.RAJU",
+      "PAN": "GZUPR7245R",
+      "QUALIFICATION": "M.SC",
+      "HIGHEST DEGREE": "2016-02-20",
+      "SUBJECT": "MATHEMATICS",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-07-01"
+    },
+    {
+      "S.NO": "15",
+      "NAME": "D.DURGANARESH",
+      "PAN": "BZDPN6628Q",
+      "QUALIFICATION": "M.SC",
+      "HIGHEST DEGREE": "2019-05-24",
+      "SUBJECT": "MATHEMATICS",
+      "DESIGNATION": "Assistant Professor",
+      "DOJ": "2025-01-21"
+    }
+  ],
+  "CIVIL": [
+    {
+      "S. No.": "1",
+      "Department": "Civil",
+      "Specialization": "STRUCTURAL",
+      "Name of the Faculty": "Dr.K.SRINIVASU",
+      "Designation": "Professor",
+      "Qualification": "Ph.D",
+      "Date of Joining": "30.04.2020",
+      "Total\nExp": "36+"
+    },
+    {
+      "S. No.": "2",
+      "Department": "Civil",
+      "Specialization": "STRUCTURAL",
+      "Name of the Faculty": "Dr.K.ChandraMouli",
+      "Designation": "Professor & HOD",
+      "Qualification": "Ph.D",
+      "Date of Joining": "7/6/2010",
+      "Total\nExp": "35+"
+    },
+    {
+      "S. No.": "3",
+      "Department": "Civil",
+      "Specialization": "STRUCTURAL",
+      "Name of the Faculty": "B.Narendra",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "27/08/2018",
+      "Total\nExp": "5"
+    },
+    {
+      "S. No.": "4",
+      "Department": "Civil",
+      "Specialization": "Transportation Engineering",
+      "Name of the Faculty": "K.Divya",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "06/01/2018",
+      "Total\nExp": "5"
+    },
+    {
+      "S. No.": "5",
+      "Department": "Civil",
+      "Specialization": "STRUCTURAL",
+      "Name of the Faculty": "O.Suraj",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "07/02/2022",
+      "Total\nExp": "1"
+    },
+    {
+      "S. No.": "6",
+      "Department": "Civil",
+      "Specialization": "STRUCTURAL",
+      "Name of the Faculty": "T.Yaswanth",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "14/11/2022",
+      "Total\nExp": "3 months"
+    },
+    {
+      "S. No.": "7",
+      "Department": "Civil",
+      "Specialization": "STRUCTURAL",
+      "Name of the Faculty": "SHAIK SAMAD",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "14/11/2022",
+      "Total\nExp": "3 months"
+    },
+    {
+      "S. No.": "8",
+      "Department": "Civil",
+      "Specialization": "Structural",
+      "Name of the Faculty": "M.Chaitanya Nava Kumar",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "03/06/2013",
+      "Total\nExp": "10"
+    },
+    {
+      "S. No.": "9",
+      "Department": "Civil",
+      "Specialization": "Structural",
+      "Name of the Faculty": "JSN Chaitanya",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "9/6/2016",
+      "Total\nExp": "8"
+    },
+    {
+      "S. No.": "",
+      "Department": "Civil",
+      "Specialization": "Structural",
+      "Name of the Faculty": "Sheikh Sahera",
+      "Designation": "Asst Professor",
+      "Qualification": "M.Tech",
+      "Date of Joining": "6/6/2013",
+      "Total\nExp": "11"
+    }
+  ],
+  "CSE": [
+    {
+      "S.No": "1",
+      "Name of the Faculty": "Dr.K.Nageswara Rao",
+      "Qualification": "Ph.D",
+      "Designation": "Professor & HOD",
+      "Date of Joining": "28.05.2019",
+      "PAN Number": "AGZPK9875A",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "2",
+      "Name of the Faculty": "Dr. J.Chandrasekhar",
+      "Qualification": "Ph.D",
+      "Designation": "Professor",
+      "Date of Joining": "11.12.2018",
+      "PAN Number": "AJBPJ5874D",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "3",
+      "Name of the Faculty": "Dr Dara Vikram",
+      "Qualification": "Ph.D",
+      "Designation": "Professor",
+      "Date of Joining": "09.01.2020",
+      "PAN Number": "CHSPD3354F",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "4",
+      "Name of the Faculty": "Dr Kode Rajiv",
+      "Qualification": "Ph.D",
+      "Designation": "Associate Professor",
+      "Date of Joining": "21.12.2020",
+      "PAN Number": "BBEPK6502R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "5",
+      "Name of the Faculty": "Dr Y V Raghava Rao",
+      "Qualification": "Ph.D",
+      "Designation": "Professor & DEAN",
+      "Date of Joining": "03.05.2021",
+      "PAN Number": "ACDPY4427C",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "6",
+      "Name of the Faculty": "Dr G Mahesh",
+      "Qualification": "Ph.D",
+      "Designation": "Associate Professor",
+      "Date of Joining": "15.04.2022",
+      "PAN Number": "BPPPG8114Q",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "7",
+      "Name of the Faculty": "Dr G Kalyani",
+      "Qualification": "Ph.D",
+      "Designation": "Associate Professor",
+      "Date of Joining": "18.05.2023",
+      "PAN Number": "HSKPK9569M",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "8",
+      "Name of the Faculty": "Mr D Koteswara Rao",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.11.2008",
+      "PAN Number": "APYPD0479D",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "9",
+      "Name of the Faculty": "Mr I Nageswara Rao",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "06.01.2016",
+      "PAN Number": "AAJPE3195R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "10",
+      "Name of the Faculty": "Mr P Aravind",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "06.10.2016",
+      "PAN Number": "BTYPP5435L",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "11",
+      "Name of the Faculty": "Mr. V.K.Pratap",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "17.12.2018",
+      "PAN Number": "AHJPV7914J",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "12",
+      "Name of the Faculty": "Mrs. Y.Jessy Kumari",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "10.01.2019",
+      "PAN Number": "AQXPY6818K",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "13",
+      "Name of the Faculty": "Mrs. K.Manvitha",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.07.2019",
+      "PAN Number": "FRNPK0670R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "14",
+      "Name of the Faculty": "Mr Kommuri Balaji",
+      "Qualification": "MS",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "18.05.2020",
+      "PAN Number": "BZSPB9501P",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "15",
+      "Name of the Faculty": "Mr K Rama Koteswara Rao",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.09.2020",
+      "PAN Number": "EBJPK8148B",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "16",
+      "Name of the Faculty": "Mrs. D.Thirupathamma",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "03.02.2021",
+      "PAN Number": "COTPD0280A",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "17",
+      "Name of the Faculty": "Mr. B.Rajashekhar",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "09.03.2021",
+      "PAN Number": "CRVPB4846F",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "18",
+      "Name of the Faculty": "Mrs M Uma Devi",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "12.04.2021",
+      "PAN Number": "CSTPM2022D",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "19",
+      "Name of the Faculty": "Mr M Arunkumar",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "03.05.2021",
+      "PAN Number": "AMAPM7701Q",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "20",
+      "Name of the Faculty": "Mr G Ashok Babu",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "03.05.2021",
+      "PAN Number": "BZXPG5143F",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "21",
+      "Name of the Faculty": "Mrs Kopuri Lavanya",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "12.05.2021",
+      "PAN Number": "EBQPK7677J",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "22",
+      "Name of the Faculty": "Mrs P.Ratna Kumari",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.09.2021",
+      "PAN Number": "NPYPY5159E",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "23",
+      "Name of the Faculty": "Ms.Ch.Bindu Madhavi",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "04.10.2021",
+      "PAN Number": "BISPC5648H",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "24",
+      "Name of the Faculty": "Mrs K. Kavya Sri",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "09.02.2022",
+      "PAN Number": "FLIPS5042C",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "25",
+      "Name of the Faculty": "Mr Ganta Srikanth",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "09.06.2022",
+      "PAN Number": "NFNPS3820D",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "26",
+      "Name of the Faculty": "Mrs K Sai Sulochana",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "02.10.2023",
+      "PAN Number": "CJDPK3471R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "27",
+      "Name of the Faculty": "Mrs Sk Hussainbi",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.01.2024",
+      "PAN Number": "DFJPS0129M",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "28",
+      "Name of the Faculty": "Mrs S Anusha",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "20.02.2024",
+      "PAN Number": "GAUPS1584K",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "29",
+      "Name of the Faculty": "Mr Addanki Praveen",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "09.10.2024",
+      "PAN Number": "CNKPA0778G",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "30",
+      "Name of the Faculty": "Ms.S.Sowjanya",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "02.03.2021",
+      "PAN Number": "EEZPS2467P",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "31",
+      "Name of the Faculty": "Mr P Laxma Chary",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "02.08.2024",
+      "PAN Number": "BZUPP9533R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "32",
+      "Name of the Faculty": "Dr U Gayatri",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.08.2024",
+      "PAN Number": "ACFPU2313R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "33",
+      "Name of the Faculty": "Mr K Tony Rhodes",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.08.2024",
+      "PAN Number": "EPLPK8768D",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "34",
+      "Name of the Faculty": "Mr B Siva Nagaraju",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.08.2024",
+      "PAN Number": "BQCPB1494C",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "35",
+      "Name of the Faculty": "Mr B Mahesh",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "02.08.2024",
+      "PAN Number": "JRRPM7346N",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "36",
+      "Name of the Faculty": "Mrs Prathyusha Ch",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "01.08.2024",
+      "PAN Number": "CAUPP0712Q",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "37",
+      "Name of the Faculty": "Mr G Suresh",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "02.08.2024",
+      "PAN Number": "AXMPG0182E",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "38",
+      "Name of the Faculty": "Mr Dharma Rao Pamidi",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "05.09.2024",
+      "PAN Number": "AUOPP9859Q",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "39",
+      "Name of the Faculty": "Mrs G Madhuri",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "05.09.2024",
+      "PAN Number": "GJPPM7539Q",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "40",
+      "Name of the Faculty": "Mr S Haribabu",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "05.09.2024",
+      "PAN Number": "AJEPH3310F",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "41",
+      "Name of the Faculty": "Mrs V Nandini",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "06.09.2024",
+      "PAN Number": "BTTPN7946M",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "42",
+      "Name of the Faculty": "Mr G Srikanth",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "05.09.2024",
+      "PAN Number": "OPYPS6529M",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "43",
+      "Name of the Faculty": "Mr R Siav kumar",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "07.09.2024",
+      "PAN Number": "BEUPR3613H",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "44",
+      "Name of the Faculty": "Mrs Karishma Bhanu",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "03.09.2025",
+      "PAN Number": "GATPB5713A",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "9",
+      "Name of the Faculty": "Mrs P Sujatha",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2012-12-21",
+      "PAN Number": "CDTPS3716F",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "15",
+      "Name of the Faculty": "Ms. N.Kanthi Priyadarsini",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2019-12-13",
+      "PAN Number": "ASUPN0182C",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "18",
+      "Name of the Faculty": "Mrs. Raziya Sulthana",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2021-02-03",
+      "PAN Number": "FMBPP4788J",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "20",
+      "Name of the Faculty": "Mrs. P. Swathi",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2021-02-03",
+      "PAN Number": "BBEPP2042K",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "27",
+      "Name of the Faculty": "Mr U U Veerendra",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2021-07-01",
+      "PAN Number": "ALEPV8806A",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "29",
+      "Name of the Faculty": "Mr.D.Hari Krishna",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2021-09-06",
+      "PAN Number": "BCJPD3175R",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "31",
+      "Name of the Faculty": "Ms. G.Sowmya",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-01-29",
+      "PAN Number": "CDZPG3632C",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "33",
+      "Name of the Faculty": "Mr N.Vamsi Krishna",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-02-21",
+      "PAN Number": "APSPN0854N",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "34",
+      "Name of the Faculty": "Mr J Ramu",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-03-09",
+      "PAN Number": "AISPJ9290M",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "36",
+      "Name of the Faculty": "Mrs. G.Sindhuja",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-10-03",
+      "PAN Number": "BRJPG4572Q",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "3",
+      "Name of the Faculty": "Dr. D Sarada Mani",
+      "Qualification": "Ph.D",
+      "Designation": "Professor",
+      "Date of Joining": "2019-08-29",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "15",
+      "Name of the Faculty": "Mrs B Sujatha",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2019-06-10",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "20",
+      "Name of the Faculty": "Mrs M Alekhya",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2021-01-04",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "30",
+      "Name of the Faculty": "Mr V.Suresh Babu",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2021-06-03",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "39",
+      "Name of the Faculty": "Mr N Pradeep Kumar",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-06-01",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "41",
+      "Name of the Faculty": "Mrs Shaik Roshna",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-07-01",
+      "Nature of Association": "Regular"
+    },
+    {
+      "S.No": "33",
+      "Name of the Faculty": "Mrs V.Asha Latha",
+      "Qualification": "M.Tech",
+      "Designation": "Assistant Professor",
+      "Date of Joining": "2022-01-22",
+      "PAN Number": "ANEPL3244L",
+      "Nature of Association": "Regular"
+    }
+  ],
+  "ECE": [
+    {
+      "S. No": "1",
+      "Name of the Faculty": "Dr. SANJAY DOLA S",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "2",
+      "Name of the Faculty": "Dr. SRIHARI RAO KOMATINENI",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "3",
+      "Name of the Faculty": "Dr. CHETTY KALAI SELVAN",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "4",
+      "Name of the Faculty": "Dr. SAIDAIAH BANDI",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "5",
+      "Name of the Faculty": "Dr. JAMPANI KRISHNA KISHORE",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "6",
+      "Name of the Faculty": "Dr. V. NAGA MALLESWARI",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "7",
+      "Name of the Faculty": "Dr. RAVI MANCHARLA",
+      "Designation": "Associate Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "8",
+      "Name of the Faculty": "Dr. NAGA JYOTHI VALETI",
+      "Designation": "Associate Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "9",
+      "Name of the Faculty": "CHEKURI VENUGOPALA CHOWDARY",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "10",
+      "Name of the Faculty": "SESHAGIRI RAO SUGGUNA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "11",
+      "Name of the Faculty": "SUJATA KANDUKURI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "12",
+      "Name of the Faculty": "MANASA MANUKONDA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "13",
+      "Name of the Faculty": "PURNE SRINIVASARAO",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "14",
+      "Name of the Faculty": "PRAMEELA PODILI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "15",
+      "Name of the Faculty": "SAI KUMAR GOPU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "16",
+      "Name of the Faculty": "BINDU SRI MOKAMATAM",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "17",
+      "Name of the Faculty": "YARRU SREEJA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "18",
+      "Name of the Faculty": "SHAHANAJ SHAIK",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "19",
+      "Name of the Faculty": "KANVITHA PENUMUTCHU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "20",
+      "Name of the Faculty": "HANEEF SHAIK",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "21",
+      "Name of the Faculty": "PAVANI VELAGA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "22",
+      "Name of the Faculty": "BHEEMANA INDU LATHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "23",
+      "Name of the Faculty": "VIJAY KUMAR ANKIPALLI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "24",
+      "Name of the Faculty": "MANOHAR PATRA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "25",
+      "Name of the Faculty": "AMALA PAYALA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "26",
+      "Name of the Faculty": "SRAVYA DOPPALAPUDI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "27",
+      "Name of the Faculty": "MEENAKSHI BOLLU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "28",
+      "Name of the Faculty": "MOPARTHY MARY JUNITHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "29",
+      "Name of the Faculty": "ANJANEYULU UMMANENI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "30",
+      "Name of the Faculty": "LALITHA GOGINENI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "31",
+      "Name of the Faculty": "RAMBABU CHEMAKURTHI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "32",
+      "Name of the Faculty": "CHAITANYA VUNNAVA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "33",
+      "Name of the Faculty": "VENKETESWARARAO VENTURUMILLI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "34",
+      "Name of the Faculty": "MODUKURI CHIRANJEEVI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "35",
+      "Name of the Faculty": "PEYYALA BALA KRISHNA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "36",
+      "Name of the Faculty": "KUMMARI SREENIVASARAO",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "37",
+      "Name of the Faculty": "PUPPALLA YOJITHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "38",
+      "Name of the Faculty": "BALUDRA RAM CHANDINI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "39",
+      "Name of the Faculty": "NALAJALA PAVAN KUMAR",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "40",
+      "Name of the Faculty": "KOMMU SIRISHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "41",
+      "Name of the Faculty": "GADDAM KOTESWARARAO",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "42",
+      "Name of the Faculty": "EDARA VIJAYA SANTHI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "43",
+      "Name of the Faculty": "NADENDLA SATYANARAYANA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "44",
+      "Name of the Faculty": "GARIGIPATI VIJAYA KUMAR",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "45",
+      "Name of the Faculty": "GANAPAVARAPU VENKATESWARLU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "46",
+      "Name of the Faculty": "ALLAM KANCHANA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "1",
+      "Name of the Faculty": "Dr. SANJAY DOLA S",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "2",
+      "Name of the Faculty": "Dr. SRIHARI RAO KOMATINENI",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "3",
+      "Name of the Faculty": "Dr. CHETTY KALAI SELVAN",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "4",
+      "Name of the Faculty": "Dr. SAIDAIAH BANDI",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "5",
+      "Name of the Faculty": "Dr. JAMPANI KRISHNA KISHORE",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "6",
+      "Name of the Faculty": "Dr. V. NAGA MALLESWARI",
+      "Designation": "Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "7",
+      "Name of the Faculty": "Dr. RAVI MANCHARLA",
+      "Designation": "Associate Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "8",
+      "Name of the Faculty": "Dr. NAGA JYOTHI VALETI",
+      "Designation": "Associate Professor",
+      "Qualification": "Ph.D.",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "9",
+      "Name of the Faculty": "CHEKURI VENUGOPALA CHOWDARY",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "10",
+      "Name of the Faculty": "SESHAGIRI RAO SUGGUNA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "11",
+      "Name of the Faculty": "SUJATA KANDUKURI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "12",
+      "Name of the Faculty": "MANASA MANUKONDA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "13",
+      "Name of the Faculty": "PURNE SRINIVASARAO",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "14",
+      "Name of the Faculty": "PRAMEELA PODILI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "15",
+      "Name of the Faculty": "SAI KUMAR GOPU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "16",
+      "Name of the Faculty": "BINDU SRI MOKAMATAM",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "17",
+      "Name of the Faculty": "YARRU SREEJA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "18",
+      "Name of the Faculty": "SHAHANAJ SHAIK",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "19",
+      "Name of the Faculty": "KANVITHA PENUMUTCHU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "20",
+      "Name of the Faculty": "HANEEF SHAIK",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "21",
+      "Name of the Faculty": "PAVANI VELAGA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "22",
+      "Name of the Faculty": "BHEEMANA INDU LATHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "23",
+      "Name of the Faculty": "VIJAY KUMAR ANKIPALLI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "24",
+      "Name of the Faculty": "MANOHAR PATRA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "25",
+      "Name of the Faculty": "AMALA PAYALA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "26",
+      "Name of the Faculty": "SRAVYA DOPPALAPUDI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "27",
+      "Name of the Faculty": "MEENAKSHI BOLLU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "28",
+      "Name of the Faculty": "MOPARTHY MARY JUNITHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "29",
+      "Name of the Faculty": "ANJANEYULU UMMANENI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "30",
+      "Name of the Faculty": "LALITHA GOGINENI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "31",
+      "Name of the Faculty": "RAMBABU CHEMAKURTHI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "32",
+      "Name of the Faculty": "CHAITANYA VUNNAVA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "33",
+      "Name of the Faculty": "VENKETESWARARAO VENTURUMILLI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "34",
+      "Name of the Faculty": "MODUKURI CHIRANJEEVI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "35",
+      "Name of the Faculty": "PEYYALA BALA KRISHNA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "36",
+      "Name of the Faculty": "KUMMARI SREENIVASARAO",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "37",
+      "Name of the Faculty": "PUPPALLA YOJITHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "38",
+      "Name of the Faculty": "BALUDRA RAM CHANDINI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "39",
+      "Name of the Faculty": "NALAJALA PAVAN KUMAR",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "40",
+      "Name of the Faculty": "KOMMU SIRISHA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "41",
+      "Name of the Faculty": "GADDAM KOTESWARARAO",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "42",
+      "Name of the Faculty": "EDARA VIJAYA SANTHI",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "43",
+      "Name of the Faculty": "NADENDLA SATYANARAYANA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "44",
+      "Name of the Faculty": "GARIGIPATI VIJAYA KUMAR",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "45",
+      "Name of the Faculty": "GANAPAVARAPU VENKATESWARLU",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    },
+    {
+      "S. No": "46",
+      "Name of the Faculty": "ALLAM KANCHANA",
+      "Designation": "Assistant Professor",
+      "Qualification": "M.Tech",
+      "Nature of association": "Regular"
+    }
+  ],
+  "CSE-DS": [
+    {
+      "S.No": "1",
+      "NAME": "Dr. M. Pavan Kumar",
+      "Designation": "Professor",
+      "DOJ": "2020-05-15",
+      "QUALAIFICATION": "Ph.D",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "2",
+      "NAME": "Dr. K. Poorna Chandra Rao",
+      "Designation": "Professor",
+      "DOJ": "2021-07-09",
+      "QUALAIFICATION": "Ph.D",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "3",
+      "NAME": "Dr. B. Tulasi",
+      "Designation": "Professor",
+      "DOJ": "2019-12-16",
+      "QUALAIFICATION": "Ph.D",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "4",
+      "NAME": "Dr. B. Bhavani",
+      "Designation": "Associate Professor",
+      "DOJ": "2020-12-10",
+      "QUALAIFICATION": "Ph.D",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "5",
+      "NAME": "M. Baji Sita Rao",
+      "Designation": "Associate Professor",
+      "DOJ": "2021-12-01",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "6",
+      "NAME": "G. Jagadeesh Babu",
+      "Designation": "Associate Professor",
+      "DOJ": "2020-06-10",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "7",
+      "NAME": "M. Pradeep Chandra",
+      "Designation": "Associate Professor",
+      "DOJ": "2021-05-22",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "8",
+      "NAME": "K. Satyanarayana",
+      "Designation": "Associate Professor",
+      "DOJ": "2017-07-05",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "9",
+      "NAME": "A. Benarji",
+      "Designation": "Associate Professor",
+      "DOJ": "2019-08-19",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "10",
+      "NAME": "M. Ambarisha",
+      "Designation": "Associate Professor",
+      "DOJ": "2021-06-12",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "11",
+      "NAME": "K. Mounika",
+      "Designation": "Assitant Professor",
+      "DOJ": "2019-04-09",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "12",
+      "NAME": "Shaik Salma Sultana",
+      "Designation": "Assitant Professor",
+      "DOJ": "2017-07-07",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "13",
+      "NAME": "J.Jyothi",
+      "Designation": "Assitant Professor",
+      "DOJ": "2020-01-06",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "14",
+      "NAME": "V. Swetha",
+      "Designation": "Assitant Professor",
+      "DOJ": "2022-05-09",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "15",
+      "NAME": "k.s.v. Ganesh",
+      "Designation": "Assitant Professor",
+      "DOJ": "2018-09-18",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "16",
+      "NAME": "D. Sridhar",
+      "Designation": "Assitant Professor",
+      "DOJ": "2012-12-12",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "17",
+      "NAME": "P. Shanthi Priya",
+      "Designation": "Assitant Professor",
+      "DOJ": "2020-05-15",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "18",
+      "NAME": "R. Sravanthi",
+      "Designation": "Assitant Professor",
+      "DOJ": "2018-05-14",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "19",
+      "NAME": "Shaik. Irfan Basha",
+      "Designation": "Assitant Professor",
+      "DOJ": "2022-05-10",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "20",
+      "NAME": "I. Kalyan Kumar",
+      "Designation": "Assitant Professor",
+      "DOJ": "2022-02-02",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "21",
+      "NAME": "Suneetha",
+      "Designation": "Assitant Professor",
+      "DOJ": "2025-07-20",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "22",
+      "NAME": "B. Srinivas",
+      "Designation": "Assitant Professor",
+      "DOJ": "2025-07-20",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "23",
+      "NAME": "M. Anusha",
+      "Designation": "Assitant Professor",
+      "DOJ": "2024-07-12",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "24",
+      "NAME": "P. Prasanna Kumari",
+      "Designation": "Assitant Professor",
+      "DOJ": "2025-07-20",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "25",
+      "NAME": "G. Prudvee Raj",
+      "Designation": "Assitant Professor",
+      "DOJ": "2021-05-23",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "26",
+      "NAME": "R. Hari Babu",
+      "Designation": "Assitant Professor",
+      "DOJ": "2021-05-22",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "27",
+      "NAME": "G. Madhuri",
+      "Designation": "Assitant Professor",
+      "DOJ": "2021-06-10",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "28",
+      "NAME": "A. Chengamma",
+      "Designation": "Assitant Professor",
+      "DOJ": "2022-07-07",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "29",
+      "NAME": "C. Vinoth",
+      "Designation": "Assitant Professor",
+      "DOJ": "2021-05-06",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "30",
+      "NAME": "T. Nandini",
+      "Designation": "Assitant Professor",
+      "DOJ": "2020-04-03",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    },
+    {
+      "S.No": "31",
+      "NAME": "C. Dhatchana Moorthy",
+      "Designation": "Assitant Professor",
+      "DOJ": "2017-09-15",
+      "QUALAIFICATION": "M.Tech",
+      "REGULAR/ADHOC": "REGULAR"
+    }
+  ],
+  "IT": [
+    {
+      "DEPARTMENT OF INFORMATION TECHNOLOGY": "Faculty List A.Y: 2025-26"
+    },
+    {
+      "Name": "BATTULA SOWJANYA",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "AMGPB4443C",
+      "University Degree": "M.Tech.",
+      "Date of Receiving Degree": "24/10/2011",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "20/03/2023",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "PATCHALA SRINIVAS",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "CAUPP4414P",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "27/08/2018",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "30/06/2023",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "GARNEPUDI SRAVANILATHA",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "CKUPG6787L",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "27/09/2021",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "18/07/2023",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "USHA CHERUKURI",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "AGNPC4621Q",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "20/12/2013",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "30/06/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "PURNIMA ANNPUREDDY",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "BZEPA5209F",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "24/09/2014",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "06/06/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "KONJETI GAYATHRI",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "ENNBK9054E",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "26/10/2017",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "06/06/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "DUTTA DEVIKA",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "FFEPD1851Q",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "28/04/2022",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "27/01/2021",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "KOTA TRIVENI DEEPTHI",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "GKBPK4116E",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "17/08/2018",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "04/07/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "DESU SABARI GIRINATH BABU",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "BEWPD1223D",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "29/12/2014",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "01/06/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "MEDA MALLIKARJUNA RAO",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "CSYPM7167A",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "15/09/2014",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "15/07/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "NADAPARAJU DURGA RAO",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "GOIPD3934Q",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "28/05/2018",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "04/07/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "EDURU NAGARJUNA",
+      "Current Designation": "Professor",
+      "PAN No.": "ABTPE8752D",
+      "University Degree": "Ph.D",
+      "Date of Receiving Degree": "02/11/2016",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "02/06/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "GANGAPATNAM SRIVIDYA",
+      "Current Designation": "Professor",
+      "PAN No.": "BAVPG0343L",
+      "University Degree": "Ph.D",
+      "Date of Receiving Degree": "23/07/2018",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "13/06/2022",
+      "Association Type": "Regular"
+    },
+    {
+      "Name": "P. Nalini",
+      "Current Designation": "Assistant Professor",
+      "PAN No.": "AVHPP9455C",
+      "University Degree": "M.Tech",
+      "Date of Receiving Degree": "",
+      "Area of Specialization": "COMPUTER SCIENCE & ENGINEERING",
+      "Initial Date of Joining": "11/08/2023",
+      "Association Type": "Regular"
+    }
+  ]
+}

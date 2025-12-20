@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,57 +10,62 @@ import { Lock, User, GraduationCap, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/lib/supabase";
 
-export default function LoginPage() {
+function LoginContent() {
     const router = useRouter();
+    const searchParams = useSearchParams();
     const [role, setRole] = useState("student");
     const [id, setId] = useState("");
     const [password, setPassword] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
-    // Form Handlers
-    const handleLogin = async (e: React.FormEvent) => {
-        e.preventDefault();
+    // Auto-select role from query params
+    useEffect(() => {
+        const roleParam = searchParams.get('role');
+        if (roleParam === 'dean') setRole('admin');
+        else if (roleParam === 'faculty') setRole('faculty');
+        else if (roleParam === 'student') setRole('student');
+    }, [searchParams]);
+
+    // Core Login Logic
+    const attemptLogin = async (currentRole: string, currentId: string, currentPassword?: string) => {
         setIsLoading(true);
 
         try {
             // 1. Verify credentials against Supabase
-            // Note: For this demo, we are looking up the ID directly. 
-            // In production, this would use supabase.auth.signInWithPassword or Firebase OTP.
-
             let userFound = null;
-            let userRole = role;
             let redirectPath = "";
+            let queryId = currentId;
 
-            if (role === 'student') {
+            if (currentRole === 'student') {
                 // Look up student by roll number or email
-                let { data, error } = await supabase
-                    .from('student_profiles')
+                let { data, error } = await (supabase
+                    .from('student_profiles') as any)
                     .select('id, first_name, last_name, roll_number, email')
-                    .or(`roll_number.eq.${id.toUpperCase()},email.eq.${id.toLowerCase()}`)
+                    .or(`roll_number.eq.${queryId.toUpperCase()},email.eq.${queryId.toLowerCase()}`)
                     .single();
 
                 if (data) {
                     userFound = { ...data, name: `${data.first_name} ${data.last_name}`, role: 'student' };
                     redirectPath = '/student/dashboard';
                 }
-            } else if (role === 'faculty') {
+            } else if (currentRole === 'faculty') {
                 // Try to find by employee_id first, then by email
-                let { data, error } = await supabase
-                    .from('faculty_profiles')
+                let { data, error } = await (supabase
+                    .from('faculty_profiles') as any)
                     .select('id, first_name, last_name, employee_id, email')
-                    .or(`employee_id.eq.${id.toUpperCase()},email.eq.${id.toLowerCase()}`)
+                    .or(`employee_id.eq.${queryId.toUpperCase()},email.eq.${queryId.toLowerCase()}`)
                     .single();
 
                 if (data) {
                     userFound = { ...data, name: `Dr. ${data.first_name} ${data.last_name}`, role: 'faculty' };
                     redirectPath = '/faculty/dashboard';
                 }
-            } else if (role === 'admin') {
+            } else if (currentRole === 'admin') {
                 // Check for Dean user in users table
-                const { data, error } = await supabase
-                    .from('users')
+                const { data, error } = await (supabase
+                    .from('users') as any)
                     .select('id, email, role')
-                    .eq('email', id.toLowerCase())
+                    .eq('email', queryId.toLowerCase())
                     .eq('role', 'dean')
                     .single();
 
@@ -69,7 +74,7 @@ export default function LoginPage() {
                     redirectPath = '/dean/dashboard';
                 } else {
                     // Fallback for generic admin
-                    if (id.toLowerCase() === 'admin' && password === 'admin123') {
+                    if (queryId.toLowerCase() === 'admin' && currentPassword === 'admin123') {
                         userFound = { name: 'Administrator', role: 'admin' };
                         redirectPath = '/admin/dashboard';
                     }
@@ -77,11 +82,10 @@ export default function LoginPage() {
             }
 
             if (userFound) {
-                // 2. Set Session (Mock Session using Cookies/LocalStorage for this demo)
-                // We'll store the user info in localStorage to persist across pages for the demo
+                // 2. Set Session
                 if (typeof window !== 'undefined') {
                     localStorage.setItem('nriit_user', JSON.stringify(userFound));
-                    document.cookie = `nriit_role=${userRole}; path=/`;
+                    document.cookie = `nriit_role=${currentRole}; path=/`;
                 }
 
                 toast.success(`Welcome back, ${userFound.name}`);
@@ -96,6 +100,12 @@ export default function LoginPage() {
         } finally {
             setIsLoading(false);
         }
+    };
+
+    // Form Handlers
+    const handleLogin = async (e: React.FormEvent) => {
+        e.preventDefault();
+        await attemptLogin(role, id, password);
     };
 
     return (
@@ -117,6 +127,7 @@ export default function LoginPage() {
                     <CardContent className="space-y-4">
                         <div className="space-y-2">
                             <label className="text-sm font-medium text-gray-300">Select Role</label>
+                            <span className="text-white"> role is {role} </span>
                             <Select value={role} onValueChange={setRole}>
                                 <SelectTrigger className="bg-white/5 border-white/10 text-white">
                                     <SelectValue placeholder="Select your role" />
@@ -185,6 +196,34 @@ export default function LoginPage() {
                                 Forgot Password?
                             </button>
                         </div>
+
+                        {/* Developer Shortcuts */}
+                        <div className="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-white/10">
+                            <Button
+                                type="button"
+                                variant="outline"
+                                className="text-xs h-8 bg-white/5 border-white/10 hover:bg-white/10"
+                                onClick={() => attemptLogin('admin', 'dean@nriit.ac.in', 'admin123')}
+                            >
+                                Dev: Dean
+                            </Button>
+                            <Button
+                                type="button"
+                                variant="outline"
+                                className="text-xs h-8 bg-white/5 border-white/10 hover:bg-white/10"
+                                onClick={() => attemptLogin('faculty', 'FACCSE001')}
+                            >
+                                Dev: Fac
+                            </Button>
+                            <Button
+                                type="button"
+                                variant="outline"
+                                className="text-xs h-8 bg-white/5 border-white/10 hover:bg-white/10"
+                                onClick={() => attemptLogin('student', '23KP1A0101')}
+                            >
+                                Dev: Stu
+                            </Button>
+                        </div>
                     </CardFooter>
                 </form>
             </Card>
@@ -193,5 +232,13 @@ export default function LoginPage() {
                 © 2024 NRI Institute of Technology. All rights reserved.
             </div>
         </div>
+    );
+}
+
+export default function LoginPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-slate-900 flex items-center justify-center text-white">Loading Portal...</div>}>
+            <LoginContent />
+        </Suspense>
     );
 }

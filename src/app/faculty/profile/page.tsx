@@ -8,8 +8,11 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Mail, Phone, MapPin, Award, BookOpen, GraduationCap, Link2 } from "lucide-react";
+import { Mail, Phone, MapPin, Award, BookOpen, GraduationCap, Link2, Calendar, Briefcase, CreditCard } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { supabase } from "@/lib/supabase";
+import { FacultyProfile } from "@/types";
 
 export default function FacultyProfilePage() {
     const [user, setUser] = useState<any>({
@@ -18,26 +21,52 @@ export default function FacultyProfilePage() {
         email: "faculty@nriit.ac.in",
         role: "Faculty"
     });
+    const [facultyProfile, setFacultyProfile] = useState<FacultyProfile | null>(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const storedUser = localStorage.getItem("nriit_user");
-        if (storedUser) {
-            try {
-                setUser(JSON.parse(storedUser));
-            } catch (e) {
-                console.error("Failed to parse user data");
+        const fetchProfile = async () => {
+            const storedUser = localStorage.getItem("nriit_user");
+            if (storedUser) {
+                try {
+                    const parsedUser = JSON.parse(storedUser);
+                    setUser(parsedUser);
+
+                    if (parsedUser.email) {
+                        const { data, error } = await supabase
+                            .from('faculty_profiles')
+                            .select('*')
+                            .eq('email', parsedUser.email)
+                            .single();
+
+                        if (data) {
+                            console.log("Fetched NBA Profile Data:", data);
+                            setFacultyProfile(data);
+                        }
+                    }
+                } catch (e) {
+                    console.error("Failed to parse user data or fetch profile", e);
+                } finally {
+                    setLoading(false);
+                }
             }
-        }
+        };
+        fetchProfile();
     }, []);
 
     const profile = {
-        ...user,
-        designation: "Associate Professor",
-        department: "Computer Science & Engineering",
-        qualification: "Ph.D. in Machine Learning, M.Tech (CSE)",
-        experience: "12 Years",
-        specialization: "AI/ML, Data Mining, Cloud Computing",
-        phone: "+91 91234 56789",
+        name: facultyProfile ? `${facultyProfile.first_name} ${facultyProfile.last_name}` : user.name,
+        id: facultyProfile?.employee_id || user.id,
+        email: facultyProfile?.email || user.email,
+        designation: facultyProfile?.designation || "Associate Professor",
+        department: facultyProfile?.dept_code || "Computer Science & Engineering",
+        qualification: facultyProfile?.qualification || "Ph.D. in Machine Learning, M.Tech (CSE)",
+        experience: facultyProfile?.experience_years ? `${facultyProfile.experience_years} Years` : "12 Years",
+        specialization: facultyProfile?.specialization || "AI/ML, Data Mining, Cloud Computing",
+        phone: facultyProfile?.phone || "+91 91234 56789",
+        joining_date: facultyProfile?.date_of_joining,
+        nature: facultyProfile?.nature_of_association || "Regular",
+        pan: facultyProfile?.pan_number,
         publications: [
             "A Novel Approach to Data Mining in Healthcare (IEEE, 2023)",
             "Cloud Security Protocols: A Survey (Springer, 2022)",
@@ -70,6 +99,7 @@ export default function FacultyProfilePage() {
                             {profile.designation}
                         </CardDescription>
                         <Badge variant="outline" className="w-fit mx-auto mt-2 text-xs">{profile.id}</Badge>
+                        {profile.pan && <Badge variant="secondary" className="w-fit mx-auto mt-1 text-[10px] text-gray-500">NBA Verified</Badge>}
                     </CardHeader>
                     <CardContent className="space-y-4 pt-4">
                         <div className="flex items-center gap-3 text-sm text-gray-600">
@@ -84,6 +114,26 @@ export default function FacultyProfilePage() {
                             <GraduationCap className="w-4 h-4 text-orange-500" />
                             <span>{profile.qualification}</span>
                         </div>
+
+                        {/* New NBA Fields */}
+                        {profile.joining_date && (
+                            <div className="flex items-center gap-3 text-sm text-gray-600">
+                                <Calendar className="w-4 h-4 text-blue-500" />
+                                <span>Joined: {new Date(profile.joining_date).toLocaleDateString()}</span>
+                            </div>
+                        )}
+                        {profile.nature && (
+                            <div className="flex items-center gap-3 text-sm text-gray-600">
+                                <Briefcase className="w-4 h-4 text-purple-500" />
+                                <span>{profile.nature}</span>
+                            </div>
+                        )}
+                        {profile.pan && (
+                            <div className="flex items-center gap-3 text-sm text-gray-600">
+                                <CreditCard className="w-4 h-4 text-pink-500" />
+                                <span>PAN: <span className="font-mono bg-gray-100 px-1 rounded">{profile.pan}</span></span>
+                            </div>
+                        )}
 
                         <Separator />
 
@@ -118,6 +168,11 @@ export default function FacultyProfilePage() {
                                     <SelectTrigger>
                                         <SelectValue />
                                     </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="cse">CSE</SelectItem>
+                                        <SelectItem value="ece">ECE</SelectItem>
+                                        <SelectItem value="it">IT</SelectItem>
+                                    </SelectContent>
                                 </Select>
                             </div>
                             <div className="space-y-2">

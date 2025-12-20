@@ -165,6 +165,9 @@ export interface FacultyProfile {
     publications_count: number;
     patents_count: number;
     projects_count: number;
+    pan_number?: string;
+    nature_of_association?: string;
+    designation_at_joining?: string;
     is_mentor: boolean;
     is_active: boolean;
     created_at: string;

@@ -1,0 +1,458 @@
+{
+  "2025-26": [
+    {
+      "sno": "1",
+      "name": "BATTULA SOWJANYA",
+      "qualification": "24/10/2011",
+      "designation": "Assistant Professor",
+      "doj": "20/03/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "PATCHALA SRINIVAS",
+      "qualification": "27/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "GARNEPUDI SRAVANILATHA",
+      "qualification": "27/09/2021",
+      "designation": "Assistant Professor",
+      "doj": "18/07/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "USHA CHERUKURI",
+      "qualification": "20/12/2013",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "PURNIMA ANNPUREDDY",
+      "qualification": "24/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "KONJETI GAYATHRI",
+      "qualification": "26/10/2017",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "DUTTA DEVIKA",
+      "qualification": "28/04/2022",
+      "designation": "Assistant Professor",
+      "doj": "27/01/2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "KOTA TRIVENI DEEPTHI",
+      "qualification": "17/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "DESU SABARI GIRINATH BABU",
+      "qualification": "29/12/2014",
+      "designation": "Assistant Professor",
+      "doj": "01/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "MEDA MALLIKARJUNA RAO",
+      "qualification": "15/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "15/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "NADAPARAJU DURGA RAO",
+      "qualification": "28/05/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "EDURU NAGARJUNA",
+      "qualification": "02/11/2016",
+      "designation": "Professor",
+      "doj": "02/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "GANGAPATNAM SRIVIDYA",
+      "qualification": "23/07/2018",
+      "designation": "Professor",
+      "doj": "13/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P. Nalini",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "11/08/2023",
+      "nature": "Regular"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1",
+      "name": "BATTULA SOWJANYA",
+      "qualification": "24/10/2011",
+      "designation": "Assistant Professor",
+      "doj": "20/03/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "PATCHALA SRINIVAS",
+      "qualification": "27/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "GARNEPUDI SRAVANILATHA",
+      "qualification": "27/09/2021",
+      "designation": "Assistant Professor",
+      "doj": "18/07/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "USHA CHERUKURI",
+      "qualification": "20/12/2013",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "PURNIMA ANNPUREDDY",
+      "qualification": "24/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "KONJETI GAYATHRI",
+      "qualification": "26/10/2017",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "DUTTA DEVIKA",
+      "qualification": "28/04/2022",
+      "designation": "Assistant Professor",
+      "doj": "27/01/2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "KOTA TRIVENI DEEPTHI",
+      "qualification": "17/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "DESU SABARI GIRINATH BABU",
+      "qualification": "29/12/2014",
+      "designation": "Assistant Professor",
+      "doj": "01/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "MEDA MALLIKARJUNA RAO",
+      "qualification": "15/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "15/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "NADAPARAJU DURGA RAO",
+      "qualification": "28/05/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "EDURU NAGARJUNA",
+      "qualification": "02/11/2016",
+      "designation": "Professor",
+      "doj": "02/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "GANGAPATNAM SRIVIDYA",
+      "qualification": "23/07/2018",
+      "designation": "Professor",
+      "doj": "13/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P. Nalini",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "11/08/2023",
+      "nature": "Regular"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1",
+      "name": "BATTULA SOWJANYA",
+      "qualification": "24/10/2011",
+      "designation": "Assistant Professor",
+      "doj": "20/03/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "PATCHALA SRINIVAS",
+      "qualification": "27/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "GARNEPUDI SRAVANILATHA",
+      "qualification": "27/09/2021",
+      "designation": "Assistant Professor",
+      "doj": "18/07/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "USHA CHERUKURI",
+      "qualification": "20/12/2013",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "PURNIMA ANNPUREDDY",
+      "qualification": "24/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "KONJETI GAYATHRI",
+      "qualification": "26/10/2017",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "DUTTA DEVIKA",
+      "qualification": "28/04/2022",
+      "designation": "Assistant Professor",
+      "doj": "27/01/2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "KOTA TRIVENI DEEPTHI",
+      "qualification": "17/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "DESU SABARI GIRINATH BABU",
+      "qualification": "29/12/2014",
+      "designation": "Assistant Professor",
+      "doj": "01/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "MEDA MALLIKARJUNA RAO",
+      "qualification": "15/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "15/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "NADAPARAJU DURGA RAO",
+      "qualification": "28/05/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "EDURU NAGARJUNA",
+      "qualification": "02/11/2016",
+      "designation": "Professor",
+      "doj": "02/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "GANGAPATNAM SRIVIDYA",
+      "qualification": "23/07/2018",
+      "designation": "Professor",
+      "doj": "13/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P. Nalini",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "11/08/2023",
+      "nature": "Regular"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1",
+      "name": "BATTULA SOWJANYA",
+      "qualification": "24/10/2011",
+      "designation": "Assistant Professor",
+      "doj": "20/03/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "PATCHALA SRINIVAS",
+      "qualification": "27/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "GARNEPUDI SRAVANILATHA",
+      "qualification": "27/09/2021",
+      "designation": "Assistant Professor",
+      "doj": "18/07/2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "USHA CHERUKURI",
+      "qualification": "20/12/2013",
+      "designation": "Assistant Professor",
+      "doj": "30/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "PURNIMA ANNPUREDDY",
+      "qualification": "24/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "KONJETI GAYATHRI",
+      "qualification": "26/10/2017",
+      "designation": "Assistant Professor",
+      "doj": "06/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "DUTTA DEVIKA",
+      "qualification": "28/04/2022",
+      "designation": "Assistant Professor",
+      "doj": "27/01/2021",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "KOTA TRIVENI DEEPTHI",
+      "qualification": "17/08/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "DESU SABARI GIRINATH BABU",
+      "qualification": "29/12/2014",
+      "designation": "Assistant Professor",
+      "doj": "01/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "MEDA MALLIKARJUNA RAO",
+      "qualification": "15/09/2014",
+      "designation": "Assistant Professor",
+      "doj": "15/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "NADAPARAJU DURGA RAO",
+      "qualification": "28/05/2018",
+      "designation": "Assistant Professor",
+      "doj": "04/07/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "EDURU NAGARJUNA",
+      "qualification": "02/11/2016",
+      "designation": "Professor",
+      "doj": "02/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "GANGAPATNAM SRIVIDYA",
+      "qualification": "23/07/2018",
+      "designation": "Professor",
+      "doj": "13/06/2022",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P. Nalini",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "11/08/2023",
+      "nature": "Regular"
+    }
+  ]
+}

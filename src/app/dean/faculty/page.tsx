@@ -120,13 +120,16 @@ export default function FacultyManagement() {
             }
 
             // Map dept_code to department info manually
-            const facultyWithDepts = (facultyData || []).map(fac => ({
-                ...fac,
-                departments: {
-                    dept_code: fac.dept_code,
-                    dept_name: deptData?.find(d => d.code === fac.dept_code)?.name || fac.dept_code
-                }
-            }));
+            const facultyWithDepts = (facultyData || []).map((fac: any) => {
+                const dept = deptData?.find((d: any) => d.code === fac.dept_code);
+                return {
+                    ...fac,
+                    departments: {
+                        dept_code: fac.dept_code,
+                        dept_name: dept ? (dept as any).name : fac.dept_code
+                    }
+                };
+            });
 
             setFaculty(facultyWithDepts);
             setFilteredFaculty(facultyWithDepts);
@@ -169,8 +172,8 @@ export default function FacultyManagement() {
 
         try {
             // Create user first
-            const { data: userData, error: userError } = await supabase
-                .from('users')
+            const { data: userData, error: userError } = await (supabase
+                .from('users') as any)
                 .insert({
                     email: formData.email,
                     role: 'faculty',
@@ -183,8 +186,8 @@ export default function FacultyManagement() {
             if (userError) throw userError;
 
             // Create faculty profile
-            const { data: facultyData, error: facultyError } = await supabase
-                .from('faculty_profiles')
+            const { data: facultyData, error: facultyError } = await (supabase
+                .from('faculty_profiles') as any)
                 .insert({
                     ...formData,
                     user_id: userData.id,
@@ -211,8 +214,8 @@ export default function FacultyManagement() {
         if (!selectedFaculty) return;
 
         try {
-            const { error } = await supabase
-                .from('faculty_profiles')
+            const { error } = await (supabase
+                .from('faculty_profiles') as any)
                 .update(formData)
                 .eq('id', selectedFaculty.id);
 
@@ -233,8 +236,8 @@ export default function FacultyManagement() {
         if (!confirm('Are you sure you want to delete this faculty member?')) return;
 
         try {
-            const { error } = await supabase
-                .from('faculty_profiles')
+            const { error } = await (supabase
+                .from('faculty_profiles') as any)
                 .update({ is_active: false })
                 .eq('id', facultyId);
 
@@ -280,8 +283,8 @@ export default function FacultyManagement() {
                 .from('faculty-photos')
                 .getPublicUrl(filePath);
 
-            const { error: updateError } = await supabase
-                .from('faculty_profiles')
+            const { error: updateError } = await (supabase
+                .from('faculty_profiles') as any)
                 .update({ photo_url: publicUrl })
                 .eq('id', facultyId);
 
@@ -329,8 +332,8 @@ export default function FacultyManagement() {
                 .from('faculty-resumes')
                 .getPublicUrl(filePath);
 
-            const { error: updateError } = await supabase
-                .from('faculty_profiles')
+            const { error: updateError } = await (supabase
+                .from('faculty_profiles') as any)
                 .update({ resume_url: publicUrl })
                 .eq('id', facultyId);
 

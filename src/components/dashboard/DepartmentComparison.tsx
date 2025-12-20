@@ -9,6 +9,7 @@ import {
     CartesianGrid,
     Tooltip,
     Legend,
+    Cell,
     ResponsiveContainer,
     LineChart,
     Line,
@@ -131,7 +132,7 @@ export const DepartmentComparison = () => {
                                     animationDuration={1500}
                                 >
                                     {DEPARTMENT_COMPARISON.map((entry, index) => (
-                                        <cell key={`cell-${index}`} fill={entry.color} />
+                                        <Cell key={`cell-${index}`} fill={entry.color} />
                                     ))}
                                 </Bar>
                             </BarChart>
@@ -212,8 +213,8 @@ export const DepartmentComparison = () => {
                             <div className="flex justify-between items-center py-2">
                                 <span className="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Status</span>
                                 <span className={`px-2 py-1 rounded text-xs font-bold ${dept.accreditationStatus === 'Accredited'
-                                        ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300'
-                                        : 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
+                                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300'
+                                    : 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300'
                                     }`}>
                                     {dept.accreditationStatus}
                                 </span>

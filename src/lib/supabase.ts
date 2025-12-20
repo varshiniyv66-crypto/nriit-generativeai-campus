@@ -14,7 +14,7 @@ if (!supabaseUrl || !supabaseAnonKey) {
 }
 
 // Client-side Supabase client (uses anon key)
-export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
+export const supabase = createClient<any>(supabaseUrl, supabaseAnonKey, {
     auth: {
         persistSession: true,
         autoRefreshToken: true,
@@ -36,7 +36,7 @@ export const createServerSupabaseClient = () => {
         throw new Error('Missing Supabase service role key');
     }
 
-    return createClient<Database>(supabaseUrl, supabaseServiceKey, {
+    return createClient<any>(supabaseUrl, supabaseServiceKey, {
         auth: {
             persistSession: false,
             autoRefreshToken: false,

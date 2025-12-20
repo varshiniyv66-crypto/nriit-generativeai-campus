@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   GraduationCap,
   Users,
@@ -28,721 +29,851 @@ import {
   MessageSquare,
   ImageIcon,
   Bell,
+  Search,
+  Menu,
+  ChevronLeft,
+  Brain,
+  Target,
+  Sparkles
 } from "lucide-react";
+import { useState, useEffect } from "react";
 
-// Department data
+// Premium Department Data with Flagship Colors
+// Premium Department Data with Flagship Colors
 const departments = [
-  { code: "CSE", name: "Computer Science & Engineering", icon: "💻", color: "from-blue-600 to-blue-800", students: 480 },
-  { code: "CSE-DS", name: "CSE (Data Science)", icon: "📊", color: "from-purple-600 to-purple-800", students: 120 },
-  { code: "CSE-AI", name: "CSE (AI & ML)", icon: "🤖", color: "from-pink-600 to-pink-800", students: 120 },
-  { code: "IT", name: "Information Technology", icon: "🌐", color: "from-green-600 to-green-800", students: 240 },
-  { code: "ECE", name: "Electronics & Communication", icon: "📡", color: "from-amber-600 to-amber-800", students: 360 },
-  { code: "CIVIL", name: "Civil Engineering", icon: "🏗️", color: "from-red-600 to-red-800", students: 120 },
-  { code: "MBA", name: "Master of Business Administration", icon: "📈", color: "from-cyan-600 to-cyan-800", students: 120 },
-  { code: "MCA", name: "Master of Computer Applications", icon: "🎓", color: "from-violet-600 to-violet-800", students: 60 },
-  { code: "BSH", name: "Basic Sciences & Humanities", icon: "📚", color: "from-slate-600 to-slate-800", students: 0 },
+  {
+    code: "CSE", name: "Computer Science", icon: "💻",
+    accent: "hover:!border-blue-500 hover:shadow-2xl hover:shadow-blue-500/40",
+    textAccent: "group-hover:text-blue-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-blue-600",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-blue-50",
+    gradient: "from-blue-500 to-blue-600",
+    students: 480,
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "CSE-DS", name: "Data Science", icon: "📊",
+    accent: "hover:!border-purple-500 hover:shadow-2xl hover:shadow-purple-500/40",
+    textAccent: "group-hover:text-purple-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-purple-600",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-purple-50",
+    gradient: "from-purple-500 to-purple-600",
+    students: 120,
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "CSE-AI", name: "AI & ML", icon: "🤖",
+    accent: "hover:!border-pink-500 hover:shadow-2xl hover:shadow-pink-500/40",
+    textAccent: "group-hover:text-pink-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-pink-600",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-pink-50",
+    gradient: "from-pink-500 to-pink-600",
+    students: 120,
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "IT", name: "Info Tech", icon: "🌐",
+    accent: "hover:!border-emerald-500 hover:shadow-2xl hover:shadow-emerald-500/40",
+    textAccent: "group-hover:text-emerald-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-emerald-600",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-emerald-50",
+    gradient: "from-emerald-500 to-emerald-600",
+    students: 240,
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "ECE", name: "Electronics", icon: "📡",
+    accent: "hover:!border-amber-500 hover:shadow-2xl hover:shadow-amber-500/40",
+    textAccent: "group-hover:text-amber-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-amber-600",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-amber-50",
+    gradient: "from-amber-500 to-amber-600",
+    students: 360,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "EVT", name: "EVT", icon: "⚡",
+    accent: "hover:!border-yellow-500 hover:shadow-2xl hover:shadow-yellow-500/40",
+    textAccent: "group-hover:text-yellow-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-yellow-500",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-yellow-50",
+    gradient: "from-yellow-400 to-yellow-600",
+    students: 120,
+    image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "MTECH", name: "M.Tech Programs", icon: "🎓",
+    accent: "hover:!border-orange-600 hover:shadow-2xl hover:shadow-orange-600/40",
+    textAccent: "group-hover:text-orange-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-orange-600",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-orange-50",
+    gradient: "from-orange-500 to-orange-700",
+    students: 72,
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "CIVIL", name: "Civil Engg", icon: "🏗️",
+    accent: "hover:!border-red-500 hover:shadow-2xl hover:shadow-red-500/40",
+    textAccent: "group-hover:text-red-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-red-500",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-red-50",
+    gradient: "from-red-500 to-red-600",
+    students: 120,
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "MBA", name: "Business Admin", icon: "📈",
+    accent: "hover:!border-cyan-500 hover:shadow-2xl hover:shadow-cyan-500/40",
+    textAccent: "group-hover:text-cyan-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-cyan-500",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-cyan-50",
+    gradient: "from-cyan-500 to-cyan-600",
+    students: 120,
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "MCA", name: "Computer App", icon: "💻",
+    accent: "hover:!border-violet-500 hover:shadow-2xl hover:shadow-violet-500/40",
+    textAccent: "group-hover:text-violet-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-violet-500",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-violet-50",
+    gradient: "from-violet-500 to-violet-600",
+    students: 60,
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    code: "FED", name: "Science & Humanities", icon: "⚛️",
+    accent: "hover:!border-teal-500 hover:shadow-2xl hover:shadow-teal-500/40",
+    textAccent: "group-hover:text-teal-600",
+    bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-teal-500",
+    cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-teal-50",
+    gradient: "from-teal-400 to-emerald-600",
+    students: 600,
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800&auto=format&fit=crop"
+  }
 ];
+
+// Helper Component for Counting Animation
+function CountUp({ end, duration = 2000, suffix = "" }: { end: number, duration?: number, suffix?: string }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTime: number | null = null;
+    const textEnd = end;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+
+      setCount(Math.floor(progress * textEnd));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [end, duration]);
+
+  return <span>{count.toLocaleString()}{suffix}</span>;
+}
 
 const stats = [
-  { label: "Students", value: "5000+", icon: GraduationCap },
-  { label: "Faculty", value: "300+", icon: Users },
-  { label: "Departments", value: "9", icon: Building2 },
-  { label: "Placements", value: "95%", icon: Briefcase },
+  { label: "Active Students", value: 5000, suffix: "+", icon: GraduationCap, color: "text-blue-400", bg: "bg-blue-500/10 border-blue-500/20" },
+  { label: "Expert Faculty", value: 300, suffix: "+", icon: Users, color: "text-purple-400", bg: "bg-purple-500/10 border-purple-500/20" },
+  { label: "Global Partners", value: 45, suffix: "+", icon: Globe, color: "text-emerald-400", bg: "bg-emerald-500/10 border-emerald-500/20" },
+  { label: "Placement Rate", value: 95, suffix: "%", icon: TrendingUp, color: "text-yellow-400", bg: "bg-yellow-500/10 border-yellow-500/20" },
 ];
 
-const features = [
-  {
-    title: "NBA Accredited Programs",
-    description: "Multiple programs accredited by National Board of Accreditation ensuring quality education",
-    icon: Award,
-  },
-  {
-    title: "State-of-the-Art Labs",
-    description: "Modern laboratories equipped with latest technology and software for hands-on learning",
-    icon: FlaskConical,
-  },
-  {
-    title: "Industry Partnerships",
-    description: "Strong ties with leading companies for internships, projects, and campus placements",
-    icon: Briefcase,
-  },
-  {
-    title: "Research Excellence",
-    description: "Active research culture with funded projects and publications in reputed journals",
-    icon: BookOpen,
-  },
-];
+import PremiumHeader from "@/components/layout/PremiumHeader";
+import PremiumFooter from "@/components/layout/PremiumFooter";
+import { VisionaryAssistant } from "@/components/ai/VisionaryAssistant";
+import { PlacementPulse } from "@/components/dashboard/PlacementPulse";
+import AcademicAffairs from "@/components/home/AcademicAffairs";
+import { UnrivaledPlacements } from "@/components/home/UnrivaledPlacements";
+import dynamic from "next/dynamic";
 
-const recruiters = [
-  "TCS", "Infosys", "Wipro", "HCL", "Tech Mahindra", "Cognizant",
-  "Capgemini", "Accenture", "IBM", "Amazon", "Microsoft", "Google"
-];
-
-const studentServices = [
-  { title: "Fee Payment", icon: CreditCard, href: "/student/fees", color: "text-blue-600", bg: "bg-blue-50" },
-  { title: "Certificates", icon: FileText, href: "/student/certificates", color: "text-green-600", bg: "bg-green-50" },
-  { title: "Hostel & Mess", icon: Home, href: "/hostel", color: "text-orange-600", bg: "bg-orange-50" },
-  { title: "Transport", icon: Bus, href: "/transport", color: "text-purple-600", bg: "bg-purple-50" },
-  { title: "Scholarships", icon: GraduationCap, href: "/scholarships", color: "text-yellow-600", bg: "bg-yellow-50" },
-  { title: "Grievance", icon: ShieldAlert, href: "/grievance", color: "text-red-600", bg: "bg-red-50" },
-];
-
-const newsUpdates = [
-  {
-    id: 1,
-    title: "NRIIT Secures NAAC A+ Accreditation",
-    date: "Dec 08, 2024",
-    excerpt: "We are proud to announce that NRI Institute of Technology has been accredited with NAAC A+ Grade, reflecting our commitment to quality education.",
-    category: "Achievement",
-    image: "/images/naac-event.jpg" // Placeholder path
-  },
-  {
-    id: 2,
-    title: "International Conference on AI (ICAI-2025)",
-    date: "Jan 20, 2025",
-    excerpt: "Call for papers is now open for the upcoming International Conference on Artificial Intelligence hosted by the CSE Department.",
-    category: "Event",
-    image: "/images/ai-conf.jpg"
-  }
-];
-
-const notices = [
-  { id: 1, title: "I B.Tech I Sem Regular Exams Notification", date: "Today", type: "Exam" },
-  { id: 2, title: "Pongal Holidays Circular 2025", date: "Yesterday", type: "General" },
-  { id: 3, title: "CRT Training Schedule for III Year", date: "2 days ago", type: "Training" },
-  { id: 4, title: "Fee Payment Last Date Extended", date: "Dec 05", type: "Fee" },
-];
-
-const testimonials = [
-  {
-    name: "S. Rajesh",
-    role: "Software Engineer at Microsoft",
-    batch: "2019-2023",
-    content: "NRIIT provided me with the tools and mentorship to crack a job at Microsoft. The labs are world-class and the faculty is incredibly supportive.",
-    image: "https://i.pravatar.cc/150?u=1"
-  },
-  {
-    name: "P. Priya",
-    role: "Data Scientist at Amazon",
-    batch: "2018-2022",
-    content: "The specialized training in Data Science and the hands-on projects helped me build a strong portfolio. Forever grateful to my dept.",
-    image: "https://i.pravatar.cc/150?u=2"
-  },
-  {
-    name: "K. Vamsi",
-    role: "System Engineer at TCS",
-    batch: "2020-2024",
-    content: "The campus life and technical clubs at NRIIT are amazing. They helped me develop leadership skills along with technical knowledge.",
-    image: "https://i.pravatar.cc/150?u=3"
-  },
-  {
-    name: "M. Kavya",
-    role: "MBA Graduate",
-    batch: "2021-2023",
-    content: "The MBA program gave me a new perspective on management. The case studies and industry interactions were the highlight.",
-    image: "https://i.pravatar.cc/150?u=4"
-  }
-];
-
-const galleryImages = [
-  "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-  "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-  "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-  "https://images.unsplash.com/photo-1592280771800-bcf291d0a63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-  "https://images.unsplash.com/photo-1524178232363-1fb2b075b955?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-  "https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-];
+// Dynamic loading for heavy 3D components
+const DigitalTwin = dynamic(() => import("@/components/campus/DigitalTwin"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[600px] bg-slate-900 rounded-[3rem] animate-pulse flex items-center justify-center">
+      <div className="text-[#D4AF37] font-bold animate-bounce">Initializing Digital Twin...</div>
+    </div>
+  )
+});
 
 export default function HomePage() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   return (
-    <main className="min-h-screen">
-      {/* Header/Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
-        <div className="container mx-auto px-4">
-          <nav className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-lg lg:text-xl">
-                N
-              </div>
-              <div className="hidden sm:block">
-                <h1 className="font-bold text-lg lg:text-xl text-gray-900">NRIIT</h1>
-                <p className="text-xs text-gray-600">Excellence in Education</p>
-              </div>
-            </Link>
+    <main className="min-h-screen bg-[#F8FAFC] overflow-x-hidden selection:bg-[#FFBA42] selection:text-[#013C58]">
+      <PremiumHeader />
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <Link href="/about" className="text-gray-700 hover:text-blue-700 font-medium transition-colors">About</Link>
-              <Link href="/departments" className="text-gray-700 hover:text-blue-700 font-medium transition-colors">Departments</Link>
-              <Link href="/admissions" className="text-gray-700 hover:text-blue-700 font-medium transition-colors">Admissions</Link>
-              <Link href="/placements" className="text-gray-700 hover:text-blue-700 font-medium transition-colors">Placements</Link>
-              <Link href="/research" className="text-gray-700 hover:text-blue-700 font-medium transition-colors">Research</Link>
-              <Link href="/contact" className="text-gray-700 hover:text-blue-700 font-medium transition-colors">Contact</Link>
-            </div>
+      {/* 🚀 CINEMA-LEVEL HERO SECTION - AURORA FLAGSHIP */}
+      {/* 🔮 HERO SECTION - VIBRANT MESH GRADIENT SLIDER */}
+      {/* 🌊 HERO SECTION - OPTION A: OCEAN SUNRISE */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#013C58] via-[#00537A] to-[#013C58] transition-all duration-1000">
+        {/* Premium Mesh Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute inset-0 hero-dots opacity-30"></div>
+        {/* Animated Glows - Ocean Gold Theme */}
+        <div className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-[#00537A]/40 rounded-full blur-[120px] animate-pulse-slow"></div>
+        <div className="absolute bottom-[-20%] left-[-10%] w-[800px] h-[800px] bg-[#F5A201]/20 rounded-full blur-[120px] animate-float-slow"></div>
 
-            {/* CTA Buttons */}
-            <div className="flex items-center gap-3">
-              <Link
-                href="/login"
-                className="hidden sm:inline-flex px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors"
-              >
-                Login
-              </Link>
-              <Link
-                href="/apply"
-                className="px-4 lg:px-6 py-2 lg:py-2.5 text-sm font-semibold text-white gradient-bg rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all btn-glow"
-              >
-                Apply Now
-              </Link>
-            </div>
-          </nav>
+        {/* 🚨 FLOATING SIDEBAR - OCEAN GOLD THEME */}
+        <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-1 shadow-2xl">
+          <Link
+            href="/admissions"
+            className="bg-[#00537A] text-white px-3 py-6 writing-vertical-rl font-bold tracking-wide rounded-l-lg hover:bg-[#013C58] transition-colors shadow-lg border-l-2 border-[#F5A201] text-xs uppercase text-center"
+          >
+            Admissions 2026
+          </Link>
+          <Link
+            href="/news-events"
+            className="bg-[#FFBA42] text-[#013C58] px-3 py-6 writing-vertical-rl font-bold tracking-wide rounded-l-lg hover:bg-[#F5A201] transition-colors shadow-lg border-l-2 border-[#013C58] text-xs uppercase text-center"
+          >
+            Latest News & Events
+          </Link>
         </div>
-      </header>
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-pattern">
-        {/* Animated Background */}
-        <div className="absolute inset-0 gradient-bg-animated opacity-90" />
-        <div className="absolute inset-0 hero-dots opacity-30" />
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-float delay-200" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-500/20 rounded-full blur-3xl" />
+        {/* 🎓 ADMISSIONS BADGE - GOLD HIGHLIGHT */}
+        <div className="absolute top-32 right-0 hidden lg:block animate-fade-in-left z-40">
+          <div className="bg-gradient-to-r from-[#F5A201] to-[#FFBA42] text-[#013C58] px-6 py-3 font-bold text-lg shadow-2xl rounded-l-xl border-l-4 border-white flex flex-col items-center">
+            <span className="text-xs uppercase tracking-widest opacity-80">Admissions Open for</span>
+            <span className="text-base">UG/PG January 2026 Session</span>
+          </div>
+        </div>
 
-        <div className="relative z-10 container mx-auto px-4 pt-24 pb-16 text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm mb-8 animate-fade-in-down">
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <span>NAAC Accredited | NBA Approved Programs</span>
+        {/* SLIDER CONTENT */}
+        <div className="relative z-10 w-full h-full flex items-center">
+          <button onClick={() => setCurrentSlide((prev) => (prev === 0 ? 2 : prev - 1))} className="absolute left-4 lg:left-10 p-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 z-50 transition-all hover:scale-110 hidden md:block">
+            <ChevronLeft className="w-8 h-8" />
+          </button>
+
+          <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
+            {/* SLIDE 1: HYBRID LIGHT THEME (AI STUDIO INSPIRED) */}
+            {currentSlide === 0 && (
+              <>
+                {/* Light Background Override */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#F8F7FF] via-[#EEF0FF] to-[#F5F3FF] z-0" />
+
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 text-sm font-bold tracking-wide">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    Admissions Open 2025
+                  </div>
+
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] leading-[1.1]">
+                    NRI Institute of <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">Technology</span>
+                  </h1>
+
+                  <p className="text-lg text-slate-600 max-w-lg leading-relaxed">
+                    Autonomous Institution, Guntur. Accredited with NAAC &apos;A+&apos; Grade and NBA (CSE, ECE, IT). Affiliated to JNTUK, Kakinada. Empowering students to be competitive, ethical, and socially responsible professionals.
+                  </p>
+
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <Link href="/admissions" className="group px-8 py-4 bg-[#0F172A] text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 flex items-center gap-2">
+                      Explore Programs
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <Link href="/virtual-tour" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-all flex items-center gap-2">
+                      <Play className="w-5 h-5" />
+                      Virtual Tour
+                    </Link>
+                  </div>
+
+                  {/* Accreditation Badges - Bottom */}
+                  <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">NAAC A+</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Accredited</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">NBA</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">CSE | ECE | IT</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">Autonomous</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">JNTUK Affiliated</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side - Animated Campus Image */}
+                <div className="relative animate-fade-in-up delay-100 hidden lg:block z-10">
+                  {/* Floating NAAC Badge */}
+                  <div className="absolute -top-4 left-1/3 z-20 bg-white px-4 py-2 rounded-xl shadow-xl border border-slate-100 flex items-center gap-2 animate-float">
+                    <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
+                      <Award className="w-5 h-5 text-amber-600" />
+                    </div>
+                    <div>
+                      <div className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Ranking</div>
+                      <div className="text-sm font-black text-[#0F172A]">NAAC A+</div>
+                    </div>
+                  </div>
+
+                  {/* Main Image Container */}
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group h-[450px]">
+                    <Image
+                      src="/gallery/nriit-vibrant-campus.png"
+                      alt="NRIIT Vibrant Campus Life"
+                      fill
+                      className="object-cover transform transition-transform duration-[3000ms] group-hover:scale-110"
+                      priority
+                    />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <div className="text-2xl font-bold">Vibrant Campus Life</div>
+                      <div className="text-sm text-white/80">Experience excellence in education</div>
+                    </div>
+
+                    {/* Alumni Badge */}
+                    <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
+                      <div className="flex -space-x-2">
+                        <div className="w-8 h-8 rounded-full bg-blue-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">A</div>
+                        <div className="w-8 h-8 rounded-full bg-green-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">B</div>
+                        <div className="w-8 h-8 rounded-full bg-purple-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">C</div>
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-800">Alumni Network</div>
+                        <div className="text-[10px] text-emerald-600 font-bold">+5k</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* NRIIT Voice Button */}
+                  <div className="absolute -bottom-4 right-4 bg-[#0F172A] text-white px-4 py-2 rounded-xl shadow-lg flex items-center gap-2 text-sm font-bold">
+                    NRIIT Voice
+                    <Sparkles className="w-4 h-4 text-amber-400" />
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* SLIDE 2: RESEARCH & INNOVATION - LIGHT THEME */}
+            {currentSlide === 1 && (
+              <>
+                {/* Light Background Override */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFFAF5] z-0" />
+
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-sm font-bold tracking-wide">
+                    <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                    Centers of Excellence
+                  </div>
+
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] leading-[1.1]">
+                    Leading the Way in <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">Global Innovation</span>
+                  </h1>
+
+                  <p className="text-lg text-slate-600 max-w-lg leading-relaxed">
+                    Our research centers are at the forefront of AI, sustainable energy, and biotechnology. Collaborating with industry leaders to solve real-world problems.
+                  </p>
+
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <Link href="/research" className="group px-8 py-4 bg-amber-500 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:bg-amber-600 transition-all hover:-translate-y-1 flex items-center gap-2">
+                      Explore Research
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <Link href="/departments" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-all flex items-center gap-2">
+                      <FlaskConical className="w-5 h-5" />
+                      View Labs
+                    </Link>
+                  </div>
+
+                  {/* Research Stats */}
+                  <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">15+</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Research Labs</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">50+</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Publications</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">₹2Cr+</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Research Grants</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side - Research Card */}
+                <div className="relative animate-fade-in-up delay-100 hidden lg:block z-10">
+                  <div className="bg-white p-10 rounded-3xl shadow-2xl border border-slate-100">
+                    <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                      <Brain className="w-10 h-10 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-black text-[#0F172A] text-center mb-3">Centers of Excellence</h3>
+                    <p className="text-slate-500 text-center mb-6">Driving innovation through dedicated research facilities and industry partnerships.</p>
+                    <div className="grid grid-cols-2 gap-4">
+                      {["AI & ML Lab", "IoT Center", "VLSI Lab", "Data Science"].map((lab, i) => (
+                        <div key={i} className="bg-amber-50 p-3 rounded-xl text-center">
+                          <span className="text-sm font-bold text-amber-700">{lab}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* SLIDE 3: VISADALA CAMPUS - LIGHT THEME */}
+            {currentSlide === 2 && (
+              <>
+                {/* Light Background Override */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#F0FDF4] via-[#ECFDF5] to-[#F0FDF9] z-0" />
+
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 text-sm font-bold tracking-wide">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    Visit Guntur Visadala Campus
+                  </div>
+
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] leading-[1.1]">
+                    From Amaravathi <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">to Global Stage</span>
+                  </h1>
+
+                  <p className="text-lg text-slate-600 max-w-lg leading-relaxed">
+                    Preparing the next generation of engineers for global excellence at our state-of-the-art Visadala campus in Guntur District.
+                  </p>
+
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <Link href="/admissions" className="group px-8 py-4 bg-emerald-500 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:bg-emerald-600 transition-all hover:-translate-y-1 flex items-center gap-2">
+                      Apply Now
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <Link href="/contact" className="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-all flex items-center gap-2">
+                      <MapPin className="w-5 h-5" />
+                      Get Directions
+                    </Link>
+                  </div>
+
+                  {/* Campus Features */}
+                  <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">25 Acres</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Campus Area</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">Wi-Fi</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Enabled Campus</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A]">Modern</div>
+                      <div className="text-xs text-slate-500 uppercase tracking-wider">Infrastructure</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side - Campus Image */}
+                <div className="relative animate-fade-in-up delay-100 hidden lg:block z-10">
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group">
+                    <img
+                      src="/banners/global-stage.png"
+                      alt="NRIIT Visadala Campus"
+                      className="w-full h-[450px] object-cover transform transition-transform duration-[3000ms] group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <div className="text-2xl font-bold">Visadala Campus</div>
+                      <div className="text-sm text-emerald-400">Guntur District, AP</div>
+                    </div>
+
+                    {/* Location Badge */}
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg flex items-center gap-2">
+                      <MapPin className="w-5 h-5 text-emerald-600" />
+                      <div className="text-sm font-bold text-slate-800">Near Amaravathi</div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-up">
-            <span className="block">Shaping Tomorrow&apos;s</span>
-            <span className="block mt-2 bg-gradient-to-r from-yellow-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent">
-              Tech Leaders
+          <button onClick={() => setCurrentSlide((prev) => (prev === 2 ? 0 : prev + 1))} className="absolute right-4 lg:right-10 p-4 rounded-full bg-slate-900/20 hover:bg-slate-900/40 backdrop-blur-md text-slate-700 border border-slate-200 z-50 transition-all hover:scale-110 hidden md:block">
+            <ChevronRight className="w-8 h-8" />
+          </button>
+
+          {/* Dots - Light Theme */}
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+            {[0, 1, 2].map(i => (
+              <button key={i} onClick={() => setCurrentSlide(i)} className={`h-3 rounded-full transition-all ${currentSlide === i ? 'bg-violet-600 w-10' : 'bg-slate-300 w-3'}`} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 📰 ANIMATED NEWS TICKER - INNOVATIVE MARQUEE */}
+      <div className="relative bg-gradient-to-r from-[#0F172A] via-[#1e293b] to-[#0F172A] py-4 overflow-hidden">
+        {/* Breaking News Label */}
+        <div className="absolute left-0 top-0 bottom-0 z-20 bg-gradient-to-r from-violet-600 to-purple-600 px-6 flex items-center gap-2 shadow-lg">
+          <Bell className="w-5 h-5 text-white animate-bounce" />
+          <span className="text-white font-black uppercase tracking-wider text-sm hidden md:block">Live Updates</span>
+        </div>
+
+        {/* Animated Marquee */}
+        <div className="flex animate-marquee whitespace-nowrap pl-32 md:pl-48">
+          {[
+            { icon: "🏆", text: "NRIIT Secures NAAC 'A+' Accreditation - Nation Proud Moment!", color: "text-emerald-400" },
+            { icon: "💼", text: "TCS, Infosys, Wipro Placement Drive - 150+ Students Selected!", color: "text-blue-400" },
+            { icon: "📅", text: "Academic Calendar 2024-25 Released - Download Now", color: "text-amber-400" },
+            { icon: "🥇", text: "Smart India Hackathon 2024 - NRIIT Students Win Grand Finale!", color: "text-violet-400" },
+            { icon: "🚀", text: "Recent Placements: ₹12 LPA Highest Package at Amazon!", color: "text-pink-400" },
+            { icon: "🎓", text: "Admissions Open for UG/PG January 2026 Session", color: "text-cyan-400" },
+          ].map((item, i) => (
+            <span key={i} className="mx-8 flex items-center gap-3">
+              <span className="text-2xl">{item.icon}</span>
+              <span className={`${item.color} font-bold text-sm`}>{item.text}</span>
+              <span className="text-slate-600 text-xl">•</span>
             </span>
-          </h1>
+          ))}
+          {/* Duplicate for seamless loop */}
+          {[
+            { icon: "🏆", text: "NRIIT Secures NAAC 'A+' Accreditation - Nation Proud Moment!", color: "text-emerald-400" },
+            { icon: "💼", text: "TCS, Infosys, Wipro Placement Drive - 150+ Students Selected!", color: "text-blue-400" },
+            { icon: "📅", text: "Academic Calendar 2024-25 Released - Download Now", color: "text-amber-400" },
+            { icon: "🥇", text: "Smart India Hackathon 2024 - NRIIT Students Win Grand Finale!", color: "text-violet-400" },
+            { icon: "🚀", text: "Recent Placements: ₹12 LPA Highest Package at Amazon!", color: "text-pink-400" },
+            { icon: "🎓", text: "Admissions Open for UG/PG January 2026 Session", color: "text-cyan-400" },
+          ].map((item, i) => (
+            <span key={`dup-${i}`} className="mx-8 flex items-center gap-3">
+              <span className="text-2xl">{item.icon}</span>
+              <span className={`${item.color} font-bold text-sm`}>{item.text}</span>
+              <span className="text-slate-600 text-xl">•</span>
+            </span>
+          ))}
+        </div>
 
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 animate-fade-in-up delay-200">
-            NRI Institute of Technology - Where innovation meets excellence.
-            Join a community of future engineers, innovators, and entrepreneurs.
-          </p>
+        {/* Right Gradient Fade */}
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0F172A] to-transparent z-10" />
+      </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
+      {/* 🏛️ CORE INSTITUTIONAL VALUES - VISION & MISSION */}
+      <section className="py-24 relative overflow-hidden bg-slate-50">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold-100/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* VISION CARD */}
+            <div className="group bg-white rounded-[2.5rem] p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-500/10 to-transparent rounded-bl-full" />
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center shadow-lg shadow-blue-600/20 group-hover:rotate-6 transition-transform">
+                  <Globe className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <span className="text-blue-600 font-bold text-xs uppercase tracking-widest block mb-1">Our Core Vision</span>
+                  <h3 className="text-3xl font-black text-[#013C58]">Institutional Excellence</h3>
+                </div>
+              </div>
+              <p className="text-xl text-slate-600 leading-relaxed font-medium italic border-l-4 border-blue-500 pl-6 py-2">
+                "To become reputed institution of Engineering & Management programs, Producing competitive, ethical & socially responsible professionals."
+              </p>
+            </div>
+
+            {/* MISSION CARD */}
+            <div className="group bg-white rounded-[2.5rem] p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-bl-full" />
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F5A201] to-[#FFBA42] flex items-center justify-center shadow-lg shadow-[#F5A201]/20 group-hover:-rotate-6 transition-transform">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <span className="text-[#F5A201] font-bold text-xs uppercase tracking-widest block mb-1">Our Core Mission</span>
+                  <h3 className="text-3xl font-black text-[#013C58]">Strategic Objectives</h3>
+                </div>
+              </div>
+              <div className="space-y-4">
+                {[
+                  "Provide quality education through best teaching and learning practices of committed staff.",
+                  "Establish a continuous interaction, participation and collaboration with industry to provide solutions.",
+                  "Provide the facilities that motivate/encourage faculty and students in research and development activities.",
+                  "Develop human values, professional ethics and interpersonal skills amongst the individuals."
+                ].map((mission, i) => (
+                  <div key={i} className="flex gap-4 p-3 rounded-2xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-100">
+                    <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex-shrink-0 flex items-center justify-center mt-1">
+                      <CheckCircle2 className="w-4 h-4" />
+                    </div>
+                    <p className="text-slate-600 font-semibold text-sm leading-normal">{mission}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 📸 CAMPUS GALLERY MARQUEE - Two Row Sliding */}
+      <section className="py-20 bg-gradient-to-br from-[#0F172A] via-[#1a2744] to-[#0F172A] relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#D4AF37]/10 rounded-full blur-[150px]" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[150px]" />
+
+        <div className="container mx-auto px-4 mb-12 relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <span className="text-[#D4AF37] font-bold text-xs uppercase tracking-[0.2em] mb-2 block">Campus Life</span>
+              <h2 className="text-4xl md:text-5xl font-black text-white">
+                Life at <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#FFE082]">NRIIT</span>
+              </h2>
+            </div>
             <Link
-              href="/admissions"
-              className="group px-8 py-4 bg-white text-blue-700 rounded-full font-semibold hover:shadow-2xl hover:shadow-white/25 transition-all flex items-center gap-2"
+              href="/gallery"
+              className="px-6 py-3 bg-[#D4AF37] hover:bg-[#FFE082] text-[#0F172A] font-bold rounded-xl transition-all hover:scale-105 flex items-center gap-2"
             >
-              Start Your Journey
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="/virtual-tour"
-              className="group px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-full font-semibold hover:bg-white/20 transition-all flex items-center gap-2"
-            >
-              <Play className="w-5 h-5" />
-              Virtual Tour
+              <ImageIcon className="w-5 h-5" />
+              View Full Gallery
+              <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
+        </div>
 
-          {/* Stats in Hero */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-16 max-w-4xl mx-auto animate-fade-in-up delay-400">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.label}
-                className="glass-card rounded-2xl p-4 md:p-6 text-center"
-              >
-                <stat.icon className="w-8 h-8 text-white/80 mx-auto mb-2" />
-                <div className="text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
-                <div className="text-sm text-white/70">{stat.label}</div>
+        {/* ROW 1 - Slides LEFT */}
+        <div className="relative mb-6 overflow-hidden">
+          <div className="flex animate-marquee-gallery gap-6 hover:[animation-play-state:paused]">
+            {[
+              { src: "/gallery/CORRECT BUILDING FRO M NRIIT TO GLOBAL.png", title: "NRIIT - Global Stage", category: "Campus" },
+              { src: "/banners/global-stage.png", title: "World Class Campus", category: "Campus" },
+              { src: "/gallery/571722750_17884096011394797_8998108365086871295_n (1).png", title: "Campus Event", category: "Events" },
+              { src: "/gallery/569031081_17884096032394797_7260677632664801698_n. - Copy.png", title: "Student Activities", category: "Campus Life" },
+              { src: "/gallery/571396112_17884638273394797_4177157676786452408_n..png", title: "Campus Day", category: "Events" },
+              { src: "/gallery/571438824_17884096068394797_7726673159106898094_n. - Copy - Copy.png", title: "NRI Campus", category: "Campus" },
+              // Duplicates for seamless loop
+              { src: "/gallery/CORRECT BUILDING FRO M NRIIT TO GLOBAL.png", title: "NRIIT - Global Stage", category: "Campus" },
+              { src: "/banners/global-stage.png", title: "World Class Campus", category: "Campus" },
+              { src: "/gallery/571722750_17884096011394797_8998108365086871295_n (1).png", title: "Campus Event", category: "Events" },
+              { src: "/gallery/569031081_17884096032394797_7260677632664801698_n. - Copy.png", title: "Student Activities", category: "Campus Life" },
+              { src: "/gallery/571396112_17884638273394797_4177157676786452408_n..png", title: "Campus Day", category: "Events" },
+              { src: "/gallery/571438824_17884096068394797_7726673159106898094_n. - Copy - Copy.png", title: "NRI Campus", category: "Campus" },
+            ].map((img, idx) => (
+              <div key={idx} className="relative flex-shrink-0 w-[320px] h-[200px] rounded-2xl overflow-hidden group cursor-pointer border-2 border-[#D4AF37]/20 shadow-lg shadow-[#D4AF37]/10">
+                <img src={img.src} alt={img.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="text-[#D4AF37] text-xs font-bold uppercase tracking-wider">{img.category}</span>
+                  <h4 className="text-white font-bold text-lg">{img.title}</h4>
+                </div>
+                {/* NAAC Badge */}
+                <div className="absolute top-3 left-3 px-2 py-1 bg-[#D4AF37] rounded-lg text-xs font-bold text-[#0F172A] shadow-lg">
+                  NAAC A+
+                </div>
+                <div className="absolute top-3 right-3 w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ChevronRight className="w-4 h-4 text-white" />
+                </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-white/50 flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/70 rounded-full animate-pulse" />
+        {/* ROW 2 - Slides RIGHT (reverse) */}
+        <div className="relative overflow-hidden">
+          <div className="flex animate-marquee-gallery-reverse gap-6 hover:[animation-play-state:paused]">
+            {[
+              { src: "/gallery/571647730_17884733448394797_217842872340785337_n. - Copy - Copy.png", title: "Tech Fest", category: "Events" },
+              { src: "/gallery/571656771_17884604793394797_8831772697411328282_n. (1) - Copy.png", title: "Student Achievements", category: "Achievements" },
+              { src: "/gallery/571812568_17884733409394797_8475558754309514453_n..png", title: "Cultural Day", category: "Events" },
+              { src: "/gallery/571863107_17884733400394797_4154023143693683405_n..png", title: "Campus Tour", category: "Campus" },
+              { src: "/gallery/571941530_17884638282394797_6523397916169445826_n.png", title: "Celebrations", category: "Events" },
+              { src: "/gallery/573557495_17884638300394797_8009028679019464750_n. (1).png", title: "Student Life", category: "Campus Life" },
+              // Duplicates for seamless loop
+              { src: "/gallery/571647730_17884733448394797_217842872340785337_n. - Copy - Copy.png", title: "Tech Fest", category: "Events" },
+              { src: "/gallery/571656771_17884604793394797_8831772697411328282_n. (1) - Copy.png", title: "Student Achievements", category: "Achievements" },
+              { src: "/gallery/571812568_17884733409394797_8475558754309514453_n..png", title: "Cultural Day", category: "Events" },
+              { src: "/gallery/571863107_17884733400394797_4154023143693683405_n..png", title: "Campus Tour", category: "Campus" },
+              { src: "/gallery/571941530_17884638282394797_6523397916169445826_n.png", title: "Celebrations", category: "Events" },
+              { src: "/gallery/573557495_17884638300394797_8009028679019464750_n. (1).png", title: "Student Life", category: "Campus Life" },
+            ].map((img, idx) => (
+              <div key={idx} className="relative flex-shrink-0 w-[320px] h-[200px] rounded-2xl overflow-hidden group cursor-pointer border-2 border-[#D4AF37]/20 shadow-lg shadow-[#D4AF37]/10">
+                <img src={img.src} alt={img.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="text-[#D4AF37] text-xs font-bold uppercase tracking-wider">{img.category}</span>
+                  <h4 className="text-white font-bold text-lg">{img.title}</h4>
+                </div>
+                {/* Alumni Badge */}
+                <div className="absolute top-3 left-3 px-2 py-1 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg text-xs font-bold text-white shadow-lg">
+                  NRIIT
+                </div>
+                <div className="absolute top-3 right-3 w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ChevronRight className="w-4 h-4 text-white" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Departments Section */}
-      <section className="py-20 md:py-28 bg-gray-50">
+      {/* 🏆 DEPARTMENTS OF EXCELLENCE - LIGHT MODE */}
+      <section className="py-28 bg-white relative">
         <div className="container mx-auto px-4">
-          {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
-              Our Departments
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              9 Departments of <span className="gradient-text">Excellence</span>
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Explore our diverse range of undergraduate and postgraduate programs
-              designed to prepare you for a successful career.
-            </p>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+            <div>
+              <span className="text-[#FFD700] font-bold text-sm uppercase tracking-[0.2em] mb-3 block">Academic Excellence</span>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#013C58] text-section">
+                World-Class <span className="gradient-text-gold">Departments</span>
+              </h2>
+            </div>
+            <Link href="/departments" className="group flex items-center gap-3 text-[#00537A] hover:text-[#FFD700] transition-colors font-bold text-lg">
+              View All Programs
+              <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+            </Link>
           </div>
 
-          {/* Departments Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {departments.filter(d => d.code !== 'BSH').map((dept, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {departments.map((dept) => (
               <Link
                 key={dept.code}
                 href={`/departments/${dept.code.toLowerCase()}`}
-                className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 card-hover"
+                className={`group card-diamond rounded-2xl p-1 relative overflow-hidden ${dept.accent}`}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${dept.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-                <div className="relative p-6 md:p-8">
-                  <div className="flex items-start justify-between mb-4">
-                    <span className="text-4xl">{dept.icon}</span>
-                    <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-all" />
+                <div className={`h-full w-full rounded-xl p-6 relative z-10 bg-white ${dept.cardBgAccent} transition-all duration-500`}>
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="text-4xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300 block">{dept.icon}</span>
+                    <div className={`w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center ${dept.bgAccent} group-hover:text-white transition-colors duration-500`}>
+                      <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-white transition-colors mb-2">
-                    {dept.name}
-                  </h3>
-                  <p className="text-sm text-gray-500 group-hover:text-white/80 transition-colors">
-                    {dept.students > 0 ? `${dept.students}+ Students` : 'Foundation Department'}
-                  </p>
-                  <div className="mt-4 pt-4 border-t border-gray-100 group-hover:border-white/20 transition-colors">
-                    <span className="text-sm font-medium text-blue-600 group-hover:text-white transition-colors">
-                      Explore Programs →
-                    </span>
+
+                  <h3 className={`text-xl font-bold text-slate-900 mb-2 ${dept.textAccent} transition-colors`}>{dept.name}</h3>
+                  <p className="text-slate-500 text-sm mb-4">{dept.students}+ Scholars</p>
+
+                  <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+                    <div className={`h-full bg-gradient-to-r ${dept.gradient} w-3/4 group-hover:w-full transition-all duration-700`}></div>
                   </div>
                 </div>
               </Link>
             ))}
           </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/departments"
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all"
-            >
-              View All Departments
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      {/* 💼 UNRIVALED PLACEMENTS - DIAMOND STANDARD */}
+      <UnrivaledPlacements />
+
+      {/* 🌐 3D CAMPUS TWIN */}
+      <div className="container mx-auto px-4">
+        <DigitalTwin />
+      </div>
+
+      {/* 📚 ACADEMIC AFFAIRS QUICK LINK */}
+      <section className="py-16 bg-[#F8FAFC]">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between mb-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12 bg-gradient-to-r from-[#0F172A] to-[#1e293b] rounded-3xl border border-white/10">
             <div>
-              <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Quick Access</span>
-              <h2 className="text-3xl font-bold text-gray-900 mt-1">Student Services</h2>
+              <span className="text-[#4CAF50] font-bold text-xs uppercase tracking-widest block mb-2">Excellence in Education</span>
+              <h3 className="text-3xl md:text-4xl font-black text-white mb-2">Academic Affairs</h3>
+              <p className="text-slate-400 text-sm max-w-lg">Programs offered, academic calendar, exam schedules, and downloadable resources.</p>
             </div>
-            <Link href="/student/dashboard" className="text-blue-600 text-sm font-medium hover:underline flex items-center gap-1">
-              View Portal <ArrowRight className="w-4 h-4" />
+            <Link
+              href="/academics"
+              className="flex-shrink-0 px-8 py-4 bg-[#4CAF50] hover:bg-[#45a049] text-white font-bold rounded-2xl transition-all hover:scale-105 shadow-lg shadow-[#4CAF50]/30 flex items-center gap-3"
+            >
+              <BookOpen className="w-5 h-5" />
+              View Academic Affairs
+              <ChevronRight className="w-5 h-5" />
             </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {studentServices.map((service, index) => (
-              <Link key={index} href={service.href} className="flex flex-col items-center p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
-                <div className={`w-14 h-14 rounded-full ${service.bg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                  <service.icon className={`w-7 h-7 ${service.color}`} />
-                </div>
-                <span className="text-gray-900 font-medium text-center text-sm">{service.title}</span>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
 
-      {/* Latest Updates Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Latest Updates</h2>
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* News Cards (2 Columns) */}
-            <div className="lg:col-span-2 space-y-8">
-              <div className="grid md:grid-cols-2 gap-6">
-                {newsUpdates.map((news) => (
-                  <div key={news.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
-                    <div className="h-48 bg-gray-200 relative overflow-hidden">
-                      <div className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-gray-900 z-10">
-                        {news.category}
-                      </div>
-                      {/* Placeholder Image Gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-purple-100 group-hover:scale-105 transition-transform duration-500" />
-                    </div>
-                    <div className="p-6">
-                      <div className="text-xs text-gray-500 mb-2">{news.date}</div>
-                      <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
-                        {news.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                        {news.excerpt}
-                      </p>
-                      <Link href={`/news/${news.id}`} className="text-blue-600 text-sm font-semibold flex items-center gap-1 group/link">
-                        Read More <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                      </Link>
-                    </div>
-                  </div>
-                ))}
+      {/* 🤝 RECRUITERS SECTION - GOLD + DIAMOND FLAGSHIP */}
+      <section className="py-24 bg-[#013C58]">
+        <div className="container mx-auto px-4 text-center">
+          <span className="text-[#FFD700] font-bold text-sm uppercase tracking-[0.2em] mb-3 block">Industry Partners</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 text-section">Our Recruiters</h2>
+          <p className="text-[#A8E8F9] text-lg md:text-xl mb-16">Top companies trust our graduates</p>
+
+          <div className="flex flex-wrap justify-center gap-5 md:gap-8">
+            {["Tech Mahindra", "Cognizant", "Capgemini", "Accenture", "IBM", "Amazon", "Microsoft", "Google"].map((company, i) => (
+              <div key={i} className="px-10 py-5 bg-white/10 border-2 border-[#FFD700]/30 rounded-2xl text-white font-bold text-lg hover:bg-[#FFD700] hover:text-[#013C58] transition-all cursor-default backdrop-blur-sm hover:scale-105">
+                {company}
               </div>
+            ))}
+          </div>
+        </div>
+      </section >
+
+      {/* 🏅 ACCREDITATION STRIP - PURE GOLD FLAGSHIP */}
+      < section className="py-20 bg-gradient-to-r from-[#00537A] via-[#013C58] to-[#00537A] text-white relative overflow-hidden" >
+        <div className="absolute inset-0 hero-dots opacity-20"></div>
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-3 text-section">Globally Recognized Excellence</h2>
+            <p className="text-[#A8E8F9] text-lg md:text-xl">Accredited by NAAC with A+ Grade, Approved by AICTE, and granted Autonomous Status.</p>
+          </div>
+
+          <div className="flex gap-8">
+            {[
+              { label: "NAAC A+", sub: "Accredited" },
+              { label: "AICTE", sub: "Approved" },
+              { label: "AUTONOMOUS", sub: "Status" }
+            ].map((badge, i) => (
+              <div key={i} className="bg-[#FFD700]/20 backdrop-blur-md border-2 border-[#FFD700]/50 rounded-2xl p-8 text-center min-w-[140px] hover:bg-[#FFD700] hover:text-[#013C58] transition-all hover:scale-105">
+                <div className="text-3xl font-extrabold">{badge.label}</div>
+                <div className="text-xs uppercase tracking-[0.15em] mt-2 opacity-80 font-semibold">{badge.sub}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Abstract shapes */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#FFD700]/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+      </section >
+
+      {/* 📅 EVENTS & NEWS GRID - DIAMOND WHITE */}
+      < section className="py-28 bg-gradient-to-b from-[#F0F9FF] to-white" >
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between mb-16">
+            <div>
+              <span className="text-[#FFD700] font-bold text-sm uppercase tracking-[0.2em] mb-3 block">Campus Life</span>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#013C58] text-section">Latest <span className="gradient-text-gold">Happenings</span></h2>
+            </div>
+            <Link href="/news" className="text-lg font-bold text-[#FFD700] hover:text-[#013C58] transition-colors">View All Updates →</Link>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* News Item 1 */}
+            <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-3xl h-[400px]">
+              {/* Keep Image Overlay as is (it has its own dark gradient) */}
             </div>
 
-            {/* Notice Board (1 Column) */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 h-fit">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="p-2 bg-red-50 rounded-lg">
-                  <Bell className="w-5 h-5 text-red-500" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">Notice Board</h3>
+            {/* Notice Board - Light */}
+            <div className="bg-white rounded-3xl p-8 border-2 border-[#E5E7EB] shadow-lg">
+              <div className="flex items-center gap-3 mb-8 border-b border-slate-100 pb-4">
+                <Bell className="w-6 h-6 text-[#FFD700]" />
+                <h3 className="font-bold text-[#013C58] text-xl">Notice Board</h3>
               </div>
               <div className="space-y-4">
-                {notices.map((notice) => (
-                  <div key={notice.id} className="flex gap-4 p-3 rounded-xl hover:bg-gray-50 transition-colors">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-lg flex flex-col items-center justify-center text-xs font-semibold text-gray-600 uppercase">
-                      <span>{notice.date.split(' ')[0].substring(0, 3)}</span>
-                      <span className="text-gray-900 font-bold">{notice.date.includes('Dec') ? notice.date.split(' ')[1] : 'NOW'}</span>
+                {[
+                  { date: "Today", title: "I B.Tech Sem I Exam Schedule Released", type: "Exam" },
+                  { date: "Yesterday", title: "Campus Recruitment Drive - TCS", type: "Placement" },
+                  { date: "2 days ago", title: "Pongal Holidays Circular", type: "General" }
+                ].map((notice, i) => (
+                  <div key={i} className="flex gap-4 group cursor-pointer">
+                    <div className="flex-shrink-0 w-12 text-center">
+                      <span className="block text-xs text-slate-400 uppercase">{notice.date}</span>
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 line-clamp-2 mb-1">
-                        {notice.title}
-                      </h4>
-                      <span className="text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
-                        {notice.type}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 pt-6 border-t border-gray-100 text-center">
-                <Link href="/notices" className="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">
-                  View All Notices
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Student Voices */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Student Voices</h2>
-            <p className="text-gray-600">Hear from our alumni and current students</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {testimonials.map((item, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600 mb-6 italic min-h-[80px]">
-                  &quot;{item.content}&quot;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-400 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-sm font-bold text-gray-900">{item.name}</h4>
-                    <p className="text-xs text-blue-600">{item.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Campus Gallery */}
-      <section className="py-20 bg-gray-50 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Visual Tour</span>
-            <h2 className="text-3xl font-bold text-gray-900 mt-1">Campus Gallery</h2>
-          </div>
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            {galleryImages.map((src, index) => (
-              <div key={index} className="break-inside-avoid relative rounded-2xl overflow-hidden group">
-                <img
-                  src={src}
-                  alt={`Campus Gallery ${index + 1}`}
-                  className="w-full h-auto object-cover hover:scale-110 transition-transform duration-700"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
-                    <ImageIcon className="w-6 h-6" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-white to-blue-50" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200/50 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-200/50 rounded-full blur-3xl" />
-
-        <div className="relative container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div>
-              <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-4">
-                Why NRIIT?
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Your Path to <span className="gradient-text">Success</span> Starts Here
-              </h2>
-              <p className="text-gray-600 text-lg mb-8">
-                At NRIIT, we believe in nurturing talent, fostering innovation, and preparing
-                students for the challenges of tomorrow. Our commitment to excellence has made
-                us one of the premier engineering institutions in Andhra Pradesh.
-              </p>
-
-              {/* Feature List */}
-              <div className="space-y-6">
-                {features.map((feature, index) => (
-                  <div key={feature.title} className="flex gap-4 group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl gradient-bg flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <feature.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">{feature.title}</h3>
-                      <p className="text-gray-600 text-sm">{feature.description}</p>
+                      <p className="text-sm text-slate-600 group-hover:text-[#D4AF37] transition-colors font-medium">{notice.title}</p>
+                      <span className="text-[10px] text-slate-500 border border-slate-200 px-1.5 rounded mt-1 inline-block">{notice.type}</span>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* Right - Visual Element */}
-            <div className="relative">
-              <div className="relative aspect-square max-w-lg mx-auto">
-                {/* Main Circle */}
-                <div className="absolute inset-8 rounded-full gradient-bg opacity-20 animate-pulse-glow" />
-                <div className="absolute inset-16 rounded-full bg-white shadow-2xl flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="text-6xl md:text-7xl font-bold gradient-text mb-2">95%</div>
-                    <div className="text-gray-600 font-medium">Placement Rate</div>
-                    <div className="text-sm text-gray-500 mt-2">Industry-Ready Graduates</div>
-                  </div>
-                </div>
-
-                {/* Floating Elements */}
-                <div className="absolute top-4 left-4 w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center animate-float">
-                  <Award className="w-10 h-10 text-purple-600" />
-                </div>
-                <div className="absolute top-4 right-4 w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center animate-float delay-200">
-                  <TrendingUp className="w-10 h-10 text-green-600" />
-                </div>
-                <div className="absolute bottom-4 left-4 w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center animate-float delay-400">
-                  <Globe className="w-10 h-10 text-blue-600" />
-                </div>
-                <div className="absolute bottom-4 right-4 w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center animate-float delay-300">
-                  <GraduationCap className="w-10 h-10 text-amber-600" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
+      </section >
 
-      {/* Recruiters Section */}
-      <section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Our Recruiters</h2>
-            <p className="text-gray-400">Top companies trust our graduates</p>
-          </div>
-
-          {/* Logo Carousel */}
-          <div className="relative overflow-hidden">
-            <div className="flex gap-12 animate-scroll">
-              {[...recruiters, ...recruiters].map((company, index) => (
-                <div
-                  key={`${company}-${index}`}
-                  className="flex-shrink-0 px-8 py-4 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10"
-                >
-                  <span className="text-white/80 font-semibold text-lg whitespace-nowrap">
-                    {company}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Accreditation Banner */}
-      <section className="py-16 gradient-bg">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Nationally Accredited Programs
-              </h2>
-              <p className="text-white/80">
-                Multiple programs accredited by NBA (National Board of Accreditation)
-              </p>
-            </div>
-            <div className="flex items-center gap-6">
-              <div className="text-center px-6 py-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                <div className="text-3xl font-bold text-white">NBA</div>
-                <div className="text-sm text-white/70">Accredited</div>
-              </div>
-              <div className="text-center px-6 py-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                <div className="text-3xl font-bold text-white">NAAC</div>
-                <div className="text-sm text-white/70">Accredited</div>
-              </div>
-              <div className="text-center px-6 py-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                <div className="text-3xl font-bold text-white">AICTE</div>
-                <div className="text-sm text-white/70">Approved</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="relative overflow-hidden rounded-3xl gradient-bg p-8 md:p-16">
-            <div className="absolute inset-0 hero-dots opacity-10" />
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-
-            <div className="relative text-center max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Ready to Begin Your Journey?
-              </h2>
-              <p className="text-lg text-white/80 mb-10">
-                Join thousands of successful alumni who started their career at NRIIT.
-                Applications are now open for the upcoming academic session.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link
-                  href="/apply"
-                  className="group px-10 py-4 bg-white text-blue-700 rounded-full font-semibold hover:shadow-2xl hover:shadow-white/25 transition-all flex items-center gap-2"
-                >
-                  Apply for Admission
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <Link
-                  href="/contact"
-                  className="px-10 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-full font-semibold hover:bg-white/20 transition-all"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Brand */}
-            <div>
-              <Link href="/" className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl">
-                  N
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-white">NRIIT</h3>
-                  <p className="text-xs text-gray-400">Est. 2001</p>
-                </div>
-              </Link>
-              <p className="text-gray-400 text-sm mb-6">
-                NRI Institute of Technology is committed to providing quality technical
-                education and producing industry-ready professionals.
-              </p>
-              <div className="flex gap-4">
-                {['facebook', 'twitter', 'linkedin', 'youtube', 'instagram'].map((social) => (
-                  <a
-                    key={social}
-                    href={`https://${social}.com/nriit`}
-                    className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Globe className="w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-semibold text-white mb-6">Quick Links</h4>
-              <ul className="space-y-3">
-                {['About Us', 'Admissions', 'Departments', 'Placements', 'Research', 'Events'].map((link) => (
-                  <li key={link}>
-                    <Link href={`/${link.toLowerCase().replace(' ', '-')}`} className="hover:text-white transition-colors">
-                      {link}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Departments */}
-            <div>
-              <h4 className="font-semibold text-white mb-6">Departments</h4>
-              <ul className="space-y-3">
-                {['CSE', 'CSE (Data Science)', 'CSE (AI & ML)', 'IT', 'ECE', 'Civil'].map((dept) => (
-                  <li key={dept}>
-                    <Link href={`/departments/${dept.toLowerCase().replace(/[^a-z]/g, '-')}`} className="hover:text-white transition-colors">
-                      {dept}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="font-semibold text-white mb-6">Contact Us</h4>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <MapPin className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm">
-                    Visadala, Guntur
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <Phone className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <span className="text-sm">0863 234 4300</span>
-                </li>
-                <li className="flex gap-3">
-                  <Mail className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <span className="text-sm">nriit.guntur@gmail.com</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} NRI Institute of Technology. All rights reserved.
-            </p>
-            <div className="flex gap-6 text-sm">
-              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-              <Link href="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-    </main>
+      <PremiumFooter />
+      <VisionaryAssistant />
+    </main >
   );
 }

@@ -1,0 +1,1504 @@
+{
+  "2025-26": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Nageswara Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "28.05.2019",
+      "pan": "AGZPK9875A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. J.Chandrasekhar",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "11.12.2018",
+      "pan": "AJBPJ5874D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Dr Dara Vikram",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "09.01.2020",
+      "pan": "CHSPD3354F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "Dr Kode Rajiv",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "21.12.2020",
+      "pan": "BBEPK6502R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "Dr Y V Raghava Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor & DEAN",
+      "doj": "03.05.2021",
+      "pan": "ACDPY4427C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "Dr G Mahesh",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "15.04.2022",
+      "pan": "BPPPG8114Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "Dr G Kalyani",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "18.05.2023",
+      "pan": "HSKPK9569M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Mr D Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.11.2008",
+      "pan": "APYPD0479D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "Mr I Nageswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06.01.2016",
+      "pan": "AAJPE3195R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "Mr P Aravind",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06.10.2016",
+      "pan": "BTYPP5435L",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "Mr. V.K.Pratap",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "17.12.2018",
+      "pan": "AHJPV7914J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "Mrs. Y.Jessy Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10.01.2019",
+      "pan": "AQXPY6818K",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "Mrs. K.Manvitha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.07.2019",
+      "pan": "FRNPK0670R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "Mr Kommuri Balaji",
+      "qualification": "MS",
+      "designation": "Assistant Professor",
+      "doj": "18.05.2020",
+      "pan": "BZSPB9501P",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15",
+      "name": "Mr K Rama Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.09.2020",
+      "pan": "EBJPK8148B",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16",
+      "name": "Mrs. D.Thirupathamma",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03.02.2021",
+      "pan": "COTPD0280A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17",
+      "name": "Mr. B.Rajashekhar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09.03.2021",
+      "pan": "CRVPB4846F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18",
+      "name": "Mrs M Uma Devi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12.04.2021",
+      "pan": "CSTPM2022D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19",
+      "name": "Mr M Arunkumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03.05.2021",
+      "pan": "AMAPM7701Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20",
+      "name": "Mr G Ashok Babu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03.05.2021",
+      "pan": "BZXPG5143F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21",
+      "name": "Mrs Kopuri Lavanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12.05.2021",
+      "pan": "EBQPK7677J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22",
+      "name": "Mrs P.Ratna Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.09.2021",
+      "pan": "NPYPY5159E",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23",
+      "name": "Ms.Ch.Bindu Madhavi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "04.10.2021",
+      "pan": "BISPC5648H",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24",
+      "name": "Mrs K. Kavya Sri",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09.02.2022",
+      "pan": "FLIPS5042C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25",
+      "name": "Mr Ganta Srikanth",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09.06.2022",
+      "pan": "NFNPS3820D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26",
+      "name": "Mrs K Sai Sulochana",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02.10.2023",
+      "pan": "CJDPK3471R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27",
+      "name": "Mrs Sk Hussainbi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.01.2024",
+      "pan": "DFJPS0129M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28",
+      "name": "Mrs S Anusha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20.02.2024",
+      "pan": "GAUPS1584K",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29",
+      "name": "Mr Addanki Praveen",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09.10.2024",
+      "pan": "CNKPA0778G",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30",
+      "name": "Ms.S.Sowjanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02.03.2021",
+      "pan": "EEZPS2467P",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31",
+      "name": "Mr P Laxma Chary",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02.08.2024",
+      "pan": "BZUPP9533R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32",
+      "name": "Dr U Gayatri",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.08.2024",
+      "pan": "ACFPU2313R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33",
+      "name": "Mr K Tony Rhodes",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.08.2024",
+      "pan": "EPLPK8768D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34",
+      "name": "Mr B Siva Nagaraju",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.08.2024",
+      "pan": "BQCPB1494C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35",
+      "name": "Mr B Mahesh",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02.08.2024",
+      "pan": "JRRPM7346N",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36",
+      "name": "Mrs Prathyusha Ch",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.08.2024",
+      "pan": "CAUPP0712Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37",
+      "name": "Mr G Suresh",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02.08.2024",
+      "pan": "AXMPG0182E",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38",
+      "name": "Mr Dharma Rao Pamidi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05.09.2024",
+      "pan": "AUOPP9859Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39",
+      "name": "Mrs G Madhuri",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05.09.2024",
+      "pan": "GJPPM7539Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40",
+      "name": "Mr S Haribabu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05.09.2024",
+      "pan": "AJEPH3310F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41",
+      "name": "Mrs V Nandini",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06.09.2024",
+      "pan": "BTTPN7946M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "42",
+      "name": "Mr G Srikanth",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "05.09.2024",
+      "pan": "OPYPS6529M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "43",
+      "name": "Mr R Siav kumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "07.09.2024",
+      "pan": "BEUPR3613H",
+      "nature": "Regular"
+    },
+    {
+      "sno": "44",
+      "name": "Mrs Karishma Bhanu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03.09.2025",
+      "pan": "GATPB5713A",
+      "nature": "Regular"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Nageswara Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "28-05-2019",
+      "pan": "AGZPK9875A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. J.Chandrasekhar",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "11-12-2018",
+      "pan": "AJBPJ5874D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Dr Dara Vikram",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "09-01-2020",
+      "pan": "CHSPD3354F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "Dr Y V Raghava Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "03-05-2021",
+      "pan": "ACDPY4427C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "Dr Kode Rajiv",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "21-12-2020",
+      "pan": "BBEPK6502R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "Dr G Mahesh",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "15-04-2022",
+      "pan": "BPPPG8114Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "Dr G Kalyani",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "18-05-2023",
+      "pan": "HSKPK9569M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Mr D Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-11-2008",
+      "pan": "APYPD0479D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "Mrs P Sujatha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "21-12-2012",
+      "pan": "CDTPS3716F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "Mr I Nageswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-01-2016",
+      "pan": "AAJPE3195R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "Mr P Aravind",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-10-2016",
+      "pan": "BTYPP5435L",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "Mr. V.K.Pratap",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "17-12-2018",
+      "pan": "AHJPV7914J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "Mrs. Y.Jessy Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10-01-2019",
+      "pan": "AQXPY6818K",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "Mrs. K.Manvitha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2019",
+      "pan": "FRNPK0670R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15",
+      "name": "Ms. N.Kanthi Priyadarsini",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "13-12-2019",
+      "pan": "ASUPN0182C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16",
+      "name": "Mr Kommuri Balaji",
+      "qualification": "MS",
+      "designation": "Assistant Professor",
+      "doj": "18-05-2020",
+      "pan": "BZSPB9501P",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17",
+      "name": "Mr K Rama Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2020",
+      "pan": "EBJPK8148B",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18",
+      "name": "Mrs. Raziya Sulthana",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "FMBPP4788J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19",
+      "name": "Mrs. D.Thirupathamma",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "COTPD0280A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20",
+      "name": "Mrs. P. Swathi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "BBEPP2042K",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21",
+      "name": "Ms.S.Sowjanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "EEZPS2467P",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22",
+      "name": "Mr. B.Rajashekhar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2021",
+      "pan": "CRVPB4846F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23",
+      "name": "Mrs M Uma Devi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2021",
+      "pan": "CSTPM2022D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24",
+      "name": "Mr M Arunkumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2021",
+      "pan": "AMAPM7701Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25",
+      "name": "Mr G Ashok Babu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2021",
+      "pan": "BZXPG5143F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26",
+      "name": "Mrs Kopuri Lavanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-05-2021",
+      "pan": "EBQPK7677J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27",
+      "name": "Mr U U Veerendra",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2021",
+      "pan": "ALEPV8806A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28",
+      "name": "Mrs P.Ratna Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2021",
+      "pan": "NPYPY5159E",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29",
+      "name": "Mr.D.Hari Krishna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-09-2021",
+      "pan": "BCJPD3175R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30",
+      "name": "Ms.Ch.Bindu Madhavi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "04-10-2021",
+      "pan": "BISPC5648H",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31",
+      "name": "Ms. G.Sowmya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-01-2022",
+      "pan": "CDZPG3632C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32",
+      "name": "Mrs K. Kavya Sri",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2022",
+      "pan": "FLIPS5042C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33",
+      "name": "Mr N.Vamsi Krishna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "21-02-2022",
+      "pan": "APSPN0854N",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34",
+      "name": "Mr J Ramu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2022",
+      "pan": "AISPJ9290M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35",
+      "name": "Mr Ganta Srikanth",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-06-2022",
+      "pan": "NFNPS3820D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36",
+      "name": "Mrs. G.Sindhuja",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-10-2022",
+      "pan": "BRJPG4572Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37",
+      "name": "Mrs K Sai Sulochana",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "02-10-2023",
+      "pan": "CJDPK3471R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38",
+      "name": "Mrs Sk Hussainbi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-01-2024",
+      "pan": "DFJPS0129M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39",
+      "name": "Mrs S Anusha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "20-02-2024",
+      "pan": "DCOPP4624Q",
+      "nature": "Regular"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Nageswara Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "28-05-2019",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. J.Chandrasekhar",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "11-12-2018",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Dr. D Sarada Mani",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "29-08-2019",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "Dr Dara Vikram",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "09-01-2020",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "Dr Y V Raghava Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "03-05-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "Dr Kode Rajiv",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "21-12-2020",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "Dr G Mahesh",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "15-04-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Dr G Kalyani",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "18-05-2023",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "Mr D Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-11-2008",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "Mrs P Sujatha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "21-12-2012",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "Mr I Nageswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-01-2016",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "Mr P Aravind",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-10-2016",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "Mr. V.K.Pratap",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "17-12-2018",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "Mrs. Y.Jessy Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10-01-2019",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15",
+      "name": "Mrs B Sujatha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10-06-2019",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16",
+      "name": "Mrs. K.Manvitha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2019",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17",
+      "name": "Ms. N.Kanthi Priyadarsini",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "13-12-2019",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18",
+      "name": "Mr Kommuri Balaji",
+      "qualification": "MS",
+      "designation": "Assistant Professor",
+      "doj": "18-05-2020",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19",
+      "name": "Mr K Rama Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2020",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20",
+      "name": "Mrs M Alekhya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "04-01-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21",
+      "name": "Mrs. Raziya Sulthana",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22",
+      "name": "Mrs. D.Thirupathamma",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23",
+      "name": "Mrs. P. Swathi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24",
+      "name": "Ms.S.Sowjanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25",
+      "name": "Mr. B.Rajashekhar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26",
+      "name": "Mrs M Uma Devi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27",
+      "name": "Mr M Arunkumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28",
+      "name": "Mr G Ashok Babu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29",
+      "name": "Mrs Kopuri Lavanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-05-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30",
+      "name": "Mr V.Suresh Babu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31",
+      "name": "Mr U U Veerendra",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32",
+      "name": "Mrs P.Ratna Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33",
+      "name": "Mr.D.Hari Krishna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-09-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34",
+      "name": "Ms.Ch.Bindu Madhavi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "04-10-2021",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35",
+      "name": "Ms. G.Sowmya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-01-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36",
+      "name": "Mrs K. Kavya Sri",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37",
+      "name": "Mr N.Vamsi Krishna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "21-02-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38",
+      "name": "Mr J Ramu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39",
+      "name": "Mr N Pradeep Kumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40",
+      "name": "Mr Ganta Srikanth",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-06-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41",
+      "name": "Mrs Shaik Roshna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "42",
+      "name": "Mrs. G.Sindhuja",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-10-2022",
+      "pan": "N/A",
+      "nature": "Regular"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1",
+      "name": "Mr D Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-11-2008",
+      "pan": "APYPD0479D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Mrs P Sujatha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "21-12-2012",
+      "pan": "CDTPS3716F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Mr I Nageswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-01-2016",
+      "pan": "AAJPE3195R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "Mr P Aravind",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-10-2016",
+      "pan": "BTYPP5435L",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "Dr. J.Chandrasekhar",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "11-12-2018",
+      "pan": "AJBPJ5874D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "Mr. V.K.Pratap",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "17-12-2018",
+      "pan": "AHJPV7914J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "Mrs. Y.Jessy Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10-01-2019",
+      "pan": "AQXPY6818K",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Dr.K.Nageswara Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor & HOD",
+      "doj": "28-05-2019",
+      "pan": "AGZPK9875A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "Mrs B Sujatha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "10-06-2019",
+      "pan": "AMNPB4541J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "Mrs. K.Manvitha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2019",
+      "pan": "FRNPK0670R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "Dr. D Sarada Mani",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "29-08-2019",
+      "pan": "ATTPD1757H",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "Ms. N.Kanthi Priyadarsini",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "13-12-2019",
+      "pan": "ASUPN0182C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "Dr Dara Vikram",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "09-01-2020",
+      "pan": "CHSPD3354F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "Mr Kommuri Balaji",
+      "qualification": "MS",
+      "designation": "Assistant Professor",
+      "doj": "18-05-2020",
+      "pan": "BZSPB9501P",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15",
+      "name": "Mr K Rama Koteswara Rao",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2020",
+      "pan": "EBJPK8148B",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16",
+      "name": "Dr Kode Rajiv",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "21-12-2020",
+      "pan": "BBEPK6502R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17",
+      "name": "Mrs M Alekhya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "04-01-2021",
+      "pan": "BTLPM1693N",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18",
+      "name": "Mrs. Raziya Sulthana",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "FMBPP4788J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19",
+      "name": "Mrs. D.Thirupathamma",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "COTPD0280A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "20",
+      "name": "Mrs. P. Swathi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "BBEPP2042K",
+      "nature": "Regular"
+    },
+    {
+      "sno": "21",
+      "name": "Ms.S.Sowjanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-02-2021",
+      "pan": "EEZPS2467P",
+      "nature": "Regular"
+    },
+    {
+      "sno": "22",
+      "name": "Mr. B.Rajashekhar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2021",
+      "pan": "CRVPB4846F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23",
+      "name": "Mrs M Uma Devi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-04-2021",
+      "pan": "CSTPM2022D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "24",
+      "name": "Dr Y V Raghava Rao",
+      "qualification": "Ph.D",
+      "designation": "Professor",
+      "doj": "03-05-2021",
+      "pan": "ACDPY4427C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "25",
+      "name": "Mr M Arunkumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2021",
+      "pan": "AMAPM7701Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "26",
+      "name": "Mr G Ashok Babu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2021",
+      "pan": "BZXPG5143F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "27",
+      "name": "Mrs Kopuri Lavanya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "12-05-2021",
+      "pan": "EBQPK7677J",
+      "nature": "Regular"
+    },
+    {
+      "sno": "28",
+      "name": "Mr V.Suresh Babu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2021",
+      "pan": "AOTPV8598R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "29",
+      "name": "Mr U U Veerendra",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2021",
+      "pan": "ALEPV8806A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "30",
+      "name": "Mrs P.Ratna Kumari",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-09-2021",
+      "pan": "NPYPY5159E",
+      "nature": "Regular"
+    },
+    {
+      "sno": "31",
+      "name": "Mr.D.Hari Krishna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "06-09-2021",
+      "pan": "BCJPD3175R",
+      "nature": "Regular"
+    },
+    {
+      "sno": "32",
+      "name": "Ms.Ch.Bindu Madhavi",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "04-10-2021",
+      "pan": "BISPC5648H",
+      "nature": "Regular"
+    },
+    {
+      "sno": "33",
+      "name": "Mrs V.Asha Latha",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "22-01-2022",
+      "pan": "ANEPL3244L",
+      "nature": "Regular"
+    },
+    {
+      "sno": "34",
+      "name": "Ms. G.Sowmya",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "29-01-2022",
+      "pan": "CDZPG3632C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "35",
+      "name": "Mrs K. Kavya Sri",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-02-2022",
+      "pan": "FLIPS5042C",
+      "nature": "Regular"
+    },
+    {
+      "sno": "36",
+      "name": "Mr N.Vamsi Krishna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "21-02-2022",
+      "pan": "APSPN0854N",
+      "nature": "Regular"
+    },
+    {
+      "sno": "37",
+      "name": "Mr J Ramu",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-03-2022",
+      "pan": "AISPJ9290M",
+      "nature": "Regular"
+    },
+    {
+      "sno": "38",
+      "name": "Dr G Mahesh",
+      "qualification": "Ph.D",
+      "designation": "Associate Professor",
+      "doj": "15-04-2022",
+      "pan": "BPPPG8114Q",
+      "nature": "Regular"
+    },
+    {
+      "sno": "39",
+      "name": "Mr N Pradeep Kumar",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-06-2022",
+      "pan": "ASHPN9227F",
+      "nature": "Regular"
+    },
+    {
+      "sno": "40",
+      "name": "Mr Ganta Srikanth",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "09-06-2022",
+      "pan": "NFNPS3820D",
+      "nature": "Regular"
+    },
+    {
+      "sno": "41",
+      "name": "Mrs Shaik Roshna",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2022",
+      "pan": "KTBPS1307E",
+      "nature": "Regular"
+    }
+  ]
+}

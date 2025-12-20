@@ -1,0 +1,16 @@
+employee_id,faculty_name,course_code,course_name,dept_code,semester,section,day,period,room
+FACECE001,Dr. ECE Kumar,EC301,Digital Electronics,ECE,3,A,Monday,1,ECE-301
+FACECE001,Dr. ECE Kumar,EC301,Digital Electronics,ECE,3,A,Tuesday,2,ECE-301
+FACECE001,Dr. ECE Kumar,EC301,Digital Electronics,ECE,3,A,Wednesday,3,ECE-301
+FACECE002,Ms. ECE Priya,EC302,Signals and Systems,ECE,3,A,Monday,2,ECE-302
+FACECE002,Ms. ECE Priya,EC302,Signals and Systems,ECE,3,A,Thursday,1,ECE-302
+FACECE002,Ms. ECE Priya,EC302,Signals and Systems,ECE,3,B,Tuesday,3,ECE-303
+FACECE003,Dr. ECE Reddy,EC303,Microprocessors,ECE,5,A,Monday,3,ECE-401
+FACECE003,Dr. ECE Reddy,EC303,Microprocessors,ECE,5,A,Wednesday,4,ECE-401
+FACECE003,Dr. ECE Reddy,EC303,Microprocessors,ECE,5,A,Friday,1,ECE-401
+FACECE004,Mr. ECE Rao,EC304,Communication Systems,ECE,5,A,Monday,4,ECE-402
+FACECE004,Mr. ECE Rao,EC304,Communication Systems,ECE,5,A,Tuesday,4,ECE-402
+FACECE004,Mr. ECE Rao,EC304,Communication Systems,ECE,5,B,Thursday,2,ECE-403
+FACECE005,Ms. ECE Devi,EC305,VLSI Design,ECE,7,A,Monday,5,ECE-501
+FACECE005,Ms. ECE Devi,EC305,VLSI Design,ECE,7,A,Wednesday,5,ECE-501
+FACECE005,Ms. ECE Devi,EC305,VLSI Design,ECE,7,A,Friday,6,ECE-501

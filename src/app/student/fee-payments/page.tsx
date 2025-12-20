@@ -50,7 +50,7 @@ export default function StudentFeePaymentsPage() {
                     .from('fee_master')
                     .select('*')
                     .eq('dept_code', profile.dept_code)
-                    .eq('academic_year', '2024-25')
+                    .eq('academic_year', '2025-2026')
                     .eq('is_active', true);
 
                 if (fees) {

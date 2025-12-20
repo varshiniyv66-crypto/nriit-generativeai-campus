@@ -56,34 +56,45 @@ export default function FacultyLayout({
     if (!user) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white">Loading...</div>;
 
     return (
-        <div className="flex h-screen bg-slate-950">
-            {/* Sidebar - Desktop */}
-            <aside className="w-64 bg-slate-900 border-r border-slate-800 hidden md:flex flex-col">
-                <div className="p-6 border-b border-slate-800 flex items-center gap-3">
-                    <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-                        <GraduationCap className="w-5 h-5 text-white" />
+        <div className="flex h-screen bg-[#0F172A] overflow-hidden relative font-sans selection:bg-purple-500 selection:text-white">
+            {/* Aurora Background Effects */}
+            <div className="absolute inset-0 pointer-events-none z-0">
+                <div className="absolute top-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-purple-500/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+                <div className="absolute bottom-[-20%] left-[-10%] w-[1000px] h-[1000px] bg-blue-500/10 rounded-full blur-[120px] animate-float-slow"></div>
+            </div>
+
+            {/* Sidebar - Desktop (Dark Glass) */}
+            <aside className="w-64 bg-[#0F172A]/80 backdrop-blur-xl border-r border-white/10 hidden md:flex flex-col relative z-20">
+                <div className="p-6 border-b border-white/10 flex items-center gap-3">
+                    <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-purple-500/20 group">
+                        <GraduationCap className="w-6 h-6" />
+                        <div className="absolute inset-0 bg-white/20 rounded-xl animate-pulse-slow"></div>
                     </div>
-                    <span className="font-bold text-white text-lg tracking-tight">Faculty Portal</span>
+                    <div>
+                        <span className="font-bold text-white text-lg tracking-tight block">Faculty Portal</span>
+                        <span className="text-[10px] text-purple-400 uppercase tracking-widest font-semibold flex items-center gap-1">
+                            Academic Suite
+                        </span>
+                    </div>
                 </div>
 
                 <div className="p-4">
-                    <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-800/50 border border-slate-700/50 mb-6">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm">
+                    <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 mb-6 group hover:bg-white/10 transition-colors shadow-sm">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-sm shadow-md ring-2 ring-white/10 group-hover:ring-white/30 transition-all">
                             {user.first_name ? user.first_name[0] : "FS"}
                         </div>
                         <div className="flex-1 min-w-0">
-                            <p className="text-sm font-medium text-white truncate">
+                            <p className="text-sm font-bold text-white truncate">
                                 {user.role === 'faculty' ? (user.name || "Faculty Name") : "Faculty Member (Preview)"}
                             </p>
-                            <p className="text-xs text-slate-400 truncate">
-                                {user.role === 'faculty' ? (user.employee_id || "Employee ID") : "FAC-PREVIEW"}
+                            <p className="text-xs text-slate-400 truncate font-medium">
+                                {user.role === 'faculty' ? (user.employee_id || "Employee ID") : "Verified Faculty"}
                             </p>
                         </div>
                     </div>
 
                     <nav className="space-y-1">
                         {NAV_ROUTES.faculty.map((route) => {
-                            // Map icons
                             const Icon = route.icon === 'LayoutDashboard' ? LayoutDashboard
                                 : route.icon === 'UserCheck' ? UserCheck
                                     : route.icon === 'FileText' ? FileText
@@ -96,43 +107,55 @@ export default function FacultyLayout({
                                 <Link
                                     key={route.href}
                                     href={route.href}
-                                    className="flex items-center gap-3 px-3 py-2.5 text-slate-300 rounded-lg hover:bg-white/5 hover:text-white transition-colors group"
+                                    className="flex items-center gap-3 px-3 py-2.5 text-slate-400 rounded-lg hover:bg-white/5 hover:text-white transition-all group relative overflow-hidden"
                                 >
-                                    <Icon className="w-4 h-4 text-slate-400 group-hover:text-indigo-400 transition-colors" />
-                                    <span className="text-sm font-medium">{route.label}</span>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-transparent translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-300 rounded-lg" />
+                                    <Icon className="w-4 h-4 text-slate-500 group-hover:text-purple-400 transition-colors relative z-10" />
+                                    <span className="text-sm font-medium relative z-10">{route.label}</span>
                                 </Link>
                             );
                         })}
                     </nav>
                 </div>
 
-                <div className="mt-auto p-4 border-t border-slate-800">
+                <div className="mt-auto p-4 border-t border-white/10">
                     <button
                         onClick={handleLogout}
-                        className="flex items-center gap-3 px-3 py-2.5 w-full text-slate-300 rounded-lg hover:bg-red-500/10 hover:text-red-400 transition-colors"
+                        className="flex items-center gap-3 px-3 py-2.5 w-full text-slate-400 rounded-lg hover:bg-red-500/10 hover:text-red-400 transition-colors"
                     >
                         <LogOut className="w-4 h-4" />
                         <span className="text-sm font-medium">Logout</span>
                     </button>
-                    <p className="text-xs text-center text-slate-500 mt-4">
-                        v2.4.0 • NRIIT Campus
+                    <p className="text-[10px] text-center text-slate-600 mt-4 uppercase tracking-widest">
+                        NRIIT Flagship v4.0
                     </p>
                 </div>
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 flex flex-col min-w-0 overflow-hidden">
+            <main className="flex-1 flex flex-col min-w-0 overflow-hidden relative z-10">
                 {/* Top Header */}
-                <header className="h-16 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-4 lg:px-8">
-                    <h1 className="text-xl font-semibold text-white">Faculty Dashboard</h1>
+                <header className="h-20 bg-[#0F172A]/80 backdrop-blur-xl border-b border-white/10 flex items-center justify-between px-4 lg:px-8 sticky top-0 z-30">
+                    <div>
+                        <h1 className="text-2xl font-bold text-white animate-shimmer drop-shadow-sm">
+                            Faculty Dashboard
+                        </h1>
+                        <p className="text-xs text-slate-400 font-medium tracking-wide">ACADEMIC STAFF PORTAL</p>
+                    </div>
 
                     <div className="flex items-center gap-4">
                         <NotificationCenter role="faculty" />
+                        <div className="h-8 w-px bg-white/10" />
+                        <div className="hidden sm:flex flex-col items-end">
+                            <span className="text-xs text-slate-400 uppercase tracking-wider">Current Term</span>
+                            <span className="text-sm font-bold text-purple-400">Spring 2025</span>
+                        </div>
                     </div>
                 </header>
 
-                <div className="flex-1 overflow-auto p-4 lg:p-8 bg-black/20">
-                    <div className="max-w-7xl mx-auto w-full">
+                <div className="flex-1 overflow-auto p-4 lg:p-8 scrollbar-hide">
+                    {/* Content Container with slight fade in */}
+                    <div className="max-w-7xl mx-auto w-full animate-fade-in-up">
                         {children}
                     </div>
                 </div>

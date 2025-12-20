@@ -1,0 +1,618 @@
+{
+  "2025-26": [
+    {
+      "sno": "1.0",
+      "name": "Thallam Venkata Naga Hanumantha Rao",
+      "qualification": "MCA",
+      "designation": "Associate Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Perisetty Aarti Devi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "D Sowmya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "18-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Vajja Ravi Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Potla Akhila",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "Chennupati Naresh Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "Kadhire Praveena",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "Sale Ravi Teja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "Shaik Nagul Meera",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-10-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "Garlapati Naga Venkata Lakshmi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "30-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "Madanu Anusha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "Adabala Chiranjeevi Venkatesh",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "Bhavanam Sravani",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "Maddukuri Prasad",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "Nuthalapati Meghana",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "15-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "Karanam Sireesha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "K Sasi Venkata Murthy",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "Motati Kavya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "Motati Sreeja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1.0",
+      "name": "Thallam Venkata Naga Hanumantha Rao",
+      "qualification": "MCA",
+      "designation": "Associate Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Perisetty Aarti Devi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "D Sowmya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "18-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Vajja Ravi Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Potla Akhila",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "Chennupati Naresh Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "Kadhire Praveena",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "Sale Ravi Teja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "Shaik Nagul Meera",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-10-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "Garlapati Naga Venkata Lakshmi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "30-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "Madanu Anusha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "Adabala Chiranjeevi Venkatesh",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "Bhavanam Sravani",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "Maddukuri Prasad",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "Nuthalapati Meghana",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "15-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "Karanam Sireesha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "K Sasi Venkata Murthy",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "Motati Kavya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "Motati Sreeja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1.0",
+      "name": "Thallam Venkata Naga Hanumantha Rao",
+      "qualification": "MCA",
+      "designation": "Associate Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Perisetty Aarti Devi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "D Sowmya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "18-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Vajja Ravi Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Potla Akhila",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "Chennupati Naresh Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "Kadhire Praveena",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "Sale Ravi Teja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "Shaik Nagul Meera",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-10-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "Garlapati Naga Venkata Lakshmi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "30-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "Madanu Anusha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "Adabala Chiranjeevi Venkatesh",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "Bhavanam Sravani",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "Maddukuri Prasad",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "Nuthalapati Meghana",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "15-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "Karanam Sireesha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "K Sasi Venkata Murthy",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "Motati Kavya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "Motati Sreeja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1.0",
+      "name": "Thallam Venkata Naga Hanumantha Rao",
+      "qualification": "MCA",
+      "designation": "Associate Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2.0",
+      "name": "Perisetty Aarti Devi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3.0",
+      "name": "D Sowmya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "18-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4.0",
+      "name": "Vajja Ravi Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5.0",
+      "name": "Potla Akhila",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6.0",
+      "name": "Chennupati Naresh Kumar",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "16-11-2023",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7.0",
+      "name": "Kadhire Praveena",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8.0",
+      "name": "Sale Ravi Teja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "10-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9.0",
+      "name": "Shaik Nagul Meera",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-10-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10.0",
+      "name": "Garlapati Naga Venkata Lakshmi",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "30-09-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11.0",
+      "name": "Madanu Anusha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "01-07-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12.0",
+      "name": "Adabala Chiranjeevi Venkatesh",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13.0",
+      "name": "Bhavanam Sravani",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14.0",
+      "name": "Maddukuri Prasad",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "02-06-2025",
+      "nature": "Regular"
+    },
+    {
+      "sno": "15.0",
+      "name": "Nuthalapati Meghana",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "15-04-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "16.0",
+      "name": "Karanam Sireesha",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "17.0",
+      "name": "K Sasi Venkata Murthy",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-06-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "18.0",
+      "name": "Motati Kavya",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    },
+    {
+      "sno": "19.0",
+      "name": "Motati Sreeja",
+      "qualification": "MCA",
+      "designation": "Assistant Professor",
+      "doj": "03-05-2024",
+      "nature": "Regular"
+    }
+  ]
+}

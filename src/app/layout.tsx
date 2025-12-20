@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/components/theme-provider";
+import { MouseSparkles } from "@/components/ui/MouseSparkles";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
     default: "NRI Institute of Technology | NRIIT Vijayawada",
     template: "%s | NRIIT",
   },
-  description: "NRI Institute of Technology (NRIIT) is a premier engineering college in Vijayawada, Andhra Pradesh, offering NBA accredited B.Tech, M.Tech, MBA, and MCA programs with excellent placements and world-class infrastructure.",
+  description: "NRI Institute of Technology (NRIIT) is a premier Autonomous engineering college in Vijayawada, Andhra Pradesh, NAAC A+ accredited, offering B.Tech, M.Tech, MBA, and MCA programs with excellent placements and world-class infrastructure.",
   keywords: [
     "NRIIT",
     "NRI Institute of Technology",
@@ -31,7 +33,8 @@ export const metadata: Metadata = {
     "MBA",
     "MCA",
     "JNTUK",
-    "NBA Accredited",
+    "NAAC A+",
+    "Autonomous Status",
     "Best Engineering College AP",
   ],
   authors: [{ name: "NRI Institute of Technology" }],
@@ -48,7 +51,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "NRI Institute of Technology | Excellence in Technical Education",
-    description: "Premier engineering college in Vijayawada offering NBA accredited programs with excellent placements and industry partnerships.",
+    description: "Premier Autonomous engineering college in Vijayawada, NAAC A+ accredited, offering advanced technical programs with excellent placements and industry partnerships.",
     url: "/",
     siteName: "NRI Institute of Technology",
     images: [
@@ -95,11 +98,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${outfit.variable} font-sans min-h-screen`}
+        className={`${inter.variable} ${outfit.variable} font-sans min-h-screen bg-[#F8FAFC] text-slate-900 selection:bg-[#D4AF37] selection:text-[#0F172A] antialiased`}
+        suppressHydrationWarning
       >
-        {children}
-        <Toaster position="top-right" richColors closeButton />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange={false}
+        >
+          <MouseSparkles />
+          {children}
+          <Toaster position="top-right" richColors closeButton />
+        </ThemeProvider>
       </body>
     </html>
   );
 }
+

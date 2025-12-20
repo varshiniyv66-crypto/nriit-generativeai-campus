@@ -303,27 +303,47 @@ export async function getDepartmentAttendanceStats(date?: string) {
                     .eq('dept_code', dept.code)
                     .eq('is_active', true);
 
-                // Get today's attendance
+                // Get today's attendance records
                 const { data: attendance } = await supabase
                     .from('period_attendance')
+                    .select('student_id, status')
+                    .eq('attendance_date', targetDate)
+                    .eq('dept_code', dept.code); // Optimization: filter by dept_code directly on period_attendance if available, or join. 
+
+                // Note: period_attendance might not have dept_code directly if normalized. 
+                // Let's stick to the join if we aren't sure, but wait, the previous code used:
+                // .eq('student.dept_code', dept.code) with nested select.
+                // Let's use the previous join approach but add student_id.
+
+                const { data: attendanceWithJoin } = await supabase
+                    .from('period_attendance')
                     .select(`
+                        student_id,
                         status,
                         student:student_profiles!inner(dept_code)
                     `)
                     .eq('attendance_date', targetDate)
                     .eq('student.dept_code', dept.code);
 
-                const uniqueStudents = new Set(attendance?.map(a => a.student) || []);
-                const presentCount = attendance?.filter(a =>
+                const records = attendanceWithJoin || [];
+
+                // Calculate present periods
+                const presentPeriodsCount = records.filter(a =>
                     ['present', 'late', 'on_duty', 'medical_leave'].includes(a.status)
-                ).length || 0;
+                ).length;
+
+                // Calculate unique students who were present at least once
+                const uniquePresentStudents = new Set(
+                    records.filter(a => ['present', 'late', 'on_duty', 'medical_leave'].includes(a.status))
+                        .map(a => a.student_id)
+                ).size;
 
                 return {
                     dept_code: dept.code,
                     dept_name: dept.name,
                     total_students: totalStudents || 0,
-                    present_today: presentCount,
-                    percentage: totalStudents ? Math.round((presentCount / (totalStudents * 8)) * 100) : 0
+                    present_today: uniquePresentStudents,
+                    percentage: totalStudents ? Math.round((presentPeriodsCount / (totalStudents * 8)) * 100) : 0
                 };
             })
         );

@@ -1,0 +1,458 @@
+{
+  "2025-26": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Venkata Ramana",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr.B.Raja",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Y Anusha",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "P Nani",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "R Saikiran",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "M Haribabu",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "S. Hareeshkumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Ch Anil",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "K Mallikarjuna",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "G Theja",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "C Nagachandra",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "S.Nandakumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "U. Jagadeesan",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P Hundeep",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Venkata Ramana",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr.B.Raja",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Y Anusha",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "P Nani",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "R Saikiran",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "M Haribabu",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "S. Hareeshkumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Ch Anil",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "K Mallikarjuna",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "G Theja",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "C Nagachandra",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "S.Nandakumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "U. Jagadeesan",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P Hundeep",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Venkata Ramana",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr.B.Raja",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Y Anusha",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "P Nani",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "R Saikiran",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "M Haribabu",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "S. Hareeshkumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Ch Anil",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "K Mallikarjuna",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "G Theja",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "C Nagachandra",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "S.Nandakumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "U. Jagadeesan",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P Hundeep",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1",
+      "name": "Dr.K.Venkata Ramana",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "2",
+      "name": "Dr.B.Raja",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "3",
+      "name": "Y Anusha",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "4",
+      "name": "P Nani",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "5",
+      "name": "R Saikiran",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "6",
+      "name": "M Haribabu",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "7",
+      "name": "S. Hareeshkumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "8",
+      "name": "Ch Anil",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "9",
+      "name": "K Mallikarjuna",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "10",
+      "name": "G Theja",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "11",
+      "name": "C Nagachandra",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "12",
+      "name": "S.Nandakumar",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "13",
+      "name": "U. Jagadeesan",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "14",
+      "name": "P Hundeep",
+      "qualification": "N/A",
+      "designation": "Assistant Professor",
+      "doj": "N/A",
+      "nature": "Regular"
+    }
+  ]
+}

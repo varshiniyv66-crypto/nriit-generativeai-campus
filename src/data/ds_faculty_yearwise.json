@@ -1,0 +1,1002 @@
+{
+  "2025-26": [
+    {
+      "sno": "1",
+      "name": "Dr. M. Pavan Kumar",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. K. Poorna Chandra Rao",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "09-07-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "3",
+      "name": "Dr. B. Tulasi",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "16-12-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "4",
+      "name": "Dr. B. Bhavani",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "10-12-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "5",
+      "name": "M. Baji Sita Rao",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "01-12-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "6",
+      "name": "G. Jagadeesh Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "7",
+      "name": "M. Pradeep Chandra",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "8",
+      "name": "K. Satyanarayana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "05-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "9",
+      "name": "A. Benarji",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "19-08-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "10",
+      "name": "M. Ambarisha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "11",
+      "name": "K. Mounika",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-04-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "12",
+      "name": "Shaik Salma Sultana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "13",
+      "name": "J.Jyothi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-01-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "14",
+      "name": "V. Swetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "15",
+      "name": "k.s.v. Ganesh",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "18-09-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "16",
+      "name": "D. Sridhar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-12-2012",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "17",
+      "name": "P. Shanthi Priya",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "18",
+      "name": "R. Sravanthi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "14-05-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "19",
+      "name": "Shaik. Irfan Basha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "20",
+      "name": "I. Kalyan Kumar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "02-02-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "21",
+      "name": "Suneetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "22",
+      "name": "B. Srinivas",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "23",
+      "name": "M. Anusha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-07-2024",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "24",
+      "name": "P. Prasanna Kumari",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "25",
+      "name": "G. Prudvee Raj",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "23-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "26",
+      "name": "R. Hari Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "27",
+      "name": "G. Madhuri",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "28",
+      "name": "A. Chengamma",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "29",
+      "name": "C. Vinoth",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "30",
+      "name": "T. Nandini",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "03-04-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "31",
+      "name": "C. Dhatchana Moorthy",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-09-2017",
+      "nature": "REGULAR"
+    }
+  ],
+  "2024-25": [
+    {
+      "sno": "1",
+      "name": "Dr. M. Pavan Kumar",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. K. Poorna Chandra Rao",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "09-07-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "3",
+      "name": "Dr. B. Tulasi",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "16-12-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "4",
+      "name": "Dr. B. Bhavani",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "10-12-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "5",
+      "name": "M. Baji Sita Rao",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "01-12-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "6",
+      "name": "G. Jagadeesh Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "7",
+      "name": "M. Pradeep Chandra",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "8",
+      "name": "K. Satyanarayana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "05-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "9",
+      "name": "A. Benarji",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "19-08-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "10",
+      "name": "M. Ambarisha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "11",
+      "name": "K. Mounika",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-04-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "12",
+      "name": "Shaik Salma Sultana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "13",
+      "name": "J.Jyothi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-01-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "14",
+      "name": "V. Swetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "15",
+      "name": "k.s.v. Ganesh",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "18-09-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "16",
+      "name": "D. Sridhar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-12-2012",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "17",
+      "name": "P. Shanthi Priya",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "18",
+      "name": "R. Sravanthi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "14-05-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "19",
+      "name": "Shaik. Irfan Basha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "20",
+      "name": "I. Kalyan Kumar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "02-02-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "21",
+      "name": "Suneetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "22",
+      "name": "B. Srinivas",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "23",
+      "name": "M. Anusha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-07-2024",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "24",
+      "name": "P. Prasanna Kumari",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "25",
+      "name": "G. Prudvee Raj",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "23-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "26",
+      "name": "R. Hari Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "27",
+      "name": "G. Madhuri",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "28",
+      "name": "A. Chengamma",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "29",
+      "name": "C. Vinoth",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "30",
+      "name": "T. Nandini",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "03-04-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "31",
+      "name": "C. Dhatchana Moorthy",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-09-2017",
+      "nature": "REGULAR"
+    }
+  ],
+  "2023-24": [
+    {
+      "sno": "1",
+      "name": "Dr. M. Pavan Kumar",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. K. Poorna Chandra Rao",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "09-07-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "3",
+      "name": "Dr. B. Tulasi",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "16-12-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "4",
+      "name": "Dr. B. Bhavani",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "10-12-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "5",
+      "name": "M. Baji Sita Rao",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "01-12-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "6",
+      "name": "G. Jagadeesh Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "7",
+      "name": "M. Pradeep Chandra",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "8",
+      "name": "K. Satyanarayana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "05-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "9",
+      "name": "A. Benarji",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "19-08-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "10",
+      "name": "M. Ambarisha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "11",
+      "name": "K. Mounika",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-04-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "12",
+      "name": "Shaik Salma Sultana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "13",
+      "name": "J.Jyothi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-01-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "14",
+      "name": "V. Swetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "15",
+      "name": "k.s.v. Ganesh",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "18-09-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "16",
+      "name": "D. Sridhar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-12-2012",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "17",
+      "name": "P. Shanthi Priya",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "18",
+      "name": "R. Sravanthi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "14-05-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "19",
+      "name": "Shaik. Irfan Basha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "20",
+      "name": "I. Kalyan Kumar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "02-02-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "21",
+      "name": "Suneetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "22",
+      "name": "B. Srinivas",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "23",
+      "name": "M. Anusha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-07-2024",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "24",
+      "name": "P. Prasanna Kumari",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "25",
+      "name": "G. Prudvee Raj",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "23-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "26",
+      "name": "R. Hari Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "27",
+      "name": "G. Madhuri",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "28",
+      "name": "A. Chengamma",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "29",
+      "name": "C. Vinoth",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "30",
+      "name": "T. Nandini",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "03-04-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "31",
+      "name": "C. Dhatchana Moorthy",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-09-2017",
+      "nature": "REGULAR"
+    }
+  ],
+  "2022-23": [
+    {
+      "sno": "1",
+      "name": "Dr. M. Pavan Kumar",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "2",
+      "name": "Dr. K. Poorna Chandra Rao",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "09-07-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "3",
+      "name": "Dr. B. Tulasi",
+      "qualification": "N/A",
+      "designation": "Professor",
+      "doj": "16-12-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "4",
+      "name": "Dr. B. Bhavani",
+      "qualification": "N/A",
+      "designation": "Associate Professor",
+      "doj": "10-12-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "5",
+      "name": "M. Baji Sita Rao",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "01-12-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "6",
+      "name": "G. Jagadeesh Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "7",
+      "name": "M. Pradeep Chandra",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "8",
+      "name": "K. Satyanarayana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "05-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "9",
+      "name": "A. Benarji",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "19-08-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "10",
+      "name": "M. Ambarisha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "11",
+      "name": "K. Mounika",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-04-2019",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "12",
+      "name": "Shaik Salma Sultana",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2017",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "13",
+      "name": "J.Jyothi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-01-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "14",
+      "name": "V. Swetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "09-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "15",
+      "name": "k.s.v. Ganesh",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "18-09-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "16",
+      "name": "D. Sridhar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-12-2012",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "17",
+      "name": "P. Shanthi Priya",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-05-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "18",
+      "name": "R. Sravanthi",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "14-05-2018",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "19",
+      "name": "Shaik. Irfan Basha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-05-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "20",
+      "name": "I. Kalyan Kumar",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "02-02-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "21",
+      "name": "Suneetha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "22",
+      "name": "B. Srinivas",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "23",
+      "name": "M. Anusha",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "12-07-2024",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "24",
+      "name": "P. Prasanna Kumari",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "20-07-2025",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "25",
+      "name": "G. Prudvee Raj",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "23-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "26",
+      "name": "R. Hari Babu",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "22-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "27",
+      "name": "G. Madhuri",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "10-06-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "28",
+      "name": "A. Chengamma",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "07-07-2022",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "29",
+      "name": "C. Vinoth",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "06-05-2021",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "30",
+      "name": "T. Nandini",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "03-04-2020",
+      "nature": "REGULAR"
+    },
+    {
+      "sno": "31",
+      "name": "C. Dhatchana Moorthy",
+      "qualification": "N/A",
+      "designation": "Assitant Professor",
+      "doj": "15-09-2017",
+      "nature": "REGULAR"
+    }
+  ]
+}

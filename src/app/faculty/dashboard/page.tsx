@@ -8,11 +8,21 @@ import { Progress } from "@/components/ui/progress";
 import {
     Users, Clock, FileText, CheckCircle2, AlertCircle, ArrowRight,
     BookOpen, TrendingUp, Calendar, Bell, Target, BarChart3,
-    AlertTriangle, UserCheck, Upload, Award, MessageSquare, Brain, Zap, Sparkles
+    AlertTriangle, UserCheck, Upload, Award, MessageSquare, Brain, Zap, Sparkles,
+    GraduationCap, ClipboardCheck
 } from "lucide-react";
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import supabase from "@/lib/supabase";
 import Link from "next/link";
+import { DashboardSkeleton } from "@/components/ui/skeleton";
+import { ThemeToggleSimple } from "@/components/theme-toggle";
+import {
+    AnimatedRadarChart,
+    AnimatedAreaChart,
+    AnimatedSegmentedBarChart,
+    ComposedLineBarChart,
+    MultiSeriesRadarChart
+} from "@/components/charts/interactive-charts";
 
 export default function FacultyDashboard() {
     const [user, setUser] = useState<any>(null);
@@ -127,12 +137,45 @@ export default function FacultyDashboard() {
         { name: 'High', value: 2, color: '#ef4444' },
     ];
 
+    // NEW: Radar chart for teaching metrics
+    const teachingMetricsData = [
+        { metric: 'Attendance', score: 85 },
+        { metric: 'Syllabus', score: 78 },
+        { metric: 'Feedback', score: 92 },
+        { metric: 'Research', score: 70 },
+        { metric: 'Mentoring', score: 88 },
+        { metric: 'Publications', score: 65 },
+    ];
+
+    // NEW: Area chart for class performance over time
+    const classPerformanceData = [
+        { month: 'Aug', cseA: 75, cseB: 72, itA: 80 },
+        { month: 'Sep', cseA: 78, cseB: 75, itA: 82 },
+        { month: 'Oct', cseA: 82, cseB: 78, itA: 85 },
+        { month: 'Nov', cseA: 80, cseB: 80, itA: 88 },
+        { month: 'Dec', cseA: 85, cseB: 82, itA: 90 },
+    ];
+
+    // NEW: Segmented bar chart for student results
+    const studentResultsData = [
+        { subject: 'CN', passed: 52, failed: 8 },
+        { subject: 'DS', passed: 58, failed: 7 },
+        { subject: 'OS', passed: 48, failed: 12 },
+        { subject: 'DBMS', passed: 55, failed: 5 },
+    ];
+
+    // NEW: Composed chart for workload distribution
+    const workloadData = [
+        { day: 'Mon', hours: 6, average: 5 },
+        { day: 'Tue', hours: 4, average: 5 },
+        { day: 'Wed', hours: 5, average: 5 },
+        { day: 'Thu', hours: 7, average: 5 },
+        { day: 'Fri', hours: 3, average: 5 },
+        { day: 'Sat', hours: 2, average: 5 },
+    ];
+
     if (loading) {
-        return (
-            <div className="flex items-center justify-center h-screen">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
-            </div>
-        );
+        return <DashboardSkeleton />;
     }
 
     return (
@@ -140,6 +183,10 @@ export default function FacultyDashboard() {
             {/* Header with Gradient */}
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-8 text-white">
                 <div className="absolute inset-0 bg-black/10"></div>
+                {/* Theme Toggle */}
+                <div className="absolute top-4 right-4 z-20">
+                    <ThemeToggleSimple />
+                </div>
                 <div className="relative z-10">
                     <div className="flex items-center justify-between">
                         <div>
@@ -151,10 +198,12 @@ export default function FacultyDashboard() {
                                 <FileText className="w-4 h-4" />
                                 Leave Request
                             </Button>
-                            <Button className="bg-white text-indigo-600 hover:bg-white/90 gap-2">
-                                <CheckCircle2 className="w-4 h-4" />
-                                Mark Attendance
-                            </Button>
+                            <Link href="/faculty/attendance">
+                                <Button className="bg-white text-indigo-600 hover:bg-white/90 gap-2">
+                                    <CheckCircle2 className="w-4 h-4" />
+                                    Mark Attendance
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                     <div className="mt-4 flex gap-4 text-sm">
@@ -248,13 +297,13 @@ export default function FacultyDashboard() {
                 {/* Workload */}
                 <Card className="relative overflow-hidden border-l-4 border-l-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-gray-600">Workload</CardTitle>
-                        <div className="p-2 rounded-lg bg-indigo-100">
+                        <CardTitle className="text-sm font-medium text-gray-600 dark:text-gray-400">Workload</CardTitle>
+                        <div className="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50">
                             <Clock className="h-5 w-5 text-indigo-600" />
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <div className="text-3xl font-bold text-gray-900">{dashboardData.workload} Hrs</div>
+                        <div className="text-3xl font-bold text-gray-900 dark:text-white">{dashboardData.workload} Hrs</div>
                         <p className="text-xs text-gray-500 mt-2">per week</p>
                     </CardContent>
                 </Card>
@@ -262,13 +311,13 @@ export default function FacultyDashboard() {
                 {/* Total Students */}
                 <Card className="relative overflow-hidden border-l-4 border-l-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-gray-600">Students</CardTitle>
-                        <div className="p-2 rounded-lg bg-green-100">
+                        <CardTitle className="text-sm font-medium text-gray-600 dark:text-gray-400">Students</CardTitle>
+                        <div className="p-2 rounded-lg bg-green-100 dark:bg-green-900/50">
                             <Users className="h-5 w-5 text-green-600" />
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <div className="text-3xl font-bold text-gray-900">{dashboardData.totalStudents}</div>
+                        <div className="text-3xl font-bold text-gray-900 dark:text-white">{dashboardData.totalStudents}</div>
                         <p className="text-xs text-gray-500 mt-2">Across 4 sections</p>
                     </CardContent>
                 </Card>
@@ -276,13 +325,13 @@ export default function FacultyDashboard() {
                 {/* Mentees */}
                 <Card className="relative overflow-hidden border-l-4 border-l-purple-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-gray-600">Mentees</CardTitle>
-                        <div className="p-2 rounded-lg bg-purple-100">
+                        <CardTitle className="text-sm font-medium text-gray-600 dark:text-gray-400">Mentees</CardTitle>
+                        <div className="p-2 rounded-lg bg-purple-100 dark:bg-purple-900/50">
                             <UserCheck className="h-5 w-5 text-purple-600" />
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <div className="text-3xl font-bold text-gray-900">{dashboardData.mentees}</div>
+                        <div className="text-3xl font-bold text-gray-900 dark:text-white">{dashboardData.mentees}</div>
                         <p className="text-xs text-purple-600 mt-2 font-medium flex items-center gap-1">
                             {dashboardData.mentoringAlerts > 0 && (
                                 <>
@@ -298,13 +347,13 @@ export default function FacultyDashboard() {
                 {/* Pending Marks */}
                 <Card className="relative overflow-hidden border-l-4 border-l-amber-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-gray-600">Pending Marks</CardTitle>
-                        <div className="p-2 rounded-lg bg-amber-100">
+                        <CardTitle className="text-sm font-medium text-gray-600 dark:text-gray-400">Pending Marks</CardTitle>
+                        <div className="p-2 rounded-lg bg-amber-100 dark:bg-amber-900/50">
                             <AlertCircle className="h-5 w-5 text-amber-600" />
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <div className="text-3xl font-bold text-gray-900">{dashboardData.pendingMarks}</div>
+                        <div className="text-3xl font-bold text-gray-900 dark:text-white">{dashboardData.pendingMarks}</div>
                         <p className="text-xs text-amber-600 mt-2 font-medium">Mid-1 Exams</p>
                     </CardContent>
                 </Card>
@@ -312,16 +361,70 @@ export default function FacultyDashboard() {
                 {/* Research */}
                 <Card className="relative overflow-hidden border-l-4 border-l-blue-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-gray-600">Research</CardTitle>
-                        <div className="p-2 rounded-lg bg-blue-100">
+                        <CardTitle className="text-sm font-medium text-gray-600 dark:text-gray-400">Research</CardTitle>
+                        <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/50">
                             <Award className="h-5 w-5 text-blue-600" />
                         </div>
                     </CardHeader>
                     <CardContent>
-                        <div className="text-3xl font-bold text-gray-900">{dashboardData.research}</div>
+                        <div className="text-3xl font-bold text-gray-900 dark:text-white">{dashboardData.research}</div>
                         <p className="text-xs text-gray-500 mt-2">Citations this year</p>
                     </CardContent>
                 </Card>
+            </div>
+
+            {/* NEW: Interactive Charts Section */}
+            <div className="grid lg:grid-cols-2 gap-6">
+                {/* Radar Chart - Teaching Metrics */}
+                <AnimatedRadarChart
+                    data={teachingMetricsData}
+                    title="Teaching Performance"
+                    description="Your performance across key metrics"
+                    dataKey="score"
+                    nameKey="metric"
+                    height={280}
+                />
+
+                {/* Area Chart - Class Performance */}
+                <AnimatedAreaChart
+                    data={classPerformanceData}
+                    title="Class Performance Trends"
+                    description="Average marks over time by section"
+                    xAxisKey="month"
+                    dataKeys={[
+                        { key: 'cseA', color: 'blue', name: 'CSE-A' },
+                        { key: 'cseB', color: 'purple', name: 'CSE-B' },
+                        { key: 'itA', color: 'green', name: 'IT-A' },
+                    ]}
+                    height={280}
+                />
+            </div>
+
+            {/* Segmented Bar + Composed Chart */}
+            <div className="grid lg:grid-cols-2 gap-6">
+                {/* Segmented Bar Chart - Student Results */}
+                <AnimatedSegmentedBarChart
+                    data={studentResultsData}
+                    title="Subject-wise Results"
+                    description="Pass/Fail distribution by subject"
+                    xAxisKey="subject"
+                    segments={[
+                        { key: 'passed', color: '#10b981', name: 'Passed' },
+                        { key: 'failed', color: '#ef4444', name: 'Failed' },
+                    ]}
+                    height={250}
+                />
+
+                {/* Composed Chart - Weekly Workload */}
+                <ComposedLineBarChart
+                    data={workloadData}
+                    title="Weekly Workload Distribution"
+                    description="Daily hours vs average"
+                    xAxisKey="day"
+                    barKey="hours"
+                    lineKey="average"
+                    height={250}
+                />
             </div>
 
             {/* Main Content Grid */}
@@ -348,15 +451,15 @@ export default function FacultyDashboard() {
                         <CardContent>
                             <div className="space-y-4">
                                 {dashboardData.todayClasses.map((cls: any, i: number) => (
-                                    <div key={i} className="flex items-center gap-4 p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 transition-all group">
+                                    <div key={i} className="flex items-center gap-4 p-4 rounded-xl border-2 border-gray-100 dark:border-gray-800 hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/20 dark:hover:to-purple-900/20 transition-all group">
                                         <div className="w-24 flex-shrink-0 text-center">
-                                            <div className="text-sm font-bold text-gray-900">{cls.time.split(' - ')[0]}</div>
+                                            <div className="text-sm font-bold text-gray-900 dark:text-white">{cls.time.split(' - ')[0]}</div>
                                             <div className="text-xs text-gray-500">{cls.time.split(' - ')[1]}</div>
                                         </div>
                                         <div className="flex-1 min-w-0">
                                             <div className="flex items-center gap-2 mb-1">
-                                                <span className="font-semibold text-gray-900 truncate">{cls.sub}</span>
-                                                <Badge variant="secondary" className="text-[10px] h-5 bg-indigo-100 text-indigo-700">{cls.year}</Badge>
+                                                <span className="font-semibold text-gray-900 dark:text-white truncate">{cls.sub}</span>
+                                                <Badge variant="secondary" className="text-[10px] h-5 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">{cls.year}</Badge>
                                             </div>
                                             <div className="text-sm text-gray-500 flex items-center gap-4">
                                                 <span className="flex items-center gap-1">
@@ -368,7 +471,7 @@ export default function FacultyDashboard() {
                                         <div className="flex gap-2">
                                             {cls.status === 'completed' ? (
                                                 <div className="flex items-center gap-2">
-                                                    <Badge className="bg-green-100 text-green-700 border-green-200">
+                                                    <Badge className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 border-green-200">
                                                         <CheckCircle2 className="w-3 h-3 mr-1" /> Marked
                                                     </Badge>
                                                 </div>
@@ -385,18 +488,18 @@ export default function FacultyDashboard() {
                                 ))}
 
                                 {/* Quick Stats */}
-                                <div className="grid grid-cols-3 gap-3 mt-4 pt-4 border-t">
-                                    <div className="text-center p-3 rounded-lg bg-green-50 border border-green-200">
-                                        <div className="text-2xl font-bold text-green-700">1</div>
-                                        <div className="text-xs text-green-600">Completed</div>
+                                <div className="grid grid-cols-3 gap-3 mt-4 pt-4 border-t dark:border-gray-800">
+                                    <div className="text-center p-3 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
+                                        <div className="text-2xl font-bold text-green-700 dark:text-green-400">1</div>
+                                        <div className="text-xs text-green-600 dark:text-green-500">Completed</div>
                                     </div>
-                                    <div className="text-center p-3 rounded-lg bg-blue-50 border border-blue-200">
-                                        <div className="text-2xl font-bold text-blue-700">2</div>
-                                        <div className="text-xs text-blue-600">Pending</div>
+                                    <div className="text-center p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
+                                        <div className="text-2xl font-bold text-blue-700 dark:text-blue-400">2</div>
+                                        <div className="text-xs text-blue-600 dark:text-blue-500">Pending</div>
                                     </div>
-                                    <div className="text-center p-3 rounded-lg bg-purple-50 border border-purple-200">
-                                        <div className="text-2xl font-bold text-purple-700">3</div>
-                                        <div className="text-xs text-purple-600">Total Today</div>
+                                    <div className="text-center p-3 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
+                                        <div className="text-2xl font-bold text-purple-700 dark:text-purple-400">3</div>
+                                        <div className="text-xs text-purple-600 dark:text-purple-500">Total Today</div>
                                     </div>
                                 </div>
                             </div>
@@ -415,6 +518,12 @@ export default function FacultyDashboard() {
                         <CardContent>
                             <ResponsiveContainer width="100%" height={250}>
                                 <BarChart data={attendanceData}>
+                                    <defs>
+                                        <linearGradient id="attendanceBarGradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="5%" stopColor="#10b981" stopOpacity={1} />
+                                            <stop offset="95%" stopColor="#059669" stopOpacity={0.8} />
+                                        </linearGradient>
+                                    </defs>
                                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                                     <XAxis dataKey="class" stroke="#888" fontSize={12} />
                                     <YAxis stroke="#888" fontSize={12} domain={[0, 100]} />
@@ -422,7 +531,12 @@ export default function FacultyDashboard() {
                                         contentStyle={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '8px' }}
                                         formatter={(value: any) => [`${value}%`, 'Attendance']}
                                     />
-                                    <Bar dataKey="attendance" fill="#10b981" radius={[8, 8, 0, 0]} />
+                                    <Bar
+                                        dataKey="attendance"
+                                        fill="url(#attendanceBarGradient)"
+                                        radius={[8, 8, 0, 0]}
+                                        animationDuration={1200}
+                                    />
                                 </BarChart>
                             </ResponsiveContainer>
                         </CardContent>
@@ -440,6 +554,12 @@ export default function FacultyDashboard() {
                         <CardContent>
                             <ResponsiveContainer width="100%" height={200}>
                                 <LineChart data={mentoringTrendData}>
+                                    <defs>
+                                        <linearGradient id="mentoringGradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="5%" stopColor="#a855f7" stopOpacity={0.8} />
+                                            <stop offset="95%" stopColor="#a855f7" stopOpacity={0.1} />
+                                        </linearGradient>
+                                    </defs>
                                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                                     <XAxis dataKey="month" stroke="#888" fontSize={12} />
                                     <YAxis stroke="#888" fontSize={12} />
@@ -447,7 +567,15 @@ export default function FacultyDashboard() {
                                         contentStyle={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '8px' }}
                                         formatter={(value: any) => [`${value}`, 'Sessions']}
                                     />
-                                    <Line type="monotone" dataKey="sessions" stroke="#a855f7" strokeWidth={3} dot={{ fill: '#a855f7', r: 5 }} />
+                                    <Line
+                                        type="monotone"
+                                        dataKey="sessions"
+                                        stroke="#a855f7"
+                                        strokeWidth={3}
+                                        dot={{ fill: '#a855f7', r: 5 }}
+                                        activeDot={{ r: 8, fill: '#7e22ce' }}
+                                        animationDuration={1500}
+                                    />
                                 </LineChart>
                             </ResponsiveContainer>
                         </CardContent>
@@ -469,13 +597,13 @@ export default function FacultyDashboard() {
                             <div className="space-y-3 max-h-96 overflow-y-auto">
                                 {dashboardData.atRiskStudents.length > 0 ? (
                                     dashboardData.atRiskStudents.map((risk: any, i: number) => (
-                                        <div key={i} className="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-200">
+                                        <div key={i} className="flex items-center justify-between p-3 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
                                             <div className="flex items-center gap-3">
-                                                <div className="w-10 h-10 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold text-sm">
+                                                <div className="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/50 text-red-600 flex items-center justify-center font-bold text-sm">
                                                     {risk.student?.first_name?.[0]}{risk.student?.last_name?.[0]}
                                                 </div>
                                                 <div>
-                                                    <div className="text-sm font-medium text-gray-900">
+                                                    <div className="text-sm font-medium text-gray-900 dark:text-white">
                                                         {risk.student?.first_name} {risk.student?.last_name}
                                                     </div>
                                                     <div className="text-xs text-gray-500">{risk.student?.roll_number}</div>
@@ -529,6 +657,7 @@ export default function FacultyDashboard() {
                                             outerRadius={60}
                                             paddingAngle={5}
                                             dataKey="value"
+                                            animationDuration={1200}
                                         >
                                             {riskDistribution.map((entry, index) => (
                                                 <Cell key={`cell-${index}`} fill={entry.color} />
@@ -541,7 +670,7 @@ export default function FacultyDashboard() {
                                     {riskDistribution.map((entry, i) => (
                                         <div key={i} className="flex items-center gap-2">
                                             <div className="w-3 h-3 rounded-full" style={{ backgroundColor: entry.color }}></div>
-                                            <span className="text-xs text-gray-600">{entry.name}: {entry.value}</span>
+                                            <span className="text-xs text-gray-600 dark:text-gray-400">{entry.name}: {entry.value}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -550,24 +679,26 @@ export default function FacultyDashboard() {
                     )}
 
                     {/* Quick Actions */}
-                    <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 hover:shadow-lg transition-shadow">
+                    <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-200 dark:border-blue-800 hover:shadow-lg transition-shadow">
                         <CardHeader>
-                            <CardTitle className="text-blue-700 text-lg">Quick Actions</CardTitle>
+                            <CardTitle className="text-blue-700 dark:text-blue-300 text-lg">Quick Actions</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-3">
-                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100">
+                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/50">
                                 <Upload className="w-4 h-4" />
                                 Upload Materials
                             </Button>
-                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100">
-                                <FileText className="w-4 h-4" />
-                                Enter Marks
-                            </Button>
-                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100">
+                            <Link href="/faculty/marks" className="block">
+                                <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/50">
+                                    <FileText className="w-4 h-4" />
+                                    Enter Marks
+                                </Button>
+                            </Link>
+                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/50">
                                 <MessageSquare className="w-4 h-4" />
                                 Schedule Mentoring
                             </Button>
-                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100">
+                            <Button variant="outline" className="w-full justify-start gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/50">
                                 <Award className="w-4 h-4" />
                                 Update Research
                             </Button>
@@ -575,19 +706,19 @@ export default function FacultyDashboard() {
                     </Card>
 
                     {/* NBA Tasks */}
-                    <Card className="bg-gradient-to-br from-amber-50 to-orange-50 border-amber-200 hover:shadow-lg transition-shadow">
+                    <Card className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-800 hover:shadow-lg transition-shadow">
                         <CardHeader>
-                            <CardTitle className="text-amber-700 text-lg flex items-center gap-2">
+                            <CardTitle className="text-amber-700 dark:text-amber-300 text-lg flex items-center gap-2">
                                 <Bell className="h-5 w-5" />
                                 NBA Tasks
                             </CardTitle>
                             <CardDescription>Pending accreditation tasks</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <div className="text-sm text-gray-700 mb-3">
+                            <div className="text-sm text-gray-700 dark:text-gray-300 mb-3">
                                 Please upload <strong>Course Outcomes (CO)</strong> mapping for Computer Networks by Friday.
                             </div>
-                            <Button size="sm" variant="outline" className="w-full text-amber-700 border-amber-300 hover:bg-amber-100">
+                            <Button size="sm" variant="outline" className="w-full text-amber-700 dark:text-amber-300 border-amber-300 dark:border-amber-700 hover:bg-amber-100 dark:hover:bg-amber-900/50">
                                 <FileText className="w-3 h-3 mr-2" /> Upload Evidence
                             </Button>
                         </CardContent>

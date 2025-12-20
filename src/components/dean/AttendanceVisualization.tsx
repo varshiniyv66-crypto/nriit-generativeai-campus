@@ -1,10 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { TrendingUp, TrendingDown, Users, AlertTriangle, CheckCircle2, Calendar } from "lucide-react";
+import { TrendingUp, TrendingDown, Users, AlertTriangle, CheckCircle2, Calendar, RefreshCw } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { getDepartmentAttendanceStats } from "@/lib/attendance";
 
 interface AttendanceData {
     department: string;
@@ -16,25 +18,50 @@ interface AttendanceData {
     criticalStudents: number;
 }
 
-const MOCK_ATTENDANCE_DATA: AttendanceData[] = [
-    { department: "CSE", totalStudents: 480, presentToday: 456, absentToday: 24, averageAttendance: 92.5, trend: 'up', criticalStudents: 12 },
-    { department: "ECE", totalStudents: 360, presentToday: 324, absentToday: 36, averageAttendance: 88.3, trend: 'down', criticalStudents: 18 },
-    { department: "MECH", totalStudents: 240, presentToday: 228, absentToday: 12, averageAttendance: 94.1, trend: 'up', criticalStudents: 5 },
-    { department: "CIVIL", totalStudents: 180, presentToday: 162, absentToday: 18, averageAttendance: 87.8, trend: 'stable', criticalStudents: 8 },
-    { department: "EEE", totalStudents: 120, presentToday: 108, absentToday: 12, averageAttendance: 89.2, trend: 'up', criticalStudents: 6 },
-    { department: "IT", totalStudents: 60, presentToday: 54, absentToday: 6, averageAttendance: 91.7, trend: 'up', criticalStudents: 3 },
-];
-
 interface AttendanceVisualizationProps {
     className?: string;
 }
 
 export function AttendanceVisualization({ className }: AttendanceVisualizationProps) {
-    const totalStudents = MOCK_ATTENDANCE_DATA.reduce((sum, dept) => sum + dept.totalStudents, 0);
-    const totalPresent = MOCK_ATTENDANCE_DATA.reduce((sum, dept) => sum + dept.presentToday, 0);
-    const totalAbsent = MOCK_ATTENDANCE_DATA.reduce((sum, dept) => sum + dept.absentToday, 0);
-    const overallPercentage = ((totalPresent / totalStudents) * 100).toFixed(1);
-    const totalCritical = MOCK_ATTENDANCE_DATA.reduce((sum, dept) => sum + dept.criticalStudents, 0);
+    const [attendanceData, setAttendanceData] = useState<AttendanceData[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        loadData();
+    }, []);
+
+    const loadData = async () => {
+        try {
+            const { data, error } = await getDepartmentAttendanceStats();
+            if (data) {
+                // Transform data to match interface
+                const transform: AttendanceData[] = data.map((d: any) => ({
+                    department: d.dept_code,
+                    totalStudents: d.total_students,
+                    presentToday: d.present_today, // Unique students present at least once
+                    absentToday: d.total_students - d.present_today,
+                    averageAttendance: d.percentage, // Period-based percentage
+                    trend: 'stable', // We don't have historical data for trend yet, defaulting to stable
+                    criticalStudents: Math.round(d.total_students * (1 - (d.percentage / 100)) * 0.2) // Mock estimation of critical students based on absent % (20% of absentees)
+                }));
+                setAttendanceData(transform);
+            }
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const totalStudents = attendanceData.reduce((sum, dept) => sum + dept.totalStudents, 0);
+    const totalPresent = attendanceData.reduce((sum, dept) => sum + dept.presentToday, 0);
+    const totalAbsent = attendanceData.reduce((sum, dept) => sum + dept.absentToday, 0);
+    const overallPercentage = totalStudents > 0 ? ((totalPresent / totalStudents) * 100).toFixed(1) : "0.0";
+    const totalCritical = attendanceData.reduce((sum, dept) => sum + dept.criticalStudents, 0);
+
+    if (loading) {
+        return <div className="p-8 text-center flex justify-center"><RefreshCw className="animate-spin text-blue-500" /></div>;
+    }
 
     return (
         <div className={cn("space-y-6", className)}>
@@ -71,7 +98,7 @@ export function AttendanceVisualization({ className }: AttendanceVisualizationPr
                             <div>
                                 <p className="text-sm font-medium text-red-700">Absent Today</p>
                                 <h3 className="text-3xl font-bold text-red-900 mt-1">{totalAbsent}</h3>
-                                <p className="text-xs text-red-600 mt-1">{((totalAbsent / totalStudents) * 100).toFixed(1)}%</p>
+                                <p className="text-xs text-red-600 mt-1">{totalStudents > 0 ? ((totalAbsent / totalStudents) * 100).toFixed(1) : "0.0"}%</p>
                             </div>
                             <Calendar className="w-10 h-10 text-red-600 opacity-50" />
                         </div>
@@ -103,9 +130,8 @@ export function AttendanceVisualization({ className }: AttendanceVisualizationPr
                 </CardHeader>
                 <CardContent>
                     <div className="space-y-4">
-                        {MOCK_ATTENDANCE_DATA.map((dept) => {
-                            const percentage = ((dept.presentToday / dept.totalStudents) * 100).toFixed(1);
-                            const isLow = parseFloat(percentage) < 85;
+                        {attendanceData.map((dept) => {
+                            const isLow = dept.averageAttendance < 75;
 
                             return (
                                 <div key={dept.department} className="p-4 rounded-lg border bg-gradient-to-r from-gray-50 to-white hover:shadow-md transition-shadow">
@@ -129,13 +155,11 @@ export function AttendanceVisualization({ className }: AttendanceVisualizationPr
                                                         "text-2xl font-bold",
                                                         isLow ? "text-red-600" : "text-green-600"
                                                     )}>
-                                                        {percentage}%
+                                                        {dept.averageAttendance}%
                                                     </span>
-                                                    {dept.trend === 'up' && <TrendingUp className="w-5 h-5 text-green-600" />}
-                                                    {dept.trend === 'down' && <TrendingDown className="w-5 h-5 text-red-600" />}
                                                 </div>
                                                 <p className="text-xs text-gray-500 mt-1">
-                                                    Avg: {dept.averageAttendance}%
+                                                    Avg Period Attendance
                                                 </p>
                                             </div>
 
@@ -150,7 +174,7 @@ export function AttendanceVisualization({ className }: AttendanceVisualizationPr
 
                                     <div className="space-y-2">
                                         <Progress
-                                            value={parseFloat(percentage)}
+                                            value={dept.averageAttendance}
                                             className={cn(
                                                 "h-3",
                                                 isLow ? "[&>div]:bg-red-500" : "[&>div]:bg-green-500"
@@ -179,21 +203,21 @@ export function AttendanceVisualization({ className }: AttendanceVisualizationPr
                 </CardContent>
             </Card>
 
-            {/* Attendance Heatmap */}
+            {/* Attendance Heatmap - Kept Static for Visual Appeal as real data for this is complex */}
             <Card>
                 <CardHeader>
                     <CardTitle>Weekly Attendance Heatmap</CardTitle>
-                    <CardDescription>Attendance patterns across the week</CardDescription>
+                    <CardDescription>Attendance patterns across the week (Simulated)</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="space-y-3">
-                        {MOCK_ATTENDANCE_DATA.map((dept) => (
+                        {attendanceData.map((dept) => (
                             <div key={dept.department} className="flex items-center gap-3">
                                 <div className="w-16 text-sm font-medium text-gray-700">{dept.department}</div>
                                 <div className="flex-1 flex gap-1">
                                     {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day, idx) => {
-                                        // Generate random attendance for demo
-                                        const dayAttendance = 85 + Math.random() * 15;
+                                        // Generate random attendance based on their avg for demo purposes
+                                        const dayAttendance = Math.min(100, Math.max(0, dept.averageAttendance + (Math.random() * 10 - 5)));
                                         const intensity = dayAttendance >= 95 ? 'bg-green-600' :
                                             dayAttendance >= 90 ? 'bg-green-500' :
                                                 dayAttendance >= 85 ? 'bg-green-400' :
@@ -217,33 +241,6 @@ export function AttendanceVisualization({ className }: AttendanceVisualizationPr
                                 </div>
                             </div>
                         ))}
-                    </div>
-
-                    <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-600">
-                        <span className="flex items-center gap-1">
-                            <div className="w-3 h-3 rounded bg-green-600"></div>
-                            95-100%
-                        </span>
-                        <span className="flex items-center gap-1">
-                            <div className="w-3 h-3 rounded bg-green-500"></div>
-                            90-95%
-                        </span>
-                        <span className="flex items-center gap-1">
-                            <div className="w-3 h-3 rounded bg-green-400"></div>
-                            85-90%
-                        </span>
-                        <span className="flex items-center gap-1">
-                            <div className="w-3 h-3 rounded bg-yellow-400"></div>
-                            80-85%
-                        </span>
-                        <span className="flex items-center gap-1">
-                            <div className="w-3 h-3 rounded bg-orange-400"></div>
-                            75-80%
-                        </span>
-                        <span className="flex items-center gap-1">
-                            <div className="w-3 h-3 rounded bg-red-400"></div>
-                            Below 75%
-                        </span>
                     </div>
                 </CardContent>
             </Card>

@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { format } from "date-fns";
+import { cn } from "@/lib/utils";
 
 type AttendanceStatus = 'present' | 'absent' | 'late' | 'on_duty' | 'medical_leave';
 
