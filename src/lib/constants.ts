@@ -326,7 +326,6 @@ export const NAV_ROUTES = {
         { href: '/admin/settings', label: 'Settings', icon: 'Settings' },
     ],
     accreditation: [
-        { href: '/accreditation/nba', label: 'NBA', icon: 'Award' },
         { href: '/accreditation/naac', label: 'NAAC', icon: 'Shield' },
         { href: '/accreditation/nirf', label: 'NIRF', icon: 'TrendingUp' },
     ],
@@ -348,7 +347,7 @@ export const INSTITUTION = {
     established: 2001,
     type: 'Private Engineering College',
     affiliation: 'JNTUK - Jawaharlal Nehru Technological University, Kakinada',
-    accreditations: ['NBA', 'NAAC'],
+    accreditations: ['NAAC'],
     socialMedia: {
         facebook: 'https://facebook.com/nriit',
         twitter: 'https://twitter.com/nriit',
