@@ -362,7 +362,7 @@ export default function AchievementsPage() {
                             </table>
                         </div>
                         <div className="bg-slate-50 px-6 py-4 flex items-center justify-between">
-                            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Source: NBA Self Assessment Report (SAR)</span>
+                            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Source: Self Assessment Report (SAR)</span>
                             <Badge className="bg-purple-100 text-purple-700 border-purple-200">Verified Data</Badge>
                         </div>
                     </div>

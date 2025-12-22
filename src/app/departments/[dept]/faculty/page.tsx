@@ -380,7 +380,7 @@ export default function FacultyPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-bold text-white">Faculty Performance & Development</h3>
-                                        <p className="text-xs text-slate-400">Data from NBA SAR Reports (Academic Years 2022-25)</p>
+                                        <p className="text-xs text-slate-400">Data from Self Assessment Reports (Academic Years 2022-25)</p>
                                     </div>
                                 </div>
 
