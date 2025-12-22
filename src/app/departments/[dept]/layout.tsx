@@ -7,7 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
     Home, BookOpen, Target, Award, User, Users, FlaskConical,
     BrainCircuit, Trophy, Calendar, GraduationCap, Briefcase,
-    Heart, ImageIcon, Phone, Menu, X, ChevronRight, Sparkles, FileText
+    Heart, ImageIcon, Phone, Menu, X, ChevronRight, Sparkles, FileText,
+    ShieldCheck, CheckCircle2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -176,6 +177,29 @@ export default function DepartmentLayout({ children }: { children: React.ReactNo
                                 );
                             })}
                         </ul>
+
+                        {/* Verified Registry Badge - Shown when on Faculty Page */}
+                        {pathname.endsWith('/faculty') && (
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                className="mt-6 p-4 rounded-2xl bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-100 shadow-sm"
+                            >
+                                <div className="flex items-center gap-2 mb-2">
+                                    <div className="p-1 rounded bg-emerald-500">
+                                        <ShieldCheck className="w-3.5 h-3.5 text-white" />
+                                    </div>
+                                    <span className="text-[10px] font-black text-emerald-800 uppercase tracking-tighter">Verified Registry</span>
+                                </div>
+                                <p className="text-[11px] font-bold text-emerald-700 leading-tight">
+                                    Official Faculty Registry for {deptCode} Department
+                                </p>
+                                <div className="mt-2 flex items-center gap-1.5 text-[9px] font-black text-emerald-600/70 border-t border-emerald-100/50 pt-2 uppercase">
+                                    <CheckCircle2 className="w-3 h-3" />
+                                    <span>Verified Data from Excel</span>
+                                </div>
+                            </motion.div>
+                        )}
                     </nav>
 
                     {/* Footer Branding */}
