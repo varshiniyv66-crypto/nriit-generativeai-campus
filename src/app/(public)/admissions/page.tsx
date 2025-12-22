@@ -79,7 +79,7 @@ export default function AdmissionsPage() {
                                 Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#FFE082]">Journey</span> at NRIIT
                             </h1>
                             <p className="text-xl text-slate-300 mb-8">
-                                Join India's premier autonomous institution. NAAC A+ Accredited, NBA certified programs, and 100% placement assistance.
+                                Join India's premier autonomous institution. NAAC A+ Accredited, UGC Autonomous status, and 100% placement assistance.
                             </p>
                             <div className="flex flex-wrap gap-4 mb-12">
                                 <Link

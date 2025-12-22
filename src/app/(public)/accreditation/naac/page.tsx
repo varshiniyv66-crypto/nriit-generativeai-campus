@@ -148,7 +148,7 @@ export default function NAACPage() {
                         </Link>
                         <Link href="/accreditation/nba" className="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-all">
                             <Zap className="w-10 h-10 text-amber-500 mb-6" />
-                            <h3 className="text-2xl font-black text-white mb-2">NBA Excellence</h3>
+                            <h3 className="text-2xl font-black text-white mb-2">Outcome Based Education</h3>
                             <p className="text-slate-500 mb-6">Specific program-tier accreditations.</p>
                             <ArrowRight className="w-6 h-6 text-slate-700 group-hover:text-amber-500 group-hover:translate-x-2 transition-all" />
                         </Link>

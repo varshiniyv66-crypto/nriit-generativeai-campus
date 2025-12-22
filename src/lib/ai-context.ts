@@ -10,7 +10,7 @@ export const NRIIT_KNOWLEDGE_BASE = `
 - **Established**: ${INSTITUTION.established}
 - **Affiliation**: ${INSTITUTION.affiliation}
 - **Type**: ${INSTITUTION.type}
-- **Accreditations**: NAAC A+, NBA Tier-I, Autonomous Status.
+- **Accreditations**: NAAC A+, ISO 9001-2015, Autonomous Status.
 - **Website**: ${INSTITUTION.website}
 - **Contact**: Phone: ${INSTITUTION.phone}, Email: ${INSTITUTION.email}
 
