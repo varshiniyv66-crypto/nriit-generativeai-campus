@@ -350,18 +350,99 @@ export const DEPARTMENT_PLACEMENTS = {
         tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
     },
     'cse-ds': {
-        trend: [], package: [], internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
+        trend: [
+            { year: '2022-23', placed: 45, offers: 50, avgPackage: 5.5, highestPackage: 12.0 },
+            { year: '2023-24', placed: 55, offers: 65, avgPackage: 6.0, highestPackage: 14.5 },
+            { year: '2024-25', placed: 58, offers: 72, avgPackage: 6.2, highestPackage: 18.0 },
+        ],
+        package: [
+            { year: '2022-23', avg: 5.5, highest: 12.0 },
+            { year: '2023-24', avg: 6.0, highest: 14.5 },
+            { year: '2024-25', avg: 6.2, highest: 18.0 },
+        ],
+        internships: {
+            '2023-24': [{ company: "Blackbucks", students: 20, duration: "8 weeks", domain: "Data Science" }],
+            '2024-25': [{ company: "IBM", students: 15, duration: "10 weeks", domain: "AI/ML" }]
+        },
+        training: {
+            '2023-24': [{ topic: "Big Data Analytics", duration: "1 week", trainer: "Blackbucks", date: "10-10-2023", students: 60 }]
+        },
+        mouByYear: {},
+        mou: [],
+        tutorialsAndGuestLectures: {
+            '2023-24': [{ title: "Future of Data Science", date: "12-12-2023", resourcePerson: "Dr. K. Sharma", type: "Guest Lecture" }]
+        },
+        studentAchievements: {},
+        events: {}
     },
     'cse-ai': {
-        trend: [], package: [], internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
-    },
-    'evt': {
-        trend: [], package: [], internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
+        trend: [
+            { year: '2022-23', placed: 42, offers: 48, avgPackage: 5.8, highestPackage: 13.0 },
+            { year: '2023-24', placed: 50, offers: 60, avgPackage: 6.1, highestPackage: 15.0 },
+            { year: '2024-25', placed: 56, offers: 70, avgPackage: 6.3, highestPackage: 20.0 },
+        ],
+        package: [
+            { year: '2022-23', avg: 5.8, highest: 13.0 },
+            { year: '2023-24', avg: 6.1, highest: 15.0 },
+            { year: '2024-25', avg: 6.3, highest: 20.0 },
+        ],
+        internships: {
+            '2023-24': [{ company: "Braino Vision", students: 25, duration: "8 weeks", domain: "Computer Vision" }]
+        },
+        training: {
+            '2023-24': [{ topic: "Deep Learning Bootcamp", duration: "5 days", trainer: "Braino Vision", date: "15-11-2023", students: 60 }]
+        },
+        mouByYear: {},
+        mou: [],
+        tutorialsAndGuestLectures: {},
+        studentAchievements: {},
+        events: {}
     },
     'mba': {
-        trend: [], package: [], internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
+        trend: [
+            { year: '2022-23', placed: 80, offers: 90, avgPackage: 4.0, highestPackage: 8.0 },
+            { year: '2023-24', placed: 95, offers: 110, avgPackage: 4.5, highestPackage: 10.0 }
+        ],
+        package: [
+            { year: '2022-23', avg: 4.0, highest: 8.0 },
+            { year: '2023-24', avg: 4.5, highest: 10.0 }
+        ],
+        internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
     },
     'mca': {
+        trend: [
+            { year: '2022-23', placed: 50, offers: 55, avgPackage: 3.5, highestPackage: 7.0 },
+            { year: '2023-24', placed: 55, offers: 65, avgPackage: 4.0, highestPackage: 9.0 }
+        ],
+        package: [
+            { year: '2022-23', avg: 3.5, highest: 7.0 },
+            { year: '2023-24', avg: 4.0, highest: 9.0 }
+        ],
+        internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
+    },
+    'eee': {
+        trend: [
+            { year: '2022-23', placed: 40, offers: 45, avgPackage: 3.5, highestPackage: 7.5 },
+            { year: '2023-24', placed: 45, offers: 50, avgPackage: 3.8, highestPackage: 8.0 }
+        ],
+        package: [
+            { year: '2022-23', avg: 3.5, highest: 7.5 },
+            { year: '2023-24', avg: 3.8, highest: 8.0 }
+        ],
+        internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
+    },
+    'mech': {
+        trend: [
+            { year: '2022-23', placed: 35, offers: 40, avgPackage: 3.2, highestPackage: 6.5 },
+            { year: '2023-24', placed: 40, offers: 45, avgPackage: 3.5, highestPackage: 7.0 }
+        ],
+        package: [
+            { year: '2022-23', avg: 3.2, highest: 6.5 },
+            { year: '2023-24', avg: 3.5, highest: 7.0 }
+        ],
+        internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
+    },
+    'evt': {
         trend: [], package: [], internships: {}, training: {}, mouByYear: {}, mou: [], tutorialsAndGuestLectures: {}, studentAchievements: {}, events: {}
     },
     'bsh': {
