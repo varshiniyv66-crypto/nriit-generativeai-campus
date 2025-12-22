@@ -54,7 +54,7 @@ const admissionProcess = [
 
 const highlights = [
     { label: "NAAC A+", value: "Accredited", icon: Award },
-    { label: "NBA", value: "CSE | ECE | IT", icon: Star },
+    { label: "ISO", value: "9001-2015", icon: Star },
     { label: "Autonomous", value: "JNTUK Affiliated", icon: Building2 },
     { label: "100%", value: "Placement Assistance", icon: Users },
 ];

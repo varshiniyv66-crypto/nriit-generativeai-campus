@@ -72,11 +72,11 @@ const newsData: NewsItem[] = [
     },
     {
         id: "n3",
-        title: "NBA Accreditation for Major Engineering Departments",
-        date: "2023-11-20",
-        department: "CSE",
+        title: "Principal Dr. Dola Sanjay S. Awarded Abdul Kalam Gold Medal",
+        date: "2018-10-15",
+        department: "ALL",
         category: "Achievement",
-        description: "CSE, ECE, EEE, ME, and CE departments have been accredited by the National Board of Accreditation (NBA), certifying global education standards.",
+        description: "Principal Dr. Dola Sanjay S. was awarded the Bharat Ratna Dr. Abdul Kalam Gold Medal for his outstanding services to education and research.",
         featured: true,
     },
     {

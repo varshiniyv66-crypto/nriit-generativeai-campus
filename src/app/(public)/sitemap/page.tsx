@@ -62,7 +62,6 @@ const sitemapSections = [
             { href: "/accreditation", label: "Accreditation Overview" },
             { href: "/accreditation/naac", label: "NAAC A+ Recognition" },
             { href: "/accreditation/nirf", label: "NIRF Rankings" },
-            { href: "/accreditation/nba", label: "NBA Accreditation" },
         ],
     },
     {
