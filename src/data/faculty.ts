@@ -195,9 +195,10 @@ export const facultyData: Record<string, Faculty[]> = {
         { id: "mba-1", title: "Mr.", name: "SUDA RAO", designation: "Associate Professor", department: "MBA", qualification: "MBA" },
         { id: "mba-2", title: "Mrs.", name: "BOLLISETTI ARCHANA", designation: "Assistant Professor", department: "MBA", qualification: "MBA" },
         { id: "mba-3", title: "Mrs.", name: "DAKARAPU SUSI SOWMYA", designation: "Assistant Professor", department: "MBA", qualification: "MBA" },
-        { id: "mba-4", title: "Mr.", name: "ANUPAMA PAMIDIMUKKALA", designation: "Assistant Professor", department: "MBA", qualification: "MBA" },
-        { id: "mba-5", title: "Dr.", name: "ZIA REHMAN", designation: "HOD & Professor", department: "MBA", qualification: "Ph.D", joiningDate: "01/06/2010" },
-        { id: "mba-6", title: "Dr.", name: "CHENCHU VETAPALEM", designation: "Professor", department: "MBA", qualification: "Ph.D", joiningDate: "08/11/2021" },
+        { id: "mba-4", title: "Dr.", name: "KPR RAJESH", designation: "Associate Professor", department: "MBA", qualification: "MBA, M.Phil, Ph.D", joiningDate: "07/07/2025", panNumber: "AYXPP2880J" },
+        { id: "mba-5", title: "Mr.", name: "ANUPAMA PAMIDIMUKKALA", designation: "Assistant Professor", department: "MBA", qualification: "MBA" },
+        { id: "mba-6", title: "Dr.", name: "ZIA REHMAN", designation: "HOD & Professor", department: "MBA", qualification: "Ph.D", joiningDate: "01/06/2010" },
+        { id: "mba-7", title: "Dr.", name: "CHENCHU VETAPALEM", designation: "Professor", department: "MBA", qualification: "Ph.D", joiningDate: "08/11/2021" },
     ],
     mca: [
         { id: "mca-1", title: "Mr.", name: "THALLAM HANUMANTHA RAO", designation: "Professor", department: "MCA", qualification: "MCA", joiningDate: "16/11/2022" },
@@ -274,7 +275,7 @@ export const departmentStats: Record<string, { students: number, faculty: number
     ds: { students: 180, faculty: 15, labs: 4, publications: 55, placements: 78 },
     civil: { students: 30, faculty: 9, labs: 6, publications: 75, placements: 65 },
     evt: { students: 60, faculty: 9, labs: 3, publications: 25, placements: 70 },
-    mba: { students: 120, faculty: 6, labs: 2, publications: 45, placements: 49 },
+    mba: { students: 120, faculty: 7, labs: 2, publications: 45, placements: 49 },
     mca: { students: 180, faculty: 10, labs: 3, publications: 30, placements: 60 },
 };
 

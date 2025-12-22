@@ -30,6 +30,7 @@ import itFacultyData from "@/data/it_faculty_yearwise.json";
 import civilFacultyData from "@/data/civil_faculty_yearwise.json";
 import mbaFacultyData from "@/data/mba_faculty_yearwise.json";
 import mcaFacultyData from "@/data/mca_faculty_yearwise.json";
+import evtFacultyData from "@/data/evt_faculty_yearwise.json";
 
 interface FacultyDirectoryButtonProps {
     department: string;
@@ -72,6 +73,9 @@ export function FacultyDirectoryButton({ department }: FacultyDirectoryButtonPro
         }
         if (["MCA", "MASTER OF COMPUTER APPLICATIONS"].includes(deptKey)) {
             return (mcaFacultyData as any)[selectedYear] || [];
+        }
+        if (["EVT", "VLSI"].includes(deptKey)) {
+            return (evtFacultyData as any)[selectedYear] || [];
         }
         // For other departments, return empty for now
         return [];

@@ -36,6 +36,11 @@ import itFacultyYearwise from '@/data/it_faculty_yearwise.json';
 import eceFacultyYearwise from '@/data/ece_faculty_yearwise.json';
 import cseAiFacultyYearwise from '@/data/cse_ai_faculty_yearwise.json';
 import cseDsFacultyYearwise from '@/data/ds_faculty_yearwise.json';
+import mbaFacultyYearwise from '@/data/mba_faculty_yearwise.json';
+import mcaFacultyYearwise from '@/data/mca_faculty_yearwise.json';
+import bshFacultyYearwise from '@/data/bsh_faculty_yearwise.json';
+import civilFacultyYearwise from '@/data/civil_faculty_yearwise.json';
+import evtFacultyYearwise from '@/data/evt_faculty_yearwise.json';
 
 // Import faculty recognition data from SAR reports
 import { getRecognitionByDepartment } from '@/data/faculty-recognition';
@@ -44,11 +49,16 @@ import { getRecognitionByDepartment } from '@/data/faculty-recognition';
 const getYearwiseData = (deptCode: string): Record<string, any[]> => {
     const dept = deptCode.toUpperCase();
     if (dept === 'CSE') return cseFacultyYearwise;
-    if (dept === 'IT') return itFacultyYearwise;
+    if (dept === 'IT' || dept === 'INFORMATION TECHNOLOGY') return itFacultyYearwise;
     if (dept === 'ECE') return eceFacultyYearwise;
-    if (dept === 'CSE-AI') return cseAiFacultyYearwise;
-    if (dept === 'CSE-DS') return cseDsFacultyYearwise;
-    return cseFacultyYearwise; // Default fallback
+    if (['AIML', 'CSE-AI', 'CSE(AI&ML)', 'CSM'].includes(dept)) return cseAiFacultyYearwise;
+    if (['DS', 'CSE-DS', 'CSD', 'DATA SCIENCE'].includes(dept)) return cseDsFacultyYearwise;
+    if (dept === 'MBA' || dept === 'MASTER OF BUSINESS ADMINISTRATION') return mbaFacultyYearwise;
+    if (dept === 'MCA' || dept === 'MASTER OF COMPUTER APPLICATIONS') return mcaFacultyYearwise;
+    if (['BSH', 'S&H', 'FED', 'BASIC SCIENCES'].includes(dept)) return bshFacultyYearwise;
+    if (['CIVIL', 'CIV', 'CE'].includes(dept)) return civilFacultyYearwise;
+    if (['EVT', 'VLSI'].includes(dept)) return evtFacultyYearwise;
+    return {}; // Return empty if no match
 };
 
 // --- Types ---
@@ -188,38 +198,41 @@ export default function FacultyPage() {
             const yearData = yearwiseData[activeYear] || [];
             // Transform JSON data to Faculty interface
             const transformedData: Faculty[] = yearData.map((f: any, index: number) => {
-                const name = f.name || '';
-                const pan = (f.pan || '').toUpperCase();
+                const rawName = f.name || f.NAME || f["Name of the Faculty"] || '';
+                // Clean name: Remove existing Dr. Mr. Mrs. to avoid double titles
+                const cleanName = rawName.replace(/Dr\.|Mr\.|Mrs\.|Ms\.|\./gi, '').trim();
+
+                const pan = (f.pan || f.PAN || '').toUpperCase();
                 const panLower = pan.toLowerCase();
 
                 // Check if faculty uploaded photo/resume via Google Form
                 const formData = formUploads[pan];
 
                 // Generate auto avatar using UI Avatars service (fallback)
-                const encodedName = encodeURIComponent(name.replace(/Dr\.|Mr\.|Mrs\.|Ms\.|\./g, '').trim());
+                const encodedName = encodeURIComponent(cleanName);
                 const bgColor = ['4F46E5', 'F97316', '16A34A', '0EA5E9', 'A855F7'][index % 5];
                 const defaultPhoto = `https://ui-avatars.com/api/?name=${encodedName}&background=${bgColor}&color=fff&size=128&font-size=0.35&bold=true`;
 
                 // Photo priority: 1. Local file (jpg/png) 2. Google Form upload 3. Auto avatar
-                // Check for local photo files: /faculty/photos/{pan}.jpg or .png
                 const localPhotoJpg = panLower ? `/faculty/photos/${panLower}.jpg` : null;
-                const localPhotoPng = panLower ? `/faculty/photos/${panLower}.png` : null;
-
-                // Try local first, then form upload, then auto avatar
                 const photoUrl = localPhotoJpg || formData?.photo || defaultPhoto;
 
+                // Determine Title
+                let title = 'Mr.';
+                if (rawName.toUpperCase().includes('DR.')) title = 'Dr.';
+                else if (rawName.toUpperCase().includes('MRS.')) title = 'Mrs.';
+                else if (rawName.toUpperCase().includes('MS.')) title = 'Ms.';
+
                 return {
-                    id: `${deptCode.toUpperCase()}-${String(index + 1).padStart(3, '0')}`,
-                    name: name,
-                    designation: f.designation || '',
-                    qualification: f.qualification || '',
+                    id: f.id || `${deptCode.toUpperCase()}-${String(index + 1).padStart(3, '0')}`,
+                    name: cleanName,
+                    designation: f.designation || f.Designation || '',
+                    qualification: f.qualification || f.Qualification || '',
                     department: deptCode.toUpperCase(),
-                    joiningDate: f.doj || '',
-                    panNumber: f.pan || '',
-                    title: name.startsWith('Dr') ? 'Dr.' : (name.startsWith('Mr') ? 'Mr.' : 'Mrs.'),
-                    // Photo priority: local file > Google Form > auto avatar
+                    joiningDate: f.doj || f.DOJ || f["Date of Joining"] || '',
+                    panNumber: pan,
+                    title: title,
                     photo: photoUrl,
-                    // Resume priority: Google Form > local file
                     resumeUrl: formData?.resume || (f.pan && f.pan !== 'N/A' ? `/faculty/resumes/${panLower}.pdf` : undefined)
                 };
             });
@@ -570,11 +583,11 @@ export default function FacultyPage() {
                                 <thead>
                                     <tr className="bg-white/5 border-b border-white/5">
                                         <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Photo</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Name</th>
+                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Faculty Name</th>
                                         <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Designation</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Qual.</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Joined</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Status</th>
+                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Qualification</th>
+                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Date of Joining</th>
+                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Nature</th>
                                         <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Profile</th>
                                     </tr>
                                 </thead>

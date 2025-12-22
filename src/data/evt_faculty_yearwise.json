@@ -1,0 +1,87 @@
+{
+    "2025-26": [
+        {
+            "sno": "1",
+            "name": "Dr. Srihari Rao Komatineni",
+            "qualification": "Ph.D",
+            "designation": "Professor & HOD",
+            "doj": "2015-06-01",
+            "nature": "Regular"
+        },
+        {
+            "sno": "2",
+            "name": "PAVAN KUMAR KATTA",
+            "qualification": "M.Tech",
+            "designation": "Lecturer",
+            "doj": "2023-01-01",
+            "nature": "Regular"
+        },
+        {
+            "sno": "3",
+            "name": "ANJANEYULU UMMANENI",
+            "qualification": "M.Tech",
+            "designation": "Assistant Professor",
+            "doj": "2022-01-01",
+            "nature": "Regular"
+        },
+        {
+            "sno": "4",
+            "name": "LALITA GOGINENI",
+            "qualification": "M.Tech",
+            "designation": "Assistant Professor",
+            "doj": "2021-01-01",
+            "nature": "Regular"
+        },
+        {
+            "sno": "5",
+            "name": "BALAKRISHNA PEYYALA",
+            "qualification": "M.Tech",
+            "designation": "Associate Professor",
+            "doj": "01/06/2023",
+            "nature": "Regular"
+        },
+        {
+            "sno": "6",
+            "name": "VIJAYASANTHI EDARA",
+            "qualification": "M.Tech",
+            "designation": "Associate Professor",
+            "doj": "24/10/2023",
+            "nature": "Regular"
+        },
+        {
+            "sno": "7",
+            "name": "RAMBABU CHEMAKURTHI",
+            "qualification": "M.Tech",
+            "designation": "Associate Professor",
+            "doj": "12/04/2017",
+            "nature": "Regular"
+        },
+        {
+            "sno": "8",
+            "name": "MEENAKSHI BOLLU",
+            "qualification": "M.Tech",
+            "designation": "Assistant Professor",
+            "doj": "2022-01-01",
+            "nature": "Regular"
+        },
+        {
+            "sno": "9",
+            "name": "TRIVENI LAKSHMI MARELLA",
+            "qualification": "M.Tech",
+            "designation": "Assistant Professor",
+            "doj": "2022-01-01",
+            "nature": "Regular"
+        },
+        {
+            "sno": "10",
+            "name": "FAIROZE SHAIK",
+            "qualification": "M.Tech",
+            "designation": "Associate Professor",
+            "doj": "01/01/2024",
+            "nature": "Regular"
+        }
+    ],
+    "2024-25": [],
+    "2023-24": [],
+    "2022-23": []
+}
