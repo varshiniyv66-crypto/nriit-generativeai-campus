@@ -256,7 +256,7 @@ export default function DepartmentHome() {
                                     </div>
                                     <div className="flex items-center gap-2 text-sm text-[#64748B]">
                                         <Users className="w-4 h-4 text-[#E5A818]" />
-                                        <span>Intake: {(staticDeptInfo as any)?.intake || deptData.intake || 120} Students</span>
+                                        <span>Intake: {(deptData as any).intake || 120} Students</span>
                                     </div>
                                 </div>
                             </CardContent>
