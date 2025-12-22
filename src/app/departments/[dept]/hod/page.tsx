@@ -10,7 +10,7 @@ export default function HODPage() {
     const params = useParams();
     const deptCode = (params.dept as string || '').toUpperCase();
     const staticInfo = staticDepartments[deptCode.toLowerCase()];
-    const hod = staticInfo?.hod;
+    const hod = staticInfo?.hod as any;
 
     if (!hod) {
         return (
