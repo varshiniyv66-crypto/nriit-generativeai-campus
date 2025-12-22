@@ -170,7 +170,7 @@ export default function DeanDashboard() {
         { metric: 'Placements', value: 87 },
         { metric: 'Research', value: 72 },
         { metric: 'Pass Rate', value: 92 },
-        { metric: 'NBA Score', value: 88 },
+        { metric: 'Quality Score', value: 88 },
         { metric: 'Infrastructure', value: 80 },
     ];
 

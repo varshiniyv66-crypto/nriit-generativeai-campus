@@ -99,7 +99,7 @@ export default function FacultyProfilePage() {
                             {profile.designation}
                         </CardDescription>
                         <Badge variant="outline" className="w-fit mx-auto mt-2 text-xs">{profile.id}</Badge>
-                        {profile.pan && <Badge variant="secondary" className="w-fit mx-auto mt-1 text-[10px] text-gray-500">NBA Verified</Badge>}
+                        {/* Badge removed per user instruction regarding NBA status */}
                     </CardHeader>
                     <CardContent className="space-y-4 pt-4">
                         <div className="flex items-center gap-3 text-sm text-gray-600">

@@ -32,7 +32,7 @@ import {
     Zap,
     ShieldCheck
 } from "lucide-react";
-import { DEPARTMENT_COMPARISON, PLACEMENT_TRENDS, NBA_CRITERIA } from "@/data/analytics";
+import { DEPARTMENT_COMPARISON, PLACEMENT_TRENDS, NBA_CRITERIA as ASSESSMENT_CRITERIA } from "@/data/analytics";
 
 const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
@@ -68,7 +68,7 @@ export const DepartmentComparison = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-                        {NBA_CRITERIA.map((criteria, idx) => (
+                        {ASSESSMENT_CRITERIA.map((criteria, idx) => (
                             <div
                                 key={criteria.id}
                                 className="group relative bg-slate-800/50 backdrop-blur-sm border border-slate-700 hover:border-amber-500/50 p-6 rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,0.15)] flex items-center space-x-4"
