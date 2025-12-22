@@ -1,161 +1,212 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useState } from "react";
+import { useParams, usePathname } from "next/navigation";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 import {
-    Home, Info, Target, FileText, Users, User, FlaskConical,
-    BookOpen, Award, Calendar, GraduationCap, Briefcase,
-    Heart, Image, Phone
+    Home, BookOpen, Target, Award, User, Users, FlaskConical,
+    BrainCircuit, Trophy, Calendar, GraduationCap, Briefcase,
+    Heart, ImageIcon, Phone, Menu, X, ChevronRight, Sparkles, FileText
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-const DEPARTMENTS: Record<string, {
-    shortName: string;
-    fullName: string;
-}> = {
-    'CSE': { shortName: 'CSE', fullName: 'Computer Science & Engineering' },
-    'CSE-DS': { shortName: 'CSE-DS', fullName: 'CSE (Data Science)' },
-    'CSE-AI': { shortName: 'CSE-AI', fullName: 'CSE (AI & ML)' },
-    'IT': { shortName: 'IT', fullName: 'Information Technology' },
-    'ECE': { shortName: 'ECE', fullName: 'Electronics & Communication' },
-    'CIVIL': { shortName: 'CIVIL', fullName: 'Civil Engineering' },
-    'MBA': { shortName: 'MBA', fullName: 'MBA' },
-    'MCA': { shortName: 'MCA', fullName: 'MCA' },
-    'BSH': { shortName: 'BSH', fullName: 'Basic Sciences & Humanities' },
-};
-
-const PAGE_SLUGS = [
-    'home', 'about', 'vision-mission', 'peos-psos', 'hod', 'dean',
-    'faculty', 'labs', 'research', 'achievements', 'events',
-    'student-corner', 'crt', 'mentoring', 'gallery', 'contact'
+const NAVIGATION_ITEMS = [
+    { icon: Home, label: "Home", href: "" },
+    { icon: BookOpen, label: "About Department", href: "/about" },
+    { icon: Target, label: "Vision & Mission", href: "/vision-mission" },
+    { icon: Award, label: "PEOs & PSOs", href: "/outcomes" },
+    { icon: Users, label: "Faculty", href: "/faculty" },
+    { icon: FlaskConical, label: "Laboratories", href: "/labs" },
+    { icon: BrainCircuit, label: "Research", href: "/research" },
+    { icon: Trophy, label: "Achievements", href: "/achievements" },
+    { icon: Calendar, label: "Events", href: "/events" },
+    { icon: GraduationCap, label: "Student Corner", href: "/student-corner" },
+    { icon: Briefcase, label: "CRT & Placements", href: "/placements" },
+    { icon: Heart, label: "Mentoring", href: "/mentoring" },
+    { icon: ImageIcon, label: "Gallery", href: "/gallery" },
+    { icon: Phone, label: "Contact Us", href: "/contact" },
 ];
 
-const PAGE_TITLES: Record<string, string> = {
-    'home': 'Home',
-    'about': 'About Department',
-    'vision-mission': 'Vision & Mission',
-    'peos-psos': 'PEOs & PSOs',
-    'hod': 'Head of Department',
-    'dean': 'Dean',
-    'faculty': 'Faculty',
-    'labs': 'Laboratories',
-    'research': 'Research',
-    'achievements': 'Achievements',
-    'events': 'Events',
-    'student-corner': 'Student Corner',
-    'crt': 'CRT & Placements',
-    'mentoring': 'Mentoring',
-    'gallery': 'Gallery',
-    'contact': 'Contact Us',
+// Department display names
+const DEPT_NAMES: Record<string, string> = {
+    'CSE': 'Computer Science',
+    'IT': 'Information Technology',
+    'ECE': 'Electronics & Communication',
+    'EEE': 'Electrical Engineering',
+    'MECH': 'Mechanical Engineering',
+    'CIVIL': 'Civil Engineering',
+    'MCA': 'Computer Applications',
+    'MBA': 'Business Administration',
+    'BSH': 'Basic Sciences & Humanities',
 };
 
-const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
-    'home': Home,
-    'about': Info,
-    'vision-mission': Target,
-    'peos-psos': FileText,
-    'hod': User,
-    'dean': User,
-    'faculty': Users,
-    'labs': FlaskConical,
-    'research': BookOpen,
-    'achievements': Award,
-    'events': Calendar,
-    'student-corner': GraduationCap,
-    'crt': Briefcase,
-    'mentoring': Heart,
-    'gallery': Image,
-    'contact': Phone,
-};
-
-export default function DepartmentLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function DepartmentLayout({ children }: { children: React.ReactNode }) {
     const params = useParams();
-    const deptParam = (params.dept as string || '').toUpperCase();
-    const department = DEPARTMENTS[deptParam];
+    const pathname = usePathname();
+    const deptCode = (params.dept as string || '').toUpperCase();
+    const deptName = DEPT_NAMES[deptCode] || deptCode;
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
-    if (!department) {
-        return (
-            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-3xl font-bold text-gray-900 mb-4">Department Not Found</h1>
-                    <Link href="/" className="text-blue-600 hover:underline">Return Home</Link>
-                </div>
-            </div>
-        );
-    }
+    const basePath = `/departments/${params.dept}`;
+    const isActive = (href: string) => {
+        if (href === "") return pathname === basePath;
+        return pathname === `${basePath}${href}`;
+    };
 
     return (
-        <div className={`min-h-screen bg-gray-50`}>
-            {/* Department Header */}
-            <header className="sticky top-0 z-40 w-full glass border-b border-white/20">
-                <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                        <Link href="/" className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center font-bold">
-                            N
+        <div className="min-h-screen bg-[#FAFAFA]">
+            {/* Mobile Menu Button */}
+            <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="fixed top-20 left-4 z-50 lg:hidden"
+            >
+                <Button
+                    variant="outline"
+                    size="icon"
+                    className="bg-white/80 backdrop-blur-xl shadow-lg border-white/50 rounded-xl hover:scale-105 transition-transform"
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                >
+                    {sidebarOpen ? <X className="h-5 w-5 text-slate-700" /> : <Menu className="h-5 w-5 text-slate-700" />}
+                </Button>
+            </motion.div>
+
+            {/* Sidebar - Floating Glass Design */}
+            <aside
+                className={cn(
+                    "fixed left-0 top-16 h-[calc(100vh-4rem)] w-72 z-40 transition-transform duration-300 ease-out",
+                    sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+                )}
+            >
+                {/* Glass Container */}
+                <div className="m-3 h-[calc(100%-1.5rem)] bg-white/70 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/50 overflow-hidden flex flex-col">
+
+                    {/* International Standard Quick Navigation */}
+                    <div className="px-4 pt-4 pb-2 space-y-2">
+                        {/* Main Website Home */}
+                        <Link
+                            href="/"
+                            className="group flex items-center gap-2 w-full py-2.5 px-4 bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-700 hover:to-slate-800 text-white text-sm font-medium rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
+                        >
+                            <Home className="w-4 h-4" />
+                            <span>🏠 Main Home</span>
+                            <ChevronRight className="w-3 h-3 ml-auto opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
                         </Link>
-                        <div className="h-6 w-px bg-gray-300 mx-2" />
-                        <Link href={`/departments/${params.dept}`} className="font-bold text-lg text-gray-900 hover:text-blue-600 transition-colors">
-                            {department.shortName}
+
+                        {/* Department Home */}
+                        <Link
+                            href={basePath}
+                            className="group flex items-center gap-2 w-full py-2.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-sm font-medium rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
+                        >
+                            <Sparkles className="w-4 h-4" />
+                            <span>📚 {deptCode} Home</span>
+                            <ChevronRight className="w-3 h-3 ml-auto opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
                         </Link>
                     </div>
 
-                    <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-                        <Link href={`/departments/${params.dept}`} className="text-blue-600">
-                            Department Home
-                        </Link>
-                        <Link href={`/departments/${params.dept}/faculty`} className="text-gray-600 hover:text-blue-600">
-                            Faculty
-                        </Link>
-                        <Link href={`/departments/${params.dept}/labs`} className="text-gray-600 hover:text-blue-600">
-                            Labs
-                        </Link>
-                        <Link href={`/departments/${params.dept}/contact`} className="text-gray-600 hover:text-blue-600">
-                            Contact
-                        </Link>
-                    </nav>
-                </div>
-            </header>
-
-            <div className="container mx-auto px-4 py-8">
-                <div className="flex flex-col lg:flex-row gap-8">
-                    {/* Sidebar Navigation */}
-                    <aside className="w-full lg:w-64 flex-shrink-0">
-                        <div className="sticky top-24 glass-card rounded-xl p-4 space-y-1">
-                            <div className="px-4 py-2 mb-2">
-                                <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-                                    Menu
-                                </h2>
+                    {/* Department Header */}
+                    <div className="p-5 border-b border-t border-slate-200/50">
+                        <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#1E4080] via-[#2563EB] to-[#7C3AED] flex items-center justify-center shadow-lg shadow-blue-500/30">
+                                <Sparkles className="w-6 h-6 text-white" />
                             </div>
-                            {PAGE_SLUGS.map((slug) => {
-                                const Icon = ICONS[slug];
-                                const title = PAGE_TITLES[slug];
-                                const href = slug === 'home'
-                                    ? `/departments/${params.dept}`
-                                    : `/departments/${params.dept}/${slug}`;
+                            <div>
+                                <h2 className="text-lg font-bold text-slate-900 tracking-tight">{deptCode}</h2>
+                                <p className="text-xs text-slate-500 font-medium">{deptName}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Navigation */}
+                    <nav className="flex-1 overflow-y-auto p-3 scrollbar-thin scrollbar-thumb-slate-300/50 scrollbar-track-transparent">
+                        <ul className="space-y-1">
+                            {NAVIGATION_ITEMS.map((item, index) => {
+                                const Icon = item.icon;
+                                const href = `${basePath}${item.href}`;
+                                const active = isActive(item.href);
 
                                 return (
-                                    <Link
-                                        key={slug}
-                                        href={href}
-                                        className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-gray-700 hover:bg-blue-600 hover:text-white transition-all group"
+                                    <motion.li
+                                        key={item.href}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: index * 0.03 }}
                                     >
-                                        <Icon className="w-4 h-4 text-gray-400 group-hover:text-white transition-colors" />
-                                        <span className="font-medium">{title}</span>
-                                    </Link>
+                                        <Link
+                                            href={href}
+                                            onClick={() => setSidebarOpen(false)}
+                                            className={cn(
+                                                "flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 group relative overflow-hidden",
+                                                active
+                                                    ? "bg-gradient-to-r from-[#1E4080] to-[#2563EB] text-white shadow-lg shadow-blue-500/30"
+                                                    : "text-slate-600 hover:bg-slate-100/80 hover:text-slate-900"
+                                            )}
+                                        >
+                                            {/* Active Glow Effect */}
+                                            {active && (
+                                                <motion.div
+                                                    layoutId="activeGlow"
+                                                    className="absolute inset-0 bg-gradient-to-r from-[#1E4080] to-[#2563EB] rounded-xl -z-10"
+                                                    transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}
+                                                />
+                                            )}
+
+                                            <div className={cn(
+                                                "w-8 h-8 rounded-lg flex items-center justify-center transition-colors",
+                                                active
+                                                    ? "bg-white/20"
+                                                    : "bg-slate-200/50 group-hover:bg-slate-200"
+                                            )}>
+                                                <Icon className={cn("w-4 h-4", active ? "text-white" : "text-slate-500 group-hover:text-slate-700")} />
+                                            </div>
+
+                                            <span className="flex-1 truncate">{item.label}</span>
+
+                                            {active && (
+                                                <motion.div
+                                                    initial={{ scale: 0 }}
+                                                    animate={{ scale: 1 }}
+                                                    className="w-2 h-2 rounded-full bg-white shadow-lg shadow-white/50"
+                                                />
+                                            )}
+                                        </Link>
+                                    </motion.li>
                                 );
                             })}
-                        </div>
-                    </aside>
+                        </ul>
+                    </nav>
 
-                    {/* Main Content */}
-                    <main className="flex-1 min-w-0">
-                        {children}
-                    </main>
+                    {/* Footer Branding */}
+                    <div className="p-4 border-t border-slate-200/50">
+                        <div className="flex items-center gap-2 text-xs text-slate-400">
+                            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
+                                <span className="text-white font-bold text-[10px]">NRI</span>
+                            </div>
+                            <span className="font-medium">NRIIT Campus Portal</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </aside>
+
+            {/* Main Content */}
+            <main className="lg:ml-72 min-h-screen">
+                {children}
+            </main>
+
+            {/* Overlay for mobile */}
+            <AnimatePresence>
+                {sidebarOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 bg-slate-900/30 backdrop-blur-sm z-30 lg:hidden"
+                        onClick={() => setSidebarOpen(false)}
+                    />
+                )}
+            </AnimatePresence>
         </div>
     );
 }

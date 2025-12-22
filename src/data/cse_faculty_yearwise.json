@@ -191,6 +191,15 @@
     },
     {
       "sno": "22",
+      "name": "Mr U Veerandra",
+      "qualification": "M.Tech",
+      "designation": "Assistant Professor",
+      "doj": "01.07.2021",
+      "pan": "ALEPV8806A",
+      "nature": "Regular"
+    },
+    {
+      "sno": "23",
       "name": "Mrs P.Ratna Kumari",
       "qualification": "M.Tech",
       "designation": "Assistant Professor",
@@ -380,20 +389,11 @@
     },
     {
       "sno": "43",
-      "name": "Mr R Siav kumar",
+      "name": "Mr R Siva kumar",
       "qualification": "M.Tech",
       "designation": "Assistant Professor",
       "doj": "07.09.2024",
       "pan": "BEUPR3613H",
-      "nature": "Regular"
-    },
-    {
-      "sno": "44",
-      "name": "Mrs Karishma Bhanu",
-      "qualification": "M.Tech",
-      "designation": "Assistant Professor",
-      "doj": "03.09.2025",
-      "pan": "GATPB5713A",
       "nature": "Regular"
     }
   ],
@@ -752,13 +752,24 @@
   ],
   "2023-24": [
     {
-      "sno": "1",
-      "name": "Dr.K.Nageswara Rao",
-      "qualification": "Ph.D",
+      "id": "CSE-001",
+      "name": "Dr. K. Nageswara Rao",
       "designation": "Professor & HOD",
-      "doj": "28-05-2019",
-      "pan": "N/A",
-      "nature": "Regular"
+      "qualification": "Ph.D",
+      "date_of_joining": "28.05.2019",
+      "nature": "Regular",
+      "photo": "https://ui-avatars.com/api/?name=K+Nageswara+Rao&background=4F46E5&color=fff&size=128",
+      "resume": "/faculty/resumes/agzpk9875a.pdf"
+    },
+    {
+      "id": "CSE-002",
+      "name": "Dr. D. Suneetha",
+      "designation": "Professor",
+      "qualification": "Ph.D",
+      "date_of_joining": "15.06.2010",
+      "nature": "Regular",
+      "photo": "https://ui-avatars.com/api/?name=D+Suneetha&background=16A34A&color=fff&size=128",
+      "resume": "/faculty/resumes/suneetha.pdf"
     },
     {
       "sno": "2",

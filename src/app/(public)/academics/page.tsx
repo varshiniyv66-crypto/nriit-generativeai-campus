@@ -7,23 +7,18 @@ import Link from "next/link";
 const programs = [
     {
         category: "UG (B.Tech)",
-        courses: ["Computer Science", "Electronics & Comm", "Mechanical", "Civil", "EEE", "IT", "AI & DS"],
+        courses: ["Computer Science & Engineering", "CSE (Data Science)", "CSE (AI & ML)", "Information Technology", "Electronics & Communication", "Electronics & VLSI Technology", "Civil Engineering"],
         count: 7
     },
     {
         category: "PG (M.Tech)",
-        courses: ["Computer Science", "VLSI Design", "Structural Engg", "Power Systems"],
-        count: 4
+        courses: ["Computer Science", "VLSI Design", "Structural Engineering"],
+        count: 3
     },
     {
         category: "Management",
-        courses: ["MBA (General)", "MBA (Fintech)"],
+        courses: ["MBA", "MCA"],
         count: 2
-    },
-    {
-        category: "Doctoral",
-        courses: ["Ph.D in Engineering & Sciences"],
-        count: 1
     }
 ];
 

@@ -4,15 +4,16 @@ import Link from "next/link";
 import { ChevronRight, Users, Award, Building2, ShieldCheck } from "lucide-react";
 
 const departments = [
-    { code: "CSE", name: "Computer Science & Engineering", icon: "💻", color: "from-blue-600 to-blue-800", students: 480, established: 2001 },
-    { code: "CSE-DS", name: "CSE (Data Science)", icon: "📊", color: "from-purple-600 to-purple-800", students: 120, established: 2020 },
+    { code: "CSE", name: "Computer Science & Engineering", icon: "💻", color: "from-blue-600 to-blue-800", students: 360, established: 2008 },
+    { code: "CSE-DS", name: "CSE (Data Science)", icon: "📊", color: "from-purple-600 to-purple-800", students: 180, established: 2020 },
     { code: "CSE-AI", name: "CSE (AI & ML)", icon: "🤖", color: "from-pink-600 to-pink-800", students: 120, established: 2020 },
-    { code: "IT", name: "Information Technology", icon: "🌐", color: "from-green-600 to-green-800", students: 240, established: 2001 },
-    { code: "ECE", name: "Electronics & Communication", icon: "📡", color: "from-amber-600 to-amber-800", students: 360, established: 2001 },
-    { code: "CIVIL", name: "Civil Engineering", icon: "🏗️", color: "from-red-600 to-red-800", students: 120, established: 2008 },
+    { code: "IT", name: "Information Technology", icon: "🌐", color: "from-green-600 to-green-800", students: 120, established: 2008 },
+    { code: "ECE", name: "Electronics & Communication", icon: "📡", color: "from-amber-600 to-amber-800", students: 180, established: 2008 },
+    { code: "EVT", name: "Electronics & VLSI Technology", icon: "⚡", color: "from-yellow-600 to-yellow-800", students: 60, established: 2020 },
+    { code: "CIVIL", name: "Civil Engineering", icon: "🏗️", color: "from-red-600 to-red-800", students: 30, established: 2008 },
     { code: "MBA", name: "Master of Business Administration", icon: "📈", color: "from-cyan-600 to-cyan-800", students: 120, established: 2009 },
-    { code: "MCA", name: "Master of Computer Applications", icon: "🎓", color: "from-violet-600 to-violet-800", students: 60, established: 2005 },
-    { code: "BSH", name: "Basic Sciences & Humanities", icon: "📚", color: "from-slate-600 to-slate-800", students: 0, established: 2001 },
+    { code: "MCA", name: "Master of Computer Applications", icon: "🎓", color: "from-violet-600 to-violet-800", students: 180, established: 2005 },
+    { code: "BSH", name: "Basic Sciences & Humanities", icon: "📚", color: "from-slate-600 to-slate-800", students: 0, established: 2008 },
 ];
 
 export default function DepartmentsListPage() {

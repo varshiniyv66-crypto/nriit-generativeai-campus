@@ -23,20 +23,23 @@ const programs = [
     {
         level: "Undergraduate",
         courses: [
-            { name: "B.Tech Computer Science & Engineering", duration: "4 Years", seats: 180, code: "CSE" },
-            { name: "B.Tech CSE (Data Science)", duration: "4 Years", seats: 60, code: "CSE-DS" },
-            { name: "B.Tech CSE (AI & ML)", duration: "4 Years", seats: 60, code: "AI-ML" },
+            { name: "B.Tech Computer Science & Engineering", duration: "4 Years", seats: 360, code: "CSE" },
+            { name: "B.Tech CSE (Data Science)", duration: "4 Years", seats: 180, code: "CSE-DS" },
+            { name: "B.Tech CSE (AI & ML)", duration: "4 Years", seats: 120, code: "AI-ML" },
             { name: "B.Tech Information Technology", duration: "4 Years", seats: 120, code: "IT" },
-            { name: "B.Tech Electronics & Communication", duration: "4 Years", seats: 120, code: "ECE" },
-            { name: "B.Tech Civil Engineering", duration: "4 Years", seats: 60, code: "CIVIL" },
+            { name: "B.Tech Electronics & Communication", duration: "4 Years", seats: 180, code: "ECE" },
+            { name: "B.Tech Electronics & VLSI Technology", duration: "4 Years", seats: 60, code: "EVT" },
+            { name: "B.Tech Civil Engineering", duration: "4 Years", seats: 30, code: "CIVIL" },
         ],
     },
     {
         level: "Postgraduate",
         courses: [
             { name: "MBA", duration: "2 Years", seats: 120, code: "MBA" },
-            { name: "MCA", duration: "2 Years", seats: 60, code: "MCA" },
-            { name: "M.Tech (CSE)", duration: "2 Years", seats: 24, code: "MTECH" },
+            { name: "MCA", duration: "2 Years", seats: 180, code: "MCA" },
+            { name: "M.Tech (CSE)", duration: "2 Years", seats: 36, code: "MTECH-CSE" },
+            { name: "M.Tech (VLSI)", duration: "2 Years", seats: 18, code: "MTECH-VLSI" },
+            { name: "M.Tech (Structural Engineering)", duration: "2 Years", seats: 18, code: "MTECH-CIVIL" },
         ],
     },
 ];

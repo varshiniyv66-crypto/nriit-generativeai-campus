@@ -48,7 +48,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-blue-600",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-blue-50",
     gradient: "from-blue-500 to-blue-600",
-    students: 480,
+    students: 360,
     image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -58,7 +58,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-purple-600",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-purple-50",
     gradient: "from-purple-500 to-purple-600",
-    students: 120,
+    students: 180,
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -78,7 +78,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-emerald-600",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-emerald-50",
     gradient: "from-emerald-500 to-emerald-600",
-    students: 240,
+    students: 120,
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -88,7 +88,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-amber-600",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-amber-50",
     gradient: "from-amber-500 to-amber-600",
-    students: 360,
+    students: 180,
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -98,7 +98,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-yellow-500",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-yellow-50",
     gradient: "from-yellow-400 to-yellow-600",
-    students: 120,
+    students: 60,
     image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -118,7 +118,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-red-500",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-red-50",
     gradient: "from-red-500 to-red-600",
-    students: 120,
+    students: 30,
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -138,7 +138,7 @@ const departments = [
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-violet-500",
     cardBgAccent: "hover:bg-gradient-to-br hover:from-white hover:to-violet-50",
     gradient: "from-violet-500 to-violet-600",
-    students: 60,
+    students: 180,
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop"
   },
   {
@@ -248,8 +248,8 @@ export default function HomePage() {
 
         {/* SLIDER CONTENT */}
         <div className="relative z-10 w-full h-full flex items-center">
-          <button onClick={() => setCurrentSlide((prev) => (prev === 0 ? 2 : prev - 1))} className="absolute left-4 lg:left-10 p-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 z-50 transition-all hover:scale-110 hidden md:block">
-            <ChevronLeft className="w-8 h-8" />
+          <button onClick={() => setCurrentSlide((prev) => (prev === 0 ? 2 : prev - 1))} className="absolute left-2 top-1/2 -translate-y-1/2 lg:left-10 p-2 lg:p-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 z-50 transition-all hover:scale-110">
+            <ChevronLeft className="w-6 h-6 lg:w-8 lg:h-8" />
           </button>
 
           <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
@@ -257,7 +257,7 @@ export default function HomePage() {
             {currentSlide === 0 && (
               <>
                 {/* Light Background Override */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#F8F7FF] via-[#EEF0FF] to-[#F5F3FF] z-0" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#F8F7FF] via-[#EEF0FF] to-[#F5F3FF] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
 
                 <div className="text-left space-y-6 animate-fade-in-up relative z-10">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 text-sm font-bold tracking-wide">
@@ -265,13 +265,13 @@ export default function HomePage() {
                     Admissions Open 2025
                   </div>
 
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] leading-[1.1]">
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] dark:text-white leading-[1.1]">
                     NRI Institute of <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">Technology</span>
                   </h1>
 
-                  <p className="text-lg text-slate-600 max-w-lg leading-relaxed">
-                    Autonomous Institution, Guntur. Accredited with NAAC &apos;A+&apos; Grade and NBA (CSE, ECE, IT). Affiliated to JNTUK, Kakinada. Empowering students to be competitive, ethical, and socially responsible professionals.
+                  <p className="text-lg text-slate-600 dark:text-slate-300 max-w-lg leading-relaxed">
+                    Autonomous Institution, Guntur. Accredited with NAAC &apos;A+&apos; Grade and AICTE. Affiliated to JNTUK, Kakinada. Empowering students to be competitive, ethical, and socially responsible professionals.
                   </p>
 
                   <div className="flex flex-wrap gap-4 pt-4">
@@ -288,22 +288,22 @@ export default function HomePage() {
                   {/* Accreditation Badges - Bottom */}
                   <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">NAAC A+</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Accredited</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">NAAC A+</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Accredited</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">NBA</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">CSE | ECE | IT</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">AICTE</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Accredited</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">Autonomous</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">JNTUK Affiliated</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">Autonomous</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">JNTUK Affiliated</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Right Side - Animated Campus Image */}
-                <div className="relative animate-fade-in-up delay-100 hidden lg:block z-10">
+                <div className="relative animate-fade-in-up delay-100 z-10 mt-8 lg:mt-0">
                   {/* Floating NAAC Badge */}
                   <div className="absolute -top-4 left-1/3 z-20 bg-white px-4 py-2 rounded-xl shadow-xl border border-slate-100 flex items-center gap-2 animate-float">
                     <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
@@ -316,7 +316,7 @@ export default function HomePage() {
                   </div>
 
                   {/* Main Image Container */}
-                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group h-[450px]">
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group h-[300px] lg:h-[450px]">
                     <Image
                       src="/gallery/nriit-vibrant-campus.png"
                       alt="NRIIT Vibrant Campus Life"
@@ -358,7 +358,7 @@ export default function HomePage() {
             {currentSlide === 1 && (
               <>
                 {/* Light Background Override */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFFAF5] z-0" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFFAF5] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
 
                 <div className="text-left space-y-6 animate-fade-in-up relative z-10">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-sm font-bold tracking-wide">
@@ -366,12 +366,12 @@ export default function HomePage() {
                     Centers of Excellence
                   </div>
 
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] leading-[1.1]">
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] dark:text-white leading-[1.1]">
                     Leading the Way in <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">Global Innovation</span>
                   </h1>
 
-                  <p className="text-lg text-slate-600 max-w-lg leading-relaxed">
+                  <p className="text-lg text-slate-600 dark:text-slate-300 max-w-lg leading-relaxed">
                     Our research centers are at the forefront of AI, sustainable energy, and biotechnology. Collaborating with industry leaders to solve real-world problems.
                   </p>
 
@@ -389,28 +389,28 @@ export default function HomePage() {
                   {/* Research Stats */}
                   <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">15+</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Research Labs</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">15+</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Research Labs</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">50+</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Publications</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">50+</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Publications</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">₹2Cr+</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Research Grants</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">₹2Cr+</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Research Grants</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Right Side - Research Card */}
-                <div className="relative animate-fade-in-up delay-100 hidden lg:block z-10">
-                  <div className="bg-white p-10 rounded-3xl shadow-2xl border border-slate-100">
+                <div className="relative animate-fade-in-up delay-100 z-10 mt-8 lg:mt-0">
+                  <div className="bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-2xl border border-slate-100 dark:border-slate-800">
                     <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                       <Brain className="w-10 h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-black text-[#0F172A] text-center mb-3">Centers of Excellence</h3>
-                    <p className="text-slate-500 text-center mb-6">Driving innovation through dedicated research facilities and industry partnerships.</p>
+                    <h3 className="text-2xl font-black text-[#0F172A] dark:text-white text-center mb-3">Centers of Excellence</h3>
+                    <p className="text-slate-500 dark:text-slate-400 text-center mb-6">Driving innovation through dedicated research facilities and industry partnerships.</p>
                     <div className="grid grid-cols-2 gap-4">
                       {["AI & ML Lab", "IoT Center", "VLSI Lab", "Data Science"].map((lab, i) => (
                         <div key={i} className="bg-amber-50 p-3 rounded-xl text-center">
@@ -427,7 +427,7 @@ export default function HomePage() {
             {currentSlide === 2 && (
               <>
                 {/* Light Background Override */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#F0FDF4] via-[#ECFDF5] to-[#F0FDF9] z-0" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#F0FDF4] via-[#ECFDF5] to-[#F0FDF9] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
 
                 <div className="text-left space-y-6 animate-fade-in-up relative z-10">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 text-sm font-bold tracking-wide">
@@ -435,12 +435,12 @@ export default function HomePage() {
                     Visit Guntur Visadala Campus
                   </div>
 
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] leading-[1.1]">
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] dark:text-white leading-[1.1]">
                     From Amaravathi <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">to Global Stage</span>
                   </h1>
 
-                  <p className="text-lg text-slate-600 max-w-lg leading-relaxed">
+                  <p className="text-lg text-slate-600 dark:text-slate-300 max-w-lg leading-relaxed">
                     Preparing the next generation of engineers for global excellence at our state-of-the-art Visadala campus in Guntur District.
                   </p>
 
@@ -458,23 +458,23 @@ export default function HomePage() {
                   {/* Campus Features */}
                   <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">25 Acres</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Campus Area</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">25 Acres</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Campus Area</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">Wi-Fi</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Enabled Campus</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">Wi-Fi</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Enabled Campus</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-[#0F172A]">Modern</div>
-                      <div className="text-xs text-slate-500 uppercase tracking-wider">Infrastructure</div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">Modern</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Infrastructure</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Right Side - Campus Image */}
-                <div className="relative animate-fade-in-up delay-100 hidden lg:block z-10">
-                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group">
+                <div className="relative animate-fade-in-up delay-100 z-10 mt-8 lg:mt-0">
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group h-[300px] lg:h-[450px]">
                     <img
                       src="/banners/global-stage.png"
                       alt="NRIIT Visadala Campus"
@@ -497,7 +497,7 @@ export default function HomePage() {
             )}
           </div>
 
-          <button onClick={() => setCurrentSlide((prev) => (prev === 2 ? 0 : prev + 1))} className="absolute right-4 lg:right-10 p-4 rounded-full bg-slate-900/20 hover:bg-slate-900/40 backdrop-blur-md text-slate-700 border border-slate-200 z-50 transition-all hover:scale-110 hidden md:block">
+          <button onClick={() => setCurrentSlide((prev) => (prev === 2 ? 0 : prev + 1))} className="absolute right-2 top-1/2 -translate-y-1/2 lg:right-10 p-2 lg:p-4 rounded-full bg-slate-900/20 hover:bg-slate-900/40 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-white/20 z-50 transition-all hover:scale-110">
             <ChevronRight className="w-8 h-8" />
           </button>
 

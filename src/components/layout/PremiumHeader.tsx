@@ -169,7 +169,7 @@ export default function PremiumHeader() {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="lg:hidden p-2 text-slate-800"
+                        className="lg:hidden p-2 text-slate-800 dark:text-white"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         {isMobileMenuOpen ? <ChevronDown className="w-6 h-6 rotate-180" /> : <Menu className="w-6 h-6" />}
@@ -178,13 +178,13 @@ export default function PremiumHeader() {
             </div>
 
             {/* 3. MOBILE MENU OVERLAY */}
-            <div className={`lg:hidden fixed inset-0 z-40 bg-white transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} pt-[130px]`}>
+            <div className={`lg:hidden fixed inset-0 z-40 bg-white dark:bg-slate-950 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} pt-[130px]`}>
                 <div className="h-full overflow-y-auto px-6 pb-20">
                     <div className="flex flex-col gap-6">
                         {/* Mobile Academy Links */}
-                        <div className="space-y-4 border-b border-slate-100 pb-6">
-                            <Link href="/about" className="block text-lg font-bold text-slate-800" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-                            <Link href="/academics" className="block text-lg font-bold text-slate-800" onClick={() => setIsMobileMenuOpen(false)}>Academics</Link>
+                        <div className="space-y-4 border-b border-slate-100 dark:border-slate-800 pb-6">
+                            <Link href="/about" className="block text-lg font-bold text-slate-800 dark:text-white" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+                            <Link href="/academics" className="block text-lg font-bold text-slate-800 dark:text-white" onClick={() => setIsMobileMenuOpen(false)}>Academics</Link>
                             <Link href="/admissions" className="block text-lg font-bold text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>Admissions 2025</Link>
                         </div>
 
@@ -196,27 +196,27 @@ export default function PremiumHeader() {
                                     <Link
                                         key={dept.code}
                                         href={`/departments/${dept.code.toLowerCase()}`}
-                                        className="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border border-slate-100"
+                                        className="flex items-center gap-2 p-2 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         <div className={`w-8 h-8 rounded bg-gradient-to-br ${dept.color} flex items-center justify-center`}>
                                             <dept.icon className="w-4 h-4 text-white" />
                                         </div>
-                                        <span className="text-xs font-bold text-slate-700">{dept.shortName}</span>
+                                        <span className="text-xs font-bold text-slate-700 dark:text-slate-300">{dept.shortName}</span>
                                     </Link>
                                 ))}
                             </div>
                         </div>
 
                         {/* Mobile Quick Links */}
-                        <div className="space-y-4 border-t border-slate-100 pt-6">
-                            <Link href="/login?role=student" className="flex items-center gap-2 text-slate-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                        <div className="space-y-4 border-t border-slate-100 dark:border-slate-800 pt-6">
+                            <Link href="/login?role=student" className="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                                 <Users className="w-4 h-4" /> Student Login
                             </Link>
-                            <Link href="/login?role=faculty" className="flex items-center gap-2 text-slate-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link href="/login?role=faculty" className="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                                 <Briefcase className="w-4 h-4" /> Faculty Login
                             </Link>
-                            <Link href="/contact" className="flex items-center gap-2 text-slate-600 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link href="/contact" className="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                                 <Phone className="w-4 h-4" /> Contact Us
                             </Link>
                         </div>

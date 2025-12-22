@@ -1,14 +1,17 @@
 
+// NBA CRITERIA SCORES - Extracted from SAR-CSE (2024-25)
+// Total Score: 952/1000
 export const NBA_CRITERIA = [
     { id: 1, name: "Vision, Mission & PEOs", score: 60, maxScore: 60, status: "Gold" },
-    { id: 2, name: "Program Curriculum", score: 120, maxScore: 120, status: "Gold" },
-    { id: 3, name: "Course Outcomes (COs)", score: 120, maxScore: 120, status: "Gold" },
-    { id: 4, name: "Student Performance", score: 142, maxScore: 150, status: "Gold" }, // Slight realistic variance
-    { id: 5, name: "Faculty Contributions", score: 195, maxScore: 200, status: "Gold" },
-    { id: 6, name: "Facilities & Support", score: 80, maxScore: 80, status: "Gold" },
+    { id: 2, name: "Program Curriculum & Teaching-Learning", score: 120, maxScore: 120, status: "Gold" },
+    { id: 3, name: "Course Outcomes & Program Outcomes", score: 120, maxScore: 120, status: "Gold" },
+    { id: 4, name: "Students' Performance", score: 111.95, maxScore: 150, status: "Silver" },
+    { id: 5, name: "Faculty Information & Contributions", score: 194.84, maxScore: 200, status: "Gold" },
+    { id: 6, name: "Facilities & Technical Support", score: 80, maxScore: 80, status: "Gold" },
     { id: 7, name: "Continuous Improvement", score: 50, maxScore: 50, status: "Gold" },
-    { id: 8, name: "First Year Academics", score: 48, maxScore: 50, status: "Gold" },
+    { id: 8, name: "First Year Academics", score: 44.97, maxScore: 50, status: "Silver" },
     { id: 9, name: "Student Support Systems", score: 50, maxScore: 50, status: "Gold" },
+    { id: 10, name: "Governance, Institutional Support & Financial Resources", score: 120, maxScore: 120, status: "Gold" },
 ];
 
 export const DEPARTMENT_COMPARISON = [
@@ -17,10 +20,10 @@ export const DEPARTMENT_COMPARISON = [
         fullName: "Computer Science & Engineering",
         intake: 360,
         placementPercentage: 92,
-        facultyCount: 88,
+        facultyCount: 38,
         avgPackage: "8.5 LPA",
         researchPapers: 145,
-        studentRatio: "1:14",
+        studentRatio: "1:10",
         accreditationStatus: "Accredited",
         color: "#3b82f6", // Blue
     },
@@ -28,12 +31,12 @@ export const DEPARTMENT_COMPARISON = [
         name: "IT",
         fullName: "Information Technology",
         intake: 120,
-        placementPercentage: 85, // Aspiring for Gold
-        facultyCount: 32,
+        placementPercentage: 85,
+        facultyCount: 18,
         avgPackage: "7.2 LPA",
         researchPapers: 89,
-        studentRatio: "1:15",
-        accreditationStatus: "Applying",
+        studentRatio: "1:7",
+        accreditationStatus: "Accredited",
         color: "#8b5cf6", // Purple
     },
     {
@@ -41,10 +44,10 @@ export const DEPARTMENT_COMPARISON = [
         fullName: "Electronics & Comm. Eng.",
         intake: 180,
         placementPercentage: 79,
-        facultyCount: 46,
+        facultyCount: 28,
         avgPackage: "6.8 LPA",
         researchPapers: 112,
-        studentRatio: "1:15",
+        studentRatio: "1:7",
         accreditationStatus: "Accredited",
         color: "#f59e0b", // Amber
     },
@@ -53,10 +56,10 @@ export const DEPARTMENT_COMPARISON = [
         fullName: "Data Science",
         intake: 180,
         placementPercentage: 88,
-        facultyCount: 24,
+        facultyCount: 15,
         avgPackage: "9.1 LPA",
         researchPapers: 45,
-        studentRatio: "1:15",
+        studentRatio: "1:12",
         accreditationStatus: "New",
         color: "#10b981", // Emerald
     },
@@ -65,10 +68,10 @@ export const DEPARTMENT_COMPARISON = [
         fullName: "AI & Machine Learning",
         intake: 120,
         placementPercentage: 86,
-        facultyCount: 18,
+        facultyCount: 15,
         avgPackage: "8.9 LPA",
         researchPapers: 38,
-        studentRatio: "1:15",
+        studentRatio: "1:8",
         accreditationStatus: "New",
         color: "#ec4899", // Pink
     }

@@ -20,6 +20,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import Link from "next/link";
 
+// NBA CRITERIA - Real scores from SAR-CSE 2024-25 (Total: 952/1000)
 const nbaCriteria = [
     {
         id: "C1",
@@ -33,7 +34,7 @@ const nbaCriteria = [
     },
     {
         id: "C2",
-        name: "Program Curriculum",
+        name: "Program Curriculum & Teaching-Learning",
         score: 120,
         max: 120,
         icon: BookOpen,
@@ -43,7 +44,7 @@ const nbaCriteria = [
     },
     {
         id: "C3",
-        name: "Course Outcomes (COs)",
+        name: "Course Outcomes & Program Outcomes",
         score: 120,
         max: 120,
         icon: Zap,
@@ -53,18 +54,18 @@ const nbaCriteria = [
     },
     {
         id: "C4",
-        name: "Student Performance",
-        score: 142,
+        name: "Students' Performance",
+        score: 111.95,
         max: 150,
         icon: TrendingUp,
         color: "text-emerald-500",
         bg: "bg-emerald-500/10",
-        description: "High graduation rates, academic excellence, and consistent track record in competitive exams."
+        description: "Graduation rates, academic excellence, and consistent performance in competitive exams."
     },
     {
         id: "C5",
-        name: "Faculty Contributions",
-        score: 195,
+        name: "Faculty Information & Contributions",
+        score: 194.84,
         max: 200,
         icon: Users,
         color: "text-rose-500",
@@ -73,7 +74,7 @@ const nbaCriteria = [
     },
     {
         id: "C6",
-        name: "Facilities & Support",
+        name: "Facilities & Technical Support",
         score: 80,
         max: 80,
         icon: Building,
@@ -94,7 +95,7 @@ const nbaCriteria = [
     {
         id: "C8",
         name: "First Year Academics",
-        score: 48,
+        score: 44.97,
         max: 50,
         icon: Award,
         color: "text-orange-500",
@@ -110,6 +111,16 @@ const nbaCriteria = [
         color: "text-pink-500",
         bg: "bg-pink-500/10",
         description: "Comprehensive mentoring, career guidance, and anti-ragging support systems."
+    },
+    {
+        id: "C10",
+        name: "Governance & Financial Resources",
+        score: 120,
+        max: 120,
+        icon: Building,
+        color: "text-teal-500",
+        bg: "bg-teal-500/10",
+        description: "Strong institutional governance, financial stability, and resource allocation."
     },
 ];
 
@@ -144,7 +155,7 @@ export default function NBAPage() {
 
                     <div className="flex flex-wrap justify-center gap-6">
                         <div className="px-8 py-4 bg-white rounded-2xl text-slate-900 font-bold flex items-center gap-3 shadow-2xl hover:scale-105 transition-all">
-                            <span className="text-3xl">817</span>
+                            <span className="text-3xl">952</span>
                             <div className="text-left leading-none">
                                 <span className="text-xs uppercase text-slate-500 block">Total Score</span>
                                 <span className="text-sm font-black">Out of 1000</span>
@@ -241,9 +252,9 @@ export default function NBAPage() {
                                     {[
                                         { name: "Computer Science & Engineering", status: "Program Accredited" },
                                         { name: "Electronics & Communication Eng.", status: "Program Accredited" },
-                                        { name: "Mechanical Engineering", status: "Program Accredited" },
-                                        { name: "Electrical & Electronics Eng.", status: "Program Accredited" },
-                                        { name: "Civil Engineering", status: "Program Accredited" },
+                                        { name: "Information Technology", status: "Applying First Time" },
+                                        { name: "CSE (Data Science)", status: "Applying First Time" },
+                                        { name: "CSE (AI & ML)", status: "New Program" },
                                     ].map((dept, i) => (
                                         <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 group hover:bg-white/10 transition-colors">
                                             <span className="text-blue-50 font-bold">{dept.name}</span>

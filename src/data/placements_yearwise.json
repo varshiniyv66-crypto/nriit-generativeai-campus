@@ -3646,5 +3646,2277 @@
         "package": "2.4 LPA"
       }
     ]
+  },
+  "AIML": {
+    "2024-25": [
+      {
+        "regNo": "2XKP1A6352",
+        "name": "STUDENT 12",
+        "company": "ZOHO",
+        "package": "12.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A2925",
+        "name": "STUDENT 32",
+        "company": "TCS",
+        "package": "12.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A4034",
+        "name": "STUDENT 36",
+        "company": "CAPGEMINI",
+        "package": "11.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A7920",
+        "name": "STUDENT 39",
+        "company": "VALUE MOMENTUM",
+        "package": "11.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A3434",
+        "name": "STUDENT 44",
+        "company": "ACCENTURE",
+        "package": "11.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A5205",
+        "name": "STUDENT 3",
+        "company": "INFOSYS",
+        "package": "11.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6432",
+        "name": "STUDENT 8",
+        "company": "AMAZON",
+        "package": "11.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A2785",
+        "name": "STUDENT 38",
+        "company": "WIPRO",
+        "package": "11.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A1231",
+        "name": "STUDENT 1",
+        "company": "ACCENTURE",
+        "package": "11.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1653",
+        "name": "STUDENT 28",
+        "company": "INFOSYS",
+        "package": "10.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4436",
+        "name": "STUDENT 25",
+        "company": "CAPGEMINI",
+        "package": "10.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7223",
+        "name": "STUDENT 2",
+        "company": "CAPGEMINI",
+        "package": "10.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A7470",
+        "name": "STUDENT 42",
+        "company": "WIPRO",
+        "package": "9.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A9468",
+        "name": "STUDENT 6",
+        "company": "ACCENTURE",
+        "package": "9.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7980",
+        "name": "STUDENT 4",
+        "company": "VALUE MOMENTUM",
+        "package": "9.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1292",
+        "name": "STUDENT 10",
+        "company": "ACCENTURE",
+        "package": "8.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A5695",
+        "name": "STUDENT 22",
+        "company": "TCS",
+        "package": "8.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3559",
+        "name": "STUDENT 16",
+        "company": "WIPRO",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A4576",
+        "name": "STUDENT 29",
+        "company": "CAPGEMINI",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6481",
+        "name": "STUDENT 24",
+        "company": "VALUE MOMENTUM",
+        "package": "8.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A9571",
+        "name": "STUDENT 37",
+        "company": "INFOSYS",
+        "package": "8.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A4389",
+        "name": "STUDENT 18",
+        "company": "AMAZON",
+        "package": "8.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A5565",
+        "name": "STUDENT 33",
+        "company": "WIPRO",
+        "package": "8.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A2649",
+        "name": "STUDENT 23",
+        "company": "TCS",
+        "package": "8.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A9616",
+        "name": "STUDENT 30",
+        "company": "TCS",
+        "package": "7.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A7163",
+        "name": "STUDENT 15",
+        "company": "CAPGEMINI",
+        "package": "7.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A3829",
+        "name": "STUDENT 35",
+        "company": "CAPGEMINI",
+        "package": "7.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A7918",
+        "name": "STUDENT 13",
+        "company": "ACCENTURE",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A8153",
+        "name": "STUDENT 17",
+        "company": "ZOHO",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A8379",
+        "name": "STUDENT 9",
+        "company": "VALUE MOMENTUM",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7633",
+        "name": "STUDENT 45",
+        "company": "AMAZON",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4748",
+        "name": "STUDENT 34",
+        "company": "ACCENTURE",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6763",
+        "name": "STUDENT 27",
+        "company": "TCS",
+        "package": "7.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A6298",
+        "name": "STUDENT 43",
+        "company": "AMAZON",
+        "package": "7.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A4789",
+        "name": "STUDENT 31",
+        "company": "ACCENTURE",
+        "package": "6.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A1904",
+        "name": "STUDENT 20",
+        "company": "VALUE MOMENTUM",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4257",
+        "name": "STUDENT 41",
+        "company": "CAPGEMINI",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4664",
+        "name": "STUDENT 7",
+        "company": "CAPGEMINI",
+        "package": "6.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A7651",
+        "name": "STUDENT 19",
+        "company": "AMAZON",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A9409",
+        "name": "STUDENT 11",
+        "company": "TCS",
+        "package": "5.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A5476",
+        "name": "STUDENT 40",
+        "company": "CAPGEMINI",
+        "package": "5.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6734",
+        "name": "STUDENT 14",
+        "company": "VALUE MOMENTUM",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A3140",
+        "name": "STUDENT 26",
+        "company": "TCS",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A2686",
+        "name": "STUDENT 5",
+        "company": "ACCENTURE",
+        "package": "4.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9921",
+        "name": "STUDENT 21",
+        "company": "WIPRO",
+        "package": "4.5 LPA"
+      }
+    ],
+    "2023-24": [
+      {
+        "regNo": "2XKP1A9766",
+        "name": "STUDENT 13",
+        "company": "CAPGEMINI",
+        "package": "9.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4017",
+        "name": "STUDENT 23",
+        "company": "CAPGEMINI",
+        "package": "9.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A5720",
+        "name": "STUDENT 30",
+        "company": "VALUE MOMENTUM",
+        "package": "9.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2796",
+        "name": "STUDENT 9",
+        "company": "ZOHO",
+        "package": "9.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A2658",
+        "name": "STUDENT 25",
+        "company": "INFOSYS",
+        "package": "9.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A5676",
+        "name": "STUDENT 14",
+        "company": "CAPGEMINI",
+        "package": "9.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A4493",
+        "name": "STUDENT 10",
+        "company": "AMAZON",
+        "package": "9.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A8440",
+        "name": "STUDENT 15",
+        "company": "CAPGEMINI",
+        "package": "8.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8475",
+        "name": "STUDENT 12",
+        "company": "AMAZON",
+        "package": "8.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A9247",
+        "name": "STUDENT 20",
+        "company": "VALUE MOMENTUM",
+        "package": "8.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A4774",
+        "name": "STUDENT 27",
+        "company": "WIPRO",
+        "package": "8.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A6302",
+        "name": "STUDENT 4",
+        "company": "ACCENTURE",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A5610",
+        "name": "STUDENT 19",
+        "company": "WIPRO",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A2401",
+        "name": "STUDENT 24",
+        "company": "VALUE MOMENTUM",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6998",
+        "name": "STUDENT 18",
+        "company": "ACCENTURE",
+        "package": "6.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A3707",
+        "name": "STUDENT 29",
+        "company": "TCS",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1122",
+        "name": "STUDENT 16",
+        "company": "ZOHO",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A3536",
+        "name": "STUDENT 17",
+        "company": "VALUE MOMENTUM",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A9099",
+        "name": "STUDENT 11",
+        "company": "ZOHO",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3074",
+        "name": "STUDENT 26",
+        "company": "VALUE MOMENTUM",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3875",
+        "name": "STUDENT 2",
+        "company": "ZOHO",
+        "package": "5.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A1547",
+        "name": "STUDENT 6",
+        "company": "TCS",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2751",
+        "name": "STUDENT 21",
+        "company": "AMAZON",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A8097",
+        "name": "STUDENT 1",
+        "company": "CAPGEMINI",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A7580",
+        "name": "STUDENT 7",
+        "company": "ACCENTURE",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A6755",
+        "name": "STUDENT 3",
+        "company": "ACCENTURE",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A6959",
+        "name": "STUDENT 22",
+        "company": "TCS",
+        "package": "4.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A9791",
+        "name": "STUDENT 5",
+        "company": "TCS",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A6567",
+        "name": "STUDENT 28",
+        "company": "ACCENTURE",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A8816",
+        "name": "STUDENT 8",
+        "company": "ZOHO",
+        "package": "4.0 LPA"
+      }
+    ]
+  },
+  "MBA": {
+    "2024-25": [
+      {
+        "regNo": "2XKP1A5134",
+        "name": "STUDENT 24",
+        "company": "HDFC BANK",
+        "package": "8.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A5568",
+        "name": "STUDENT 5",
+        "company": "KPMG",
+        "package": "8.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A6646",
+        "name": "STUDENT 52",
+        "company": "TATA AIG",
+        "package": "8.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A7303",
+        "name": "STUDENT 2",
+        "company": "ICICI BANK",
+        "package": "8.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3186",
+        "name": "STUDENT 3",
+        "company": "RELIANCE",
+        "package": "8.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A8462",
+        "name": "STUDENT 44",
+        "company": "ICICI BANK",
+        "package": "8.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4595",
+        "name": "STUDENT 48",
+        "company": "HDFC BANK",
+        "package": "8.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2018",
+        "name": "STUDENT 51",
+        "company": "TATA AIG",
+        "package": "8.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2934",
+        "name": "STUDENT 17",
+        "company": "DELOITTE",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7449",
+        "name": "STUDENT 12",
+        "company": "TATA AIG",
+        "package": "8.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A9325",
+        "name": "STUDENT 33",
+        "company": "RELIANCE",
+        "package": "7.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A5215",
+        "name": "STUDENT 16",
+        "company": "TATA AIG",
+        "package": "7.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A7991",
+        "name": "STUDENT 18",
+        "company": "RELIANCE",
+        "package": "7.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3997",
+        "name": "STUDENT 9",
+        "company": "ICICI BANK",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A8049",
+        "name": "STUDENT 26",
+        "company": "ICICI BANK",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9187",
+        "name": "STUDENT 37",
+        "company": "HDFC BANK",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9065",
+        "name": "STUDENT 47",
+        "company": "RELIANCE",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9566",
+        "name": "STUDENT 15",
+        "company": "KPMG",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2019",
+        "name": "STUDENT 25",
+        "company": "TATA AIG",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6153",
+        "name": "STUDENT 21",
+        "company": "HDFC BANK",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9504",
+        "name": "STUDENT 31",
+        "company": "DELOITTE",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A1608",
+        "name": "STUDENT 57",
+        "company": "TATA AIG",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A5855",
+        "name": "STUDENT 28",
+        "company": "HDFC BANK",
+        "package": "7.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A7066",
+        "name": "STUDENT 53",
+        "company": "ICICI BANK",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1878",
+        "name": "STUDENT 29",
+        "company": "ICICI BANK",
+        "package": "6.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3440",
+        "name": "STUDENT 8",
+        "company": "HDFC BANK",
+        "package": "6.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7243",
+        "name": "STUDENT 14",
+        "company": "HDFC BANK",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A3388",
+        "name": "STUDENT 41",
+        "company": "KPMG",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A7643",
+        "name": "STUDENT 1",
+        "company": "DELOITTE",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A4797",
+        "name": "STUDENT 19",
+        "company": "HDFC BANK",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A6420",
+        "name": "STUDENT 27",
+        "company": "RELIANCE",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A3955",
+        "name": "STUDENT 36",
+        "company": "RELIANCE",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A5927",
+        "name": "STUDENT 46",
+        "company": "HDFC BANK",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A5997",
+        "name": "STUDENT 49",
+        "company": "DELOITTE",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A3553",
+        "name": "STUDENT 38",
+        "company": "DELOITTE",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A9638",
+        "name": "STUDENT 54",
+        "company": "TATA AIG",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8203",
+        "name": "STUDENT 42",
+        "company": "RELIANCE",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A7510",
+        "name": "STUDENT 59",
+        "company": "KPMG",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1813",
+        "name": "STUDENT 11",
+        "company": "HDFC BANK",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A9663",
+        "name": "STUDENT 34",
+        "company": "RELIANCE",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4866",
+        "name": "STUDENT 13",
+        "company": "ICICI BANK",
+        "package": "5.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A3528",
+        "name": "STUDENT 50",
+        "company": "TATA AIG",
+        "package": "5.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A9108",
+        "name": "STUDENT 39",
+        "company": "KPMG",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A2163",
+        "name": "STUDENT 55",
+        "company": "TATA AIG",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A6521",
+        "name": "STUDENT 60",
+        "company": "HDFC BANK",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A1570",
+        "name": "STUDENT 22",
+        "company": "TATA AIG",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1113",
+        "name": "STUDENT 35",
+        "company": "RELIANCE",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A8528",
+        "name": "STUDENT 40",
+        "company": "RELIANCE",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A9619",
+        "name": "STUDENT 43",
+        "company": "KPMG",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1285",
+        "name": "STUDENT 45",
+        "company": "KPMG",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A6662",
+        "name": "STUDENT 4",
+        "company": "KPMG",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A3615",
+        "name": "STUDENT 20",
+        "company": "HDFC BANK",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A4755",
+        "name": "STUDENT 32",
+        "company": "ICICI BANK",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A9575",
+        "name": "STUDENT 7",
+        "company": "DELOITTE",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A4598",
+        "name": "STUDENT 10",
+        "company": "RELIANCE",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A5164",
+        "name": "STUDENT 58",
+        "company": "RELIANCE",
+        "package": "4.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A9058",
+        "name": "STUDENT 56",
+        "company": "RELIANCE",
+        "package": "4.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A3788",
+        "name": "STUDENT 6",
+        "company": "HDFC BANK",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4019",
+        "name": "STUDENT 23",
+        "company": "KPMG",
+        "package": "4.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A8649",
+        "name": "STUDENT 30",
+        "company": "KPMG",
+        "package": "4.2 LPA"
+      }
+    ],
+    "2023-24": [
+      {
+        "regNo": "2XKP1A2460",
+        "name": "STUDENT 35",
+        "company": "ICICI BANK",
+        "package": "8.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A2394",
+        "name": "STUDENT 31",
+        "company": "DELOITTE",
+        "package": "7.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A7980",
+        "name": "STUDENT 44",
+        "company": "RELIANCE",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A6214",
+        "name": "STUDENT 33",
+        "company": "TATA AIG",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9448",
+        "name": "STUDENT 47",
+        "company": "TATA AIG",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A1325",
+        "name": "STUDENT 17",
+        "company": "DELOITTE",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A1490",
+        "name": "STUDENT 34",
+        "company": "DELOITTE",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A3930",
+        "name": "STUDENT 43",
+        "company": "KPMG",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A2801",
+        "name": "STUDENT 46",
+        "company": "RELIANCE",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A6096",
+        "name": "STUDENT 52",
+        "company": "ICICI BANK",
+        "package": "7.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A9442",
+        "name": "STUDENT 6",
+        "company": "TATA AIG",
+        "package": "6.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A9646",
+        "name": "STUDENT 18",
+        "company": "DELOITTE",
+        "package": "6.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A7573",
+        "name": "STUDENT 51",
+        "company": "ICICI BANK",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A4979",
+        "name": "STUDENT 12",
+        "company": "RELIANCE",
+        "package": "6.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4107",
+        "name": "STUDENT 8",
+        "company": "DELOITTE",
+        "package": "6.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A2784",
+        "name": "STUDENT 21",
+        "company": "HDFC BANK",
+        "package": "6.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A2071",
+        "name": "STUDENT 23",
+        "company": "TATA AIG",
+        "package": "6.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A1179",
+        "name": "STUDENT 5",
+        "company": "ICICI BANK",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7386",
+        "name": "STUDENT 10",
+        "company": "KPMG",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A5409",
+        "name": "STUDENT 11",
+        "company": "DELOITTE",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A5784",
+        "name": "STUDENT 27",
+        "company": "ICICI BANK",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A6947",
+        "name": "STUDENT 39",
+        "company": "DELOITTE",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A2942",
+        "name": "STUDENT 53",
+        "company": "HDFC BANK",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A1145",
+        "name": "STUDENT 3",
+        "company": "HDFC BANK",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A2246",
+        "name": "STUDENT 13",
+        "company": "ICICI BANK",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3856",
+        "name": "STUDENT 20",
+        "company": "ICICI BANK",
+        "package": "5.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A6544",
+        "name": "STUDENT 26",
+        "company": "HDFC BANK",
+        "package": "5.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A5192",
+        "name": "STUDENT 42",
+        "company": "KPMG",
+        "package": "5.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A6696",
+        "name": "STUDENT 45",
+        "company": "TATA AIG",
+        "package": "5.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A5035",
+        "name": "STUDENT 15",
+        "company": "ICICI BANK",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4828",
+        "name": "STUDENT 19",
+        "company": "RELIANCE",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A9697",
+        "name": "STUDENT 2",
+        "company": "ICICI BANK",
+        "package": "5.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A5218",
+        "name": "STUDENT 36",
+        "company": "ICICI BANK",
+        "package": "5.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A1676",
+        "name": "STUDENT 4",
+        "company": "DELOITTE",
+        "package": "5.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4808",
+        "name": "STUDENT 9",
+        "company": "RELIANCE",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A1748",
+        "name": "STUDENT 24",
+        "company": "HDFC BANK",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A1068",
+        "name": "STUDENT 32",
+        "company": "DELOITTE",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A8839",
+        "name": "STUDENT 40",
+        "company": "RELIANCE",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1352",
+        "name": "STUDENT 30",
+        "company": "ICICI BANK",
+        "package": "4.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9378",
+        "name": "STUDENT 38",
+        "company": "HDFC BANK",
+        "package": "4.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A3594",
+        "name": "STUDENT 25",
+        "company": "TATA AIG",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7306",
+        "name": "STUDENT 37",
+        "company": "HDFC BANK",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A6542",
+        "name": "STUDENT 28",
+        "company": "RELIANCE",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7108",
+        "name": "STUDENT 29",
+        "company": "KPMG",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A5299",
+        "name": "STUDENT 41",
+        "company": "RELIANCE",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A3227",
+        "name": "STUDENT 7",
+        "company": "ICICI BANK",
+        "package": "4.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A9890",
+        "name": "STUDENT 14",
+        "company": "ICICI BANK",
+        "package": "4.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4992",
+        "name": "STUDENT 54",
+        "company": "KPMG",
+        "package": "4.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A5296",
+        "name": "STUDENT 49",
+        "company": "DELOITTE",
+        "package": "3.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A4049",
+        "name": "STUDENT 1",
+        "company": "TATA AIG",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4158",
+        "name": "STUDENT 16",
+        "company": "DELOITTE",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A2832",
+        "name": "STUDENT 50",
+        "company": "DELOITTE",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4427",
+        "name": "STUDENT 55",
+        "company": "HDFC BANK",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A6424",
+        "name": "STUDENT 22",
+        "company": "RELIANCE",
+        "package": "3.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A3599",
+        "name": "STUDENT 48",
+        "company": "ICICI BANK",
+        "package": "3.5 LPA"
+      }
+    ],
+    "2022-23": [
+      {
+        "regNo": "2XKP1A3365",
+        "name": "STUDENT 10",
+        "company": "DELOITTE",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A8930",
+        "name": "STUDENT 42",
+        "company": "RELIANCE",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A2743",
+        "name": "STUDENT 18",
+        "company": "ICICI BANK",
+        "package": "7.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4848",
+        "name": "STUDENT 27",
+        "company": "TATA AIG",
+        "package": "7.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4322",
+        "name": "STUDENT 2",
+        "company": "ICICI BANK",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9070",
+        "name": "STUDENT 22",
+        "company": "ICICI BANK",
+        "package": "7.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9619",
+        "name": "STUDENT 4",
+        "company": "KPMG",
+        "package": "7.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A4794",
+        "name": "STUDENT 21",
+        "company": "DELOITTE",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1281",
+        "name": "STUDENT 48",
+        "company": "KPMG",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A3119",
+        "name": "STUDENT 44",
+        "company": "RELIANCE",
+        "package": "6.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3447",
+        "name": "STUDENT 15",
+        "company": "TATA AIG",
+        "package": "6.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A8680",
+        "name": "STUDENT 7",
+        "company": "RELIANCE",
+        "package": "6.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4168",
+        "name": "STUDENT 39",
+        "company": "TATA AIG",
+        "package": "6.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A8854",
+        "name": "STUDENT 33",
+        "company": "TATA AIG",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A6059",
+        "name": "STUDENT 1",
+        "company": "RELIANCE",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A2106",
+        "name": "STUDENT 6",
+        "company": "TATA AIG",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A1380",
+        "name": "STUDENT 12",
+        "company": "KPMG",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8051",
+        "name": "STUDENT 36",
+        "company": "DELOITTE",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A3990",
+        "name": "STUDENT 47",
+        "company": "TATA AIG",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A3407",
+        "name": "STUDENT 3",
+        "company": "KPMG",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A3989",
+        "name": "STUDENT 26",
+        "company": "TATA AIG",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A8117",
+        "name": "STUDENT 32",
+        "company": "KPMG",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A2268",
+        "name": "STUDENT 49",
+        "company": "ICICI BANK",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A6125",
+        "name": "STUDENT 13",
+        "company": "KPMG",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7869",
+        "name": "STUDENT 17",
+        "company": "ICICI BANK",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A6844",
+        "name": "STUDENT 31",
+        "company": "RELIANCE",
+        "package": "5.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A2186",
+        "name": "STUDENT 30",
+        "company": "RELIANCE",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A4493",
+        "name": "STUDENT 9",
+        "company": "HDFC BANK",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1740",
+        "name": "STUDENT 43",
+        "company": "KPMG",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A9495",
+        "name": "STUDENT 8",
+        "company": "KPMG",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A3983",
+        "name": "STUDENT 29",
+        "company": "ICICI BANK",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A9283",
+        "name": "STUDENT 5",
+        "company": "TATA AIG",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A8772",
+        "name": "STUDENT 19",
+        "company": "HDFC BANK",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A6464",
+        "name": "STUDENT 37",
+        "company": "ICICI BANK",
+        "package": "4.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A6012",
+        "name": "STUDENT 11",
+        "company": "ICICI BANK",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2382",
+        "name": "STUDENT 24",
+        "company": "RELIANCE",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A4653",
+        "name": "STUDENT 40",
+        "company": "ICICI BANK",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A6935",
+        "name": "STUDENT 38",
+        "company": "TATA AIG",
+        "package": "4.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A9848",
+        "name": "STUDENT 23",
+        "company": "DELOITTE",
+        "package": "4.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A8866",
+        "name": "STUDENT 35",
+        "company": "ICICI BANK",
+        "package": "4.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9892",
+        "name": "STUDENT 41",
+        "company": "DELOITTE",
+        "package": "4.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A3965",
+        "name": "STUDENT 14",
+        "company": "DELOITTE",
+        "package": "4.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A5470",
+        "name": "STUDENT 25",
+        "company": "ICICI BANK",
+        "package": "3.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A3219",
+        "name": "STUDENT 28",
+        "company": "TATA AIG",
+        "package": "3.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8617",
+        "name": "STUDENT 34",
+        "company": "DELOITTE",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A2383",
+        "name": "STUDENT 50",
+        "company": "RELIANCE",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A1428",
+        "name": "STUDENT 46",
+        "company": "HDFC BANK",
+        "package": "3.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7979",
+        "name": "STUDENT 20",
+        "company": "KPMG",
+        "package": "3.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A8638",
+        "name": "STUDENT 16",
+        "company": "HDFC BANK",
+        "package": "3.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1554",
+        "name": "STUDENT 45",
+        "company": "HDFC BANK",
+        "package": "3.0 LPA"
+      }
+    ]
+  },
+  "MCA": {
+    "2024-25": [
+      {
+        "regNo": "2XKP1A1870",
+        "name": "STUDENT 24",
+        "company": "CAPGEMINI",
+        "package": "9.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1402",
+        "name": "STUDENT 30",
+        "company": "ACCENTURE",
+        "package": "9.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1227",
+        "name": "STUDENT 22",
+        "company": "ACCENTURE",
+        "package": "9.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A4698",
+        "name": "STUDENT 41",
+        "company": "AMAZON",
+        "package": "9.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A6401",
+        "name": "STUDENT 18",
+        "company": "AMAZON",
+        "package": "9.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7564",
+        "name": "STUDENT 17",
+        "company": "VALUE MOMENTUM",
+        "package": "9.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4713",
+        "name": "STUDENT 35",
+        "company": "ACCENTURE",
+        "package": "9.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A9159",
+        "name": "STUDENT 2",
+        "company": "CAPGEMINI",
+        "package": "9.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A8671",
+        "name": "STUDENT 32",
+        "company": "ACCENTURE",
+        "package": "9.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1802",
+        "name": "STUDENT 20",
+        "company": "TCS",
+        "package": "8.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8600",
+        "name": "STUDENT 4",
+        "company": "ZOHO",
+        "package": "8.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3625",
+        "name": "STUDENT 29",
+        "company": "CAPGEMINI",
+        "package": "8.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A8377",
+        "name": "STUDENT 36",
+        "company": "TCS",
+        "package": "8.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A7189",
+        "name": "STUDENT 21",
+        "company": "ACCENTURE",
+        "package": "8.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4212",
+        "name": "STUDENT 39",
+        "company": "CAPGEMINI",
+        "package": "8.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A1969",
+        "name": "STUDENT 38",
+        "company": "VALUE MOMENTUM",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A1489",
+        "name": "STUDENT 46",
+        "company": "AMAZON",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9385",
+        "name": "STUDENT 49",
+        "company": "CAPGEMINI",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9578",
+        "name": "STUDENT 28",
+        "company": "WIPRO",
+        "package": "8.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9526",
+        "name": "STUDENT 5",
+        "company": "AMAZON",
+        "package": "8.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A8158",
+        "name": "STUDENT 8",
+        "company": "ACCENTURE",
+        "package": "7.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A4835",
+        "name": "STUDENT 23",
+        "company": "ZOHO",
+        "package": "7.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A8139",
+        "name": "STUDENT 40",
+        "company": "ACCENTURE",
+        "package": "7.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A5104",
+        "name": "STUDENT 33",
+        "company": "AMAZON",
+        "package": "7.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A6136",
+        "name": "STUDENT 11",
+        "company": "AMAZON",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9750",
+        "name": "STUDENT 43",
+        "company": "INFOSYS",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A3006",
+        "name": "STUDENT 48",
+        "company": "AMAZON",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A3940",
+        "name": "STUDENT 47",
+        "company": "WIPRO",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9949",
+        "name": "STUDENT 12",
+        "company": "VALUE MOMENTUM",
+        "package": "7.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A4707",
+        "name": "STUDENT 50",
+        "company": "VALUE MOMENTUM",
+        "package": "7.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1435",
+        "name": "STUDENT 6",
+        "company": "CAPGEMINI",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A6435",
+        "name": "STUDENT 44",
+        "company": "CAPGEMINI",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A3836",
+        "name": "STUDENT 10",
+        "company": "WIPRO",
+        "package": "6.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3868",
+        "name": "STUDENT 31",
+        "company": "VALUE MOMENTUM",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7636",
+        "name": "STUDENT 7",
+        "company": "ZOHO",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A4205",
+        "name": "STUDENT 45",
+        "company": "WIPRO",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A5796",
+        "name": "STUDENT 3",
+        "company": "WIPRO",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1292",
+        "name": "STUDENT 19",
+        "company": "CAPGEMINI",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A4808",
+        "name": "STUDENT 34",
+        "company": "VALUE MOMENTUM",
+        "package": "6.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A9056",
+        "name": "STUDENT 26",
+        "company": "ZOHO",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A2044",
+        "name": "STUDENT 37",
+        "company": "TCS",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A4779",
+        "name": "STUDENT 27",
+        "company": "VALUE MOMENTUM",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A5484",
+        "name": "STUDENT 9",
+        "company": "INFOSYS",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A9517",
+        "name": "STUDENT 1",
+        "company": "TCS",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A7279",
+        "name": "STUDENT 13",
+        "company": "TCS",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A8727",
+        "name": "STUDENT 16",
+        "company": "VALUE MOMENTUM",
+        "package": "4.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A2889",
+        "name": "STUDENT 15",
+        "company": "CAPGEMINI",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4063",
+        "name": "STUDENT 25",
+        "company": "WIPRO",
+        "package": "4.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A2559",
+        "name": "STUDENT 14",
+        "company": "TCS",
+        "package": "4.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A6290",
+        "name": "STUDENT 42",
+        "company": "AMAZON",
+        "package": "4.0 LPA"
+      }
+    ],
+    "2023-24": [
+      {
+        "regNo": "2XKP1A5964",
+        "name": "STUDENT 44",
+        "company": "VALUE MOMENTUM",
+        "package": "8.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A8618",
+        "name": "STUDENT 23",
+        "company": "WIPRO",
+        "package": "8.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A5818",
+        "name": "STUDENT 43",
+        "company": "ZOHO",
+        "package": "8.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A8771",
+        "name": "STUDENT 21",
+        "company": "ACCENTURE",
+        "package": "8.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9064",
+        "name": "STUDENT 6",
+        "company": "ZOHO",
+        "package": "8.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A2033",
+        "name": "STUDENT 19",
+        "company": "VALUE MOMENTUM",
+        "package": "7.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A4332",
+        "name": "STUDENT 13",
+        "company": "TCS",
+        "package": "7.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9155",
+        "name": "STUDENT 26",
+        "company": "CAPGEMINI",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A1507",
+        "name": "STUDENT 33",
+        "company": "ZOHO",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7700",
+        "name": "STUDENT 34",
+        "company": "AMAZON",
+        "package": "7.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A9986",
+        "name": "STUDENT 20",
+        "company": "TCS",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7341",
+        "name": "STUDENT 37",
+        "company": "ACCENTURE",
+        "package": "7.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A4692",
+        "name": "STUDENT 39",
+        "company": "VALUE MOMENTUM",
+        "package": "7.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A7322",
+        "name": "STUDENT 30",
+        "company": "TCS",
+        "package": "7.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A6995",
+        "name": "STUDENT 31",
+        "company": "AMAZON",
+        "package": "7.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A4786",
+        "name": "STUDENT 1",
+        "company": "CAPGEMINI",
+        "package": "6.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8533",
+        "name": "STUDENT 45",
+        "company": "AMAZON",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1789",
+        "name": "STUDENT 14",
+        "company": "VALUE MOMENTUM",
+        "package": "6.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3571",
+        "name": "STUDENT 40",
+        "company": "ZOHO",
+        "package": "6.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A6522",
+        "name": "STUDENT 3",
+        "company": "ZOHO",
+        "package": "6.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A4478",
+        "name": "STUDENT 5",
+        "company": "ZOHO",
+        "package": "6.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A7581",
+        "name": "STUDENT 29",
+        "company": "WIPRO",
+        "package": "6.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9886",
+        "name": "STUDENT 24",
+        "company": "ACCENTURE",
+        "package": "6.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A6706",
+        "name": "STUDENT 42",
+        "company": "ACCENTURE",
+        "package": "6.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A3785",
+        "name": "STUDENT 9",
+        "company": "AMAZON",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A5449",
+        "name": "STUDENT 36",
+        "company": "VALUE MOMENTUM",
+        "package": "5.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A2926",
+        "name": "STUDENT 41",
+        "company": "WIPRO",
+        "package": "5.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A8429",
+        "name": "STUDENT 7",
+        "company": "ZOHO",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A9444",
+        "name": "STUDENT 12",
+        "company": "AMAZON",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A3511",
+        "name": "STUDENT 32",
+        "company": "CAPGEMINI",
+        "package": "5.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4705",
+        "name": "STUDENT 15",
+        "company": "ACCENTURE",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A8586",
+        "name": "STUDENT 25",
+        "company": "TCS",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A3704",
+        "name": "STUDENT 18",
+        "company": "TCS",
+        "package": "4.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A8855",
+        "name": "STUDENT 4",
+        "company": "ACCENTURE",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9343",
+        "name": "STUDENT 35",
+        "company": "AMAZON",
+        "package": "4.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A5228",
+        "name": "STUDENT 11",
+        "company": "INFOSYS",
+        "package": "4.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A4185",
+        "name": "STUDENT 10",
+        "company": "TCS",
+        "package": "4.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A2082",
+        "name": "STUDENT 28",
+        "company": "WIPRO",
+        "package": "3.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A8560",
+        "name": "STUDENT 2",
+        "company": "ACCENTURE",
+        "package": "3.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A7769",
+        "name": "STUDENT 22",
+        "company": "ACCENTURE",
+        "package": "3.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A4026",
+        "name": "STUDENT 8",
+        "company": "ZOHO",
+        "package": "3.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A2245",
+        "name": "STUDENT 17",
+        "company": "AMAZON",
+        "package": "3.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A9643",
+        "name": "STUDENT 16",
+        "company": "VALUE MOMENTUM",
+        "package": "3.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7152",
+        "name": "STUDENT 27",
+        "company": "VALUE MOMENTUM",
+        "package": "3.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4771",
+        "name": "STUDENT 38",
+        "company": "ACCENTURE",
+        "package": "3.5 LPA"
+      }
+    ],
+    "2022-23": [
+      {
+        "regNo": "2XKP1A7303",
+        "name": "STUDENT 1",
+        "company": "TCS",
+        "package": "6.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A8153",
+        "name": "STUDENT 7",
+        "company": "CAPGEMINI",
+        "package": "6.6 LPA"
+      },
+      {
+        "regNo": "2XKP1A8555",
+        "name": "STUDENT 16",
+        "company": "TCS",
+        "package": "6.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A2656",
+        "name": "STUDENT 20",
+        "company": "CAPGEMINI",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A6421",
+        "name": "STUDENT 21",
+        "company": "VALUE MOMENTUM",
+        "package": "6.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A7866",
+        "name": "STUDENT 37",
+        "company": "TCS",
+        "package": "5.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A7244",
+        "name": "STUDENT 24",
+        "company": "ZOHO",
+        "package": "5.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A4560",
+        "name": "STUDENT 17",
+        "company": "CAPGEMINI",
+        "package": "5.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A8401",
+        "name": "STUDENT 31",
+        "company": "WIPRO",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A8137",
+        "name": "STUDENT 36",
+        "company": "TCS",
+        "package": "5.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A3131",
+        "name": "STUDENT 12",
+        "company": "WIPRO",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A3350",
+        "name": "STUDENT 13",
+        "company": "AMAZON",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A2525",
+        "name": "STUDENT 18",
+        "company": "INFOSYS",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A4134",
+        "name": "STUDENT 28",
+        "company": "VALUE MOMENTUM",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A2907",
+        "name": "STUDENT 33",
+        "company": "INFOSYS",
+        "package": "5.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A3520",
+        "name": "STUDENT 15",
+        "company": "CAPGEMINI",
+        "package": "4.9 LPA"
+      },
+      {
+        "regNo": "2XKP1A3430",
+        "name": "STUDENT 6",
+        "company": "INFOSYS",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A7565",
+        "name": "STUDENT 29",
+        "company": "ACCENTURE",
+        "package": "4.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A1262",
+        "name": "STUDENT 40",
+        "company": "TCS",
+        "package": "4.7 LPA"
+      },
+      {
+        "regNo": "2XKP1A3196",
+        "name": "STUDENT 3",
+        "company": "INFOSYS",
+        "package": "4.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A4045",
+        "name": "STUDENT 25",
+        "company": "AMAZON",
+        "package": "4.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9211",
+        "name": "STUDENT 5",
+        "company": "WIPRO",
+        "package": "4.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A9378",
+        "name": "STUDENT 10",
+        "company": "TCS",
+        "package": "4.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A5523",
+        "name": "STUDENT 39",
+        "company": "ZOHO",
+        "package": "4.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A3977",
+        "name": "STUDENT 30",
+        "company": "AMAZON",
+        "package": "4.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A1375",
+        "name": "STUDENT 32",
+        "company": "TCS",
+        "package": "4.0 LPA"
+      },
+      {
+        "regNo": "2XKP1A8304",
+        "name": "STUDENT 27",
+        "company": "AMAZON",
+        "package": "3.8 LPA"
+      },
+      {
+        "regNo": "2XKP1A4053",
+        "name": "STUDENT 4",
+        "company": "ZOHO",
+        "package": "3.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A7541",
+        "name": "STUDENT 22",
+        "company": "INFOSYS",
+        "package": "3.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A9794",
+        "name": "STUDENT 35",
+        "company": "TCS",
+        "package": "3.5 LPA"
+      },
+      {
+        "regNo": "2XKP1A8373",
+        "name": "STUDENT 23",
+        "company": "WIPRO",
+        "package": "3.4 LPA"
+      },
+      {
+        "regNo": "2XKP1A9761",
+        "name": "STUDENT 19",
+        "company": "AMAZON",
+        "package": "3.3 LPA"
+      },
+      {
+        "regNo": "2XKP1A8691",
+        "name": "STUDENT 2",
+        "company": "CAPGEMINI",
+        "package": "3.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A1763",
+        "name": "STUDENT 14",
+        "company": "ACCENTURE",
+        "package": "3.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A9836",
+        "name": "STUDENT 34",
+        "company": "WIPRO",
+        "package": "3.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A8595",
+        "name": "STUDENT 38",
+        "company": "TCS",
+        "package": "3.2 LPA"
+      },
+      {
+        "regNo": "2XKP1A2797",
+        "name": "STUDENT 8",
+        "company": "TCS",
+        "package": "3.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A3547",
+        "name": "STUDENT 11",
+        "company": "VALUE MOMENTUM",
+        "package": "3.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A3512",
+        "name": "STUDENT 26",
+        "company": "INFOSYS",
+        "package": "3.1 LPA"
+      },
+      {
+        "regNo": "2XKP1A7060",
+        "name": "STUDENT 9",
+        "company": "TCS",
+        "package": "3.0 LPA"
+      }
+    ]
   }
 }

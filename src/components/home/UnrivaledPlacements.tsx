@@ -48,29 +48,29 @@ const latestYear = data[data.length - 1];
 
 export function UnrivaledPlacements() {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-24 bg-white dark:bg-slate-950 relative overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* LEFT CONTENTS */}
                     <div className="space-y-8">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-serif text-[#0B1120] leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-serif text-[#0B1120] dark:text-white leading-tight">
                                 Unrivaled Career Outcomes
                             </h2>
                             <div className="w-24 h-1.5 bg-[#D4AF37] mt-6 rounded-full" />
                         </div>
 
-                        <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
+                        <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
                             Our students consistently secure top-tier positions at global technology giants.
-                            With a consistent <span className="font-bold text-[#0B1120]">95%+ placement record</span>,
+                            With a consistent <span className="font-bold text-[#0B1120] dark:text-white">95%+ placement record</span>,
                             we bridge the gap between academia and industry excellence.
                         </p>
 
                         <div className="flex flex-wrap gap-6">
                             {/* Highest Package Card */}
-                            <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-xl transition-shadow min-w-[240px]">
-                                <div className="text-4xl font-black text-[#1E3A8A] mb-2">
+                            <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-xl transition-shadow min-w-[240px]">
+                                <div className="text-4xl font-black text-[#1E3A8A] dark:text-blue-400 mb-2">
                                     ₹{latestYear.highest} LPA
                                 </div>
                                 <div className="text-sm font-bold text-slate-400 uppercase tracking-wider">
@@ -79,7 +79,7 @@ export function UnrivaledPlacements() {
                             </div>
 
                             {/* Average Package Card */}
-                            <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-xl transition-shadow min-w-[240px]">
+                            <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-xl transition-shadow min-w-[240px]">
                                 <div className="text-4xl font-black text-[#D4AF37] mb-2">
                                     ₹{latestYear.average} LPA
                                 </div>
@@ -92,7 +92,7 @@ export function UnrivaledPlacements() {
                         <div className="pt-4">
                             <Link
                                 href="/placements"
-                                className="inline-flex items-center gap-2 text-[#1E3A8A] font-bold hover:text-[#D4AF37] transition-colors text-lg group"
+                                className="inline-flex items-center gap-2 text-[#1E3A8A] dark:text-blue-400 font-bold hover:text-[#D4AF37] transition-colors text-lg group"
                             >
                                 View Placement Report
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
@@ -101,13 +101,13 @@ export function UnrivaledPlacements() {
                     </div>
 
                     {/* RIGHT CHART CARD */}
-                    <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] border border-slate-100 relative">
+                    <div className="bg-white dark:bg-slate-900 rounded-[3rem] p-8 md:p-12 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] border border-slate-100 dark:border-slate-800 relative">
                         {/* Decorative background blob */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-slate-50 rounded-bl-[3rem] -z-10" />
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-slate-50 dark:bg-slate-800/50 rounded-bl-[3rem] -z-10" />
 
                         <div className="flex items-center justify-between mb-8">
-                            <h3 className="text-xl font-bold text-[#0B1120]">Package Growth (LPA)</h3>
-                            <div className="p-2 bg-slate-50 rounded-lg">
+                            <h3 className="text-xl font-bold text-[#0B1120] dark:text-white">Package Growth (LPA)</h3>
+                            <div className="p-2 bg-slate-50 dark:bg-slate-800 rounded-lg">
                                 <TrendingUp className="w-5 h-5 text-[#D4AF37]" />
                             </div>
                         </div>
