@@ -54,11 +54,11 @@ interface EventItem {
 const newsData: NewsItem[] = [
     {
         id: "n1",
-        title: "NRIIT Secures NAAC 'A' Grade Accreditation",
-        date: "2024-12-15",
+        title: "NRIIT Secures NAAC 'A+' Grade Accreditation",
+        date: "2023-12-15",
         department: "ALL",
         category: "Achievement",
-        description: "NRI Institute of Technology has been awarded 'A' grade by the National Assessment and Accreditation Council (NAAC), recognizing excellence in higher education.",
+        description: "NRI Institute of Technology has been awarded 'A+' grade by the National Assessment and Accreditation Council (NAAC), recognizing excellence in higher education.",
         featured: true,
     },
     {
