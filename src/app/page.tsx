@@ -521,6 +521,7 @@ export default function HomePage() {
         {/* Animated Marquee */}
         <div className="flex animate-marquee whitespace-nowrap pl-32 md:pl-48">
           {[
+            { icon: "🚀", text: "New Digital Campus Live at nriit.world - Welcome!", color: "text-red-400" },
             { icon: "🏆", text: "NRIIT Secures NAAC 'A+' Accreditation - Nation Proud Moment!", color: "text-emerald-400" },
             { icon: "💼", text: "TCS, Infosys, Wipro Placement Drive - 150+ Students Selected!", color: "text-blue-400" },
             { icon: "📅", text: "Academic Calendar 2024-25 Released - Download Now", color: "text-amber-400" },
