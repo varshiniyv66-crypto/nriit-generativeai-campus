@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Search, Menu, ChevronDown, Monitor, Cpu, Radio, Lightbulb, Building, Briefcase, GraduationCap, Cog, Zap, Leaf, BookOpen, Sun, Moon, Users, Phone } from "lucide-react";
+import { Search, Menu, ChevronDown, Monitor, Cpu, Radio, Lightbulb, Building, Briefcase, GraduationCap, Cog, Zap, Leaf, BookOpen, Sun, Moon, Users, Phone, Crown } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 
@@ -38,7 +38,54 @@ export default function PremiumHeader() {
             <div className="bg-[#0B1120] text-gray-300 text-[13px] font-medium border-b border-white/10 hidden lg:block">
                 <div className="container mx-auto px-4 h-10 flex items-center justify-between">
                     <div className="flex items-center gap-6">
-                        <Link href="/about" className="hover:text-white transition-colors flex items-center gap-1">About Us <ChevronDown className="w-3 h-3" /></Link>
+                        {/* ABOUT US DROPDOWN */}
+                        <div
+                            className="relative group"
+                            onMouseEnter={() => setIsAboutOpen && setIsAboutOpen(true)}
+                            onMouseLeave={() => setIsAboutOpen && setIsAboutOpen(false)}
+                        >
+                            <Link href="/about" className="hover:text-[#FFD700] text-[#FFD700] transition-colors flex items-center gap-1 font-bold">
+                                About Us <ChevronDown className="w-3 h-3 group-hover:rotate-180 transition-transform" />
+                            </Link>
+                            {/* Dropdown */}
+                            <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div className="bg-slate-900 border border-white/10 rounded-xl shadow-2xl p-3 min-w-[220px]">
+                                    <Link href="/principal" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-amber-500/10 transition-colors group/item">
+                                        <Crown className="w-4 h-4 text-amber-400" />
+                                        <div>
+                                            <div className="text-white font-semibold group-hover/item:text-amber-400 transition-colors">Principal</div>
+                                            <div className="text-[11px] text-slate-500">Dr. Dola Sanjay S</div>
+                                        </div>
+                                    </Link>
+                                    <Link href="/vice-principal" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-emerald-500/10 transition-colors group/item">
+                                        <Users className="w-4 h-4 text-emerald-400" />
+                                        <div>
+                                            <div className="text-white font-semibold group-hover/item:text-emerald-400 transition-colors">Vice Principal</div>
+                                            <div className="text-[11px] text-slate-500">Prof. K. Srihari Rao</div>
+                                        </div>
+                                    </Link>
+                                    <div className="h-px bg-white/10 my-2" />
+                                    <Link href="/management" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-blue-500/10 transition-colors group/item">
+                                        <Briefcase className="w-4 h-4 text-blue-400" />
+                                        <div>
+                                            <div className="text-white font-semibold group-hover/item:text-blue-400 transition-colors">Management</div>
+                                            <div className="text-[11px] text-slate-500">MNK Education Society</div>
+                                        </div>
+                                    </Link>
+                                    <Link href="/governing-body" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-purple-500/10 transition-colors group/item">
+                                        <Building className="w-4 h-4 text-purple-400" />
+                                        <div>
+                                            <div className="text-white font-semibold group-hover/item:text-purple-400 transition-colors">Governing Body</div>
+                                            <div className="text-[11px] text-slate-500">Statutory Body</div>
+                                        </div>
+                                    </Link>
+                                    <div className="h-px bg-white/10 my-2" />
+                                    <Link href="/about" className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white/5 transition-colors">
+                                        <span className="text-[11px] text-slate-400 hover:text-white">View Full About Page →</span>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
                         <Link href="/disclosures" className="hover:text-white transition-colors flex items-center gap-1">Disclosures <ChevronDown className="w-3 h-3" /></Link>
                         <Link href="/corporate" className="hover:text-white transition-colors">Corporate Interactions</Link>
                         <Link href="/careers" className="hover:text-white transition-colors">Careers</Link>
@@ -184,6 +231,9 @@ export default function PremiumHeader() {
                         {/* Mobile Academy Links */}
                         <div className="space-y-4 border-b border-slate-100 dark:border-slate-800 pb-6">
                             <Link href="/about" className="block text-lg font-bold text-slate-800 dark:text-white" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+                            <Link href="/principal" className="flex items-center gap-2 text-lg font-bold text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}><Crown className="w-4 h-4" /> Principal</Link>
+                            <Link href="/vice-principal" className="flex items-center gap-2 text-lg font-bold text-[#10B981]" onClick={() => setIsMobileMenuOpen(false)}>Vice Principal</Link>
+                            <Link href="/management" className="block text-lg font-bold text-slate-800 dark:text-white" onClick={() => setIsMobileMenuOpen(false)}>Management</Link>
                             <Link href="/academics" className="block text-lg font-bold text-slate-800 dark:text-white" onClick={() => setIsMobileMenuOpen(false)}>Academics</Link>
                             <Link href="/admissions" className="block text-lg font-bold text-[#D4AF37]" onClick={() => setIsMobileMenuOpen(false)}>Admissions 2025</Link>
                         </div>

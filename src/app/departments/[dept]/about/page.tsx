@@ -8,17 +8,18 @@ import { BookOpen, Calendar, Users, Award, Home, GraduationCap, Building2, Check
 import { motion } from "framer-motion";
 
 const DEPARTMENTS: Record<string, { name: string; fullName: string; established: number }> = {
-    CSE: { name: "Computer Science & Engineering", fullName: "Department of Computer Science and Engineering", established: 2001 },
-    IT: { name: "Information Technology", fullName: "Department of Information Technology", established: 2001 },
-    ECE: { name: "Electronics & Communication", fullName: "Department of Electronics and Communication Engineering", established: 2001 },
-    CIVIL: { name: "Civil Engineering", fullName: "Department of Civil Engineering", established: 2008 },
+    CSE: { name: "Computer Science & Engineering", fullName: "Department of Computer Science and Engineering", established: 2008 },
+    IT: { name: "Information Technology", fullName: "Department of Information Technology", established: 2008 },
+    ECE: { name: "Electronics & Communication", fullName: "Department of Electronics and Communication Engineering", established: 2008 },
+    CIVIL: { name: "Civil Engineering", fullName: "Department of Civil Engineering", established: 2009 },
     EEE: { name: "Electrical & Electronics", fullName: "Department of Electrical & Electronics Engineering", established: 2008 },
     MECH: { name: "Mechanical Engineering", fullName: "Department of Mechanical Engineering", established: 2008 },
     "CSE-DS": { name: "CSE (Data Science)", fullName: "Department of CSE (Data Science)", established: 2020 },
     "CSE-AI": { name: "CSE (AI & ML)", fullName: "Department of CSE (AI & Machine Learning)", established: 2021 },
-    EVT: { name: "Electronics & VLSI", fullName: "Department of Electronics & VLSI Technology", established: 2024 },
-    MBA: { name: "Business Administration", fullName: "Department of MBA", established: 2009 },
-    MCA: { name: "Computer Applications", fullName: "Department of MCA", established: 2005 },
+    EVT: { name: "Electronics & VLSI", fullName: "Department of Electronics & VLSI Technology", established: 2023 },
+    MBA: { name: "Business Administration", fullName: "Department of MBA", established: 2010 },
+    MCA: { name: "Computer Applications", fullName: "Department of MCA", established: 2023 },
+    BSH: { name: "Basic Sciences & Humanities", fullName: "Department of Basic Sciences and Humanities", established: 2008 },
 };
 
 export default function AboutDepartment() {

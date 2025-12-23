@@ -5,8 +5,20 @@ import { useParams } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DEPARTMENT_ACADEMIC_DATA, PROGRAM_OUTCOMES } from "@/data/academic-outcomes";
-import { Award, Target, CheckCircle2, Home, Globe, Zap, BookOpen, Sparkles, ArrowRight, GraduationCap } from "lucide-react";
+import { Award, Target, CheckCircle2, Home, Globe, Zap, BookOpen, Sparkles, ArrowRight, GraduationCap, ClipboardCheck, BarChart3, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import {
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    Legend,
+    ResponsiveContainer,
+    Cell
+} from "recharts";
+import { cn } from "@/lib/utils";
 
 export default function OutcomesPage() {
     const params = useParams();
@@ -198,7 +210,171 @@ export default function OutcomesPage() {
                         </div>
                     </div>
 
-                    {/* Footer / Mapping Info */}
+                    {/* 5. PO-PSO MAPPING MATRIX - New Section */}
+                    {academicData.poPsoMapping && (
+                        <motion.div variants={itemVariants}>
+                            <div className="flex items-end justify-between mb-8 border-b border-slate-200 pb-4">
+                                <h2 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
+                                    <span className="bg-orange-600 text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-orange-200">
+                                        <ClipboardCheck className="w-5 h-5" />
+                                    </span>
+                                    Curriculum Correlation Matrix
+                                </h2>
+                                <Badge className="bg-orange-50 text-orange-700 hover:bg-orange-100 border-none px-3 py-1 uppercase tracking-wider text-[10px] font-black">
+                                    PO-PSO Mapping
+                                </Badge>
+                            </div>
+
+                            <div className="overflow-x-auto bg-white rounded-3xl border border-slate-100 p-8 shadow-sm">
+                                <table className="w-full text-center border-collapse" suppressHydrationWarning>
+                                    <thead>
+                                        <tr>
+                                            <th className="p-4 text-xs font-black text-slate-400 uppercase tracking-widest text-left border-b border-slate-50">Outcomes</th>
+                                            {PROGRAM_OUTCOMES.map(po => (
+                                                <th key={po.id} className="p-4 text-xs font-black text-slate-900 uppercase border-b border-slate-50 min-w-[50px]">
+                                                    {po.id}
+                                                </th>
+                                            ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {Object.entries(academicData.poPsoMapping).map(([psoId, mappings]) => (
+                                            <tr key={psoId} className="group hover:bg-slate-50 transition-colors">
+                                                <td className="p-4 text-sm font-bold text-slate-900 text-left border-b border-slate-50 whitespace-nowrap">
+                                                    {psoId}
+                                                </td>
+                                                {mappings.map((val, idx) => (
+                                                    <td key={idx} className="p-4 border-b border-slate-50">
+                                                        <div className={cn(
+                                                            "w-8 h-8 rounded-lg flex items-center justify-center mx-auto text-xs font-black transition-all group-hover:scale-110",
+                                                            val === 3 ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200" :
+                                                                val === 2 ? "bg-indigo-100 text-indigo-700" :
+                                                                    val === 1 ? "bg-slate-100 text-slate-500 font-medium" :
+                                                                        "text-slate-200 font-normal"
+                                                        )}>
+                                                            {val || '-'}
+                                                        </div>
+                                                    </td>
+                                                ))}
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                                <div className="mt-8 flex flex-wrap gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-widest border-t border-slate-50 pt-8 justify-center">
+                                    <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-indigo-600"></span> 3 - Substantial</div>
+                                    <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-indigo-100"></span> 2 - Moderate</div>
+                                    <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-slate-100"></span> 1 - Slight</div>
+                                    <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-transparent border border-slate-200"></span> - No Correlation</div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    )}
+
+                    {/* 6. ATTAINMENT LEVELS - New Section */}
+                    {academicData.attainments && (
+                        <motion.div variants={itemVariants}>
+                            <div className="flex items-end justify-between mb-8 border-b border-slate-200 pb-4">
+                                <h2 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
+                                    <span className="bg-blue-600 text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
+                                        <BarChart3 className="w-5 h-5" />
+                                    </span>
+                                    Target vs. Actual Attainment
+                                </h2>
+                                <Badge className="bg-blue-50 text-blue-700 hover:bg-blue-100 border-none px-3 py-1 uppercase tracking-wider text-[10px] font-black">
+                                    Performance Metrics
+                                </Badge>
+                            </div>
+
+                            <div className="bg-white p-4 sm:p-6 rounded-3xl border border-slate-100 shadow-sm relative overflow-hidden">
+                                <div className="h-[300px] sm:h-[400px] w-full">
+                                    <ResponsiveContainer width="100%" height="100%">
+                                        <BarChart
+                                            data={academicData.attainments.map((att, idx) => ({
+                                                name: idx < 12 ? `PO${idx + 1}` : `PSO${idx - 11}`,
+                                                Target: att.target,
+                                                Actual: att.actual,
+                                                level: att.actual >= att.target ? 'Met' : 'Gap'
+                                            }))}
+                                            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                                        >
+                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                                            <XAxis dataKey="name" tick={{ fontSize: 10, fontWeight: 700 }} axisLine={false} tickLine={false} />
+                                            <YAxis axisLine={false} tickLine={false} domain={[0, 3]} tick={{ fontSize: 10, fontWeight: 700 }} />
+                                            <Tooltip
+                                                cursor={{ fill: '#f8fafc' }}
+                                                content={({ active, payload, label }) => {
+                                                    if (active && payload && payload.length) {
+                                                        return (
+                                                            <div className="bg-slate-900 text-white p-3 rounded-xl shadow-xl border border-slate-700">
+                                                                <p className="text-xs font-bold mb-2 text-slate-400 uppercase tracking-wider">{label}</p>
+                                                                <div className="space-y-1">
+                                                                    <div className="flex items-center gap-2 text-sm font-semibold">
+                                                                        <div className="w-2 h-2 rounded-full bg-blue-500" />
+                                                                        <span>Actual: {Number(payload[0].value).toFixed(2)}</span>
+                                                                    </div>
+                                                                    <div className="flex items-center gap-2 text-xs text-slate-400">
+                                                                        <div className="w-2 h-2 rounded-full bg-slate-600" />
+                                                                        <span>Target: {Number(payload[1].value).toFixed(2)}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                    }
+                                                    return null;
+                                                }}
+                                            />
+                                            <Legend iconType="circle" wrapperStyle={{ fontSize: '12px', fontWeight: 600, paddingTop: '20px' }} />
+                                            <Bar dataKey="Actual" radius={[6, 6, 0, 0]} barSize={20}>
+                                                {academicData.attainments.map((entry, index) => (
+                                                    <Cell key={`cell-${index}`} fill={entry.actual >= entry.target ? '#10b981' : '#3b82f6'} />
+                                                ))}
+                                            </Bar>
+                                            <Bar dataKey="Target" fill="#e2e8f0" radius={[6, 6, 0, 0]} barSize={20} />
+                                        </BarChart>
+                                    </ResponsiveContainer>
+                                </div>
+
+                                {/* Summary Stats */}
+                                <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-slate-100 pt-6">
+                                    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-4">
+                                        <div className="p-3 bg-white rounded-xl shadow-sm text-blue-600">
+                                            <Target className="w-5 h-5" />
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">Avg. Attainment</p>
+                                            <p className="text-2xl font-black text-slate-900">
+                                                {(academicData.attainments.reduce((acc, curr) => acc + curr.actual, 0) / academicData.attainments.length).toFixed(2)}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-4">
+                                        <div className="p-3 bg-white rounded-xl shadow-sm text-emerald-600">
+                                            <BarChart3 className="w-5 h-5" />
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">Attainment Level</p>
+                                            <p className="text-2xl font-black text-slate-900">
+                                                Level {(academicData.attainments.reduce((acc, curr) => acc + curr.actual, 0) / academicData.attainments.length) > 2.5 ? '3' : (academicData.attainments.reduce((acc, curr) => acc + curr.actual, 0) / academicData.attainments.length) > 1.5 ? '2' : '1'}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-4">
+                                        <div className="p-3 bg-white rounded-xl shadow-sm text-amber-500">
+                                            <Sparkles className="w-5 h-5" />
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">Success Rate</p>
+                                            <p className="text-2xl font-black text-slate-900">
+                                                {Math.round((academicData.attainments.filter(a => a.actual >= a.target).length / academicData.attainments.length) * 100)}%
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    )}
+
+                    {/* Footer / Mapping Info & Compliance */}
                     <motion.div variants={itemVariants} className="pb-10">
                         <div className="p-8 bg-slate-900 rounded-[2rem] text-slate-300 flex flex-col md:flex-row items-center gap-8 border border-slate-800 text-center md:text-left relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-[80px]" />
@@ -206,7 +382,7 @@ export default function OutcomesPage() {
                             <div className="relative z-10 p-4 bg-slate-800 rounded-2xl shrink-0">
                                 <BookOpen className="w-8 h-8 text-blue-400" />
                             </div>
-                            <div className="relative z-10">
+                            <div className="relative z-10 flex-1">
                                 <h4 className="text-xl font-black text-white mb-2">Curriculum Mapping & Compliance</h4>
                                 <p className="text-sm opacity-70 leading-relaxed max-w-3xl mx-auto md:mx-0">
                                     The Program Specific Outcomes (PSOs) are comprehensively mapped to Program Outcomes (POs) to ensure
@@ -214,6 +390,14 @@ export default function OutcomesPage() {
                                     Department Advisory Board (DAB) to maintain academic rigor.
                                 </p>
                             </div>
+
+                            {academicData.dabReview && (
+                                <div className="relative z-10 px-6 py-4 rounded-2xl bg-white/5 border border-white/10 shrink-0">
+                                    <div className="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em] mb-1">DAB Compliance</div>
+                                    <div className="text-lg font-black text-white tracking-tight">{academicData.dabReview.frequency} Review</div>
+                                    <div className="text-[9px] font-bold text-slate-500 uppercase mt-1">Last: {academicData.dabReview.lastReview}</div>
+                                </div>
+                            )}
                         </div>
                     </motion.div>
 

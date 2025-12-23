@@ -6,7 +6,7 @@ import { useMemo } from "react";
 import { departments as staticDepartments } from "@/data/departments";
 import { DEPARTMENT_ACHIEVEMENTS } from "@/data/achievements-data";
 import { getRecognitionByDepartment, getTotalAwards } from "@/data/faculty-recognition";
-import { Trophy, Home, Sparkles, Filter, Calendar, User, Search, Upload, CheckCircle2, X, Globe2, GraduationCap, Award, BookOpen } from "lucide-react";
+import { Trophy, Home, Sparkles, Filter, Calendar, User, Search, Upload, CheckCircle2, X, Globe2, GraduationCap, Award, BookOpen, Star } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -369,7 +369,72 @@ export default function AchievementsPage() {
                 </motion.div>
             </div>
 
-            {/* 2. STUDENT ACHIEVEMENTS GRID */}
+            {/* 2. STUDENT HALL OF FAME - NEW PREMIUM SECTION */}
+            <div className="container mx-auto px-6 max-w-7xl mb-16">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="relative"
+                >
+                    <div className="flex items-center gap-4 mb-10">
+                        <div className="p-4 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl shadow-lg shadow-amber-500/30">
+                            <Star className="w-8 h-8 text-white" />
+                        </div>
+                        <div>
+                            <h2 className="text-3xl font-black text-slate-900 tracking-tight">Student Hall of Fame</h2>
+                            <p className="text-slate-500 font-medium">Elite performers and global competition winners</p>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {achievements.filter(a => ['National', 'First', 'Winner', 'Gold'].some(k => a.title.includes(k) || a.description.includes(k))).slice(0, 3).map((achievement, idx) => (
+                            <motion.div
+                                key={`hall-${achievement.id}`}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: idx * 0.1 }}
+                                viewport={{ once: true }}
+                                className="relative group"
+                            >
+                                <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 rounded-[2.5rem] blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                                <div className="relative bg-white rounded-[2.4rem] p-8 border border-amber-100 shadow-xl overflow-hidden">
+                                    {/* Spotlight Ornament */}
+                                    <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-50 rounded-full blur-3xl opacity-60" />
+
+                                    <div className="flex items-start justify-between mb-6">
+                                        <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600">
+                                            <Trophy className="w-8 h-8" />
+                                        </div>
+                                        <Badge className="bg-amber-100 text-amber-700 border-none font-black text-[10px] uppercase tracking-widest px-3 py-1">
+                                            Top Elite
+                                        </Badge>
+                                    </div>
+
+                                    <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight">
+                                        {achievement.title}
+                                    </h3>
+                                    <p className="text-slate-500 text-sm font-medium mb-6 line-clamp-2">
+                                        {achievement.description}
+                                    </p>
+
+                                    <div className="flex items-center gap-3 pt-6 border-t border-slate-50">
+                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center text-slate-400 font-black text-xs border border-white">
+                                            {achievement.recipient.split(' ').map(n => n[0]).join('')}
+                                        </div>
+                                        <div>
+                                            <div className="text-xs font-black text-slate-900 uppercase tracking-wider">{achievement.recipient}</div>
+                                            <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{achievement.date}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </motion.div>
+            </div>
+
+            {/* 3. STUDENT ACHIEVEMENTS GRID */}
             <div className="container mx-auto px-6 max-w-7xl">
                 <motion.div
                     variants={containerVariants}

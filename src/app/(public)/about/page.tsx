@@ -7,8 +7,8 @@ import DepartmentSpotlight from "@/components/home/DepartmentSpotlight";
 import realData from "@/data/extracted_content.json";
 
 const stats = [
-    { label: "Years of Excellence", value: "15+", icon: Building2 },
-    { label: "Students", value: "2600+", icon: GraduationCap },
+    { label: "Years of Excellence", value: "17+", icon: Building2 },
+    { label: "Students", value: "3,235", icon: GraduationCap },
     { label: "Faculty", value: "300+", icon: Users },
     { label: "Placements", value: "95%", icon: Award },
 ];
@@ -17,7 +17,7 @@ const achievements = [
     "NAAC A+ Accredited Institution",
     "Autonomous Status Institution",
     "AICTE Approved",
-    "Affiliated to JNTUK (Guntur)",
+    "Affiliated to JNTUK Kakinada",
     "State-of-the-art Infrastructure",
     "Industry Partnerships with Fortune 500",
     "Research Centers of Excellence",
@@ -134,10 +134,10 @@ export default function AboutPage() {
                             </h1>
 
                             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-100">
-                                NRI Institute of Technology (NRIIT), established in 2008, is a premier autonomous engineering college in Andhra Pradesh.
+                                NRI Institute of Technology (NRIIT), established in 2008, is a premier autonomous engineering college located in Visadala Village, Medikondur Mandal, Guntur District, Andhra Pradesh.
                             </p>
                             <p className="mt-4 text-[#D4AF37] font-bold text-lg animate-fade-in-up delay-200">
-                                NAAC A+ Accredited • JNTUK Permanent Affiliation
+                                NAAC A+ Accredited • JNTUK Kakinada Affiliation • Autonomous Status
                             </p>
                         </div>
 
@@ -208,6 +208,56 @@ export default function AboutPage() {
             </section>
 
             {/* ═══════════════════════════════════════════════════════════════ */}
+            {/* WHO WE ARE - Main Narrative Section */}
+            {/* ═══════════════════════════════════════════════════════════════ */}
+            <section className="py-20 bg-white relative overflow-hidden">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="absolute top-0 left-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-50 -translate-x-1/2 -translate-y-1/2" />
+                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-amber-50 rounded-full blur-3xl opacity-50 translate-x-1/2 translate-y-1/2" />
+
+                    <div className="relative z-10 space-y-12">
+                        {/* Header */}
+                        <div className="text-center mb-12">
+                            <h2 className="text-4xl font-black text-slate-900 mb-6">
+                                About <span className="text-[#D4AF37]">NRI Institute of Technology</span>
+                            </h2>
+                            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-[#D4AF37] mx-auto rounded-full" />
+                        </div>
+
+                        {/* Content Blocks */}
+                        <div className="grid md:grid-cols-2 gap-12 items-start">
+                            <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-light">
+                                <p>
+                                    <strong className="text-slate-900 font-semibold">NRI Institute of Technology (NRIIT)</strong>, established in 2008 by the <span className="text-blue-600 font-medium">MNK Educational Society</span>, is a leading autonomous institution committed to academic excellence, ethical values, and holistic education. Founded under the visionary leadership of <strong className="text-slate-900">Sri Ravindra, Chairman</strong>, NRIIT integrates global educational standards with India’s rich cultural ethos to prepare students for the challenges of a rapidly evolving world.
+                                </p>
+                                <p>
+                                    Located on a <strong className="text-slate-900">10.94-acre green campus at Visadala Village</strong>, near Guntur, Andhra Pradesh, the institute offers a serene and eco-friendly learning environment while remaining well connected to major urban centers. The campus features modern academic infrastructure, advanced laboratories, digital learning facilities, transport services, sports amenities, auditoriums, and uninterrupted power and water systems.
+                                </p>
+                                <p>
+                                    NRIIT is <span className="bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium">Autonomous</span>, affiliated to <strong className="text-slate-900">Jawaharlal Nehru Technological University, Kakinada (JNTUK)</strong>, and approved by AICTE, New Delhi. The institute offers 7 Undergraduate and 5 Postgraduate programmes in Engineering and Management, designed in alignment with emerging technologies, industry needs, and societal relevance.
+                                </p>
+                            </div>
+
+                            <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-light bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-lg relative">
+                                <div className="absolute top-0 right-0 p-6 opacity-10">
+                                    <Sparkles className="w-24 h-24 text-[#D4AF37]" />
+                                </div>
+                                <p>
+                                    The institute has a vibrant and diverse academic community of <strong className="text-[#D4AF37] text-2xl font-bold">3,235 students</strong> in the 2024–25 academic year, including NRI students, reflecting sustained growth, diverse, and increasing global acceptance.
+                                </p>
+                                <p>
+                                    Guided by the Indian philosophy of <em className="text-slate-900 font-serif text-xl">“Vasudhaiva Kutumbakam”</em> (The World is One Family), NRIIT promotes inclusivity, ethical conduct, leadership, and social responsibility. The institute follows <strong>Outcome-Based Education (OBE)</strong> and provides students with rich opportunities through academic seminars, industry interaction, research exposure, community engagement, cultural activities, and career-oriented training.
+                                </p>
+                                <p className="font-medium text-slate-800 italic border-l-4 border-[#D4AF37] pl-4">
+                                    Through a balanced focus on academic rigor, innovation, and values, NRIIT nurtures globally competent professionals, responsible citizens, and ethical leaders, contributing meaningfully to the nation and the global knowledge economy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════════════════════ */}
             {/* MAIN CONTENT: 2-Column Layout (Spotlight + Sidebar) */}
             {/* ═══════════════════════════════════════════════════════════════ */}
             <section className="py-20 bg-slate-50 relative overflow-hidden">
@@ -251,13 +301,23 @@ export default function AboutPage() {
                                     <h3 className="text-xl font-bold text-slate-900">Our History & Legacy</h3>
                                 </div>
 
-                                <p className="text-slate-600 text-sm leading-relaxed relative z-10">
-                                    {realData.about.history.replace("HISTORY ", "").substring(0, 500)}...
+                                <p className="text-slate-600 text-sm leading-relaxed relative z-10 mb-4">
+                                    Established in 2008 by MNK Education Society under the visionary leadership of Sri. Ravindra, Chairman. Located in a scenic 10.9425-acre campus in Visadala Village, just 9 km from Guntur city.
                                 </p>
-
-                                <Link href="/about" className="mt-4 text-[#D4AF37] font-bold text-sm hover:underline flex items-center gap-1">
-                                    Read Full History <span>→</span>
-                                </Link>
+                                <div className="space-y-2 text-xs text-slate-500 relative z-10">
+                                    <div className="flex items-center gap-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                                        <span><strong>2008:</strong> Institution Founded</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                                        <span><strong>2018:</strong> NAAC A+ Accreditation</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                                        <span><strong>2022:</strong> Granted Autonomous Status</span>
+                                    </div>
+                                </div>
                             </div>
 
                             {/* Vision Card */}

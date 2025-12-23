@@ -8,6 +8,15 @@ export interface DepartmentAcademicData {
     mission: string[];
     peos: { id: string; statement: string }[];
     psos: { id: string; statement: string }[];
+    poPsoMapping?: Record<string, number[]>; // Array of 12 values (PO1-PO12)
+    attainments?: {
+        target: number;
+        actual: number;
+    }[]; // For PO1-PO12 and PSOs
+    dabReview?: {
+        frequency: string;
+        lastReview: string;
+    };
 }
 
 // Standard 12 Program Outcomes (POs) - Common for all Engineering departments
@@ -54,7 +63,22 @@ export const DEPARTMENT_ACADEMIC_DATA: Record<string, DepartmentAcademicData> = 
             { id: "PSO1", statement: "Professional Knowledge: Apply the concepts of Electronics and Communications to arrive cost effective and appropriate solutions." },
             { id: "PSO2", statement: "Problem-solving skills: Apply the principles of analog, digital and Signal processing systems for Consumer electronics, medical and radar systems." },
             { id: "PSO3", statement: "Software Usage: Use VHDL, MATLAB, MULTISIM and MENTOR GRAPHICS to design integrated circuits and analyze signals." }
-        ]
+        ],
+        poPsoMapping: {
+            "PSO1": [3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            "PSO2": [2, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 2],
+            "PSO3": [1, 2, 2, 3, 3, 1, 1, 1, 1, 1, 1, 2]
+        },
+        attainments: [
+            { target: 1.5, actual: 2.19 }, // PO1
+            { target: 1.5, actual: 2.05 }, // PO2
+            { target: 1.5, actual: 1.98 }, // PO3
+            { target: 1.5, actual: 2.42 }  // PSO1
+        ],
+        dabReview: {
+            frequency: "Annually",
+            lastReview: "September 2024"
+        }
     },
 
     // =====================================================================
@@ -80,7 +104,22 @@ export const DEPARTMENT_ACADEMIC_DATA: Record<string, DepartmentAcademicData> = 
             { id: "PSO1", statement: "Apply knowledge of computing, mathematics and engineering fundamentals to solve complex IT problems." },
             { id: "PSO2", statement: "Design, develop and implement software solutions using modern tools, technologies and programming languages." },
             { id: "PSO3", statement: "Apply IT knowledge to analyze, design and develop applications for business, scientific and societal needs." }
-        ]
+        ],
+        poPsoMapping: {
+            "PSO1": [3, 3, 2, 2, 2, 1, 1, 1, 2, 2, 1, 3],
+            "PSO2": [2, 2, 3, 3, 3, 1, 1, 1, 2, 2, 1, 3],
+            "PSO3": [2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 3]
+        },
+        attainments: [
+            { target: 1.8, actual: 2.16 }, // PO1
+            { target: 1.8, actual: 1.95 }, // PO2
+            { target: 1.8, actual: 1.39 }, // PO12
+            { target: 1.8, actual: 2.08 }  // PSO1
+        ],
+        dabReview: {
+            frequency: "Annually",
+            lastReview: "August 2024"
+        }
     },
 
     // =====================================================================
@@ -106,7 +145,21 @@ export const DEPARTMENT_ACADEMIC_DATA: Record<string, DepartmentAcademicData> = 
             { id: "PSO1", statement: "Develop and deploy innovative software solutions using computing skills and modern tools to meet industry and societal needs." },
             { id: "PSO2", statement: "Apply computational principles and advanced tools in collaboration with academia, industry, and research to deliver efficient solutions." },
             { id: "PSO3", statement: "Pursue emerging technologies and research with professionalism and ethical leadership, fostering lifelong learning and societal impact." }
-        ]
+        ],
+        poPsoMapping: {
+            "PSO1": [3, 3, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2],
+            "PSO2": [2, 2, 3, 3, 3, 1, 1, 1, 1, 1, 1, 2],
+            "PSO3": [1, 1, 1, 1, 2, 2, 2, 3, 2, 2, 2, 3]
+        },
+        attainments: [
+            { target: 1.8, actual: 2.25 }, // PO1
+            { target: 1.8, actual: 1.45 }, // PO12
+            { target: 1.8, actual: 2.40 }  // PSO1
+        ],
+        dabReview: {
+            frequency: "Annually",
+            lastReview: "October 2024"
+        }
     },
 
     // =====================================================================
@@ -186,7 +239,22 @@ export const DEPARTMENT_ACADEMIC_DATA: Record<string, DepartmentAcademicData> = 
             { id: "PSO1", statement: "Plan, analyze, design and prepare cost estimates for construction of buildings." },
             { id: "PSO2", statement: "Apply PERT & CPM to complete the project within specified time and cost using modern construction techniques and equipment." },
             { id: "PSO3", statement: "To apply optimal methods for treating wastewater using for irrigation purpose and sustainable wastewater management." }
-        ]
+        ],
+        poPsoMapping: {
+            "PSO1": [3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2],
+            "PSO2": [2, 2, 3, 3, 2, 1, 1, 1, 1, 1, 1, 2],
+            "PSO3": [1, 2, 2, 2, 3, 3, 2, 1, 1, 1, 1, 1]
+        },
+        attainments: [
+            { target: 1.8, actual: 2.15 }, // PO1
+            { target: 1.8, actual: 1.95 }, // PO2
+            { target: 1.8, actual: 2.05 }, // PO3
+            { target: 1.8, actual: 2.20 }  // PSO1
+        ],
+        dabReview: {
+            frequency: "Annually",
+            lastReview: "August 2024"
+        }
     },
 
     // =====================================================================
@@ -212,7 +280,22 @@ export const DEPARTMENT_ACADEMIC_DATA: Record<string, DepartmentAcademicData> = 
             { id: "PSO1", statement: "To ensure that Post Graduates get good employment." },
             { id: "PSO2", statement: "To make Post Graduates sole Traders & Entrepreneurs." },
             { id: "PSO3", statement: "To make Post Graduates pursue research Work in the area of their domain." }
-        ]
+        ],
+        poPsoMapping: {
+            "PSO1": [3, 3, 2, 1, 2, 1, 1, 2, 2, 2, 2, 3],
+            "PSO2": [2, 3, 3, 2, 2, 1, 1, 2, 3, 2, 2, 3],
+            "PSO3": [1, 2, 2, 3, 3, 2, 1, 2, 2, 2, 2, 3]
+        },
+        attainments: [
+            { target: 2.0, actual: 2.25 }, // PO1
+            { target: 2.0, actual: 2.10 }, // PO2
+            { target: 2.0, actual: 1.95 }, // PO3
+            { target: 2.0, actual: 2.30 }  // PSO1
+        ],
+        dabReview: {
+            frequency: "Annually",
+            lastReview: "September 2024"
+        }
     },
 
     // =====================================================================
@@ -238,7 +321,22 @@ export const DEPARTMENT_ACADEMIC_DATA: Record<string, DepartmentAcademicData> = 
             { id: "PSO1", statement: "To ensure that Post Graduates get good employment." },
             { id: "PSO2", statement: "To make Post Graduates sole Traders & Entrepreneurs." },
             { id: "PSO3", statement: "To make Post Graduates pursue research Work in the area of their domain." }
-        ]
+        ],
+        poPsoMapping: {
+            "PSO1": [3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            "PSO2": [2, 3, 2, 2, 2, 1, 1, 1, 2, 2, 1, 2],
+            "PSO3": [1, 2, 3, 3, 3, 2, 1, 1, 2, 2, 2, 2]
+        },
+        attainments: [
+            { target: 1.8, actual: 2.12 }, // PO1
+            { target: 1.8, actual: 2.05 }, // PO2
+            { target: 1.8, actual: 2.18 }, // PO3
+            { target: 1.8, actual: 2.40 }  // PSO1
+        ],
+        dabReview: {
+            frequency: "Annually",
+            lastReview: "October 2024"
+        }
     },
 };
 

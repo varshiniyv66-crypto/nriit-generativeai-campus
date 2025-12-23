@@ -22,7 +22,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'CSE',
         color: '#2563EB', // Blue
         icon: '💻',
-        established: 2001,
+        established: 2008,
     },
     'CSE-DS': {
         name: 'CSE - Data Science',
@@ -38,7 +38,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'ECE',
         color: '#F59E0B', // Amber
         icon: '📡',
-        established: 2001,
+        established: 2008,
     },
     'CSE-AI': {
         name: 'CSE - AI & ML',
@@ -46,7 +46,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'CSE-AI',
         color: '#EC4899', // Pink
         icon: '🤖',
-        established: 2020,
+        established: 2021,
     },
     'IT': {
         name: 'Information Technology',
@@ -54,7 +54,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'IT',
         color: '#10B981', // Green
         icon: '🌐',
-        established: 2001,
+        established: 2008,
     },
     'EVT': {
         name: 'Electric Vehicle Technology',
@@ -62,7 +62,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'EVT',
         color: '#22C55E', // Emerald
         icon: '⚡',
-        established: 2022,
+        established: 2023,
     },
     'CIVIL': {
         name: 'Civil Engineering',
@@ -78,7 +78,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'BSH',
         color: '#64748B', // Slate
         icon: '📚',
-        established: 2001,
+        established: 2008,
     },
     'MBA': {
         name: 'Master of Business Administration',
@@ -94,7 +94,7 @@ export const DEPARTMENTS: Record<DepartmentCode, {
         shortName: 'MCA',
         color: '#8B5CF6', // Violet
         icon: '🎓',
-        established: 2005,
+        established: 2023,
     },
 };
 
@@ -344,7 +344,7 @@ export const INSTITUTION = {
     phone: '0863 234 4300',
     email: 'nriit.guntur@gmail.com',
     website: 'https://www.nriit.ac.in',
-    established: 2001,
+    established: 2008,
     type: 'Private Engineering College',
     affiliation: 'JNTUK - Jawaharlal Nehru Technological University, Kakinada',
     accreditations: ['NAAC'],

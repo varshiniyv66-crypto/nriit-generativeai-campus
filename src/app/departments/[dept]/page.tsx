@@ -29,7 +29,7 @@ const DEPARTMENTS: Record<string, {
         fullName: 'Department of Computer Science and Engineering',
         shortName: 'CSE',
         color: 'from-[#1E4080] to-[#E5A818]',
-        established: 2001,
+        established: 2008,
         bannerImage: '/banners/cse.png',
     },
     'CSE-DS': {
@@ -45,7 +45,7 @@ const DEPARTMENTS: Record<string, {
         fullName: 'Department of Computer Science and Engineering (AI & ML)',
         shortName: 'CSE-AI',
         color: 'from-[#1E4080] to-[#E5A818]',
-        established: 2020,
+        established: 2021,
         bannerImage: '/banners/cse.png', // Reusing CSE for AI
     },
     'IT': {
@@ -53,7 +53,7 @@ const DEPARTMENTS: Record<string, {
         fullName: 'Department of Information Technology',
         shortName: 'IT',
         color: 'from-[#1E4080] to-[#E5A818]',
-        established: 2001,
+        established: 2008,
         bannerImage: '/banners/it.png',
     },
     'ECE': {
@@ -61,7 +61,7 @@ const DEPARTMENTS: Record<string, {
         fullName: 'Department of Electronics and Communication Engineering',
         shortName: 'ECE',
         color: 'from-[#1E4080] to-[#E5A818]',
-        established: 2001,
+        established: 2008,
         bannerImage: '/banners/ece.png',
     },
     'CIVIL': {
@@ -93,7 +93,7 @@ const DEPARTMENTS: Record<string, {
         fullName: 'Department of Basic Sciences and Humanities',
         shortName: 'BSH',
         color: 'from-[#1E4080] to-[#E5A818]',
-        established: 2001,
+        established: 2008,
         bannerImage: '/banners/civil.png', // Fallback for General Sciences
     },
     'EVT': {
@@ -101,7 +101,7 @@ const DEPARTMENTS: Record<string, {
         fullName: 'Department of EVT',
         shortName: 'EVT',
         color: 'from-[#1E4080] to-[#E5A818]',
-        established: 2024,
+        established: 2022,
         bannerImage: '/banners/ece.png', // Fallback
     },
     'MTECH': {

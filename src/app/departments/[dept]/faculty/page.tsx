@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FacultyProfileModal } from "@/components/department/FacultyProfileModal";
 import {
     Search,
     MapPin,
@@ -77,6 +78,8 @@ interface Faculty {
     department: string;
     title?: string;
     joiningDate?: string;
+    pan?: string;
+    nature?: string;
     panNumber?: string;
 }
 
@@ -87,16 +90,38 @@ type AcademicYear = '2025-26' | '2024-25' | '2023-24' | '2022-23';
 // --- Helper Functions ---
 const parseDate = (dateStr?: string): Date | null => {
     if (!dateStr) return null;
+
+    let day: string | undefined, month: string | undefined, year: string | undefined;
+
+    // Handle YYYY-MM-DD or DD-MM-YYYY
     if (dateStr.includes('-')) {
-        const parts = dateStr.split('-');
-        if (parts.length === 3) return new Date(dateStr);
+        const parts = dateStr.split('-').map(p => p.trim());
+        if (parts[0].length === 4) {
+            [year, month, day] = parts;
+        } else {
+            [day, month, year] = parts;
+        }
     }
-    if (dateStr.includes('/')) {
-        const [day, month, year] = dateStr.split('/');
-        return new Date(`${year}-${month}-${day}`);
+    // Handle DD/MM/YYYY
+    else if (dateStr.includes('/')) {
+        [day, month, year] = dateStr.split('/').map(p => p.trim());
     }
-    return null;
+    // Handle DD.MM.YYYY
+    else if (dateStr.includes('.')) {
+        [day, month, year] = dateStr.split('.').map(p => p.trim());
+    } else {
+        return null;
+    }
+
+    const y = parseInt(year || '0', 10);
+    const m = parseInt(month || '0', 10);
+    const d = parseInt(day || '0', 10);
+
+    if (isNaN(y) || isNaN(m) || isNaN(d) || y < 1900 || y > 2100) return null;
+
+    return new Date(y, m - 1, d);
 };
+
 
 const isFacultyActiveInYear = (faculty: Faculty, year: AcademicYear): boolean => {
     const joiningDate = parseDate(faculty.joiningDate);
@@ -152,33 +177,56 @@ export default function FacultyPage() {
                     const line = lines[i].trim();
                     if (!line) continue;
 
-                    // Simple CSV parsing (handle quoted fields)
-                    const fields = line.split(',').map(f => f.replace(/^"|"$/g, '').trim());
+                    // Simple CSV parser that handles quotes
+                    // This regex matches: "quoted value" OR non-comma-value
+                    const parts = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
 
-                    // Columns: Timestamp, Email, TIME, Date, Full Name, PAN, Department, Designation, Photo, Resume
-                    const pan = (fields[5] || '').toUpperCase();
-                    let photo = fields[8] || '';
-                    let resume = fields[9] || '';
+                    if (parts && parts.length >= 4) {
+                        // Assuming columns: Timestamp, Email, FacultyId/Name/Details..., Photo, Resume, PAN
+                        // Adjust indices based on actual Google Sheet columns
+                        // From previous context: 2=Name, 3=Designation, 4=Photo, 5=Resume, 6=PAN
+                        // But let's look for known patterns
 
-                    // Convert Google Drive share links to direct URLs
-                    // Format: https://drive.google.com/open?id=XXX → https://drive.google.com/uc?export=view&id=XXX
-                    const convertDriveUrl = (url: string, isImage: boolean = false) => {
-                        if (url.includes('drive.google.com')) {
-                            const idMatch = url.match(/id=([a-zA-Z0-9_-]+)/);
-                            if (idMatch) {
-                                return isImage
-                                    ? `https://drive.google.com/uc?export=view&id=${idMatch[1]}`
-                                    : `https://drive.google.com/file/d/${idMatch[1]}/view`;
+                        // We need PAN to map securely. Assuming PAN is in one of the columns or we map by ID
+                        // Let's rely on finding a PAN-like string in the row
+                        // Standard PAN regex: [A-Z]{5}[0-9]{4}[A-Z]{1}
+
+                        const rowText = line.toUpperCase();
+                        const panMatch = rowText.match(/[A-Z]{5}[0-9]{4}[A-Z]{1}/);
+
+                        if (panMatch) {
+                            const pan = panMatch[0];
+                            // Extract URLs
+                            // Google Drive links usually contain 'drive.google.com'
+                            let photo = parts.find(p => p.includes('drive.google.com') && (p.toLowerCase().includes('photo') || p.toLowerCase().includes('image') || lines[0].split(',')[lines[i].indexOf(p)]?.toLowerCase().includes('photo'))) || '';
+                            let resume = parts.find(p => p.includes('drive.google.com') && (p.toLowerCase().includes('resume') || p.toLowerCase().includes('cv') || p.toLowerCase().includes('pdf'))) || '';
+
+                            // Fallback: If strict column mapping is needed, we would need the header.
+                            // For now, let's grab the first two Drive links found
+                            const driveLinks = parts.filter(p => p.includes('drive.google.com'));
+                            if (driveLinks.length > 0) photo = driveLinks[0].replace(/"/g, '');
+                            if (driveLinks.length > 1) resume = driveLinks[1].replace(/"/g, '');
+
+                            // Clean URLs
+                            const convertDriveUrl = (url: string, isImage: boolean = false) => {
+                                if (url.includes('drive.google.com')) {
+                                    const idMatch = url.match(/id=([a-zA-Z0-9_-]+)/);
+                                    if (idMatch) {
+                                        return isImage
+                                            ? `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000` // Revert to thumbnail API as it is more standard and headers are handled better
+                                            : `https://drive.google.com/file/d/${idMatch[1]}/view`;
+                                    }
+                                }
+                                return url;
+                            };
+
+                            photo = convertDriveUrl(photo, true);
+                            resume = convertDriveUrl(resume, false);
+
+                            if (pan) {
+                                uploads[pan] = { photo, resume };
                             }
                         }
-                        return url;
-                    };
-
-                    photo = convertDriveUrl(photo, true);
-                    resume = convertDriveUrl(resume, false);
-
-                    if (pan) {
-                        uploads[pan] = { photo, resume };
                     }
                 }
 
@@ -198,9 +246,31 @@ export default function FacultyPage() {
             const yearData = yearwiseData[activeYear] || [];
             // Transform JSON data to Faculty interface
             const transformedData: Faculty[] = yearData.map((f: any, index: number) => {
-                const rawName = f.name || f.NAME || f["Name of the Faculty"] || '';
-                // Clean name: Remove existing Dr. Mr. Mrs. to avoid double titles
-                const cleanName = rawName.replace(/Dr\.|Mr\.|Mrs\.|Ms\.|\./gi, '').trim();
+                let rawName = f.name || f.NAME || f["Name of the Faculty"] || '';
+                rawName = rawName.trim();
+
+                // Determine Title (Case insensitive, handles with or without dot)
+                let title = '';
+                const upperName = rawName.toUpperCase();
+
+                if (upperName.startsWith('DR')) title = 'Dr.';
+                else if (upperName.startsWith('PROF')) title = 'Prof.';
+                else if (upperName.startsWith('MRS')) title = 'Mrs.';
+                else if (upperName.startsWith('MS')) title = 'Ms.';
+                else if (upperName.startsWith('MR')) title = 'Mr.';
+                else {
+                    // If no title found in name, check designation or default based on gender if available (not available here)
+                    // For now, default to empty to avoid "Mr. Ms. Name" issues
+                    // But if we want a default, we should be careful. 
+                    // User complained about "Mr. Dr", implying "Mr" was forced.
+                    title = '';
+                }
+
+                // Clean name: Remove titles and special chars
+                // Regex matches: Start of string -> One or more (Title + optional dot + space)
+                // FIX: Use word boundaries (\b) to prevent "Mr" matching inside "Mrs"
+                // FIX: Use global flag and loop concept by matching the pattern at the start
+                const cleanName = rawName.replace(/^(\b(Prof|Mrs|Ms|Dr|Mr)\b\.?\s*)+/i, '').trim();
 
                 const pan = (f.pan || f.PAN || '').toUpperCase();
                 const panLower = pan.toLowerCase();
@@ -213,15 +283,26 @@ export default function FacultyPage() {
                 const bgColor = ['4F46E5', 'F97316', '16A34A', '0EA5E9', 'A855F7'][index % 5];
                 const defaultPhoto = `https://ui-avatars.com/api/?name=${encodedName}&background=${bgColor}&color=fff&size=128&font-size=0.35&bold=true`;
 
-                // Photo priority: 1. Local file (jpg/png) 2. Google Form upload 3. Auto avatar
+                // Photo priority: 1. Google Form upload 2. Local file (jpg/png) 3. Auto avatar
                 const localPhotoJpg = panLower ? `/faculty/photos/${panLower}.jpg` : null;
-                const photoUrl = localPhotoJpg || formData?.photo || defaultPhoto;
+                // FIX: Prioritize formData.photo because localPhotoJpg is just a string path that might 404.
+                // If the user uploaded a photo via Form, we want to show that.
+                const photoUrl = formData?.photo || localPhotoJpg || defaultPhoto;
 
-                // Determine Title
-                let title = 'Mr.';
-                if (rawName.toUpperCase().includes('DR.')) title = 'Dr.';
-                else if (rawName.toUpperCase().includes('MRS.')) title = 'Mrs.';
-                else if (rawName.toUpperCase().includes('MS.')) title = 'Ms.';
+                // Calculate Experience
+                let experience = 'N/A';
+                const dojRaw = f.doj || f.DOJ || f["Date of Joining"] || f["date_of_joining"];
+                if (dojRaw) {
+                    const dojDate = parseDate(dojRaw); // Use helper function
+                    if (dojDate && !isNaN(dojDate.getTime())) {
+                        const currentYear = new Date().getFullYear();
+                        const joinYear = dojDate.getFullYear();
+                        const diff = currentYear - joinYear;
+                        // Defensive check: Ensure diff is a number and non-negative
+                        const safeYears = (isNaN(diff) || diff < 0) ? 0 : diff;
+                        experience = `${safeYears}+ Years`;
+                    }
+                }
 
                 return {
                     id: f.id || `${deptCode.toUpperCase()}-${String(index + 1).padStart(3, '0')}`,
@@ -229,11 +310,12 @@ export default function FacultyPage() {
                     designation: f.designation || f.Designation || '',
                     qualification: f.qualification || f.Qualification || '',
                     department: deptCode.toUpperCase(),
-                    joiningDate: f.doj || f.DOJ || f["Date of Joining"] || '',
+                    joiningDate: dojRaw || '',
                     panNumber: pan,
-                    title: title,
+                    title: title, // Use detected or empty title
                     photo: photoUrl,
-                    resumeUrl: formData?.resume || (f.pan && f.pan !== 'N/A' ? `/faculty/resumes/${panLower}.pdf` : undefined)
+                    experience: experience, // Pass calculated experience
+                    resumeUrl: formData?.resume // Removed fallback to local path to prevent redirection to Dashboard on 404
                 };
             });
             setAllFaculty(transformedData);
@@ -556,159 +638,142 @@ export default function FacultyPage() {
                         </div>
                     </motion.div>
 
-                    {/* --- LIST TABLE --- */}
+                    {/* --- PREMIUM LIST VIEW (Gold & Diamond Standard) --- */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="lg:col-span-2 bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden flex flex-col"
+                        className="lg:col-span-2 space-y-4"
                     >
-                        <div className="p-6 border-b border-white/10 flex justify-between items-center bg-white/5">
+                        <div className="p-6 rounded-3xl bg-slate-900/50 backdrop-blur-xl border border-white/10 flex justify-between items-center">
                             <div className="flex items-center gap-3">
-                                <div className="bg-green-500/20 p-2 rounded-lg text-green-400">
+                                <div className="bg-gradient-to-br from-amber-400 to-orange-600 p-2.5 rounded-xl shadow-lg shadow-orange-500/20 text-white">
                                     <ShieldCheck className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-white">Verified Registry</h3>
-                                    <p className="text-xs text-slate-400">Synced with {activeYear} Database</p>
+                                    <h3 className="text-xl font-black text-white tracking-tight">Verified Faculty Registry</h3>
+                                    <p className="text-xs text-slate-400 font-medium">Synced with {activeYear} Database • {filteredFaculty.length} Members</p>
                                 </div>
-                            </div>
-                            <div className="px-3 py-1 bg-white/5 rounded-full text-xs font-mono text-slate-300 border border-white/10">
-                                {filteredFaculty.length} Results
                             </div>
                         </div>
 
-                        <div className="overflow-x-auto flex-1 custom-scrollbar">
-                            <table className="w-full text-left border-collapse" suppressHydrationWarning>
-                                <thead>
-                                    <tr className="bg-white/5 border-b border-white/5">
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Photo</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Faculty Name</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Designation</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Qualification</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Date of Joining</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Nature</th>
-                                        <th className="py-4 px-6 text-xs font-bold text-slate-400 uppercase tracking-wider">Profile</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-white/5">
-                                    {filteredFaculty.length > 0 ? (
-                                        filteredFaculty.map((faculty, idx) => {
-                                            // Helper to generate consistent colors based on name
-                                            const getAvatarColor = (name: string) => {
-                                                const colors = [
-                                                    'from-blue-500 to-cyan-400',
-                                                    'from-emerald-500 to-green-400',
-                                                    'from-orange-500 to-amber-400',
-                                                    'from-purple-500 to-fuchsia-400',
-                                                    'from-rose-500 to-pink-400',
-                                                    'from-indigo-500 to-violet-400'
-                                                ];
-                                                let hash = 0;
-                                                for (let i = 0; i < name.length; i++) {
-                                                    hash = name.charCodeAt(i) + ((hash << 5) - hash);
-                                                }
-                                                return colors[Math.abs(hash) % colors.length];
-                                            };
+                        <div className="flex flex-col gap-4">
+                            {filteredFaculty.length > 0 ? (
+                                filteredFaculty.map((faculty, idx) => {
+                                    const initials = faculty.name.replace(/Dr\.|Mr\.|Mrs\.|Ms\./g, "").trim().split(" ").slice(0, 2).map(n => n[0]).join("").toUpperCase();
 
-                                            // Helper to get initials (First letter of first 2 words)
-                                            const getInitials = (name: string) => {
-                                                const cleanName = name.replace(/Dr\.|Mr\.|Mrs\.|Ms\./g, "").trim();
-                                                const parts = cleanName.split(" ").filter(p => p.length > 0);
-                                                if (parts.length >= 2) {
-                                                    return (parts[0][0] + parts[1][0]).toUpperCase();
-                                                }
-                                                return cleanName.substring(0, 2).toUpperCase();
-                                            };
+                                    return (
+                                        <motion.div
+                                            initial={{ opacity: 0, x: -10 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: idx * 0.05 }}
+                                            key={faculty.id}
+                                            className="group relative bg-slate-900/40 hover:bg-slate-800/60 backdrop-blur-md border border-white/5 hover:border-orange-500/30 rounded-3xl p-4 transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(249,115,22,0.15)] overflow-hidden"
+                                        >
+                                            {/* Gold/Diamond Accent Line */}
+                                            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-orange-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                                            const initials = getInitials(faculty.name);
-                                            const bgGradient = getAvatarColor(faculty.name);
-
-                                            return (
-                                                <tr key={faculty.id} className="hover:bg-white/5 transition-colors group">
-                                                    {/* Photo Column */}
-                                                    <td className="py-4 px-6">
-                                                        <div className={`w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br ${bgGradient} flex items-center justify-center border border-white/10 shadow-lg group-hover:scale-105 transition-transform duration-300 ring-1 ring-white/5 group-hover:ring-white/20`}>
-                                                            {/* Prefer real photo if valid, else fallback to initials */}
+                                            <div className="flex flex-col sm:flex-row items-center gap-6">
+                                                {/* LARGE PHOTO SECTION */}
+                                                <div className="relative shrink-0">
+                                                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden p-[2px] bg-gradient-to-br from-orange-400 via-yellow-200 to-amber-600 shadow-2xl">
+                                                        <div className="w-full h-full rounded-[14px] overflow-hidden bg-slate-950 relative">
                                                             {faculty.photo && !faculty.photo.includes('ui-avatars.com') ? (
                                                                 <img
                                                                     src={faculty.photo}
                                                                     alt={faculty.name}
-                                                                    className="w-full h-full object-cover"
+                                                                    referrerPolicy="no-referrer"
+                                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                                                     onError={(e) => {
-                                                                        // Fallback on error by hiding image and showing initials behind it (already rendered by parent div bg)
                                                                         e.currentTarget.style.display = 'none';
-                                                                        e.currentTarget.parentElement?.classList.add('show-initials');
+                                                                        e.currentTarget.parentElement?.querySelector('.fallback-initials')?.classList.remove('hidden');
                                                                     }}
                                                                 />
-                                                            ) : null}
-                                                            {/* Initials are always here, visible if no photo or photo fails/is hidden */}
-                                                            <span className={`text-sm font-black text-white drop-shadow-md ${faculty.photo && !faculty.photo.includes('ui-avatars.com') ? 'absolute -z-10' : ''}`}>
-                                                                {initials}
-                                                            </span>
+                                                            ) : (
+                                                                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-900 to-slate-900">
+                                                                    <span className="text-2xl font-black text-white/20">{initials}</span>
+                                                                </div>
+                                                            )}
+                                                            {/* Fallback Initials (Hidden by default) */}
+                                                            <div className="fallback-initials hidden absolute inset-0 bg-gradient-to-br from-indigo-900 to-slate-900 items-center justify-center">
+                                                                <span className="text-2xl font-black text-white/20">{initials}</span>
+                                                            </div>
                                                         </div>
-                                                    </td>
-                                                    {/* Name Column */}
-                                                    <td className="py-4 px-6">
-                                                        <div>
-                                                            <p className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors">
-                                                                {faculty.title} {faculty.name}
-                                                            </p>
-                                                            <p className="text-[10px] text-slate-500 font-mono tracking-tight">{faculty.id}</p>
-                                                        </div>
-                                                    </td>
-                                                    <td className="py-4 px-6">
-                                                        <span className={`inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide border ${faculty.designation.includes('Professor') && !faculty.designation.includes('Assistant')
-                                                            ? 'bg-orange-500/10 text-orange-400 border-orange-500/20' // Professor - Saffron
-                                                            : 'bg-blue-500/10 text-blue-400 border-blue-500/20' // Assistant - Blue
-                                                            }`}>
-                                                            {faculty.designation}
-                                                        </span>
-                                                    </td>
-                                                    <td className="py-4 px-6 text-sm text-slate-400 font-medium">
-                                                        {faculty.qualification || 'N/A'}
-                                                    </td>
-                                                    <td className="py-4 px-6 text-sm text-slate-500 font-mono">
-                                                        {faculty.joiningDate || '-'}
-                                                    </td>
-                                                    {/* Status Column */}
-                                                    <td className="py-4 px-6">
-                                                        <div className="flex items-center gap-1.5 ">
-                                                            <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                                                            <span className="text-xs font-medium text-green-400">Regular</span>
-                                                        </div>
-                                                    </td>
-                                                    {/* Profile Column */}
-                                                    <td className="py-4 px-6">
-                                                        <a
-                                                            href={faculty.resumeUrl || '#'}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-colors border ${faculty.resumeUrl
-                                                                ? 'bg-orange-500/10 hover:bg-orange-500/20 text-orange-400 border-orange-500/20'
-                                                                : 'bg-slate-800/50 text-slate-500 border-slate-700 cursor-not-allowed'
-                                                                }`}
-                                                            onClick={(e) => !faculty.resumeUrl && e.preventDefault()}
-                                                        >
-                                                            <FileText className="w-3.5 h-3.5" />
-                                                            {faculty.name.split(' ').map(n => n[0]).join('').substring(0, 3)}
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            );
-                                        })
-                                    ) : (
-                                        <tr>
-                                            <td colSpan={7} className="py-16 text-center text-slate-500">
-                                                <div className="flex flex-col items-center gap-2">
-                                                    <Search className="w-8 h-8 opacity-20" />
-                                                    <p>No faculty found for {activeYear}</p>
+                                                    </div>
+                                                    {/* Verified Badge */}
+                                                    <div className="absolute -bottom-2 -right-2 bg-emerald-500 text-white p-1 rounded-full shadow-lg border-2 border-slate-900">
+                                                        <CheckCircle2 className="w-3 h-3" />
+                                                    </div>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                    )}
-                                </tbody>
-                            </table>
+
+                                                {/* CONTENT SECTION */}
+                                                <div className="flex-1 text-center sm:text-left space-y-2 w-full">
+                                                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                                        <div>
+                                                            <h4 className="text-xl sm:text-2xl font-black text-white group-hover:text-amber-400 transition-colors tracking-tight">
+                                                                {faculty.title} {faculty.name}
+                                                            </h4>
+                                                            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mt-1">
+                                                                <span className={`px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider border ${faculty.designation.includes('Professor')
+                                                                    ? 'bg-orange-500/10 text-orange-400 border-orange-500/20'
+                                                                    : 'bg-blue-500/10 text-blue-400 border-blue-500/20'
+                                                                    }`}>
+                                                                    {faculty.designation}
+                                                                </span>
+                                                                <span className="hidden sm:inline text-slate-600">•</span>
+                                                                <span className="text-xs text-slate-400 font-medium">{faculty.qualification}</span>
+                                                            </div>
+                                                        </div>
+
+                                                        {/* RESUME / PROFILE BUTTON - INNOVATIVE INTERACTION */}
+                                                        <div className="mt-4 sm:mt-0 relative z-20">
+                                                            {faculty.resumeUrl ? (
+                                                                <FacultyProfileModal
+                                                                    faculty={{
+                                                                        id: faculty.pan || faculty.id || "N/A",
+                                                                        name: (faculty.title || "") + " " + faculty.name,
+                                                                        designation: faculty.designation || "Faculty",
+                                                                        qualification: faculty.qualification || "",
+                                                                        photo: faculty.photo || "",
+                                                                        resumeUrl: faculty.resumeUrl,
+                                                                        experience: faculty.experience || "0 Years",
+                                                                        nature: faculty.nature || "Regular",
+                                                                    }}
+                                                                />
+                                                            ) : (
+                                                                <div className="px-6 py-2.5 rounded-xl bg-white/5 border border-white/5 opacity-50 cursor-not-allowed">
+                                                                    <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">No Resume</span>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4">
+                                                        <div className="p-2 sm:p-3 rounded-xl bg-white/5 border border-white/5">
+                                                            <div className="text-[10px] text-slate-500 uppercase font-bold text-left">Experience</div>
+                                                            <div className="text-sm font-bold text-slate-200 text-left">{faculty.experience || 'N/A'}</div>
+                                                        </div>
+                                                        <div className="p-2 sm:p-3 rounded-xl bg-white/5 border border-white/5">
+                                                            <div className="text-[10px] text-slate-500 uppercase font-bold text-left">Nature</div>
+                                                            <div className="text-sm font-bold text-emerald-400 text-left">Regular</div>
+                                                        </div>
+                                                        <div className="p-2 sm:p-3 rounded-xl bg-white/5 border border-white/5 col-span-2 sm:col-span-1">
+                                                            <div className="text-[10px] text-slate-500 uppercase font-bold text-left">ID Number</div>
+                                                            <div className="text-xs font-mono text-slate-300 text-left mt-0.5">{faculty.id}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </motion.div>
+                                    );
+                                })
+                            ) : (
+                                <div className="py-20 text-center bg-slate-900/50 rounded-3xl border border-white/10 border-dashed">
+                                    <Search className="w-12 h-12 text-slate-600 mx-auto mb-4" />
+                                    <h3 className="text-lg font-bold text-slate-300">No Faculty Found</h3>
+                                    <p className="text-sm text-slate-500">Try adjusting your search filters</p>
+                                </div>
+                            )}
                         </div>
                     </motion.div>
                 </div>
