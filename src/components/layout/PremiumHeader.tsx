@@ -24,6 +24,7 @@ const departments = [
 
 export default function PremiumHeader() {
     const [isDeptOpen, setIsDeptOpen] = useState(false);
+    const [isAboutOpen, setIsAboutOpen] = useState(false);
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
