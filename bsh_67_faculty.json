@@ -1,0 +1,538 @@
+[
+  {
+    "sno": "1.0",
+    "name": "Dr.K.Srinivasarao",
+    "qualification": "M.SC.(Mathematics) and PhD",
+    "designation": "Associate Professor",
+    "doj": "12/15/2019",
+    "nature": "Regular"
+  },
+  {
+    "sno": "2.0",
+    "name": "Dr.G.Sreedevikumari",
+    "qualification": "M.SC.(Mathematics) and PhD",
+    "designation": "Associate Professor",
+    "doj": "11/15/2021",
+    "nature": "Regular"
+  },
+  {
+    "sno": "3.0",
+    "name": "Dr.G.Krishnakumari",
+    "qualification": "M.Sc. (Physics) and Ph.D.",
+    "designation": "Associate Professor",
+    "doj": "8/6/2008",
+    "nature": "Regular"
+  },
+  {
+    "sno": "4.0",
+    "name": "Dr.SK.MUNTAJ BEGUM",
+    "qualification": "M.Sc. (Physics) and Ph.D.",
+    "designation": "Associate Professor",
+    "doj": "6/1/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "5.0",
+    "name": "DR.P.RAJASEKHAR",
+    "qualification": "M.SC.(Mathematics) and PhD",
+    "designation": "Associate Professor",
+    "doj": "6/26/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "6.0",
+    "name": "Dr.C.RAVIKANTH",
+    "qualification": "Ph.D",
+    "designation": "Professor",
+    "doj": "5/8/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "7.0",
+    "name": "DR.G.KARUNADEEPTHI",
+    "qualification": "M.SC(CHEMISTRY) PH.D",
+    "designation": "Associate Professor",
+    "doj": "7/28/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "8.0",
+    "name": "G.SURESH",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "11/27/2021",
+    "nature": "Regular"
+  },
+  {
+    "sno": "9.0",
+    "name": "D.VINODA",
+    "qualification": "M.Phil",
+    "designation": "Assistant Professor",
+    "doj": "7/4/2019",
+    "nature": "Regular"
+  },
+  {
+    "sno": "10.0",
+    "name": "CH.DHANALAKSHMI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/1/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "11.0",
+    "name": "Y.SUPRAJA",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/1/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "12.0",
+    "name": "B.NAGAMANI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/30/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "13.0",
+    "name": "M.APPARAO",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/1/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "14.0",
+    "name": "M.KALYANI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "10/28/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "15.0",
+    "name": "D.VANI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/1/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "16.0",
+    "name": "V.SANDYARANI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "5/4/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "17.0",
+    "name": "M.SRINIVASARAO",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "8/16/2011",
+    "nature": "Regular"
+  },
+  {
+    "sno": "18.0",
+    "name": "G.SRINIVASARAO",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/1/2015",
+    "nature": "Regular"
+  },
+  {
+    "sno": "19.0",
+    "name": "G.NAGALAKSHMI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/10/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "20.0",
+    "name": "P.BIKSHALU",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "5/26/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "21.0",
+    "name": "M.RADHADEVI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/26/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "22.0",
+    "name": "SK.PHARJANA",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "8/25/2021",
+    "nature": "Regular"
+  },
+  {
+    "sno": "23.0",
+    "name": "Y.RAJYALAKSHMI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/4/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "24.0",
+    "name": "J.BRAMARAMBICADEVI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "11/8/2021",
+    "nature": "Regular"
+  },
+  {
+    "sno": "25.0",
+    "name": "CH.ANUSHA",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "4/1/2015",
+    "nature": "Regular"
+  },
+  {
+    "sno": "26.0",
+    "name": "I.SURESHBABU",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "5/24/2017",
+    "nature": "Regular"
+  },
+  {
+    "sno": "27.0",
+    "name": "V.GOVARDHANARAO",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "7/25/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "28.0",
+    "name": "V.NAVEEN CHOWDARY",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "1/27/2021",
+    "nature": "Regular"
+  },
+  {
+    "sno": "29.0",
+    "name": "K.SRI NAGAVALLI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/1/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "30.0",
+    "name": "Y.SRINIVASARAO",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "4/1/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "31.0",
+    "name": "I.VIDYAREKHA",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "6/27/2019",
+    "nature": "Regular"
+  },
+  {
+    "sno": "32.0",
+    "name": "M.JOYCE",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "7/16/2009",
+    "nature": "Regular"
+  },
+  {
+    "sno": "33.0",
+    "name": "S.KAVITHA",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/15/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "34.0",
+    "name": "T.SIREESHA",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "12/11/2019",
+    "nature": "Regular"
+  },
+  {
+    "sno": "35.0",
+    "name": "B V R SAIKRISHNA",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "10/17/2019",
+    "nature": "Regular"
+  },
+  {
+    "sno": "36.0",
+    "name": "V SATISHBABU",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "6/1/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "37.0",
+    "name": "D.NAGABHUSHANAM",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "6/1/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "38.0",
+    "name": "JAYMUNNISA",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "4/1/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "39.0",
+    "name": "A.MEDASRIMRUNALINI",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "4/11/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "40.0",
+    "name": "A V RAMANA",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "11/16/2020",
+    "nature": "Regular"
+  },
+  {
+    "sno": "41.0",
+    "name": "A.SAKEETH",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "11/16/2020",
+    "nature": "Regular"
+  },
+  {
+    "sno": "42.0",
+    "name": "M.SUBRAMANYAM",
+    "qualification": "MCA",
+    "designation": "Assistant Professor",
+    "doj": "6/5/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "43.0",
+    "name": "A.ADIYYA",
+    "qualification": "MCA",
+    "designation": "Assistant Professor",
+    "doj": "6/5/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "44.0",
+    "name": "T.RATNAKUMAR",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "11/27/2019",
+    "nature": "Regular"
+  },
+  {
+    "sno": "45.0",
+    "name": "G.ANJANEYULU",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "6/8/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "46.0",
+    "name": "A.TEJASWI",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "6/24/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "47.0",
+    "name": "T.CHAKRAVARTHI",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "6/5/2017",
+    "nature": "Regular"
+  },
+  {
+    "sno": "48.0",
+    "name": "K.SRINIVASARAO",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/12/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "49.0",
+    "name": "N.SARATH CHAND",
+    "qualification": "MCA",
+    "designation": "Assistant Professor",
+    "doj": "6/27/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "50.0",
+    "name": "K.SRILAKSHMI",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "7/22/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "51.0",
+    "name": "SK.MADEENA BEGUM",
+    "qualification": "M.Sc",
+    "designation": "Assistant Professor",
+    "doj": "6/21/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "52.0",
+    "name": "T.HARISH",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "7/31/2023",
+    "nature": "Regular"
+  },
+  {
+    "sno": "53.0",
+    "name": "K.KARUNA KUMARI",
+    "qualification": "M.P.Ed",
+    "designation": "Assistant Professor",
+    "doj": "6/1/2022",
+    "nature": "Regular"
+  },
+  {
+    "sno": "54.0",
+    "name": "K.SAMBAIAH",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "7/31/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "55.0",
+    "name": "DR.G.RAMASAILAJA",
+    "qualification": "Ph.D",
+    "designation": "Associate Professor",
+    "doj": "6/15/2008",
+    "nature": "Regular"
+  },
+  {
+    "sno": "56.0",
+    "name": "B.RAJU",
+    "qualification": "M.SC",
+    "designation": "Assistant Professor",
+    "doj": "7/1/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "57.0",
+    "name": "D.DURGANARESH",
+    "qualification": "M.SC",
+    "designation": "Assistant Professor",
+    "doj": "1/21/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "58.0",
+    "name": "K.SRINIVASARAO",
+    "qualification": "M.PHIL",
+    "designation": "Assistant Professor",
+    "doj": "7/1/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "59.0",
+    "name": "V.SANDHYA",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "7/1/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "60.0",
+    "name": "K.SUMAPRIYA",
+    "qualification": "M.Tech",
+    "designation": "Assistant Professor",
+    "doj": "6/23/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "61.0",
+    "name": "B.SRINIVASARAO",
+    "qualification": "M.SC",
+    "designation": "Assistant Professor",
+    "doj": "7/31/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "62.0",
+    "name": "R.SASIRANI",
+    "qualification": "M.SC",
+    "designation": "Assistant Professor",
+    "doj": "7/31/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "63.0",
+    "name": "V.SRINIVASARAO",
+    "qualification": "MA",
+    "designation": "Assistant Professor",
+    "doj": "7/31/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "64.0",
+    "name": "Dr.SK.RASOOL",
+    "qualification": "PH.D",
+    "designation": "Associate Professor",
+    "doj": "10/14/2024",
+    "nature": "Regular"
+  },
+  {
+    "sno": "65.0",
+    "name": "I.PADMAJA",
+    "qualification": "MLIC",
+    "designation": "Assistant Professor",
+    "doj": "6/21/2021",
+    "nature": "Regular"
+  },
+  {
+    "sno": "66.0",
+    "name": "VELPURI HARITHA",
+    "qualification": "M.TECH",
+    "designation": "Assistant Professor",
+    "doj": "6/28/2025",
+    "nature": "Regular"
+  },
+  {
+    "sno": "67.0",
+    "name": "CH. SAI NARENDRA KUMAR",
+    "qualification": "M.PED",
+    "designation": "Assistant Professor",
+    "doj": "9/25/2025",
+    "nature": "Regular"
+  }
+]

@@ -73,6 +73,13 @@ export default function PremiumHeader() {
                                             <div className="text-[11px] text-slate-500">MNK Education Society</div>
                                         </div>
                                     </Link>
+                                    <Link href="/administration" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-indigo-500/10 transition-colors group/item">
+                                        <Users className="w-4 h-4 text-indigo-400" />
+                                        <div>
+                                            <div className="text-white font-semibold group-hover/item:text-indigo-400 transition-colors">Administration</div>
+                                            <div className="text-[11px] text-slate-500">Leadership Team</div>
+                                        </div>
+                                    </Link>
                                     <Link href="/governing-body" className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-purple-500/10 transition-colors group/item">
                                         <Building className="w-4 h-4 text-purple-400" />
                                         <div>

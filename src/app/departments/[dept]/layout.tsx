@@ -16,6 +16,8 @@ import { cn } from "@/lib/utils";
 const NAVIGATION_ITEMS = [
     { icon: Home, label: "Home", href: "" },
     { icon: BookOpen, label: "About Department", href: "/about" },
+    { icon: Award, label: "Dean's Message", href: "/dean" },
+    { icon: User, label: "HOD's Message", href: "/hod" },
     { icon: Target, label: "Vision & Mission", href: "/vision-mission" },
     { icon: Award, label: "PEOs & PSOs", href: "/outcomes" },
     { icon: Users, label: "Faculty", href: "/faculty" },

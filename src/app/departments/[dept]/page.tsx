@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { User, Calendar, Award, ArrowRight, Target, BookOpen, TrendingUp, Users, Briefcase, GraduationCap, Brain, LineChart as ChartIcon } from "lucide-react";
+import { User, Calendar, Award, ArrowRight, Target, BookOpen, TrendingUp, Users, Briefcase, GraduationCap, Brain, LineChart as ChartIcon, Quote } from "lucide-react";
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -230,48 +230,17 @@ export default function DepartmentHome() {
                 </TabsList>
 
                 <TabsContent value="overview" className="space-y-8">
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {/* HOD Profile Section */}
-                        <Card className="md:col-span-1 border-t-4 border-t-[#E5A818] shadow-lg bg-white overflow-hidden">
-                            <div className="aspect-[4/5] bg-gray-100 relative group overflow-hidden">
-                                <img
-                                    src={staticDeptInfo?.hod?.photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(staticDeptInfo?.hod?.name || 'HOD')}&background=1E4080&color=fff&size=512`}
-                                    alt="HOD"
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#1E4080] via-transparent to-transparent opacity-60" />
-                                <div className="absolute bottom-4 left-4 right-4 text-white">
-                                    <h3 className="text-xl font-bold leading-tight">{staticDeptInfo?.hod?.name || "HOD Name"}</h3>
-                                    <p className="text-sm opacity-90">{staticDeptInfo?.hod?.designation || "Head of Department"}</p>
-                                </div>
-                            </div>
-                            <CardContent className="p-6">
-                                <p className="text-[#1E3A5F] italic mb-4 text-sm leading-relaxed quote-left before:content-['“'] before:text-4xl before:text-[#E5A818] before:absolute before:-top-2 before:-left-2 relative pt-2">
-                                    {staticDeptInfo?.hod?.message || "Welcome to our department. We are dedicated to providing the best learning environment for our students."}
-                                </p>
-                                <div className="flex flex-col gap-2 pt-4 border-t border-gray-100">
-                                    <div className="flex items-center gap-2 text-sm text-[#64748B]">
-                                        <Calendar className="w-4 h-4 text-[#E5A818]" />
-                                        <span>ESTD: {deptData.established}</span>
-                                    </div>
-                                    <div className="flex items-center gap-2 text-sm text-[#64748B]">
-                                        <Users className="w-4 h-4 text-[#E5A818]" />
-                                        <span>Intake: {(deptData as any).intake || 120} Students</span>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        {/* Vision & Mission Section */}
-                        <div className="md:col-span-2 space-y-8">
-                            <Card className="border-t-4 border-t-[#1E3A8A] shadow-lg bg-white h-full">
-                                <CardHeader>
-                                    <CardTitle className="flex items-center gap-2 text-xl text-[#1E3A5F]">
-                                        <Target className="w-6 h-6 text-[#3B82F6]" />
-                                        Vision & Mission
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="space-y-6">
+                    {/* Vision & Mission Section - Universal Layout - Profiles removed as per request */}
+                    <div className="w-full">
+                        <Card className="border-t-4 border-t-[#1E3A8A] shadow-lg bg-white h-full">
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2 text-xl text-[#1E3A5F]">
+                                    <Target className="w-6 h-6 text-[#3B82F6]" />
+                                    Vision & Mission
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-6">
+                                <div className="grid md:grid-cols-2 gap-6">
                                     <div className="bg-gradient-to-r from-[#EFF6FF] to-transparent p-6 rounded-xl border border-blue-100">
                                         <Badge className="mb-3 bg-[#1E3A8A] text-white hover:bg-[#1E3A8A] px-3 py-1">Department Vision</Badge>
                                         <p className="text-[#1E3A5F] text-lg leading-relaxed font-semibold italic">
@@ -292,9 +261,9 @@ export default function DepartmentHome() {
                                             )}
                                         </ul>
                                     </div>
-                                </CardContent>
-                            </Card>
-                        </div>
+                                </div>
+                            </CardContent>
+                        </Card>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
