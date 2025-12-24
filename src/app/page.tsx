@@ -838,22 +838,22 @@ export default function HomePage() {
             {departments.map((dept) => (
               <Link
                 key={dept.code}
-                href={`/ departments / ${dept.code.toLowerCase()} `}
-                className={`group card - diamond rounded - 2xl p - 1 relative overflow - hidden ${dept.accent} `}
+                href={`/departments/${dept.code.toLowerCase()}`}
+                className={`group card-diamond rounded-2xl p-1 relative overflow-hidden ${dept.accent}`}
               >
-                <div className={`h - full w - full rounded - xl p - 6 relative z - 10 bg - white ${dept.cardBgAccent} transition - all duration - 500`}>
+                <div className={`h-full w-full rounded-xl p-6 relative z-10 bg-white ${dept.cardBgAccent} transition-all duration-500`}>
                   <div className="flex justify-between items-start mb-6">
                     <span className="text-4xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300 block">{dept.icon}</span>
-                    <div className={`w - 8 h - 8 rounded - full bg - slate - 100 flex items - center justify - center ${dept.bgAccent} group - hover: text - white transition - colors duration - 500`}>
+                    <div className={`w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center ${dept.bgAccent} group-hover:text-white transition-colors duration-500`}>
                       <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
                     </div>
                   </div>
 
-                  <h3 className={`text - xl font - bold text - slate - 900 mb - 2 ${dept.textAccent} transition - colors`}>{dept.name}</h3>
+                  <h3 className={`text-xl font-bold text-slate-900 mb-2 ${dept.textAccent} transition-colors`}>{dept.name}</h3>
                   <p className="text-slate-500 text-sm mb-4">{dept.students}+ Scholars</p>
 
                   <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                    <div className={`h - full bg - gradient - to - r ${dept.gradient} w - 3 / 4 group - hover: w - full transition - all duration - 700`}></div>
+                    <div className={`h-full bg-gradient-to-r ${dept.gradient} w-3/4 group-hover:w-full transition-all duration-700`}></div>
                   </div>
                 </div>
               </Link>
