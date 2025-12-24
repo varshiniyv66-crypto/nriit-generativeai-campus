@@ -37,6 +37,52 @@ import {
   Sparkles
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+// NEWS DATA SOURCE
+const NEWS_ITEMS = [
+  { category: "SYSTEM UPGRADE", text: "nriit.world Unified Ecosystem Live: Integrated ERP & LMS with Enterprise-grade DDoS Protection & RBAC Security.", color: "bg-indigo-600" },
+  { category: "LEGACY ACCESS", text: "Archive Access: Old website (nriit.ac.in) remains accessible from this portal for historical records.", color: "bg-slate-600" },
+  { category: "BREAKING", text: "New Digital Campus Live at nriit.world - Welcome!", color: "bg-red-500" },
+  { category: "ACADEMIC", text: "Academic Calendar 2024-25 Released - Download Now", color: "bg-blue-500" },
+  { category: "BREAKING", text: "NRIIT Secures NAAC 'A+' Accreditation - Nation Proud Moment!", color: "bg-red-500" },
+  { category: "PLACEMENT", text: "TCS, Infosys, Wipro Placement Drive - 150+ Students Selected!", color: "bg-emerald-500" },
+  { category: "ACADEMIC", text: "Admissions Open for UG/PG January 2026 Session", color: "bg-blue-500" },
+  { category: "ACHIEVEMENT", text: "Smart India Hackathon 2024 - NRIIT Students Win Grand Finale!", color: "bg-purple-500" },
+];
+
+function NewsSlider() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % NEWS_ITEMS.length);
+    }, 4000); // Change every 4 seconds
+    return () => clearInterval(timer);
+  }, []);
+
+  const item = NEWS_ITEMS[index];
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={index}
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -20, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="absolute inset-0 flex items-center gap-3"
+      >
+        <span className={`px-2 py-0.5 rounded text-[10px] font-black text-white ${item.color}`}>
+          {item.category}
+        </span>
+        <span className="text-sm font-medium text-slate-200 truncate">
+          {item.text}
+        </span>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
 
 // Premium Department Data with Flagship Colors
 // Premium Department Data with Flagship Colors
@@ -510,50 +556,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 📰 ANIMATED NEWS TICKER - INNOVATIVE MARQUEE */}
-      <div className="relative bg-gradient-to-r from-[#0F172A] via-[#1e293b] to-[#0F172A] py-4 overflow-hidden">
-        {/* Breaking News Label */}
-        <div className="absolute left-0 top-0 bottom-0 z-20 bg-gradient-to-r from-violet-600 to-purple-600 px-6 flex items-center gap-2 shadow-lg">
-          <Bell className="w-5 h-5 text-white animate-bounce" />
-          <span className="text-white font-black uppercase tracking-wider text-sm hidden md:block">Live Updates</span>
-        </div>
+      {/* 📰 ANIMATED NEWS TICKER - CATEGORIZED ONE BY ONE */}
+      <div className="relative bg-[#0F172A] border-y border-slate-800 py-3 overflow-hidden">
+        <div className="container mx-auto px-4 flex items-center gap-4">
+          {/* Static Label */}
+          <div className="flex items-center gap-2 text-white/80 shrink-0">
+            <Bell className="w-5 h-5 text-[#FFD700] animate-bounce" />
+            <span className="text-xs font-bold uppercase tracking-widest hidden md:block">BREAKING NEWS</span>
+            <div className="h-4 w-[1px] bg-slate-700 mx-2"></div>
+          </div>
 
-        {/* Animated Marquee */}
-        <div className="flex animate-marquee whitespace-nowrap pl-32 md:pl-48">
-          {[
-            { icon: "🚀", text: "New Digital Campus Live at nriit.world - Welcome!", color: "text-red-400" },
-            { icon: "🏆", text: "NRIIT Secures NAAC 'A+' Accreditation - Nation Proud Moment!", color: "text-emerald-400" },
-            { icon: "💼", text: "TCS, Infosys, Wipro Placement Drive - 150+ Students Selected!", color: "text-blue-400" },
-            { icon: "📅", text: "Academic Calendar 2024-25 Released - Download Now", color: "text-amber-400" },
-            { icon: "🥇", text: "Smart India Hackathon 2024 - NRIIT Students Win Grand Finale!", color: "text-violet-400" },
-            { icon: "🚀", text: "Recent Placements: ₹12 LPA Highest Package at Amazon!", color: "text-pink-400" },
-            { icon: "🎓", text: "Admissions Open for UG/PG January 2026 Session", color: "text-cyan-400" },
-          ].map((item, i) => (
-            <span key={i} className="mx-8 flex items-center gap-3">
-              <span className="text-2xl">{item.icon}</span>
-              <span className={`${item.color} font-bold text-sm`}>{item.text}</span>
-              <span className="text-slate-600 text-xl">•</span>
-            </span>
-          ))}
-          {/* Duplicate for seamless loop */}
-          {[
-            { icon: "🏆", text: "NRIIT Secures NAAC 'A+' Accreditation - Nation Proud Moment!", color: "text-emerald-400" },
-            { icon: "💼", text: "TCS, Infosys, Wipro Placement Drive - 150+ Students Selected!", color: "text-blue-400" },
-            { icon: "📅", text: "Academic Calendar 2024-25 Released - Download Now", color: "text-amber-400" },
-            { icon: "🥇", text: "Smart India Hackathon 2024 - NRIIT Students Win Grand Finale!", color: "text-violet-400" },
-            { icon: "🚀", text: "Recent Placements: ₹12 LPA Highest Package at Amazon!", color: "text-pink-400" },
-            { icon: "🎓", text: "Admissions Open for UG/PG January 2026 Session", color: "text-cyan-400" },
-          ].map((item, i) => (
-            <span key={`dup-${i}`} className="mx-8 flex items-center gap-3">
-              <span className="text-2xl">{item.icon}</span>
-              <span className={`${item.color} font-bold text-sm`}>{item.text}</span>
-              <span className="text-slate-600 text-xl">•</span>
-            </span>
-          ))}
+          {/* One-by-One Slider */}
+          <div className="flex-1 relative h-8 overflow-hidden">
+            <NewsSlider />
+          </div>
         </div>
-
-        {/* Right Gradient Fade */}
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0F172A] to-transparent z-10" />
       </div>
 
       {/* 🏛️ CORE INSTITUTIONAL VALUES - VISION & MISSION */}
