@@ -16,7 +16,7 @@ const programmes = [
             { name: "Civil Engineering", icon: Building, alias: "CE" },
             { name: "CSE (Artificial Intelligence & ML)", icon: Lightbulb, alias: "AI-ML" },
             { name: "CSE (Data Science)", icon: Monitor, alias: "DS" },
-            { name: "Electric Vehicles Technology", icon: Zap, alias: "EVT" },
+            { name: "Electronics & VLSI Technology", icon: Zap, alias: "EVT" },
         ]
     },
     {

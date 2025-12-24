@@ -75,7 +75,7 @@ export const departments: Record<string, DepartmentData> = {
     // ECE Department - Extracted from sar-ece updated.csv (Lines 547-561)
     // =====================================================================
     ece: {
-        name: "Electronics and Communication Engineering",
+        name: "Electronics & Communication Engineering",
         code: "ECE",
         vision: "To become a center of excellence by bringing out the professional competence in the core areas of electronics and communication engineering.",
         mission: [
@@ -122,7 +122,7 @@ export const departments: Record<string, DepartmentData> = {
     // CSE Department - Extracted from sar-cse updated.csv (Lines 505-517)
     // =====================================================================
     cse: {
-        name: "Computer Science and Engineering",
+        name: "Computer Science & Engineering",
         code: "CSE",
         vision: "To develop globally competent and ethically guided Computer Science professionals, excelling in technological leadership, research-driven innovation, and transformative contributions to society.",
         mission: [

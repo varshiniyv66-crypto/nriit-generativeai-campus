@@ -53,6 +53,33 @@ interface EventItem {
 // ============================================
 const newsData: NewsItem[] = [
     {
+        id: "new1",
+        title: "Digital Ecosystem Launched",
+        date: "2025-12-23",
+        department: "ALL",
+        category: "Achievement",
+        description: "Introduction of nriit.world - the unified digital ecosystem for NRI Institute of Technology, marking a significant technological leap.",
+        featured: true,
+    },
+    {
+        id: "new2",
+        title: "Legacy Website Access Secured: nriit.ac.in",
+        date: "2025-12-19",
+        department: "ALL",
+        category: "Achievement",
+        description: "Full access to the legacy nriit.ac.in website is successfully integrated and accessible via the new nriit.world portal for all historical archives.",
+        featured: true,
+    },
+    {
+        id: "new3",
+        title: "Official Launch of nriit.world Digital Campus",
+        date: "2025-12-18",
+        department: "ALL",
+        category: "Achievement",
+        description: "nriit.world officially launched in coordination with legacy systems, initiating the transition to a unified smart campus experience.",
+        featured: true,
+    },
+    {
         id: "n1",
         title: "NRIIT Secures NAAC 'A+' Grade Accreditation",
         date: "2023-01-10",

@@ -11,8 +11,8 @@ import { useEffect } from "react";
 const departments = [
     { code: "CSE", name: "Computer Science & Engineering", icon: Monitor, color: "from-blue-500 to-indigo-600", shortName: "CSE" },
     { code: "IT", name: "Information Technology", icon: Cpu, color: "from-cyan-500 to-blue-500", shortName: "IT" },
-    { code: "ECE", name: "Electronics & Communication", icon: Radio, color: "from-orange-500 to-red-500", shortName: "ECE" },
-    { code: "EVT", name: "Electric Vehicles Technology", icon: Zap, color: "from-yellow-500 to-orange-500", shortName: "EVT" },
+    { code: "ECE", name: "Electronics & Communication Engineering", icon: Radio, color: "from-orange-500 to-red-500", shortName: "ECE" },
+    { code: "EVT", name: "Electronics & VLSI Technology", icon: Zap, color: "from-yellow-500 to-orange-500", shortName: "EVT" },
     { code: "MTECH", name: "Master of Technology", icon: Cog, color: "from-gray-500 to-slate-600", shortName: "M.Tech" },
     { code: "CIVIL", name: "Civil Engineering", icon: Building, color: "from-amber-500 to-yellow-600", shortName: "CIVIL" },
     { code: "CSE-AI", name: "CSE (AI & ML)", icon: Lightbulb, color: "from-purple-500 to-pink-500", shortName: "AI/ML" },

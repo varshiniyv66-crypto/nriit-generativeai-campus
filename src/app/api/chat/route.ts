@@ -32,7 +32,7 @@ export async function POST(req: Request) {
             }
             // ============== DEPARTMENTS ==============
             else if (query.includes("department") || query.includes("branch") || query.includes("course") || query.includes("programme") || query.includes("cse") || query.includes("ece") || query.includes("it") || query.includes("mba") || query.includes("mca") || query.includes("civil") || query.includes("ai") || query.includes("data science")) {
-                content = "🏛️ **NRIIT Departments (11 Schools of Excellence):**\n\n**B.Tech (4 Years):**\n• Computer Science & Engineering (CSE)\n• Information Technology (IT)\n• Electronics & Communication (ECE)\n• Civil Engineering\n• CSE - Artificial Intelligence & ML\n• CSE - Data Science\n• Electric Vehicles Technology (EVT)\n\n**Postgraduate:**\n• M.Tech (Structural, VLSI, CSE)\n• MBA (2 Years)\n• MCA (2 Years)\n\nExplore all: [Academic Programmes](/programmes)";
+                content = "🏛️ **NRIIT Departments (11 Schools of Excellence):**\n\n**B.Tech (4 Years):**\n• Computer Science & Engineering (CSE)\n• Information Technology (IT)\n• Electronics & Communication (ECE)\n• Civil Engineering\n• CSE - Artificial Intelligence & ML\n• CSE - Data Science\n• Electronics & VLSI Technology (EVT)\n\n**Postgraduate:**\n• M.Tech (Structural, VLSI, CSE)\n• MBA (2 Years)\n• MCA (2 Years)\n\nExplore all: [Academic Programmes](/programmes)";
             }
             // ============== ACCREDITATION ==============
             else if (query.includes("naac") || query.includes("nba") || query.includes("accredit") || query.includes("autonomous") || query.includes("aicte") || query.includes("jntuk") || query.includes("ranking")) {

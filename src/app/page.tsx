@@ -88,7 +88,7 @@ function NewsSlider() {
 // Premium Department Data with Flagship Colors
 const departments = [
   {
-    code: "CSE", name: "Computer Science", icon: "💻",
+    code: "CSE", name: "Computer Science & Engineering", icon: "💻",
     accent: "hover:!border-blue-500 hover:shadow-2xl hover:shadow-blue-500/40",
     textAccent: "group-hover:text-blue-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-blue-600",
@@ -98,7 +98,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "CSE-DS", name: "Data Science", icon: "📊",
+    code: "CSE-DS", name: "CSE (Data Science)", icon: "📊",
     accent: "hover:!border-purple-500 hover:shadow-2xl hover:shadow-purple-500/40",
     textAccent: "group-hover:text-purple-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-purple-600",
@@ -108,7 +108,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "CSE-AI", name: "AI & ML", icon: "🤖",
+    code: "CSE-AI", name: "CSE (AI & ML)", icon: "🤖",
     accent: "hover:!border-pink-500 hover:shadow-2xl hover:shadow-pink-500/40",
     textAccent: "group-hover:text-pink-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-pink-600",
@@ -118,7 +118,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "IT", name: "Info Tech", icon: "🌐",
+    code: "IT", name: "Information Technology", icon: "🌐",
     accent: "hover:!border-emerald-500 hover:shadow-2xl hover:shadow-emerald-500/40",
     textAccent: "group-hover:text-emerald-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-emerald-600",
@@ -128,7 +128,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "ECE", name: "Electronics", icon: "📡",
+    code: "ECE", name: "Electronics & Communication Engineering", icon: "📡",
     accent: "hover:!border-amber-500 hover:shadow-2xl hover:shadow-amber-500/40",
     textAccent: "group-hover:text-amber-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-amber-600",
@@ -138,7 +138,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "EVT", name: "EVT", icon: "⚡",
+    code: "EVT", name: "Electronics & VLSI Technology", icon: "⚡",
     accent: "hover:!border-yellow-500 hover:shadow-2xl hover:shadow-yellow-500/40",
     textAccent: "group-hover:text-yellow-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-yellow-500",
@@ -148,7 +148,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "MTECH", name: "M.Tech Programs", icon: "🎓",
+    code: "MTECH", name: "Master of Technology", icon: "🎓",
     accent: "hover:!border-orange-600 hover:shadow-2xl hover:shadow-orange-600/40",
     textAccent: "group-hover:text-orange-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-orange-600",
@@ -158,7 +158,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "CIVIL", name: "Civil Engg", icon: "🏗️",
+    code: "CIVIL", name: "Civil Engineering", icon: "🏗️",
     accent: "hover:!border-red-500 hover:shadow-2xl hover:shadow-red-500/40",
     textAccent: "group-hover:text-red-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-red-500",
@@ -168,7 +168,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "MBA", name: "Business Admin", icon: "📈",
+    code: "MBA", name: "Master of Business Administration", icon: "📈",
     accent: "hover:!border-cyan-500 hover:shadow-2xl hover:shadow-cyan-500/40",
     textAccent: "group-hover:text-cyan-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-cyan-500",
@@ -178,7 +178,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "MCA", name: "Computer App", icon: "💻",
+    code: "MCA", name: "Master of Computer Applications", icon: "💻",
     accent: "hover:!border-violet-500 hover:shadow-2xl hover:shadow-violet-500/40",
     textAccent: "group-hover:text-violet-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-violet-500",
@@ -188,7 +188,7 @@ const departments = [
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop"
   },
   {
-    code: "FED", name: "Science & Humanities", icon: "⚛️",
+    code: "FED", name: "Basic Sciences & Humanities", icon: "⚛️",
     accent: "hover:!border-teal-500 hover:shadow-2xl hover:shadow-teal-500/40",
     textAccent: "group-hover:text-teal-600",
     bgAccent: "group-hover:bg-gradient-to-r group-hover:from-[#D4AF37] group-hover:to-teal-500",
@@ -251,6 +251,26 @@ const DigitalTwin = dynamic(() => import("@/components/campus/DigitalTwin"), {
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [cycleCount, setCycleCount] = useState(0);
+
+  useEffect(() => {
+    // Stop after 3 complete cycles
+    if (cycleCount >= 3) return;
+
+    const duration = currentSlide === 0 ? 35000 : 5000;
+
+    const timer = setTimeout(() => {
+      // Loop sequence: 0 -> 1 -> 2 -> 3 -> 0 (repeat 3 times)
+      if (currentSlide === 3) {
+        setCurrentSlide(0);
+        setCycleCount((prev) => prev + 1);
+      } else {
+        setCurrentSlide((prev) => prev + 1);
+      }
+    }, duration);
+
+    return () => clearTimeout(timer);
+  }, [currentSlide, cycleCount]);
 
   return (
     <main className="min-h-screen bg-[#F8FAFC] overflow-x-hidden selection:bg-[#FFBA42] selection:text-[#013C58]">
@@ -294,18 +314,86 @@ export default function HomePage() {
 
         {/* SLIDER CONTENT */}
         <div className="relative z-10 w-full h-full flex items-center">
-          <button onClick={() => setCurrentSlide((prev) => (prev === 0 ? 2 : prev - 1))} className="absolute left-2 top-1/2 -translate-y-1/2 lg:left-10 p-2 lg:p-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 z-50 transition-all hover:scale-110">
+          <button onClick={() => setCurrentSlide((prev) => (prev === 0 ? 3 : prev - 1))} className="absolute left-2 top-1/2 -translate-y-1/2 lg:left-10 p-2 lg:p-4 rounded-full bg-slate-900/20 hover:bg-slate-900/40 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-white/20 z-50 transition-all hover:scale-110">
             <ChevronLeft className="w-6 h-6 lg:w-8 lg:h-8" />
           </button>
 
           <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
-            {/* SLIDE 1: HYBRID LIGHT THEME (AI STUDIO INSPIRED) */}
+
+            {/* SLIDE 1: NBA WELCOME BANNER (Moved) */}
+            {currentSlide === 1 && (
+              <>
+                {/* Light Background Override */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#F0F9FF] via-[#E0F2FE] to-[#F0FDFA] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
+
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10 lg:pl-20">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-600/10 border border-blue-600/30 text-blue-700 text-sm font-bold tracking-wide">
+                    <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+                    World Class Accreditation Inspection
+                  </div>
+
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0F172A] dark:text-white leading-[1.1]">
+                    A Grand Welcome to <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">NBA Expert Team</span>
+                  </h1>
+
+                  <p className="text-lg text-slate-600 dark:text-slate-300 max-w-lg leading-relaxed">
+                    NRI Institute of Technology is honored to host the distinguished National Board of Accreditation team. We proudly showcase our commitment to global standards in technical education.
+                  </p>
+
+                  <div className="flex flex-wrap gap-4 pt-4">
+                    <Link href="/accreditation/nba" className="group px-8 py-4 bg-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all hover:-translate-y-1 flex items-center gap-2">
+                      View SAR Reports
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+
+                  {/* Impact Stats */}
+                  <div className="flex flex-wrap gap-8 pt-8 border-t border-slate-200 mt-8">
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">Outcome Based</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Education Model</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-black text-[#0F172A] dark:text-white">Global</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Standards</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side - Grand Image */}
+                <div className="relative animate-fade-in-up delay-100 z-10 mt-8 lg:mt-0">
+                  <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white group h-[300px] lg:h-[450px]">
+                    <img
+                      src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1600&auto=format&fit=crop"
+                      alt="Grand Welcome"
+                      className="w-full h-full object-cover transform transition-transform duration-[3000ms] group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent" />
+
+                    {/* Welcome Badge */}
+                    <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-md px-6 py-4 rounded-xl shadow-xl border-l-4 border-blue-600">
+                      <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Distinguished Visit</div>
+                      <div className="text-xl font-black text-slate-800">NBA Inspection</div>
+                      <div className="text-xs text-blue-600 font-bold mt-1">December 2024</div>
+                    </div>
+
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                      <div className="text-3xl font-bold">Welcome</div>
+                      <div className="text-sm text-blue-100">To Our Center of Excellence</div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* SLIDE 0: HYBRID LIGHT THEME (AI STUDIO INSPIRED) */}
             {currentSlide === 0 && (
               <>
                 {/* Light Background Override */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F8F7FF] via-[#EEF0FF] to-[#F5F3FF] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
 
-                <div className="text-left space-y-6 animate-fade-in-up relative z-10">
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10 lg:pl-20">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 text-sm font-bold tracking-wide">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                     Admissions Open 2025
@@ -401,12 +489,12 @@ export default function HomePage() {
             )}
 
             {/* SLIDE 2: RESEARCH & INNOVATION - LIGHT THEME */}
-            {currentSlide === 1 && (
+            {currentSlide === 2 && (
               <>
                 {/* Light Background Override */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFF5EB] to-[#FFFAF5] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
 
-                <div className="text-left space-y-6 animate-fade-in-up relative z-10">
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10 lg:pl-20">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-sm font-bold tracking-wide">
                     <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
                     Centers of Excellence
@@ -470,12 +558,12 @@ export default function HomePage() {
             )}
 
             {/* SLIDE 3: VISADALA CAMPUS - LIGHT THEME */}
-            {currentSlide === 2 && (
+            {currentSlide === 3 && (
               <>
                 {/* Light Background Override */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F0FDF4] via-[#ECFDF5] to-[#F0FDF9] dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 z-0" />
 
-                <div className="text-left space-y-6 animate-fade-in-up relative z-10">
+                <div className="text-left space-y-6 animate-fade-in-up relative z-10 lg:pl-20">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 text-sm font-bold tracking-wide">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                     Visit Guntur Visadala Campus
@@ -543,14 +631,14 @@ export default function HomePage() {
             )}
           </div>
 
-          <button onClick={() => setCurrentSlide((prev) => (prev === 2 ? 0 : prev + 1))} className="absolute right-2 top-1/2 -translate-y-1/2 lg:right-10 p-2 lg:p-4 rounded-full bg-slate-900/20 hover:bg-slate-900/40 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-white/20 z-50 transition-all hover:scale-110">
+          <button onClick={() => setCurrentSlide((prev) => (prev === 3 ? 0 : prev + 1))} className="absolute right-2 top-1/2 -translate-y-1/2 lg:right-10 p-2 lg:p-4 rounded-full bg-slate-900/20 hover:bg-slate-900/40 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-white/20 z-50 transition-all hover:scale-110">
             <ChevronRight className="w-8 h-8" />
           </button>
 
           {/* Dots - Light Theme */}
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-            {[0, 1, 2].map(i => (
-              <button key={i} onClick={() => setCurrentSlide(i)} className={`h-3 rounded-full transition-all ${currentSlide === i ? 'bg-violet-600 w-10' : 'bg-slate-300 w-3'}`} />
+            {[0, 1, 2, 3].map(i => (
+              <button key={i} onClick={() => setCurrentSlide(i)} className={`h- 3 rounded - full transition - all ${currentSlide === i ? 'bg-blue-600 w-10' : 'bg-slate-300 w-3'}`} />
             ))}
           </div>
         </div>
@@ -559,10 +647,11 @@ export default function HomePage() {
       {/* 📰 ANIMATED NEWS TICKER - CATEGORIZED ONE BY ONE */}
       <div className="relative bg-[#0F172A] border-y border-slate-800 py-3 overflow-hidden">
         <div className="container mx-auto px-4 flex items-center gap-4">
-          {/* Static Label */}
-          <div className="flex items-center gap-2 text-white/80 shrink-0">
-            <Bell className="w-5 h-5 text-[#FFD700] animate-bounce" />
-            <span className="text-xs font-bold uppercase tracking-widest hidden md:block">BREAKING NEWS</span>
+          <div className="flex items-center gap-3 shrink-0">
+            <div className="px-4 py-1.5 bg-purple-600 text-white text-xs font-bold uppercase tracking-widest rounded-full flex items-center gap-2 shadow-lg shadow-purple-500/20">
+              <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+              LIVE UPDATES
+            </div>
             <div className="h-4 w-[1px] bg-slate-700 mx-2"></div>
           </div>
 
@@ -749,22 +838,22 @@ export default function HomePage() {
             {departments.map((dept) => (
               <Link
                 key={dept.code}
-                href={`/departments/${dept.code.toLowerCase()}`}
-                className={`group card-diamond rounded-2xl p-1 relative overflow-hidden ${dept.accent}`}
+                href={`/ departments / ${dept.code.toLowerCase()} `}
+                className={`group card - diamond rounded - 2xl p - 1 relative overflow - hidden ${dept.accent} `}
               >
-                <div className={`h-full w-full rounded-xl p-6 relative z-10 bg-white ${dept.cardBgAccent} transition-all duration-500`}>
+                <div className={`h - full w - full rounded - xl p - 6 relative z - 10 bg - white ${dept.cardBgAccent} transition - all duration - 500`}>
                   <div className="flex justify-between items-start mb-6">
                     <span className="text-4xl filter drop-shadow-md group-hover:scale-110 transition-transform duration-300 block">{dept.icon}</span>
-                    <div className={`w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center ${dept.bgAccent} group-hover:text-white transition-colors duration-500`}>
+                    <div className={`w - 8 h - 8 rounded - full bg - slate - 100 flex items - center justify - center ${dept.bgAccent} group - hover: text - white transition - colors duration - 500`}>
                       <ArrowRight className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
                     </div>
                   </div>
 
-                  <h3 className={`text-xl font-bold text-slate-900 mb-2 ${dept.textAccent} transition-colors`}>{dept.name}</h3>
+                  <h3 className={`text - xl font - bold text - slate - 900 mb - 2 ${dept.textAccent} transition - colors`}>{dept.name}</h3>
                   <p className="text-slate-500 text-sm mb-4">{dept.students}+ Scholars</p>
 
                   <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                    <div className={`h-full bg-gradient-to-r ${dept.gradient} w-3/4 group-hover:w-full transition-all duration-700`}></div>
+                    <div className={`h - full bg - gradient - to - r ${dept.gradient} w - 3 / 4 group - hover: w - full transition - all duration - 700`}></div>
                   </div>
                 </div>
               </Link>
