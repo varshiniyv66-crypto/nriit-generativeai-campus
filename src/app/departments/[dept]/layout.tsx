@@ -25,7 +25,6 @@ const NAVIGATION_ITEMS = [
     { icon: BrainCircuit, label: "Research", href: "/research" },
     { icon: Trophy, label: "Achievements", href: "/achievements" },
     { icon: Calendar, label: "Events", href: "/events" },
-    { icon: GraduationCap, label: "Student Corner", href: "/student-corner" },
     { icon: Briefcase, label: "CRT & Placements", href: "/placements" },
     { icon: Heart, label: "Mentoring", href: "/mentoring" },
     { icon: ImageIcon, label: "Gallery", href: "/gallery" },
