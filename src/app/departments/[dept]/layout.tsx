@@ -8,7 +8,7 @@ import {
     Home, BookOpen, Target, Award, User, Users, FlaskConical,
     BrainCircuit, Trophy, Calendar, GraduationCap, Briefcase,
     Heart, ImageIcon, Phone, Menu, X, ChevronRight, Sparkles, FileText,
-    ShieldCheck, CheckCircle2
+    ShieldCheck, CheckCircle2, Clock
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -28,6 +28,7 @@ const NAVIGATION_ITEMS = [
     { icon: Briefcase, label: "CRT & Placements", href: "/placements" },
     { icon: Heart, label: "Mentoring", href: "/mentoring" },
     { icon: ImageIcon, label: "Gallery", href: "/gallery" },
+    { icon: Clock, label: "Hourly Attendance", href: "/hourly-attendance" },
     { icon: Phone, label: "Contact Us", href: "/contact" },
 ];
 

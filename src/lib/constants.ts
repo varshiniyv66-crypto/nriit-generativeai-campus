@@ -280,6 +280,7 @@ export const NAV_ROUTES = {
         { href: '/dean/faculty', label: 'Faculty', icon: 'Users' },
         { href: '/dean/students', label: 'Students', icon: 'GraduationCap' },
         { href: '/dean/attendance', label: 'Attendance', icon: 'UserCheck' },
+        { href: '/dean/attendance/hourly', label: 'Hourly Hub', icon: 'Clock' },
         { href: '/dean/reports', label: 'Reports', icon: 'BarChart' },
         { href: '/dean/analytics', label: 'Analytics', icon: 'TrendingUp' },
     ],

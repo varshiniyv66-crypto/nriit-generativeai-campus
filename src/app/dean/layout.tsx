@@ -16,7 +16,8 @@ import {
     Award,
     Settings,
     TrendingUp,
-    Calendar
+    Calendar,
+    Clock
 } from "lucide-react";
 import { NAV_ROUTES } from "@/lib/constants";
 import { useEffect, useState } from "react";
@@ -119,6 +120,8 @@ export default function DeanLayout({
                             if (route.icon === 'UserCheck') Icon = UserCheck;
                             if (route.icon === 'TrendingUp') Icon = TrendingUp;
                             if (route.icon === 'Calendar') Icon = Calendar;
+                            if (route.icon === 'Clock') Icon = Clock;
+                            if (route.icon === 'Clock') Icon = Clock;
 
                             const isActive = false; // We can parse this later if needed, mostly for visual styling
 

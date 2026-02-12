@@ -13,6 +13,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { FacultyDirectoryButton } from "@/components/department/FacultyDirectoryButton";
 import { YearWisePlacementsButton } from "@/components/department/YearWisePlacementsButton";
 import { PlacementComparativeAnalysis } from "@/components/department/PlacementComparativeAnalysis";
+import { HourlyAttendanceButton } from "@/components/department/HourlyAttendanceButton";
 import { departments as staticDepartments } from "@/data/departments";
 import { DEPARTMENT_ACADEMIC_DATA } from "@/data/academic-outcomes";
 
@@ -214,6 +215,7 @@ export default function DepartmentHome() {
                         <div className="pt-4 flex flex-wrap items-center gap-4 animate-fade-in delay-500">
                             <FacultyDirectoryButton department={deptParam} />
                             <YearWisePlacementsButton department={deptParam} />
+                            <HourlyAttendanceButton department={deptParam} />
                         </div>
                     </div>
                 </div>

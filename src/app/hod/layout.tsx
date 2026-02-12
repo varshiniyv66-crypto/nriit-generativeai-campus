@@ -14,7 +14,11 @@ import {
     Menu,
     X,
     ChevronDown,
-    LogOut
+    LogOut,
+    GraduationCap,
+    UserCheck,
+    BarChart,
+    Award
 } from "lucide-react";
 import { useState } from "react";
 
@@ -26,6 +30,10 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     ClipboardCheck,
     FileText,
     Settings,
+    GraduationCap,
+    UserCheck,
+    BarChart,
+    Award
 };
 
 export default function HODLayout({ children }: { children: React.ReactNode }) {
@@ -63,8 +71,8 @@ export default function HODLayout({ children }: { children: React.ReactNode }) {
                                 key={item.href}
                                 href={item.href}
                                 className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${isActive
-                                        ? "bg-blue-50 text-blue-700"
-                                        : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                                    ? "bg-blue-50 text-blue-700"
+                                    : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                                     }`}
                             >
                                 <IconComponent className="w-5 h-5" />
