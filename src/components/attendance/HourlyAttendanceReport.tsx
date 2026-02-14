@@ -96,11 +96,14 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
 
     // Excel Serial Date Converter
     const excelDateToJSDate = (serial: number) => {
-        // Excel base date logic
         const utc_days = Math.floor(serial - 25569);
         const utc_value = utc_days * 86400;
         const date_info = new Date(utc_value * 1000);
-        return date_info.toLocaleDateString('en-GB'); // DD/MM/YYYY
+        // Force strict DD/MM/YYYY format
+        const day = date_info.getDate().toString().padStart(2, '0');
+        const month = (date_info.getMonth() + 1).toString().padStart(2, '0');
+        const year = date_info.getFullYear();
+        return `${day}/${month}/${year}`;
     };
 
     const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -153,13 +156,9 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
     const processExcelData = async (data: any[][]) => {
         if (data.length < 5) return;
 
-        // 1. Identify Key Rows
-        // We know Row 2 (Index 1) is Date, Row 3 (Index 2) is Hour based on standard format
         const dateRowIndex = 1;
         const periodRowIndex = 2;
 
-        // 2. Determine Data Width (Max Cols) to avoid truncation issues
-        // Scan first 20 rows to find max width
         let maxCol = 0;
         data.slice(0, 20).forEach(row => {
             if (row.length > maxCol) maxCol = row.length;
@@ -168,35 +167,78 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         const dateRow = data[dateRowIndex] || [];
         const periodRow = data[periodRowIndex] || [];
 
-        // 3. Build Date Map with robust propagation
         const dateMap: Record<number, string> = {};
         const uniqueDates = new Set<string>();
+        const rawDateStrings: string[] = [];
 
-        // Start from col 1 (skipping Roll No) up to maxCol
+        // 1. Collect all raw strings first to infer format
         for (let col = 1; col < maxCol; col++) {
             const rawDate = dateRow[col];
+            if (typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
+                rawDateStrings.push(rawDate);
+            }
+        }
 
-            // Try to resolve date
+        // 2. Infer Date Format (DD/MM vs MM/DD)
+        // If we see any part[0] > 12, it MUST be DD/MM.
+        // If we see any part[1] > 12, it MUST be MM/DD.
+        let isDDMM = true; // Default to India/UK
+        let formatDetected = false;
+
+        for (const d of rawDateStrings) {
+            const parts = d.split(/[-/]/);
+            if (parts.length === 3) {
+                const p0 = parseInt(parts[0]);
+                const p1 = parseInt(parts[1]);
+
+                if (p0 > 12) {
+                    isDDMM = true;
+                    formatDetected = true;
+                    break;
+                }
+                if (p1 > 12) {
+                    isDDMM = false;
+                    formatDetected = true;
+                    break;
+                }
+            }
+        }
+
+        // 3. Process Columns with inferred format
+        for (let col = 1; col < maxCol; col++) {
+            const rawDate = dateRow[col];
+            let fmtDate = "";
+
             if (rawDate && typeof rawDate === 'number') {
-                const fmtDate = excelDateToJSDate(rawDate);
+                fmtDate = excelDateToJSDate(rawDate); // Returns DD/MM/YYYY
+            } else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
+                const parts = rawDate.split(/[-/]/);
+                if (parts.length === 3) {
+                    if (isDDMM) {
+                        // Keep as DD/MM/YYYY
+                        fmtDate = `${parts[0].padStart(2, '0')}/${parts[1].padStart(2, '0')}/${parts[2]}`;
+                    } else {
+                        // Convert MM/DD/YYYY -> DD/MM/YYYY
+                        fmtDate = `${parts[1].padStart(2, '0')}/${parts[0].padStart(2, '0')}/${parts[2]}`;
+                    }
+                } else {
+                    fmtDate = rawDate;
+                }
+            } else if (!rawDate && dateMap[col - 1]) {
+                fmtDate = dateMap[col - 1]; // Propagate
+            }
+
+            if (fmtDate) {
                 dateMap[col] = fmtDate;
                 uniqueDates.add(fmtDate);
-            } else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
-                // Formatting clean up if needed
-                dateMap[col] = rawDate;
-                uniqueDates.add(rawDate);
-            } else if (!rawDate && dateMap[col - 1]) {
-                // Propagate from left (handle empty/merged cells)
-                dateMap[col] = dateMap[col - 1];
             }
         }
 
         const sortedDates = Array.from(uniqueDates).sort((a, b) => {
-            // Robust Sort: Handle DD/MM/YYYY and MM/DD/YYYY mixes if possible
             const parseDate = (d: string) => {
                 const parts = d.split(/[-/]/);
                 if (parts.length !== 3) return 0;
-                // Assume DD/MM/YYYY for standard Indian/UK format
+                // Always parse as DD/MM/YYYY now because we normalized it above
                 return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0])).getTime();
             };
             return parseDate(b) - parseDate(a); // Descending
@@ -204,14 +246,28 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
 
         setAvailableDates(sortedDates);
 
-        // Build Hierarchy
         const hierarchy = groupDates(sortedDates);
         setDateHierarchy(hierarchy);
 
-        // Auto-select latest
+        // Auto-select latest VALID date (<= Today + 1 buffer) to avoid typos like Year 2026 in 2025
         if (sortedDates.length > 0) {
-            const latestDate = sortedDates[0];
-            const parts = latestDate.split(/[-/]/);
+            const now = new Date();
+            // Allow 1 day buffer for timezone diffs
+            const limit = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 2).getTime();
+
+            let bestDate = sortedDates[0];
+
+            // Find first date <= limit
+            for (const d of sortedDates) {
+                const parts = d.split('/');
+                const ts = new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0])).getTime();
+                if (ts < limit) {
+                    bestDate = d;
+                    break;
+                }
+            }
+
+            const parts = bestDate.split(/[-/]/);
             const year = parts[2];
             const monthName = new Date(parseInt(year), parseInt(parts[1]) - 1).toLocaleString('default', { month: 'long' });
 
