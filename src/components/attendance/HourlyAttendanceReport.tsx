@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as XLSX from "xlsx";
 import {
     Upload,
@@ -13,12 +13,14 @@ import {
     Moon,
     Clock,
     UserX,
-    Filter
+    Filter,
+    RefreshCw
 } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { fetchAttendanceCsv } from "@/app/actions/attendance";
 
 // Types
 type AbsentStatus = 'Full Day' | 'Forenoon' | 'Afternoon' | 'Partial';
@@ -39,7 +41,8 @@ interface HourlyAttendanceReportProps {
 
 export default function HourlyAttendanceReport({ classId, backLink, titlePrefix = "" }: HourlyAttendanceReportProps) {
     const [file, setFile] = useState<File | null>(null);
-    const [parsing, setParsing] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [parsing, setParsing] = useState(false); // Kept for manual upload compatibility
     const [activeTab, setActiveTab] = useState<"counseling" | "daily" | "register">("counseling");
 
     // Data State
@@ -56,8 +59,44 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         partial: 0
     });
 
+    // State for Date Filtering
+    const [dateHierarchy, setDateHierarchy] = useState<Record<string, Record<string, string[]>>>({});
+    const [selectedYear, setSelectedYear] = useState<string>("");
+    const [selectedMonth, setSelectedMonth] = useState<string>("");
+
+    // Initialize Data from Server
+    useEffect(() => {
+        loadLiveAttendance();
+    }, [classId]);
+
+    const loadLiveAttendance = async () => {
+        setLoading(true);
+        try {
+            const result = await fetchAttendanceCsv(classId);
+            if (result.success && result.data) {
+                // Parse CSV string
+                parseCsvData(result.data);
+            }
+        } catch (err) {
+            console.error("Auto-fetch failed", err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const parseCsvData = (csvText: string) => {
+        const workbook = XLSX.read(csvText, { type: 'string' });
+        const sheetName = workbook.SheetNames[0];
+        const sheet = workbook.Sheets[sheetName];
+        const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" }) as any[][];
+
+        setExcelData(jsonData);
+        processExcelData(jsonData);
+    };
+
     // Excel Serial Date Converter
     const excelDateToJSDate = (serial: number) => {
+        // Excel base date logic
         const utc_days = Math.floor(serial - 25569);
         const utc_value = utc_days * 86400;
         const date_info = new Date(utc_value * 1000);
@@ -90,67 +129,118 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         }
     };
 
+    // Group dates by Year -> Month
+    const groupDates = (dates: string[]) => {
+        const groups: Record<string, Record<string, string[]>> = {};
+
+        dates.forEach(dateStr => {
+            const parts = dateStr.split(/[-/]/); // DD/MM/YYYY
+            if (parts.length !== 3) return;
+
+            const year = parts[2];
+            const monthIndex = parseInt(parts[1]) - 1;
+            const monthName = new Date(parseInt(year), monthIndex).toLocaleString('default', { month: 'long' });
+
+            if (!groups[year]) groups[year] = {};
+            if (!groups[year][monthName]) groups[year][monthName] = [];
+
+            groups[year][monthName].push(dateStr);
+        });
+
+        return groups;
+    };
+
     const processExcelData = async (data: any[][]) => {
         if (data.length < 5) return;
 
-        const dateRow = data[1];
-        const periodRow = data[2];
+        // 1. Identify Key Rows
+        // We know Row 2 (Index 1) is Date, Row 3 (Index 2) is Hour based on standard format
+        const dateRowIndex = 1;
+        const periodRowIndex = 2;
 
-        // Find valid date columns
+        // 2. Determine Data Width (Max Cols) to avoid truncation issues
+        // Scan first 20 rows to find max width
+        let maxCol = 0;
+        data.slice(0, 20).forEach(row => {
+            if (row.length > maxCol) maxCol = row.length;
+        });
+
+        const dateRow = data[dateRowIndex] || [];
+        const periodRow = data[periodRowIndex] || [];
+
+        // 3. Build Date Map with robust propagation
         const dateMap: Record<number, string> = {};
         const uniqueDates = new Set<string>();
 
-        for (let col = 1; col < dateRow.length; col++) {
+        // Start from col 1 (skipping Roll No) up to maxCol
+        for (let col = 1; col < maxCol; col++) {
             const rawDate = dateRow[col];
+
+            // Try to resolve date
             if (rawDate && typeof rawDate === 'number') {
                 const fmtDate = excelDateToJSDate(rawDate);
                 dateMap[col] = fmtDate;
                 uniqueDates.add(fmtDate);
-            } else if (rawDate && typeof rawDate === 'string' && rawDate.includes('/')) {
+            } else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
+                // Formatting clean up if needed
                 dateMap[col] = rawDate;
                 uniqueDates.add(rawDate);
             } else if (!rawDate && dateMap[col - 1]) {
+                // Propagate from left (handle empty/merged cells)
                 dateMap[col] = dateMap[col - 1];
             }
         }
 
         const sortedDates = Array.from(uniqueDates).sort((a, b) => {
-            const [d1, m1, y1] = a.split('/').map(Number);
-            const [d2, m2, y2] = b.split('/').map(Number);
-            return new Date(y2, m2 - 1, d2).getTime() - new Date(y1, m1 - 1, d1).getTime();
+            // Robust Sort: Handle DD/MM/YYYY and MM/DD/YYYY mixes if possible
+            const parseDate = (d: string) => {
+                const parts = d.split(/[-/]/);
+                if (parts.length !== 3) return 0;
+                // Assume DD/MM/YYYY for standard Indian/UK format
+                return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0])).getTime();
+            };
+            return parseDate(b) - parseDate(a); // Descending
         });
 
         setAvailableDates(sortedDates);
+
+        // Build Hierarchy
+        const hierarchy = groupDates(sortedDates);
+        setDateHierarchy(hierarchy);
+
+        // Auto-select latest
         if (sortedDates.length > 0) {
-            analyzeDailyAbsentees(sortedDates[0], data, dateMap, periodRow);
+            const latestDate = sortedDates[0];
+            const parts = latestDate.split(/[-/]/);
+            const year = parts[2];
+            const monthName = new Date(parseInt(year), parseInt(parts[1]) - 1).toLocaleString('default', { month: 'long' });
+
+            setSelectedYear(year);
+            setSelectedMonth(monthName);
+            analyzeDailyAbsentees(latestDate, data, dateMap, periodRow, maxCol);
         }
     };
 
     const determineStatus = (periods: number[]): { status: AbsentStatus, note: string } => {
-        // Periods classification
         const fnPeriods = [1, 2, 3, 4];
         const anPeriods = [5, 6, 7];
 
         const missedFN = periods.filter(p => fnPeriods.includes(p));
         const missedAN = periods.filter(p => anPeriods.includes(p));
 
-        const isFullFN = missedFN.length >= 3; // Allowing 1 margin of error/lab buffer
-        const isFullAN = missedAN.length >= 2;
+        const isSignificantFN = missedFN.length >= 3;
+        const isSignificantAN = missedAN.length >= 2;
 
-        // Full Day Logic
-        if (isFullFN && isFullAN) {
+        if (isSignificantFN && isSignificantAN) {
             return { status: 'Full Day', note: 'Absent for entire day.' };
         }
-
-        // Half Day Logic
-        if (isFullFN) {
+        if (isSignificantFN) {
             return { status: 'Forenoon', note: 'Missed Morning Session.' };
         }
-        if (isFullAN) {
+        if (isSignificantAN) {
             return { status: 'Afternoon', note: 'Missed Afternoon Session (Post-Lunch).' };
         }
 
-        // Partial Logic
         if (periods.length === 1 && periods[0] === 1) {
             return { status: 'Partial', note: 'Late Comer (Period 1 Absent).' };
         }
@@ -162,14 +252,27 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         targetDate: string,
         data: any[][],
         dateMap: Record<number, string>,
-        periodRow: any[]
+        periodRow: any[],
+        maxCol: number
     ) => {
         setSelectedDate(targetDate);
 
         const dailyAbsentees: DailyAbsentee[] = [];
         const currentStats = { fullDay: 0, forenoon: 0, afternoon: 0, partial: 0 };
 
-        for (let row = 5; row < data.length; row++) {
+        // Auto-detect start row for students
+        // Look for the first row where Column 0 matches a Roll Number pattern (e.g., "22KP...")
+        let startRow = 5;
+        for (let r = 3; r < data.length; r++) {
+            const cell = data[r][0]?.toString() || "";
+            // Simple check: contains numbers and letters, length > 5
+            if (/[0-9]/.test(cell) && /[a-zA-Z]/.test(cell) && cell.length > 6) {
+                startRow = r;
+                break;
+            }
+        }
+
+        for (let row = startRow; row < data.length; row++) {
             const rollNo = data[row][0]?.toString();
             // Try to get name from Column B (Index 1) if available, else placeholder
             const rawName = data[row][1]?.toString();
@@ -179,13 +282,15 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
 
             const absentPeriods: number[] = [];
 
-            for (let col = 1; col < data[row].length; col++) {
+            for (let col = 1; col < maxCol; col++) {
+                // Check if this column belongs to the selected date
                 if (dateMap[col] === targetDate) {
                     const status = data[row][col]?.toString().toUpperCase();
-                    if (status === 'A') {
+
+                    if (status === 'A' || status === 'ABSENT' || status === 'ABS') {
                         let periods = periodRow[col]?.toString();
                         if (periods) {
-                            const pList = periods.split(',').map((p: string) => parseInt(p.trim())).filter((n: number) => !isNaN(n));
+                            const pList = periods.split(/[,&-]/).map((p: string) => parseInt(p.trim())).filter((n: number) => !isNaN(n));
                             absentPeriods.push(...pList);
                         }
                     }
@@ -212,7 +317,7 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
             }
         }
 
-        // Sort by severity: Full Day -> AN -> FN -> Partial
+        // Sort by severity
         dailyAbsentees.sort((a, b) => {
             const severity = { 'Full Day': 4, 'Forenoon': 3, 'Afternoon': 2, 'Partial': 1 };
             return severity[b.status] - severity[a.status];
@@ -231,41 +336,89 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                         <ArrowLeft className="w-5 h-5" />
                     </Link>
                     <div>
-                        <h1 className="text-2xl font-black text-gray-900 uppercase tracking-tight">
+                        <h1 className="text-2xl font-black text-gray-900 uppercase tracking-tight flex items-center gap-3">
                             {titlePrefix} {classId.replace(/-/g, ' ')}
+                            <button
+                                onClick={loadLiveAttendance}
+                                disabled={loading}
+                                className={`p-2 rounded-full hover:bg-gray-100 transition-all ${loading ? 'animate-spin text-blue-600' : 'text-gray-400 hover:text-blue-600'}`}
+                                title="Refresh Live Data"
+                            >
+                                <RefreshCw className="w-5 h-5" />
+                            </button>
                         </h1>
-                        <p className="text-gray-500 font-medium">Hourly Attendance Counsel</p>
+                        <p className="text-gray-500 font-medium">Hourly Attendance Counsel {loading && <span className="text-blue-600 ml-2 text-sm animate-pulse">Syncing...</span>}</p>
                     </div>
                 </div>
 
+                {/* Hierarchical Date Selector */}
                 {excelData.length > 0 && (
-                    <div className="flex items-center gap-2 bg-white p-1.5 rounded-xl border border-gray-200 shadow-sm">
+                    <div className="flex flex-wrap items-center gap-2 bg-white p-1.5 rounded-xl border border-gray-200 shadow-sm">
                         <div className="px-3 py-1.5 bg-blue-50 rounded-lg">
                             <CalendarIcon className="w-4 h-4 text-blue-600" />
                         </div>
+
+                        {/* Year Selector */}
                         <select
-                            className="bg-transparent border-none text-gray-900 font-bold text-sm focus:ring-0 cursor-pointer min-w-[140px]"
+                            className="bg-transparent border-none text-gray-900 font-bold text-sm focus:ring-0 cursor-pointer outline-none"
+                            value={selectedYear}
+                            onChange={(e) => {
+                                const yr = e.target.value;
+                                setSelectedYear(yr);
+                                // Default to first month of new year
+                                const months = Object.keys(dateHierarchy[yr] || {});
+                                if (months.length > 0) setSelectedMonth(months[0]);
+                            }}
+                        >
+                            {Object.keys(dateHierarchy).sort((a, b) => b.localeCompare(a)).map(year => (
+                                <option key={year} value={year}>{year}</option>
+                            ))}
+                        </select>
+
+                        <span className="text-gray-300">/</span>
+
+                        {/* Month Selector */}
+                        <select
+                            className="bg-transparent border-none text-gray-900 font-bold text-sm focus:ring-0 cursor-pointer outline-none min-w-[100px]"
+                            value={selectedMonth}
+                            onChange={(e) => setSelectedMonth(e.target.value)}
+                        >
+                            {selectedYear && dateHierarchy[selectedYear] && Object.keys(dateHierarchy[selectedYear]).map(month => (
+                                <option key={month} value={month}>{month}</option>
+                            ))}
+                        </select>
+
+                        <span className="text-gray-300">/</span>
+
+                        {/* Date Selector */}
+                        <select
+                            className="bg-transparent border-none text-gray-900 font-bold text-sm focus:ring-0 cursor-pointer outline-none min-w-[100px]"
                             value={selectedDate}
                             onChange={(e) => {
                                 const date = e.target.value;
+                                // Re-run analysis for selected date
                                 const dateRow = excelData[1];
                                 const periodRow = excelData[2];
-                                // Re-build dateMap (simplified for UI update, ideally extracted)
+
+                                let maxCol = 0;
+                                excelData.slice(0, 20).forEach(row => { if (row.length > maxCol) maxCol = row.length; });
+
                                 const dateMap: Record<number, string> = {};
-                                for (let col = 1; col < dateRow.length; col++) {
+                                for (let col = 1; col < maxCol; col++) {
                                     const rawDate = dateRow[col];
                                     if (rawDate && typeof rawDate === 'number') {
                                         dateMap[col] = excelDateToJSDate(rawDate);
-                                    } else if (rawDate && typeof rawDate === 'string' && rawDate.includes('/')) {
+                                    } else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
                                         dateMap[col] = rawDate;
                                     } else if (!rawDate && dateMap[col - 1]) {
                                         dateMap[col] = dateMap[col - 1];
                                     }
                                 }
-                                analyzeDailyAbsentees(date, excelData, dateMap, periodRow);
+
+                                analyzeDailyAbsentees(date, excelData, dateMap, periodRow, maxCol);
                             }}
                         >
-                            {availableDates.map(date => (
+                            {selectedYear && selectedMonth && dateHierarchy[selectedYear]?.[selectedMonth]?.map(date => (
                                 <option key={date} value={date}>{date}</option>
                             ))}
                         </select>
@@ -273,15 +426,23 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                 )}
             </div>
 
+            {/* Status Messages for Loading */}
+            {loading && !excelData.length && (
+                <div className="py-20 text-center">
+                    <div className="animate-spin w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-4"></div>
+                    <p className="text-gray-500 font-medium">Fetching live attendance sheet from Google...</p>
+                </div>
+            )}
+
             {/* Upload Section - Collapses when file is loaded */}
-            {!file && (
+            {!loading && !excelData.length && !file && (
                 <div className="bg-white p-8 rounded-2xl border-2 border-dashed border-gray-300 hover:border-blue-400 hover:bg-blue-50/10 transition-all cursor-pointer group text-center">
                     <label className="cursor-pointer">
                         <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                             <Upload className="w-8 h-8" />
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900">Upload Attendance Sheet</h3>
-                        <p className="text-gray-500 text-sm mt-1 mb-4">Drag and drop or click to select .xlsx file</p>
+                        <h3 className="text-lg font-bold text-gray-900">Upload Data Manually</h3>
+                        <p className="text-gray-500 text-sm mt-1 mb-4">We couldn't auto-load the Google Sheet. Please upload the .xlsx file.</p>
                         <span className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-bold shadow-md shadow-blue-200 group-hover:shadow-lg transition-all">Browse Files</span>
                         <input type="file" className="hidden" accept=".xlsx" onChange={handleFileUpload} />
                     </label>
