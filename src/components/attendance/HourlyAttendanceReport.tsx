@@ -165,33 +165,12 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         });
 
         const dateRow = data[dateRowIndex] || [];
-        // Clone period row to avoid mutating original data refs if needed
-        const periodRow = [...(data[periodRowIndex] || [])];
-
-        // 2a. Fix "Merged" Period Headers (Spreading Logic)
-        // If a cell contains "1, 2, 3, 4" or "1\n2\n3", it implies it headers multiple columns
-        for (let col = 0; col < periodRow.length; col++) {
-            const val = periodRow[col];
-            if (typeof val === 'string' && (val.includes(',') || val.includes('\n') || val.match(/\d+\s+\d+/))) {
-                // Split by comma, newline, or whitespace sequence
-                const parts = val.split(/[,&\n\s]+/).map(p => p.trim()).filter(p => p.length > 0 && !isNaN(parseInt(p)));
-
-                if (parts.length > 1) {
-                    // We found a multi-value header! Spread it.
-                    // System design assumption: Columns are sequential.
-                    parts.forEach((part, index) => {
-                        if (col + index < periodRow.length) {
-                            // Overwrite/Fill subsequent columns
-                            periodRow[col + index] = part;
-                        }
-                    });
-                }
-            }
-        }
+        const periodRow = data[periodRowIndex] || [];
 
         // 3. Build Date Map with robust propagation
         const uniqueDates = new Set<string>();
         const rawDateStrings: string[] = [];
+        const dateMap: Record<number, string> = {}; // To store formatted dates by column index
 
         // 1. Collect all raw strings first to infer format
         for (let col = 1; col < maxCol; col++) {
@@ -295,7 +274,7 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
 
             setSelectedYear(year);
             setSelectedMonth(monthName);
-            analyzeDailyAbsentees(latestDate, data, dateMap, periodRow, maxCol);
+            analyzeDailyAbsentees(bestDate, data, dateMap, periodRow, maxCol);
         }
     };
 

@@ -14,8 +14,8 @@ export const ATTENDANCE_SHEET_IDS: Record<string, string> = {
 
     // PLACEHOLDERS for the missing 2 sheets (Total 9 requested)
     // Please update these IDs when available
-    "2-2-CSE-C": "",
-    "2-2-CSE-D": ""
+    "2-2-CSE-C": "1GEqiEUqqbdQ-0SLRv6FD9ydYIiDhOgD8H6S9XMW2ZEE",
+    "2-2-CSE-D": "1MDf9wqw3x_mf4_3wwt442ltqCC1bISShur8xuKzVqyE"
 };
 
 export const getSheetUrl = (classId: string) => {
