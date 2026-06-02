@@ -39,6 +39,50 @@ interface HourlyAttendanceReportProps {
     titlePrefix?: string;
 }
 
+// Helpers
+const normalizeDateStr = (dateStr: string) => {
+    const parts = dateStr.split(/[-/]/);
+    if (parts.length !== 3) return dateStr;
+
+    // Check if year (parts[2]) is "00XX" or "0XXX"
+    // Or if it's 2 digits "25" -> "2025"
+    let year = parts[2];
+    if (year.length === 4 && year.startsWith('00')) {
+        year = '20' + year.substring(2);
+    } else if (year.length === 2) {
+        year = '20' + year;
+    }
+
+    return `${parts[0]}/${parts[1]}/${year}`;
+};
+
+const determineStatus = (periods: number[]): { status: AbsentStatus; note: string } => {
+    const fnPeriods = [1, 2, 3, 4];
+    const anPeriods = [5, 6, 7, 8];
+
+    const missedFN = periods.filter(p => fnPeriods.includes(p));
+    const missedAN = periods.filter(p => anPeriods.includes(p));
+
+    const isSignificantFN = missedFN.length >= 3;
+    const isSignificantAN = missedAN.length >= 2; // 2 out of 4 is significant
+
+    if (isSignificantFN && isSignificantAN) {
+        return { status: 'Full Day', note: 'Absent for entire day.' };
+    }
+    if (isSignificantFN) {
+        return { status: 'Forenoon', note: 'Missed Morning Session.' };
+    }
+    if (isSignificantAN) {
+        return { status: 'Afternoon', note: 'Missed Afternoon Session (Post-Lunch).' };
+    }
+
+    if (periods.length === 1 && periods[0] === 1) {
+        return { status: 'Partial', note: 'Late Comer (Period 1 Absent).' };
+    }
+
+    return { status: 'Partial', note: `Bunking / Irregular (${periods.join(', ')})` };
+};
+
 export default function HourlyAttendanceReport({ classId, backLink, titlePrefix = "" }: HourlyAttendanceReportProps) {
     const [file, setFile] = useState<File | null>(null);
     const [loading, setLoading] = useState(false);
@@ -160,267 +204,125 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         const periodRowIndex = 2;
 
         let maxCol = 0;
-        data.slice(0, 20).forEach(row => {
-            if (row.length > maxCol) maxCol = row.length;
+        data.slice(0, 20).forEach(row => { if (row.length > maxCol) maxCol = row.length; });
+
+        const dateRow = data[1] || [];
+        const uniqueDates = new Set<string>();
+        const dateMap: Record<number, string> = {};
+
+        let isDDMM = true;
+        for (let col = 1; col < maxCol; col++) {
+            const raw = dateRow[col];
+            if (typeof raw === 'string' && (raw.includes('/') || raw.includes('-'))) {
+                const parts = raw.split(/[-/]/);
+                if (parts.length === 3) {
+                    if (parseInt(parts[0]) > 12) { isDDMM = true; break; }
+                    if (parseInt(parts[1]) > 12) { isDDMM = false; break; }
+                }
+            }
+        }
+
+        for (let col = 1; col < maxCol; col++) {
+            const raw = dateRow[col];
+            let fmt = "";
+            if (typeof raw === 'number') fmt = excelDateToJSDate(raw);
+            else if (typeof raw === 'string' && (raw.includes('/') || raw.includes('-'))) {
+                const p = raw.split(/[-/]/);
+                fmt = isDDMM ? `${p[0].padStart(2, '0')}/${p[1].padStart(2, '0')}/${p[2]}` : `${p[1].padStart(2, '0')}/${p[0].padStart(2, '0')}/${p[2]}`;
+            } else if (!raw && dateMap[col - 1]) fmt = dateMap[col - 1];
+
+            if (fmt) {
+                dateMap[col] = normalizeDateStr(fmt);
+                uniqueDates.add(dateMap[col]);
+            }
+        }
+
+        const sorted = Array.from(uniqueDates).sort((a, b) => {
+            const [dA, mA, yA] = a.split('/').map(Number);
+            const [dB, mB, yB] = b.split('/').map(Number);
+            return new Date(yA, mA - 1, dA).getTime() - new Date(yB, mB - 1, dB).getTime();
         });
 
-        const dateRow = data[dateRowIndex] || [];
-        const periodRow = data[periodRowIndex] || [];
+        const valid = sorted.filter(d => {
+            const [dd, mm, yy] = d.split('/').map(Number);
+            return new Date(yy, mm - 1, dd) <= new Date();
+        });
 
-        // 3. Build Date Map with robust propagation
-        const uniqueDates = new Set<string>();
-        const rawDateStrings: string[] = [];
-        const dateMap: Record<number, string> = {}; // To store formatted dates by column index
+        setAvailableDates(valid);
+        setDateHierarchy(groupDates(valid));
 
-        // 1. Collect all raw strings first to infer format
+        if (valid.length > 0) {
+            const last = valid[valid.length - 1];
+            const p = last.split('/');
+            setSelectedYear(p[2]);
+            setSelectedMonth(new Date(parseInt(p[2]), parseInt(p[1]) - 1).toLocaleString('default', { month: 'long' }));
+            analyzeDailyAbsentees(last, data);
+        }
+    };
+
+    const analyzeDailyAbsentees = async (targetDate: string, data: any[][]) => {
+        setSelectedDate(targetDate);
+        let maxCol = 0;
+        data.slice(0, 20).forEach(row => { if (row.length > maxCol) maxCol = row.length; });
+        const dateRow = data[1] || [];
+        const periodRow = data[2] || [];
+        const dateMap: Record<number, string> = {};
+
+        let isDDMM = true;
         for (let col = 1; col < maxCol; col++) {
-            const rawDate = dateRow[col];
-            if (typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
-                rawDateStrings.push(rawDate);
+            const raw = dateRow[col];
+            if (typeof raw === 'string' && (raw.includes('/') || raw.includes('-'))) {
+                const parts = raw.split(/[-/]/);
+                if (parts.length === 3 && parseInt(parts[0]) > 12) { isDDMM = true; break; }
+                if (parts.length === 3 && parseInt(parts[1]) > 12) { isDDMM = false; break; }
             }
         }
 
-        // 2. Infer Date Format (DD/MM vs MM/DD)
-        // If we see any part[0] > 12, it MUST be DD/MM.
-        // If we see any part[1] > 12, it MUST be MM/DD.
-        let isDDMM = true; // Default to India/UK
-        let formatDetected = false;
-
-        for (const d of rawDateStrings) {
-            const parts = d.split(/[-/]/);
-            if (parts.length === 3) {
-                const p0 = parseInt(parts[0]);
-                const p1 = parseInt(parts[1]);
-
-                if (p0 > 12) {
-                    isDDMM = true;
-                    formatDetected = true;
-                    break;
-                }
-                if (p1 > 12) {
-                    isDDMM = false;
-                    formatDetected = true;
-                    break;
-                }
-            }
-        }
-
-        // Helper to normalize year (e.g., "0025" -> "2025")
-        const normalizeDateStr = (dateStr: string) => {
-            const parts = dateStr.split(/[-/]/);
-            if (parts.length !== 3) return dateStr;
-
-            // Check if year (parts[2]) is "00XX" or "0XXX"
-            // Or if it's 2 digits "25" -> "2025"
-            let year = parts[2];
-            if (year.length === 4 && year.startsWith('00')) {
-                year = '20' + year.substring(2);
-            } else if (year.length === 2) {
-                year = '20' + year;
-            }
-
-            return `${parts[0]}/${parts[1]}/${year}`;
-        };
-
-        // ... (rest of processExcelData)
-
-        // 3. Process Columns with inferred format
         for (let col = 1; col < maxCol; col++) {
-            const rawDate = dateRow[col];
-            let fmtDate = "";
-
-            if (rawDate && typeof rawDate === 'number') {
-                fmtDate = excelDateToJSDate(rawDate); // Returns DD/MM/YYYY
-            } else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
-                const parts = rawDate.split(/[-/]/);
-                if (parts.length === 3) {
-                    if (isDDMM) {
-                        // Keep as DD/MM/YYYY
-                        fmtDate = `${parts[0].padStart(2, '0')}/${parts[1].padStart(2, '0')}/${parts[2]}`;
-                    } else {
-                        // Convert MM/DD/YYYY -> DD/MM/YYYY
-                        fmtDate = `${parts[1].padStart(2, '0')}/${parts[0].padStart(2, '0')}/${parts[2]}`;
-                    }
-                } else {
-                    fmtDate = rawDate;
-                }
-            } else if (!rawDate && dateMap[col - 1]) {
-                fmtDate = dateMap[col - 1]; // Propagate
-            }
-
-            if (fmtDate) {
-                // Normalize Year Typos here
-                fmtDate = normalizeDateStr(fmtDate);
-
-                dateMap[col] = fmtDate;
-                uniqueDates.add(fmtDate);
-            }
+            const raw = dateRow[col];
+            let fmt = "";
+            if (typeof raw === 'number') fmt = excelDateToJSDate(raw);
+            else if (typeof raw === 'string' && (raw.includes('/') || raw.includes('-'))) {
+                const p = raw.split(/[-/]/);
+                fmt = isDDMM ? `${p[0].padStart(2, '0')}/${p[1].padStart(2, '0')}/${p[2]}` : `${p[1].padStart(2, '0')}/${p[0].padStart(2, '0')}/${p[2]}`;
+            } else if (!raw && dateMap[col - 1]) fmt = dateMap[col - 1];
+            if (fmt) dateMap[col] = normalizeDateStr(fmt);
         }
 
-        // ... (rest of sorting logic)
+        const dailyAbsentees: DailyAbsentee[] = [];
+        const stats = { fullDay: 0, forenoon: 0, afternoon: 0, partial: 0 };
+        let startRow = 5;
+        for (let r = 3; r < data.length; r++) {
+            const cell = data[r][0]?.toString() || "";
+            if (/[0-9]/.test(cell) && /[a-zA-Z]/.test(cell) && cell.length > 6) { startRow = r; break; }
+        }
 
-        const determineStatus = (periods: number[]): { status: AbsentStatus, note: string } => {
-            const fnPeriods = [1, 2, 3, 4];
-            const anPeriods = [5, 6, 7, 8];
-
-            const missedFN = periods.filter(p => fnPeriods.includes(p));
-            const missedAN = periods.filter(p => anPeriods.includes(p));
-
-            const isSignificantFN = missedFN.length >= 3;
-            const isSignificantAN = missedAN.length >= 2; // 2 out of 4 is significant
-
-            if (isSignificantFN && isSignificantAN) {
-                return { status: 'Full Day', note: 'Absent for entire day.' };
-            }
-            if (isSignificantFN) {
-                return { status: 'Forenoon', note: 'Missed Morning Session.' };
-            }
-            if (isSignificantAN) {
-                return { status: 'Afternoon', note: 'Missed Afternoon Session (Post-Lunch).' };
-            }
-
-            if (periods.length === 1 && periods[0] === 1) {
-                return { status: 'Partial', note: 'Late Comer (Period 1 Absent).' };
-            }
-
-            return { status: 'Partial', note: `Bunking / Irregular (${periods.join(', ')})` };
-        };
-
-        const analyzeDailyAbsentees = async (
-            targetDate: string,
-            data: any[][],
-            existingDateMap?: Record<number, string>,
-            existingPeriodRow?: any[],
-            existingMaxCol?: number
-        ) => {
-            setSelectedDate(targetDate);
-
-            // Re-calculate helpers if not provided (safe mode for UI switching)
-            let maxCol = existingMaxCol || 0;
-            if (!maxCol) {
-                data.slice(0, 20).forEach(row => { if (row.length > maxCol) maxCol = row.length; });
-            }
-
-            const periodRow = existingPeriodRow || data[2] || [];
-
-            let dateMap = existingDateMap || {};
-            if (!existingDateMap || Object.keys(dateMap).length === 0) {
-                // Re-build date map on the fly if needed
-                const dateRow = data[1] || [];
-                // ... (copy strict date parsing logic or just simple mapping if already processed?)
-                // Ideally processExcelData store this in a ref or state, but re-calculating is safer for now
-                const normalizeDateStr = (d: string) => {
-                    const p = d.split(/[-/]/);
-                    if (p.length !== 3) return d;
-                    let y = p[2];
-                    if (y.length === 4 && y.startsWith('00')) y = '20' + y.substring(2);
-                    else if (y.length === 2) y = '20' + y;
-                    return `${p[0]}/${p[1]}/${y}`;
-                };
-
-                const uniqueDates = new Set<string>();
-                const rawDateStrings: string[] = [];
-                for (let col = 1; col < maxCol; col++) {
-                    const r = dateRow[col];
-                    if (typeof r === 'string' && (r.includes('/') || r.includes('-'))) rawDateStrings.push(r);
-                }
-                // Infer format again
-                let isDDMM = true;
-                for (const d of rawDateStrings) {
-                    const p = d.split(/[-/]/);
-                    if (p.length === 3 && parseInt(p[0]) > 12) { isDDMM = true; break; }
-                    if (p.length === 3 && parseInt(p[1]) > 12) { isDDMM = false; break; }
-                }
-
-                for (let col = 1; col < maxCol; col++) {
-                    const rawDate = dateRow[col];
-                    let fmtDate = "";
-                    if (rawDate && typeof rawDate === 'number') fmtDate = excelDateToJSDate(rawDate);
-                    else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
-                        const parts = rawDate.split(/[-/]/);
-                        if (parts.length === 3) {
-                            if (isDDMM) fmtDate = `${parts[0].padStart(2, '0')}/${parts[1].padStart(2, '0')}/${parts[2]}`;
-                            else fmtDate = `${parts[1].padStart(2, '0')}/${parts[0].padStart(2, '0')}/${parts[2]}`;
-                        } else fmtDate = rawDate;
-                    } else if (!rawDate && dateMap[col - 1]) fmtDate = dateMap[col - 1];
-
-                    if (fmtDate) dateMap[col] = normalizeDateStr(fmtDate);
-                }
-            }
-
-            const dailyAbsentees: DailyAbsentee[] = [];
-            const currentStats = { fullDay: 0, forenoon: 0, afternoon: 0, partial: 0 };
-
-            // Auto-detect start row for students
-            // Look for the first row where Column 0 matches a Roll Number pattern (e.g., "22KP...")
-            let startRow = 5;
-            for (let r = 3; r < data.length; r++) {
-                const cell = data[r][0]?.toString() || "";
-                // Simple check: contains numbers and letters, length > 5
-                if (/[0-9]/.test(cell) && /[a-zA-Z]/.test(cell) && cell.length > 6) {
-                    startRow = r;
-                    break;
-                }
-            }
-
-            for (let row = startRow; row < data.length; row++) {
-                const rollNo = data[row][0]?.toString();
-                // Try to get name from Column B (Index 1) if available, else placeholder
-                const rawName = data[row][1]?.toString();
-                const name = (rawName && rawName.length > 2) ? rawName : "Student " + rollNo;
-
-                if (!rollNo || rollNo.length < 5) continue;
-
-                const absentPeriods: number[] = [];
-
-                for (let col = 1; col < maxCol; col++) {
-                    // Check if this column belongs to the selected date
-                    if (dateMap[col] === targetDate) {
-                        const status = data[row][col]?.toString().toUpperCase();
-
-                        if (status === 'A' || status === 'ABSENT' || status === 'ABS') {
-                            let periods = periodRow[col]?.toString();
-                            if (periods) {
-                                const pList = periods.split(/[,&-]/).map((p: string) => parseInt(p.trim())).filter((n: number) => !isNaN(n));
-                                absentPeriods.push(...pList);
-                            }
-                        }
+        for (let row = startRow; row < data.length; row++) {
+            const rollNo = data[row][0]?.toString();
+            if (!rollNo || rollNo.length < 5) continue;
+            const absentPeriods: number[] = [];
+            for (let col = 1; col < maxCol; col++) {
+                if (dateMap[col] === targetDate) {
+                    const val = data[row][col]?.toString().toUpperCase();
+                    if (['A', 'ABSENT', 'ABS'].includes(val)) {
+                        const p = periodRow[col]?.toString();
+                        if (p) p.split(/[,&-]/).forEach((n: string) => { const num = parseInt(n.trim()); if (!isNaN(num)) absentPeriods.push(num); });
                     }
                 }
-
-                if (absentPeriods.length > 0) {
-                    const uniquePeriods = Array.from(new Set(absentPeriods)).sort((a, b) => a - b);
-                    const { status, note } = determineStatus(uniquePeriods);
-
-                    // Update Stats
-                    if (status === 'Full Day') currentStats.fullDay++;
-                    else if (status === 'Forenoon') currentStats.forenoon++;
-                    else if (status === 'Afternoon') currentStats.afternoon++;
-                    else currentStats.partial++;
-
-                    dailyAbsentees.push({
-                        rollNumber: rollNo,
-                        name: name,
-                        absentPeriods: uniquePeriods,
-                        status: status,
-                        counselingNote: note
-                    });
-                }
             }
+            if (absentPeriods.length > 0) {
+                const unique = Array.from(new Set(absentPeriods)).sort((a, b) => a - b);
+                const { status, note } = determineStatus(unique);
+                if (status === 'Full Day') stats.fullDay++; else if (status === 'Forenoon') stats.forenoon++; else if (status === 'Afternoon') stats.afternoon++; else stats.partial++;
+                dailyAbsentees.push({ rollNumber: rollNo, name: data[row][1]?.toString() || "Student", absentPeriods: unique, status, counselingNote: note });
+            }
+        }
+        setStats(stats);
+        setAbsentees(dailyAbsentees.sort((a, b) => ({ 'Full Day': 4, 'Forenoon': 3, 'Afternoon': 2, 'Partial': 1 }[b.status] - ({ 'Full Day': 4, 'Forenoon': 3, 'Afternoon': 2, 'Partial': 1 }[a.status]))));
+    };
 
-            // Sort by severity
-            dailyAbsentees.sort((a, b) => {
-                const severity = { 'Full Day': 4, 'Forenoon': 3, 'Afternoon': 2, 'Partial': 1 };
-                return severity[b.status] - severity[a.status];
-            });
-
-            setStats(currentStats);
-            setAbsentees(dailyAbsentees);
-        };
-
-        return (
+    return (
             <div className="max-w-7xl mx-auto space-y-6 pb-20">
-                {/* Header with Navigation */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
                         <Link href={backLink} className="p-2 hover:bg-gray-100 rounded-lg text-gray-600 transition-colors">
@@ -472,12 +374,7 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                                         if (dates.length > 0) {
                                             const firstDate = dates[0];
                                             // Trigger analysis for the new default date
-                                            analyzeDailyAbsentees(firstDate, excelData, {}, excelData[2], 0);
-                                            // Note: checking valid args for analyzeDailyAbsentees...
-                                            // It needs (date, data, dateMap, periodRow, maxCol).
-                                            // dateMap and maxCol are derived inside processExcelData but NOT stored in state.
-                                            // We need to re-derive or store them.
-                                            // REFACTOR: simplify analyzeDailyAbsentees specific args or store them.
+                                            analyzeDailyAbsentees(firstDate, excelData);
                                         }
                                     }
                                 }}
@@ -501,7 +398,7 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                                     if (dates.length > 0) {
                                         const firstDate = dates[0];
                                         // Trigger analysis
-                                        analyzeDailyAbsentees(firstDate, excelData, {}, excelData[2], 0);
+                                        analyzeDailyAbsentees(firstDate, excelData);
                                     }
                                 }}
                             >
@@ -518,26 +415,7 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                                 value={selectedDate}
                                 onChange={(e) => {
                                     const date = e.target.value;
-                                    // Re-run analysis for selected date
-                                    const dateRow = excelData[1];
-                                    const periodRow = excelData[2];
-
-                                    let maxCol = 0;
-                                    excelData.slice(0, 20).forEach(row => { if (row.length > maxCol) maxCol = row.length; });
-
-                                    const dateMap: Record<number, string> = {};
-                                    for (let col = 1; col < maxCol; col++) {
-                                        const rawDate = dateRow[col];
-                                        if (rawDate && typeof rawDate === 'number') {
-                                            dateMap[col] = excelDateToJSDate(rawDate);
-                                        } else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
-                                            dateMap[col] = rawDate;
-                                        } else if (!rawDate && dateMap[col - 1]) {
-                                            dateMap[col] = dateMap[col - 1];
-                                        }
-                                    }
-
-                                    analyzeDailyAbsentees(date, excelData, dateMap, periodRow, maxCol);
+                                    analyzeDailyAbsentees(date, excelData);
                                 }}
                             >
                                 {selectedYear && selectedMonth && dateHierarchy[selectedYear]?.[selectedMonth]?.map(date => (
