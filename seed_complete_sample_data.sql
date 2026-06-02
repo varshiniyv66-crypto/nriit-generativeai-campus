@@ -276,6 +276,7 @@ END $$;
 -- SECTION 9: CREATE ATTENDANCE SUMMARY VIEW
 -- ===========================================
 
+DROP VIEW IF EXISTS v_student_attendance_summary CASCADE;
 CREATE OR REPLACE VIEW v_student_attendance_summary AS
 SELECT 
     s.id as student_id,

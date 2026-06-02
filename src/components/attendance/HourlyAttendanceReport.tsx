@@ -289,11 +289,64 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
         const analyzeDailyAbsentees = async (
             targetDate: string,
             data: any[][],
-            dateMap: Record<number, string>,
-            periodRow: any[],
-            maxCol: number
+            existingDateMap?: Record<number, string>,
+            existingPeriodRow?: any[],
+            existingMaxCol?: number
         ) => {
             setSelectedDate(targetDate);
+
+            // Re-calculate helpers if not provided (safe mode for UI switching)
+            let maxCol = existingMaxCol || 0;
+            if (!maxCol) {
+                data.slice(0, 20).forEach(row => { if (row.length > maxCol) maxCol = row.length; });
+            }
+
+            const periodRow = existingPeriodRow || data[2] || [];
+
+            let dateMap = existingDateMap || {};
+            if (!existingDateMap || Object.keys(dateMap).length === 0) {
+                // Re-build date map on the fly if needed
+                const dateRow = data[1] || [];
+                // ... (copy strict date parsing logic or just simple mapping if already processed?)
+                // Ideally processExcelData store this in a ref or state, but re-calculating is safer for now
+                const normalizeDateStr = (d: string) => {
+                    const p = d.split(/[-/]/);
+                    if (p.length !== 3) return d;
+                    let y = p[2];
+                    if (y.length === 4 && y.startsWith('00')) y = '20' + y.substring(2);
+                    else if (y.length === 2) y = '20' + y;
+                    return `${p[0]}/${p[1]}/${y}`;
+                };
+
+                const uniqueDates = new Set<string>();
+                const rawDateStrings: string[] = [];
+                for (let col = 1; col < maxCol; col++) {
+                    const r = dateRow[col];
+                    if (typeof r === 'string' && (r.includes('/') || r.includes('-'))) rawDateStrings.push(r);
+                }
+                // Infer format again
+                let isDDMM = true;
+                for (const d of rawDateStrings) {
+                    const p = d.split(/[-/]/);
+                    if (p.length === 3 && parseInt(p[0]) > 12) { isDDMM = true; break; }
+                    if (p.length === 3 && parseInt(p[1]) > 12) { isDDMM = false; break; }
+                }
+
+                for (let col = 1; col < maxCol; col++) {
+                    const rawDate = dateRow[col];
+                    let fmtDate = "";
+                    if (rawDate && typeof rawDate === 'number') fmtDate = excelDateToJSDate(rawDate);
+                    else if (rawDate && typeof rawDate === 'string' && (rawDate.includes('/') || rawDate.includes('-'))) {
+                        const parts = rawDate.split(/[-/]/);
+                        if (parts.length === 3) {
+                            if (isDDMM) fmtDate = `${parts[0].padStart(2, '0')}/${parts[1].padStart(2, '0')}/${parts[2]}`;
+                            else fmtDate = `${parts[1].padStart(2, '0')}/${parts[0].padStart(2, '0')}/${parts[2]}`;
+                        } else fmtDate = rawDate;
+                    } else if (!rawDate && dateMap[col - 1]) fmtDate = dateMap[col - 1];
+
+                    if (fmtDate) dateMap[col] = normalizeDateStr(fmtDate);
+                }
+            }
 
             const dailyAbsentees: DailyAbsentee[] = [];
             const currentStats = { fullDay: 0, forenoon: 0, afternoon: 0, partial: 0 };
@@ -403,9 +456,30 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                                 onChange={(e) => {
                                     const yr = e.target.value;
                                     setSelectedYear(yr);
-                                    // Default to first month of new year
-                                    const months = Object.keys(dateHierarchy[yr] || {});
-                                    if (months.length > 0) setSelectedMonth(months[0]);
+
+                                    // Auto-select first month and first date of that month
+                                    const months = Object.keys(dateHierarchy[yr] || {}).sort((a, b) => {
+                                        // Sort months chronologically if possible, or just use key order
+                                        // For now, keys are Month Names (February), relying on existing sort or just taking first
+                                        return 0;
+                                    });
+
+                                    if (months.length > 0) {
+                                        const firstMonth = months[0];
+                                        setSelectedMonth(firstMonth);
+
+                                        const dates = dateHierarchy[yr][firstMonth] || [];
+                                        if (dates.length > 0) {
+                                            const firstDate = dates[0];
+                                            // Trigger analysis for the new default date
+                                            analyzeDailyAbsentees(firstDate, excelData, {}, excelData[2], 0);
+                                            // Note: checking valid args for analyzeDailyAbsentees...
+                                            // It needs (date, data, dateMap, periodRow, maxCol).
+                                            // dateMap and maxCol are derived inside processExcelData but NOT stored in state.
+                                            // We need to re-derive or store them.
+                                            // REFACTOR: simplify analyzeDailyAbsentees specific args or store them.
+                                        }
+                                    }
                                 }}
                             >
                                 {Object.keys(dateHierarchy).sort((a, b) => b.localeCompare(a)).map(year => (
@@ -419,7 +493,17 @@ export default function HourlyAttendanceReport({ classId, backLink, titlePrefix 
                             <select
                                 className="bg-transparent border-none text-gray-900 font-bold text-sm focus:ring-0 cursor-pointer outline-none min-w-[100px]"
                                 value={selectedMonth}
-                                onChange={(e) => setSelectedMonth(e.target.value)}
+                                onChange={(e) => {
+                                    const mn = e.target.value;
+                                    setSelectedMonth(mn);
+
+                                    const dates = dateHierarchy[selectedYear]?.[mn] || [];
+                                    if (dates.length > 0) {
+                                        const firstDate = dates[0];
+                                        // Trigger analysis
+                                        analyzeDailyAbsentees(firstDate, excelData, {}, excelData[2], 0);
+                                    }
+                                }}
                             >
                                 {selectedYear && dateHierarchy[selectedYear] && Object.keys(dateHierarchy[selectedYear]).map(month => (
                                     <option key={month} value={month}>{month}</option>

@@ -25,6 +25,14 @@ CREATE TABLE IF NOT EXISTS class_sections (
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
+-- Fix class_sections columns if the table already existed
+ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS name TEXT;
+ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS academic_year_id UUID REFERENCES academic_years(id);
+ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS dept_code TEXT;
+ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS year INTEGER;
+ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS semester INTEGER;
+ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS section TEXT;
+
 -- Add unique constraint if not exists (safe way is complex in SQL script, skipping 'IF NOT EXISTS' for constraint)
 -- We'll assume the Unique index is needed for ON CONFLICT
 DROP INDEX IF EXISTS idx_class_sections_unique;
@@ -78,10 +86,15 @@ ALTER TABLE class_sections ADD COLUMN IF NOT EXISTS section TEXT;
 
 -- Fix courses
 ALTER TABLE courses ADD COLUMN IF NOT EXISTS code TEXT;
+ALTER TABLE courses ADD COLUMN IF NOT EXISTS name TEXT;
 ALTER TABLE courses ADD COLUMN IF NOT EXISTS dept_code TEXT;
 ALTER TABLE courses ADD COLUMN IF NOT EXISTS type TEXT;
 ALTER TABLE courses ADD COLUMN IF NOT EXISTS semester INTEGER;
 ALTER TABLE courses ADD COLUMN IF NOT EXISTS credits INTEGER DEFAULT 3;
+
+-- Add unique constraint or index on code for ON CONFLICT (code) to work
+DROP INDEX IF EXISTS idx_courses_code_unique;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_courses_code_unique ON courses (code);
 
 -- Re-create unique index for Upsert to work
 DROP INDEX IF EXISTS idx_class_sections_unique;

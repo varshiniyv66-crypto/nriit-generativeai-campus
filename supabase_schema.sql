@@ -39,7 +39,8 @@ CREATE TYPE department_code AS ENUM (
   'CIVIL',
   'MBA',
   'MCA',
-  'BSH'
+  'BSH',
+  'EVT'
 );
 
 CREATE TYPE gender_type AS ENUM ('male', 'female', 'other');
@@ -434,13 +435,18 @@ CREATE TABLE class_sections (
 CREATE TABLE timetable (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   class_section_id UUID REFERENCES class_sections(id) ON DELETE CASCADE,
-  day_of_week INTEGER CHECK (day_of_week BETWEEN 1 AND 6), -- 1=Monday, 6=Saturday
-  period_number INTEGER CHECK (period_number BETWEEN 1 AND 8), -- 8 periods as per requirements
-  course_id UUID REFERENCES courses(id),
   faculty_id UUID REFERENCES faculty_profiles(id),
+  course_id UUID REFERENCES courses(id),
+  day_of_week VARCHAR(50) NOT NULL,
+  period_number INTEGER NOT NULL,
+  start_time TIME,
+  end_time TIME,
   room_number VARCHAR(50),
   is_lab BOOLEAN DEFAULT false,
+  academic_year VARCHAR(20) DEFAULT '2025-2026',
+  is_active BOOLEAN DEFAULT true,
   created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW(),
   UNIQUE(class_section_id, day_of_week, period_number)
 );
 
